@@ -13,6 +13,7 @@ int start()                           // Special function start()
                                       // Tech. ind. function call
    MA=iMA(NULL,0,Period_MA,0,MODE_SMA,PRICE_CLOSE,0); 
 //--------------------------------------------------------------------
+//   if (Bid > MA)   // Checking if price above
    if (Bid > MA && Fact_Up == true)   // Checking if price above
      {
       Fact_Dn = true;                 // Report about price above MA
@@ -21,6 +22,7 @@ int start()                           // Special function start()
       Alert("Bid is ==> (",Bid,").");// Alert 
      }
 //--------------------------------------------------------------------
+//   if (Bid < MA)   // Checking if price below
    if (Bid < MA && Fact_Dn == true)   // Checking if price below
      {
       Fact_Up = true;                 // Report about price below MA
