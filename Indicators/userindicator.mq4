@@ -12,9 +12,9 @@ double Buf_0[],Buf_1[];             // Declaring arrays (for indicator buffers)
 int init()                          // Special function init()
   {
    SetIndexBuffer(0,Buf_0);         // Assigning an array to a buffer
-   SetIndexStyle (0,DRAW_LINE,STYLE_SOLID,2);// Line style
+   //SetIndexStyle (0,DRAW_LINE,STYLE_SOLID,2);// Line style
    SetIndexBuffer(1,Buf_1);         // Assigning an array to a buffer
-   SetIndexStyle (1,DRAW_LINE,STYLE_DOT,1);// Line style
+   //SetIndexStyle (1,DRAW_LINE,STYLE_DOT,1);// Line style
    return;                          // Exit the special funct. init()
   }
 //--------------------------------------------------------------------
