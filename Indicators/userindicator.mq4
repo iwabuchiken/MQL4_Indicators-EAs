@@ -1,40 +1,37 @@
 //--------------------------------------------------------------------
 // userindicator.mq4 
-// Предназначен для использования в качестве примера в учебнике MQL4.
+// The code should be used for educational purpose only.
 //--------------------------------------------------------------------
-#property indicator_chart_window    // Индик. рисуется в основном окне
-#property indicator_buffers 2       // Количество буферов
-#property indicator_color1 Blue     // Цвет первой линии
-#property indicator_color2 Red      // Цвет второй линии
-
-double Buf_0[],Buf_1[];             // Открытие индикаторных массивов
+#property indicator_chart_window    // Indicator is drawn in the main window
+#property indicator_buffers 2       // Number of buffers
+#property indicator_color1 Blue     // Color of the 1st line
+#property indicator_color2 Red      // Color of the 2nd line
+ 
+double Buf_0[],Buf_1[];             // Declaring arrays (for indicator buffers)
 //--------------------------------------------------------------------
-int init()                          // Специальная функция init()
+int init()                          // Special function init()
   {
-//--------------------------------------------------------------------
-   SetIndexBuffer(0,Buf_0);         // Назначение массива буферу
-   SetIndexStyle (0,DRAW_LINE,STYLE_SOLID,2);// Стиль линии
-//--------------------------------------------------------------------
-   SetIndexBuffer(1,Buf_1);         // Назначение массива буферу
-   SetIndexStyle (1,DRAW_LINE,STYLE_DOT,1);// Стиль линии
-//--------------------------------------------------------------------
-   return;                          // Выход из спец. ф-ии init()
+   SetIndexBuffer(0,Buf_0);         // Assigning an array to a buffer
+   SetIndexStyle (0,DRAW_LINE,STYLE_SOLID,2);// Line style
+   SetIndexBuffer(1,Buf_1);         // Assigning an array to a buffer
+   SetIndexStyle (1,DRAW_LINE,STYLE_DOT,1);// Line style
+   return;                          // Exit the special funct. init()
   }
 //--------------------------------------------------------------------
-int start()                         // Специальная функция start()
+int start()                         // Special function start()
   {
-   int i,                           // Индекс бара
-       Counted_bars;                // Количество просчитанных баров 
+   int i,                           // Bar index
+       Counted_bars;                // Number of counted bars
 //--------------------------------------------------------------------
-   Counted_bars=IndicatorCounted(); // Количество просчитанных баров 
-   i=Bars-Counted_bars-1;           // Индекс первого непосчитанного
-   while(i>=0)                      // Цикл по непосчитанным барам
+   Counted_bars=IndicatorCounted(); // Number of counted bars
+   i=Bars-Counted_bars-1;           // Index of the first uncounted
+   while(i>=0)                      // Loop for uncounted bars
      {
-      Buf_0[i]=High[i];             // Значение 0 буфера на i-ом баре
-      Buf_1[i]=Low[i];              // Значение 1 буфера на i-ом баре
-      i--;                          // Расчёт индекса следующего бара
+      Buf_0[i]=High[i];             // Value of 0 buffer on i bar
+      Buf_1[i]=Low[i];              // Value of 1st buffer on i bar
+      i--;                          // Calculating index of the next bar
      }
 //--------------------------------------------------------------------
-   return;                          // Выход из спец. ф-ии start()
+   return;                          // Exit the special funct. start()
   }
 //--------------------------------------------------------------------
