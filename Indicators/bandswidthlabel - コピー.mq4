@@ -58,7 +58,7 @@ int start(){
     }
 
     string Band_Width = DoubleToStr(UpperBuffer[0] - LowerBuffer[0],Digits);
-    ObjectCreate("Bands_Width_Label", OBJ_LABEL, 0, 10, 0);
+    ObjectCreate("Bands_Width_Label", OBJ_LABEL, 0, 0, 0);
     ObjectSetText("Bands_Width_Label", Band_Width, FontSize, FontType, FontColor);
     ObjectSet("Bands_Width_Label", OBJPROP_CORNER, WhatCorner);
     ObjectSet("Bands_Width_Label", OBJPROP_XDISTANCE, 1);
