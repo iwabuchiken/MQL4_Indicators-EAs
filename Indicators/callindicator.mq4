@@ -295,54 +295,29 @@ void saveData_Highs_2() {
 
       //steps.3
       //ref https://docs.mql4.com/files/fileopen
-      string terminal_data_path=TerminalInfoString(TERMINAL_DATA_PATH);
-      string filename=terminal_data_path+"\\MQL4\\Files\\"+"fractals.csv";
+      string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);
       
-      //int filehandle=FileOpen(filename,FILE_WRITE|FILE_CSV);
-      int filehandle=FileOpen(filename,FILE_WRITE|FILE_CSV);
-      
-      if(filehandle<0)
-        {
-         Print("Failed to open the file by the absolute path ");
-         Print("Error code ",GetLastError());
-        }
-      else {
-      
-         Print("file => opened");
-      
-      }
-      
-   //--- correct way of working in the "file sandbox"
-      ResetLastError();
-      filehandle=FileOpen("fractals.csv",FILE_WRITE|FILE_CSV);
-      if(filehandle!=INVALID_HANDLE)
-        {
-         FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
-         FileClose(filehandle);
-         Print("FileOpen OK");
-        }
-      else Print("Operation FileOpen failed, error ",GetLastError());
-
    //--- another example with the creation of an enclosed directory in MQL4\Files\
-      string subfolder="Research";
+      string subfolder = "Research";
       
-      //filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_WRITE|FILE_CSV);
-      //filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_READ|FILE_WRITE|FILE_CSV);
-      filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_READ|FILE_WRITE|FILE_TXT);
+      int filehandle = FileOpen(subfolder+"\\fractals.txt",FILE_READ|FILE_WRITE|FILE_TXT);
       
-         if(filehandle!=INVALID_HANDLE)
+      if(filehandle!=INVALID_HANDLE)
         {
             //ref https://www.mql5.com/en/forum/3239
             FileSeek(filehandle,0,SEEK_END);
         
          //FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
-         FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         //FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         FileWrite(filehandle,
+               "",TimeCurrent(),":",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"");
          
          //show filehandle
          Alert("filehandle => '",filehandle,"'");
          
          FileClose(filehandle);
          Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+         
         }
       else {
       
