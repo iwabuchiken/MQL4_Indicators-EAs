@@ -33,6 +33,11 @@ int start()                           // Special function start()
       Fact_Up = true;                 // Report about price below MA
       Fact_Dn = false;                // Don't report about price above MA
       Alert("Price is below MA(",Period_MA,").");// Alert 
+      
+      //test
+      show_Alert_2();
+      
+      
      }
 //--------------------------------------------------------------------
    return;                            // Exit start()
@@ -74,12 +79,124 @@ void show_Alert() {
 
 void show_Alert_2() {
 
+      Alert("show_Alert_2()");
+
       //Alert("TerminalInfoString(TERMINAL_DATA_PATH)... \n " +
         //     "==> (",TerminalInfoString(TERMINAL_DATA_PATH),").");// Alert 
              
       // C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E
 
-
+      //steps.2
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path=TerminalInfoString(TERMINAL_DATA_PATH);
+      string filename=terminal_data_path+"\\MQL4\\Files\\"+"fractals.csv";
       
+      int filehandle=FileOpen(filename,FILE_WRITE|FILE_CSV);
+      
+      if(filehandle<0)
+        {
+         Print("Failed to open the file by the absolute path ");
+         Print("Error code ",GetLastError());
+        }
+      else {
+      
+         Print("file => opened");
+      
+      }
+      
+   //--- correct way of working in the "file sandbox"
+      ResetLastError();
+      filehandle=FileOpen("fractals.csv",FILE_WRITE|FILE_CSV);
+      if(filehandle!=INVALID_HANDLE)
+        {
+         FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         FileClose(filehandle);
+         Print("FileOpen OK");
+        }
+      else Print("Operation FileOpen failed, error ",GetLastError());
+   //--- another example with the creation of an enclosed directory in MQL4\Files\
+      string subfolder="Research";
+      filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_WRITE|FILE_CSV);
+         if(filehandle!=INVALID_HANDLE)
+        {
+         //FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         
+         //show filehandle
+         Alert("filehandle => '",filehandle,"'");
+         
+         FileClose(filehandle);
+         Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+        }
+      else {
+      
+         Print("File open failed, error ",GetLastError());
+         
+         //alert
+         Alert("File open failed, error");
+         
+      }
 
 }//show_Alert()
+
+void show_Alert_3() {
+
+      Alert("show_Alert_3()");
+
+      //Alert("TerminalInfoString(TERMINAL_DATA_PATH)... \n " +
+        //     "==> (",TerminalInfoString(TERMINAL_DATA_PATH),").");// Alert 
+             
+      // C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E
+
+      //steps.2
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path=TerminalInfoString(TERMINAL_DATA_PATH);
+      string filename=terminal_data_path+"\\MQL4\\Files\\"+"fractals.csv";
+      
+      int filehandle=FileOpen(filename,FILE_WRITE|FILE_CSV);
+      
+      if(filehandle<0)
+        {
+         Print("Failed to open the file by the absolute path ");
+         Print("Error code ",GetLastError());
+        }
+      else {
+      
+         Print("file => opened");
+      
+      }
+      
+   //--- correct way of working in the "file sandbox"
+      ResetLastError();
+      filehandle=FileOpen("fractals.csv",FILE_WRITE|FILE_CSV);
+      if(filehandle!=INVALID_HANDLE)
+        {
+         FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         FileClose(filehandle);
+         Print("FileOpen OK");
+        }
+      else Print("Operation FileOpen failed, error ",GetLastError());
+   //--- another example with the creation of an enclosed directory in MQL4\Files\
+      string subfolder="Research";
+      filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_WRITE|FILE_CSV);
+         if(filehandle!=INVALID_HANDLE)
+        {
+         //FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         
+         //show filehandle
+         Alert("filehandle => '",filehandle,"'");
+         
+         FileClose(filehandle);
+         Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+        }
+      else {
+      
+         Print("File open failed, error ",GetLastError());
+         
+         //alert
+         Alert("File open failed, error");
+         
+      }
+
+}//show_Alert_3()
