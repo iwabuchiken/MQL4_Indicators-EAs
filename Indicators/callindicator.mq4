@@ -187,7 +187,8 @@ void show_Alert_3() {
       string subfolder="Research";
       
       //filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_WRITE|FILE_CSV);
-      filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_READ|FILE_WRITE|FILE_CSV);
+      //filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_READ|FILE_WRITE|FILE_CSV);
+      filehandle=FileOpen(subfolder+"\\fractals.txt",FILE_READ|FILE_WRITE|FILE_TXT);
       
          if(filehandle!=INVALID_HANDLE)
         {
