@@ -6,3 +6,5 @@ Logs/*
 Presets/*
 Projects/*
 Scripts/*
+
+*.ex4
