@@ -15,7 +15,9 @@ int start()                           // Special function start()
 //--------------------------------------------------------------------
 
    //test
-   show_Alert_3();
+   saveData_Highs();
+   
+   //show_Alert_3();
 
 /*
 
@@ -211,3 +213,76 @@ void show_Alert_3() {
       }
 
 }//show_Alert_3()
+
+void saveData_Highs() {
+
+      //+------------------------------------------------------------------+
+      //| setup                                                                 |
+      //+------------------------------------------------------------------+
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);
+      
+      string fname = "highs.txt";
+      
+      string filepath = terminal_data_path + "\\MQL4\\Files\\" + fname;
+
+      //+------------------------------------------------------------------+
+      //| validate: file exists                                                                 |
+      //+------------------------------------------------------------------+
+      int filehandle;
+      
+      if(FileIsExist(filepath) != true)
+        {
+        
+            //alert
+            Alert("file NOT exists => ",filepath,"");
+        
+            //filehandle = FileOpen(filepath, FILE_WRITE|FILE_TXT);
+            filehandle = FileOpen(filepath, FILE_WRITE|FILE_CSV);
+            
+        }
+      else
+        {
+            
+            filehandle = FileOpen(filepath, FILE_WRITE|FILE_READ|FILE_TXT);
+            
+        }
+
+      //+------------------------------------------------------------------+
+      //| file open                                                                 |
+      //+------------------------------------------------------------------+
+      //int filehandle = FileOpen(filepath, FILE_READ|FILE_WRITE|FILE_TXT);
+      //int filehandle = FileOpen(filepath, FILE_WRITE|FILE_READ|FILE_TXT);
+
+      if(filehandle == INVALID_HANDLE) {
+      
+         //alert
+         Alert("Invalid file handle => ",fname,"");
+         
+         return;
+      
+      }
+      
+      // seek end
+      //ref https://www.mql5.com/en/forum/3239
+      FileSeek(filehandle,0,SEEK_END);
+
+      //+------------------------------------------------------------------+
+      //| file: write                                                                 |
+      //+------------------------------------------------------------------+
+      FileWrite(filehandle,
+            "[",TimeCurrent(),":",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"" +
+            "Highs ]" );
+
+      //+------------------------------------------------------------------+
+      //| file: close                                                                 |
+      //+------------------------------------------------------------------+
+      FileClose(filehandle);
+      
+      //+------------------------------------------------------------------+
+      //| report                                                                 |
+      //+------------------------------------------------------------------+
+      //alert
+       Alert("file written => ",fname,"");
+
+}//saveData_Highs()
