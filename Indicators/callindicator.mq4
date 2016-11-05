@@ -20,15 +20,11 @@ int start()                           // Special function start()
       Fact_Up = false;                // Don't report about price below MA
 
       // show alert
-      show_Alert();
-      
-/*      Alert("Price is above MA!!!(",Period_MA,").");// Alert 
-      //Alert("Bid is now... ==> (",Bid,").");// Alert 
+      //show_Alert();
+      show_Alert_2();
       
       
-      int count = get_IndicatorCounted();
-      Alert("Bid is now... ==> (",Bid," / Period_MA=",Period_MA," \n/ bars=",count," / Bars=",Bars,").");// Alert 
-*/
+      
      }
 //--------------------------------------------------------------------
 //   if (Bid < MA)   // Checking if price below
@@ -73,5 +69,17 @@ void show_Alert() {
             "/ Bars=",Bars," / High=",High[i],"" + 
             " ).");// Alert 
 
+
+}//show_Alert()
+
+void show_Alert_2() {
+
+      //Alert("TerminalInfoString(TERMINAL_DATA_PATH)... \n " +
+        //     "==> (",TerminalInfoString(TERMINAL_DATA_PATH),").");// Alert 
+             
+      // C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E
+
+
+      
 
 }//show_Alert()
