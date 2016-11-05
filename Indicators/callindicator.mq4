@@ -15,9 +15,9 @@ int start()                           // Special function start()
 //--------------------------------------------------------------------
 
    //test
-   saveData_Highs();
+//   saveData_Highs();
    
-   //show_Alert_3();
+   show_Alert_3();
 
 /*
 
