@@ -23,9 +23,9 @@ int start()                           // Special function start()
          
          //saveData_BBValue();     // exec: BB vand value
          
-//         saveData_BBValue_ForMonths(3);   // exec: BB +2s values
+         saveData_BBValue_ForDays(3);   // exec: BB +2s values
 
-         conv_DateTime_2_SerialTimeLabel(TimeCurrent());
+//         conv_DateTime_2_SerialTimeLabel(TimeCurrent());
          
          Fact_Up = false;        // no more executions
          
@@ -231,9 +231,9 @@ void saveData_BBValue() {
 
 }//saveData_BBValue
 
-void saveData_BBValue_ForMonths(int numof_months) {
+void saveData_BBValue_ForDays(int numof_months) {
 
-      Alert("saveData_BBValue_ForMonths()");
+      Alert("saveData_BBValue_ForDays()");
 
       //+------------------------------------------------------------------+
       //| setup                                                                 |
@@ -243,7 +243,14 @@ void saveData_BBValue_ForMonths(int numof_months) {
       string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);
       
       //string subfolder = "Research", fname = "dat.txt";
-      string subfolder = "Research", fname = "bb_values.csv";
+      string subfolder = "Research";
+      
+      //string fname = "bb_values.csv";
+      string fname = "bb_values" 
+                  //+ "_" 
+                  + "." 
+                  + conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
+                  + ".csv";
       
       //int filehandle = FileOpen(subfolder + "\\" + fname, FILE_READ|FILE_WRITE|FILE_TXT);
       //int filehandle = FileOpen(subfolder + "\\" + fname, FILE_READ|FILE_WRITE|FILE_CSV);
@@ -263,7 +270,7 @@ void saveData_BBValue_ForMonths(int numof_months) {
             //+------------------------------------------------------------------+
             //| header                                                                 |
             //+------------------------------------------------------------------+
-            FileWrite(filehandle,TimeToStr(d));
+            FileWrite(filehandle, TimeToStr(d), Symbol());
             FileWrite(filehandle,"no.","time", "high","BB.+2s");
                  
             for(int i = 0; i < numOf_Highs; i++)
@@ -276,9 +283,9 @@ void saveData_BBValue_ForMonths(int numof_months) {
                            
                            TimeToStr(d - (60 * 60 * i)),
                            
-                           iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i),
+                           High[i],
                            
-                           High[i]
+                           iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i)
                         
                         ) ;
                
@@ -305,7 +312,8 @@ void saveData_BBValue_ForMonths(int numof_months) {
 
 string conv_DateTime_2_SerialTimeLabel(int time) {
 
-      string datetime_label = TimeToStr(time);
+      //string datetime_label = TimeToStr(time);
+      string datetime_label = TimeToStr(time, TIME_DATE|TIME_SECONDS);
       
       //+------------------------------------------------------------------+
       //| split: date and time                                                                 |
@@ -361,12 +369,12 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
       
                         + "_"
                         
-                        + result_time[0] + result_time[1];
+                        + result_time[0] + result_time[1] + result_time[2];
 
       //+------------------------------------------------------------------+
       //| report                                                                 |
       //+------------------------------------------------------------------+
-/*
+
       Alert("datetime_label => ",datetime_label,""
       
             + "\n"
@@ -383,7 +391,7 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
             
       );
 
-*/
+
       
       
       return time_label;
