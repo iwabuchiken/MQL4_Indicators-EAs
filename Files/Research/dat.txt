@@ -38,3 +38,15 @@
 ;2016.11.07 12:27:11;USDJPY:PERIOD_H1 / BB[1] = 102.39258183
 [test_indicator_callindicator.mq4]
 ;2016.11.07 12:27:11;USDJPY:PERIOD_H1 / BB[2] = 102.4410273
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:34:06;USDJPY:PERIOD_H1 / High[0] = 104.282
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:34:06;USDJPY:PERIOD_H1 / High[1] = 104.288
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:34:06;USDJPY:PERIOD_H1 / High[2] = 104.145
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:34:06;USDJPY:PERIOD_H1 / BB[0] = 104.34044745
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:34:06;USDJPY:PERIOD_H1 / BB[1] = 104.34044745
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:34:06;USDJPY:PERIOD_H1 / BB[2] = 104.34044745
