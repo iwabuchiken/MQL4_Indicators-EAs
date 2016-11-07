@@ -283,7 +283,8 @@ void saveData_BBValue_ForDays(int numof_months) {
                            
                            TimeToStr(d - (60 * 60 * i)),
                            
-                           High[i],
+                           //High[i],
+                           Close[i],
                            
                            iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i)
                         
