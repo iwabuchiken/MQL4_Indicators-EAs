@@ -275,9 +275,17 @@ void saveData_BBValue_ForDays(int numof_days) {
             FileWrite(filehandle, TimeToStr(d), Symbol());
             FileWrite(filehandle,"no.","time", "close","BB +2s");
                  
+            
+                 
             for(int i = 0; i < numOf_Highs; i++)
               {
-
+                  //+------------------------------------------------------------------+
+                  //| check: saturdays(6, -5), sundays(0), mondays(1, 6-)                                                                 |
+                  //+------------------------------------------------------------------+
+                  if(TimeDayOfWeek(d - (60 * 60 * i)) == 0 || TimeDayOfWeek(d - (60 * 60 * i)) == 6)
+                    {
+                        continue;
+                    }
                   
                   FileWrite(filehandle,
                  
