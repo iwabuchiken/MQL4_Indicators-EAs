@@ -236,6 +236,12 @@ void saveData_BBValue_ForDays(int numof_days) {
 
       Alert("saveData_BBValue_ForDays()");
 
+
+      //test: change symbol: step.8-3-P.1-t.4
+      string symbol_name = "USDJPY";
+      
+      ChartSetSymbolPeriod(0, symbol_name, 0);
+
       //+------------------------------------------------------------------+
       //| setup                                                                 |
       //+------------------------------------------------------------------+
@@ -272,7 +278,9 @@ void saveData_BBValue_ForDays(int numof_days) {
             //+------------------------------------------------------------------+
             //| header                                                                 |
             //+------------------------------------------------------------------+
-            FileWrite(filehandle, TimeToStr(d), Symbol());
+            //FileWrite(filehandle, TimeToStr(d), Symbol());
+            FileWrite(filehandle, TimeToStr(d), symbol_name);
+            
             FileWrite(filehandle,"no.","time", "close","BB +2s");
                  
             
@@ -309,12 +317,14 @@ void saveData_BBValue_ForDays(int numof_days) {
                            (i + 1),
                            
                            //TimeToStr(d - (60 * 60 * i)),
-                           TimeToStr(iTime(Symbol(), PERIOD_H1, i)),
+                           //TimeToStr(iTime(Symbol(), PERIOD_H1, i)),
+                           TimeToStr(iTime(symbol_name, PERIOD_H1, i)),
                            
                            //High[i],
                            Close[i],
                            
-                           iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i)
+                           //iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i)
+                           iBands(symbol_name,0,20,2,0,PRICE_CLOSE,MODE_UPPER,i)
                         
                         ) ;
                
