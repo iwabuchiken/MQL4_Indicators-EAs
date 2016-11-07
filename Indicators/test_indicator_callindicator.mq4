@@ -279,6 +279,7 @@ void saveData_BBValue_ForDays(int numof_days) {
                  
             for(int i = 0; i < numOf_Highs; i++)
               {
+/*              
                   //+------------------------------------------------------------------+
                   //| check: saturdays(6, -5), sundays(0), mondays(1, 6-)                                                                 |
                   //+------------------------------------------------------------------+
@@ -299,7 +300,7 @@ void saveData_BBValue_ForDays(int numof_days) {
                     
                         //continue;
                     }
-                  
+*/                  
                   //+------------------------------------------------------------------+
                   //| file: write                                                                 |
                   //+------------------------------------------------------------------+                  
@@ -307,7 +308,8 @@ void saveData_BBValue_ForDays(int numof_days) {
                  
                            (i + 1),
                            
-                           TimeToStr(d - (60 * 60 * i)),
+                           //TimeToStr(d - (60 * 60 * i)),
+                           TimeToStr(iTime(Symbol(), PERIOD_H1, i)),
                            
                            //High[i],
                            Close[i],
