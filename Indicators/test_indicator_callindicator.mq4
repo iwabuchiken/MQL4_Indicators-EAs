@@ -202,7 +202,8 @@ void saveData_BBValue() {
                         
                         ";",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"" +
                         //" / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_LOW,MODE_LOWER,i),""
-                        " / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,0),""
+                        //" / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,0),""
+                        " / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i),""
                         ) ;
                
               }
