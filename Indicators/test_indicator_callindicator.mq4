@@ -22,8 +22,9 @@ int start()                           // Special function start()
 //         saveData_Highs_3();     // execute
          
          //saveData_BBValue();     // exec: BB vand value
+         int numof_days = 30;
          
-         saveData_BBValue_ForDays(3);   // exec: BB +2s values
+         saveData_BBValue_ForDays(numof_days);   // exec: BB +2s values
 
 //         conv_DateTime_2_SerialTimeLabel(TimeCurrent());
          
@@ -231,7 +232,7 @@ void saveData_BBValue() {
 
 }//saveData_BBValue
 
-void saveData_BBValue_ForDays(int numof_months) {
+void saveData_BBValue_ForDays(int numof_days) {
 
       Alert("saveData_BBValue_ForDays()");
 
@@ -262,7 +263,8 @@ void saveData_BBValue_ForDays(int numof_months) {
             datetime d = TimeCurrent();      // current time
                   
             //int numOf_Highs = 3;
-            int numOf_Highs = numof_months * 30;
+            int hours_per_day = 24;
+            int numOf_Highs = numof_days * hours_per_day;
             
             //ref https://www.mql5.com/en/forum/3239
             FileSeek(filehandle,0,SEEK_END);
@@ -271,7 +273,7 @@ void saveData_BBValue_ForDays(int numof_months) {
             //| header                                                                 |
             //+------------------------------------------------------------------+
             FileWrite(filehandle, TimeToStr(d), Symbol());
-            FileWrite(filehandle,"no.","time", "high","BB.+2s");
+            FileWrite(filehandle,"no.","time", "close","BB +2s");
                  
             for(int i = 0; i < numOf_Highs; i++)
               {
