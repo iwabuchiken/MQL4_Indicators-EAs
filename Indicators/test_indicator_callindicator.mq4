@@ -19,9 +19,11 @@ int start()                           // Special function start()
      {
      
          //saveData_Highs_2();     // execute
-         saveData_Highs_3();     // execute
+//         saveData_Highs_3();     // execute
          
-         saveData_BBValue();     // exec: BB vand value
+         //saveData_BBValue();     // exec: BB vand value
+         
+         saveData_BBValue_ForMonths(3);   // exec: BB +2s values
          
          Fact_Up = false;        // no more executions
          
@@ -204,6 +206,75 @@ void saveData_BBValue() {
                         //" / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_LOW,MODE_LOWER,i),""
                         //" / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,0),""
                         " / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i),""
+                        ) ;
+               
+              }
+            
+         
+         //show filehandle
+         Alert("filehandle => '",filehandle,"'");
+         
+         FileClose(filehandle);
+         Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+         
+        }
+      else {
+      
+         Print("File open failed, error ",GetLastError());
+         
+         //alert
+         Alert("File open failed, error");
+         
+      }
+
+}//saveData_BBValue
+
+void saveData_BBValue_ForMonths(int numof_months) {
+
+      Alert("saveData_BBValue_ForMonths()");
+
+      //+------------------------------------------------------------------+
+      //| setup                                                                 |
+      //+------------------------------------------------------------------+
+      //steps.8
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);
+      
+      //string subfolder = "Research", fname = "dat.txt";
+      string subfolder = "Research", fname = "bb_values.csv";
+      
+      //int filehandle = FileOpen(subfolder + "\\" + fname, FILE_READ|FILE_WRITE|FILE_TXT);
+      //int filehandle = FileOpen(subfolder + "\\" + fname, FILE_READ|FILE_WRITE|FILE_CSV);
+      int filehandle = FileOpen(subfolder + "\\" + fname, FILE_WRITE|FILE_CSV);
+      
+      if(filehandle!=INVALID_HANDLE)
+        {
+            
+            //int numOf_Highs = 3;
+            int numOf_Highs = numof_months * 30;
+            
+            //ref https://www.mql5.com/en/forum/3239
+            FileSeek(filehandle,0,SEEK_END);
+            
+            //+------------------------------------------------------------------+
+            //| header                                                                 |
+            //+------------------------------------------------------------------+
+            FileWrite(filehandle,TimeToStr(TimeCurrent()));
+            FileWrite(filehandle,"no.","high","BB.+2s");
+                 
+            for(int i = 0; i < numOf_Highs; i++)
+              {
+
+                  datetime d = TimeCurrent();      // current time
+                  
+                  FileWrite(filehandle,
+                 
+                           (i + 1),
+                           
+                           iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i),
+                           
+                           High[i]
+                        
                         ) ;
                
               }
