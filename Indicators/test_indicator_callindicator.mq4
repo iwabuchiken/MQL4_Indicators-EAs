@@ -201,7 +201,8 @@ void saveData_BBValue() {
                         ";",TimeToStr(d,TIME_DATE)," ",TimeToStr(d,TIME_SECONDS),"" +
                         
                         ";",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"" +
-                        " / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_LOW,MODE_LOWER,i),""
+                        //" / BB[",i,"] = ",iBands(Symbol(),0,20,2,0,PRICE_LOW,MODE_LOWER,i),""
+                        " / BB[",i,"] = ",iBands(Symbol(),0,20,2,i,PRICE_LOW,MODE_LOWER,0),""
                         ) ;
                
               }
