@@ -23,7 +23,9 @@ int start()                           // Special function start()
          
          //saveData_BBValue();     // exec: BB vand value
          
-         saveData_BBValue_ForMonths(3);   // exec: BB +2s values
+//         saveData_BBValue_ForMonths(3);   // exec: BB +2s values
+
+         conv_DateTime_2_SerialTimeLabel(TimeCurrent());
          
          Fact_Up = false;        // no more executions
          
@@ -300,3 +302,90 @@ void saveData_BBValue_ForMonths(int numof_months) {
       }
 
 }//saveData_BBValue
+
+string conv_DateTime_2_SerialTimeLabel(int time) {
+
+      string datetime_label = TimeToStr(time);
+      
+      //+------------------------------------------------------------------+
+      //| split: date and time                                                                 |
+      //+------------------------------------------------------------------+
+      
+      //ref https://docs.mql4.com/strings/stringsplit
+      string sep=" ";                // A separator as a character
+      
+      ushort u_sep;                  // The code of the separator character
+      
+      string result_date_time[];               // An array to get strings
+      
+      //--- Get the separator code
+      u_sep=StringGetCharacter(sep,0);
+   
+      int k=StringSplit(datetime_label,u_sep,result_date_time);
+      
+
+      //+------------------------------------------------------------------+
+      //| split: date                                                                 |
+      //+------------------------------------------------------------------+
+      string sep_date=".";                // A separator as a character
+      
+//      ushort u_sep;                  // The code of the separator character
+      
+      string result_date[];               // An array to get strings
+      
+      //--- Get the separator code
+      u_sep = StringGetCharacter(sep_date,0);
+   
+      k = StringSplit(result_date_time[0],u_sep,result_date);
+      
+      
+      //+------------------------------------------------------------------+
+      //| split: time                                                                 |
+      //+------------------------------------------------------------------+
+      string sep_time=":";                // A separator as a character
+      
+//      ushort u_sep;                  // The code of the separator character
+      
+      string result_time[];               // An array to get strings
+      
+      //--- Get the separator code
+      u_sep = StringGetCharacter(sep_time,0);
+   
+      k = StringSplit(result_date_time[1],u_sep,result_time);
+
+
+      //+------------------------------------------------------------------+
+      //| Build string                                                                 |
+      //+------------------------------------------------------------------+
+      string time_label = result_date[0] + result_date[1] + result_date[2]
+      
+                        + "_"
+                        
+                        + result_time[0] + result_time[1];
+
+      //+------------------------------------------------------------------+
+      //| report                                                                 |
+      //+------------------------------------------------------------------+
+/*
+      Alert("datetime_label => ",datetime_label,""
+      
+            + "\n"
+            + "result_date_time[0] => ",result_date_time[0],""
+            
+            + "\n"
+            + "result_date[0] => ",result_date[0],""
+            
+            + "\n"
+            + "result_time[0] => ",result_time[0],""
+            
+            + "\n"
+            + "time_label => ", time_label,""
+            
+      );
+
+*/
+      
+      
+      return time_label;
+
+}//conv_DateTime_2_SerialTimeLabel(int time)
