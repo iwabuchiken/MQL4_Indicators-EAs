@@ -18,7 +18,8 @@ int start()                           // Special function start()
    if(Fact_Up == true)           // initially, Fact_Up is set to true
      {
      
-         saveData_Highs_2();     // execute
+         //saveData_Highs_2();     // execute
+         saveData_Highs_3();     // execute
          
          Fact_Up = false;        // no more executions
          
@@ -107,3 +108,60 @@ string conv_Seconds_2_TimeLabel(int seconds) {
    return time_label;
 
 }//conv_Seconds_2_TimeLabel(int seconds)
+
+void saveData_Highs_3() {
+
+      Alert("saveData_Highs_3()");
+
+      //steps.4
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);
+      
+   //--- another example with the creation of an enclosed directory in MQL4\Files\
+      string subfolder = "Research", fname = "dat.txt";
+      
+      int filehandle = FileOpen(subfolder + "\\" + fname, FILE_READ|FILE_WRITE|FILE_TXT);
+      
+      if(filehandle!=INVALID_HANDLE)
+        {
+            
+            int numOf_Highs = 3;
+            
+            for(int i = 0; i < numOf_Highs; i++)
+              {
+
+                  //ref https://www.mql5.com/en/forum/3239
+                  FileSeek(filehandle,0,SEEK_END);
+                 
+                  datetime d = TimeCurrent();      // current time
+                  
+                  FileWrite(filehandle,
+                 
+                        "[test_indicator_callindicator.mq4]\n" +
+                        
+                        ";",TimeToStr(d,TIME_DATE)," ",TimeToStr(d,TIME_SECONDS),"" +
+                        
+                        ";",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"" +
+                        " / High[",i,"] = ",High[i],""
+                        ) ;
+               
+              }
+            
+         
+         //show filehandle
+         Alert("filehandle => '",filehandle,"'");
+         
+         FileClose(filehandle);
+         Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+         
+        }
+      else {
+      
+         Print("File open failed, error ",GetLastError());
+         
+         //alert
+         Alert("File open failed, error");
+         
+      }
+
+}//saveData_Highs_3

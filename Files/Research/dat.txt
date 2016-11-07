@@ -1,0 +1,10 @@
+[test_indicator_callindicator.mq4]
+1478519876;2016.11.07 11:57:56;17112 11:57:56;USDJPY:PERIOD_H1
+[test_indicator_callindicator.mq4]
+1478520320;2016.11.07 12:05:20;17112 12:5:20;USDJPY:PERIOD_H1
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:06:19;USDJPY:PERIOD_H1 / High[0] = 104.282
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:06:19;USDJPY:PERIOD_H1 / High[1] = 104.288
+[test_indicator_callindicator.mq4]
+;2016.11.07 12:06:19;USDJPY:PERIOD_H1 / High[2] = 104.145
