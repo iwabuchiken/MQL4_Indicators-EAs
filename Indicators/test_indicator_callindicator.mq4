@@ -250,6 +250,8 @@ void saveData_BBValue_ForMonths(int numof_months) {
       if(filehandle!=INVALID_HANDLE)
         {
             
+            datetime d = TimeCurrent();      // current time
+                  
             //int numOf_Highs = 3;
             int numOf_Highs = numof_months * 30;
             
@@ -259,17 +261,18 @@ void saveData_BBValue_ForMonths(int numof_months) {
             //+------------------------------------------------------------------+
             //| header                                                                 |
             //+------------------------------------------------------------------+
-            FileWrite(filehandle,TimeToStr(TimeCurrent()));
-            FileWrite(filehandle,"no.","high","BB.+2s");
+            FileWrite(filehandle,TimeToStr(d));
+            FileWrite(filehandle,"no.","time", "high","BB.+2s");
                  
             for(int i = 0; i < numOf_Highs; i++)
               {
 
-                  datetime d = TimeCurrent();      // current time
                   
                   FileWrite(filehandle,
                  
                            (i + 1),
+                           
+                           TimeToStr(d - (60 * 60 * i)),
                            
                            iBands(Symbol(),0,20,2,0,PRICE_CLOSE,MODE_UPPER,i),
                            
