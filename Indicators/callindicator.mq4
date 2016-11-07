@@ -15,8 +15,17 @@ int start()                           // Special function start()
 //--------------------------------------------------------------------
 
    //test
+   if(Fact_Up == true)           // initially, Fact_Up is set to true
+     {
+     
+         saveData_Highs_2();     // execute
+         
+         Fact_Up = false;        // no more executions
+         
+         
+     }
 //   saveData_Highs();
-   saveData_Highs_2();
+   //saveData_Highs_2();
    
 //   show_Alert_3();
 
@@ -309,8 +318,19 @@ void saveData_Highs_2() {
         
          //FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
          //FileWrite(filehandle,TimeCurrent(),Symbol(), EnumToString(ENUM_TIMEFRAMES(_Period)));
+         
+         datetime d = TimeCurrent();      // current time
+         
          FileWrite(filehandle,
-               "",TimeCurrent(),":",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"");
+               //"",TimeCurrent(),":",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"");
+               //"",TimeCurrent(),"" +
+               //";",TimeToStr(TimeCurrent(),TIME_SECONDS),"" +
+               //";",conv_Seconds_2_TimeLabel(TimeCurrent()),"" +
+               "",d,"" +
+               ";",TimeToStr(d,TIME_DATE)," ",TimeToStr(d,TIME_SECONDS),"" +
+               ";",conv_Seconds_2_TimeLabel(d),"" +
+               
+               ";",Symbol(),":",EnumToString(ENUM_TIMEFRAMES(_Period)),"");
          
          //show filehandle
          Alert("filehandle => '",filehandle,"'");
@@ -329,3 +349,25 @@ void saveData_Highs_2() {
       }
 
 }//saveData_Highs_2
+
+string conv_Seconds_2_TimeLabel(int seconds) {
+
+   //int seconds_final = seconds - (minutes * 60);   // seconds, final ---> 2 digits
+   int seconds_final = seconds % 60;   // seconds, final ---> 2 digits
+   
+   int minutes = seconds / 60;            // minutes, total
+   
+   int minutes_final = minutes % 60;      // minutes, final ---> 2 digits
+   
+   int hours = minutes / 60;
+   
+   int hours_final = hours % 24;
+   
+   int days = hours / 24;
+   
+   //string time_label = minutes_final + ":" + seconds_final;
+   string time_label = days + " " + hours_final + ":" + minutes_final + ":" + seconds_final; // build label
+   
+   return time_label;
+
+}//conv_Seconds_2_TimeLabel(int seconds)
