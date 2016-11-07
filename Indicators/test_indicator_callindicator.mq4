@@ -282,11 +282,27 @@ void saveData_BBValue_ForDays(int numof_days) {
                   //+------------------------------------------------------------------+
                   //| check: saturdays(6, -5), sundays(0), mondays(1, 6-)                                                                 |
                   //+------------------------------------------------------------------+
-                  if(TimeDayOfWeek(d - (60 * 60 * i)) == 0 || TimeDayOfWeek(d - (60 * 60 * i)) == 6)
+                  if(TimeDayOfWeek(d - (60 * 60 * i)) == 0)    // sundays
                     {
                         continue;
                     }
                   
+                  if(TimeDayOfWeek(d - (60 * 60 * i)) == 6)    // saturdays
+                    {
+                    
+                        int hour_value = TimeHour(d - (60 * 60 * i));
+                        
+                        if(hour_value > 5)
+                          {
+                              continue;
+                          }
+                    
+                        //continue;
+                    }
+                  
+                  //+------------------------------------------------------------------+
+                  //| file: write                                                                 |
+                  //+------------------------------------------------------------------+                  
                   FileWrite(filehandle,
                  
                            (i + 1),
