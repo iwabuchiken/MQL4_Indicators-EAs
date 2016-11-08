@@ -23,10 +23,13 @@ int start()                           // Special function start()
    if(Fact_Up == true)           // initially, Fact_Up is set to true
      {
      
-         int numof_days = 30;
+         //int numof_days = 30;
+         int numof_days = 3;
          
          //seekPattern_3Falls3Ups(numof_days);   // exec: BB +2s values
-         seekPattern_3Falls3Ups__V2(numof_days);
+         //seekPattern_3Falls3Ups__V2(numof_days);
+         //seekPattern_3Falls3Ups(numof_days);
+         seekPattern_3Ups(numof_days);
 
          Fact_Up = false;        // no more executions
          
@@ -110,7 +113,7 @@ void seekPattern_3Falls3Ups(int numof_days) {
             
             int numof_target_bars = numof_days * 24;
             
-            string data[][3];    // data: no., time, close
+            //string data[][3];    // data: no., time, close
             
             int k = 0;      // offset used for i
             
@@ -342,7 +345,7 @@ void seekPattern_3Falls3Ups__V2(int numof_days) {
             
             int numof_target_bars = numof_days * 24;
             
-            string data[][3];    // data: no., time, close
+            //string data[][3];    // data: no., time, close
             
             int k = 0;      // offset used for i
             
@@ -489,3 +492,249 @@ void seekPattern_3Falls3Ups__V2(int numof_days) {
 
 
 }//void seekPattern_3Falls3Ups__V2(int numof_days)
+
+void seekPattern_3Ups(int numof_days) {
+
+      Alert("seekPattern_3Falls3Ups()");
+
+      //+------------------------------------------------------------------+
+      //| setup                                                                 |
+      //+------------------------------------------------------------------+
+      string symbol_name = "USDJPY";         // symbol string
+      
+      ChartSetSymbolPeriod(0, symbol_name, 0);  // set symbol
+
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);  // data path
+      
+      string subfolder = "Research";      // subfolder name
+      
+      //string fname = "3ups_3downs"        // file name
+      string fname = "3ups"        // file name
+                  //+ "_" 
+                  + "." 
+                  + conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
+                  + ".csv";
+
+      //+------------------------------------------------------------------+
+      //| File: open                                                                 |
+      //+------------------------------------------------------------------+
+      int filehandle = FileOpen(subfolder + "\\" + fname, FILE_WRITE|FILE_CSV);
+      
+      if(filehandle!=INVALID_HANDLE)
+        {
+            
+            datetime d = TimeCurrent();      // current time
+                  
+            //int numOf_Highs = 3;
+            int hours_per_day = 24;
+            int numOf_Highs = numof_days * hours_per_day;
+            
+            //ref https://www.mql5.com/en/forum/3239
+            FileSeek(filehandle,0,SEEK_END);
+
+            //+------------------------------------------------------------------+
+            //| metadata                                                                  |
+            //+------------------------------------------------------------------+
+            FileWrite(filehandle, 
+                        TimeToStr(d, TIME_DATE|TIME_SECONDS), 
+                        symbol_name,
+                        //PERIOD_CURRENT
+                        //ref https://www.mql5.com/en/forum/133159
+                        "period = ",Period(),"",
+                        "List of 3-ups"
+                        
+                        );
+
+            //+------------------------------------------------------------------+
+            //| header                                                                 |
+            //+------------------------------------------------------------------+
+            //FileWrite(filehandle,"no.","time", "close");    // header
+            FileWrite(filehandle,"no.", "index", "time", "close", "open", "diff");    // header
+
+            //+------------------------------------------------------------------+
+            //| get: data: setup                                                                 |
+            //+------------------------------------------------------------------+
+            // vars
+            //int i;
+            //double a,b;    // a => high, b => low
+            
+            //double c;      // diff of a minus b
+            
+            int numof_target_bars = numof_days * 24;
+            
+            //string data[][3];    // data: no., time, close
+            
+            int k = 0;      // offset used for i
+            
+            //int hit_indices[];   // indices of matched bars(i.e. 3-ups)
+            int hit_indices[];   // indices of matched bars(i.e. 3-ups)
+            
+            //ref https://docs.mql4.com/array/arrayresize
+            //ArrayResize(hit_indices, Bars);     // compile -> OK
+            ArrayResize(hit_indices, numof_days * 24);     // compile -> OK
+            
+            int numof_hit_indices = 0;  // count up the matched bars
+            
+            int numof_ups = 3;
+            
+            int max_depths = numof_ups;
+            
+            int current_depths = 0;
+                     
+            //for(int i=0; i < numof_target_bars ;i++)
+            for(int i = 0; i < numof_target_bars - numof_ups ;i++)
+           {
+               
+               // nested function
+               //int ret = _seekPattern_3Ups__GetDiff(i, k, max_depths);
+               int ret = _seekPattern_3Ups__GetDiff(i, k, max_depths, filehandle);
+               
+               if(ret == i)
+                 {
+                 
+                     // add to the array
+                     hit_indices[numof_hit_indices] = i;
+                     
+                     // increment the index
+                     numof_hit_indices += 1;
+                     
+                     // increment i
+                     i += (max_depths - 1);
+                     
+                     // next index value
+                     continue;
+                     
+                 }
+                else if(ret < 0)//if(ret == i)
+                 {
+                     // increment i by the return value(which is, the offset value k minus -1)
+                     i += ret * (-1);
+                     
+                     // next index value
+                     continue;
+                     
+                 }//if(ret == i)
+                else    // neither of the above
+                        // then, just continue the loop
+                  {
+                   
+                   continue;
+                   
+                  }//if(ret == i)
+               
+            }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
+            //FileWrite(filehandle,"numof_hit_indices => ",numof_hit_indices,"");
+                 
+         //+------------------------------------------------------------------+
+         //| footer                                                                 |
+         //+------------------------------------------------------------------+
+         FileWrite(filehandle, 
+                  "numof_hit_indices=",numof_hit_indices,"", 
+                  "total bars=",numof_target_bars,"",
+                  
+                  "ratio=",numof_hit_indices*1.0/numof_target_bars,""
+                  
+                  );    // data
+         
+         FileClose(filehandle);
+         //Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+
+      //+------------------------------------------------------------------+
+      //| File: can't open                                                                 |
+      //+------------------------------------------------------------------+
+      }
+      else {
+      
+         Print("File open failed, error ",GetLastError());
+         
+         //alert
+         Alert("File open failed, error");
+         
+      }
+
+      
+
+
+}//void seekPattern_3Falls3Ups__V2(int numof_days)
+
+int _seekPattern_3Ups__GetDiff
+(int i, int k, int depth, int filehandle) {
+
+      double a,b, c;    // a => high, b => low
+      
+      a = Close[i + k];
+      b = Open[i + k];
+
+      c = a - b;     // diff
+
+      if(c >= 0)     // white bar
+        {
+            
+            //debug
+            //ref https://www.mql5.com/en/forum/3239
+            FileSeek(filehandle,0,SEEK_END);
+
+            //+------------------------------------------------------------------+
+            //| metadata                                                                  |
+            //+------------------------------------------------------------------+
+            FileWrite(filehandle, 
+                        TimeToStr(iTime(Symbol(), Period(), i)), 
+                        "i=",i,"",
+                        "k=",k,"",
+                        "a=",a,"",
+                        "b=",b,"",
+                        "c=",c,""
+                        
+                        );
+
+            
+            // inspect: k
+            if((k + 1) > depth)  // i.e. the current bar is the last bar to be inspected
+                                 // i.e. the current is the Xth bar in X-Ups detection work
+              {
+              
+                  FileWrite(filehandle, 
+                        
+                        "(k + 1) > depth"
+                        
+                        );
+                  
+                  return i;
+                  
+              }//if((k + 1) > depth)
+            else
+              {
+              
+                  FileWrite(filehandle, 
+                        
+                        "(k + 1) <= depth"
+                        
+                        );
+              
+                  // offset k
+                  k += 1;
+                  
+                  // call the function
+                  //return _seekPattern_3Ups__GetDiff(i, k, depth);
+                  return _seekPattern_3Ups__GetDiff(i, k, depth, filehandle);
+                  
+              }//if((k + 1) > depth)
+
+         }//if(c >= 0)     // white bar
+         
+       else//if(c >= 0)     // white bar
+         {
+            
+            FileWrite(filehandle, 
+                        
+                  "c >= 0"
+            
+            );
+            // return the current offset value(modified)
+            return k * (-1);
+         
+          
+         }//if(c >= 0)     // white bar
+         
+}
