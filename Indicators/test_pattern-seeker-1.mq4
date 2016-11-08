@@ -23,8 +23,8 @@ int start()                           // Special function start()
    if(Fact_Up == true)           // initially, Fact_Up is set to true
      {
      
-         //int numof_days = 30;
-         int numof_days = 3;
+         int numof_days = 30;
+         //int numof_days = 3;
          
          //seekPattern_3Falls3Ups(numof_days);   // exec: BB +2s values
          //seekPattern_3Falls3Ups__V2(numof_days);
