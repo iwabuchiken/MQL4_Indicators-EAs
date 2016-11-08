@@ -579,7 +579,8 @@ void seekPattern_3Ups(int numof_days) {
             int numof_ups = 3;
             
             //int max_depths = numof_ups;
-            int max_depths = numof_ups;
+            //int max_depths = numof_ups;
+            int max_depths = numof_ups - 1;
             
             int current_depths = 0;
                      
