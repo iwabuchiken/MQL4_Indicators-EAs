@@ -578,6 +578,7 @@ void seekPattern_3Ups(int numof_days) {
             
             int numof_ups = 3;
             
+            //int max_depths = numof_ups;
             int max_depths = numof_ups;
             
             int current_depths = 0;
@@ -637,6 +638,31 @@ void seekPattern_3Ups(int numof_days) {
                   
                   );    // data
          
+         
+         //+------------------------------------------------------------------+
+         //| write: hit data                                                                 |
+         //+------------------------------------------------------------------+
+         double a, b;
+         
+         for(i=0; i < numof_hit_indices; i++)
+           {
+               a = Close[hit_indices[i]];
+               b = Open[hit_indices[i]];
+               
+               FileWrite(filehandle, 
+                  
+                  (i + 1), 
+                  
+                  hit_indices[i],
+                  
+                  TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
+                  
+                  a, b, (a - b)
+                  
+               );    // data
+            
+           }//for(int i=0;i < numof_hit_indices; i++)
+         
          FileClose(filehandle);
          //Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
 
@@ -691,6 +717,7 @@ int _seekPattern_3Ups__GetDiff
             
             // inspect: k
             if((k + 1) > depth)  // i.e. the current bar is the last bar to be inspected
+            //if( k > depth)
                                  // i.e. the current is the Xth bar in X-Ups detection work
               {
               
