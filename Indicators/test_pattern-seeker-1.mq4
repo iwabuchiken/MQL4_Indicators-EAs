@@ -23,16 +23,11 @@ int start()                           // Special function start()
    if(Fact_Up == true)           // initially, Fact_Up is set to true
      {
      
-         //saveData_Highs_2();     // execute
-//         saveData_Highs_3();     // execute
-         
-         //saveData_BBValue();     // exec: BB vand value
          int numof_days = 30;
          
-         seekPattern_3Falls3Ups(numof_days);   // exec: BB +2s values
+         //seekPattern_3Falls3Ups(numof_days);   // exec: BB +2s values
+         seekPattern_3Falls3Ups__V2(numof_days);
 
-//         conv_DateTime_2_SerialTimeLabel(TimeCurrent());
-         
          Fact_Up = false;        // no more executions
          
          
@@ -277,3 +272,220 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
       return time_label;
 
 }//conv_DateTime_2_SerialTimeLabel(int time)
+
+void seekPattern_3Falls3Ups__V2(int numof_days) {
+
+      Alert("seekPattern_3Falls3Ups()");
+
+      //+------------------------------------------------------------------+
+      //| setup                                                                 |
+      //+------------------------------------------------------------------+
+      string symbol_name = "USDJPY";         // symbol string
+      
+      ChartSetSymbolPeriod(0, symbol_name, 0);  // set symbol
+
+      //ref https://docs.mql4.com/files/fileopen
+      string terminal_data_path = TerminalInfoString(TERMINAL_DATA_PATH);  // data path
+      
+      string subfolder = "Research";      // subfolder name
+      
+      string fname = "3ups_3downs"        // file name
+                  //+ "_" 
+                  + "." 
+                  + conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
+                  + ".csv";
+
+      //+------------------------------------------------------------------+
+      //| File: open                                                                 |
+      //+------------------------------------------------------------------+
+      int filehandle = FileOpen(subfolder + "\\" + fname, FILE_WRITE|FILE_CSV);
+      
+      if(filehandle!=INVALID_HANDLE)
+        {
+            
+            datetime d = TimeCurrent();      // current time
+                  
+            //int numOf_Highs = 3;
+            int hours_per_day = 24;
+            int numOf_Highs = numof_days * hours_per_day;
+            
+            //ref https://www.mql5.com/en/forum/3239
+            FileSeek(filehandle,0,SEEK_END);
+
+            //+------------------------------------------------------------------+
+            //| metadata                                                                  |
+            //+------------------------------------------------------------------+
+            FileWrite(filehandle, 
+                        TimeToStr(d, TIME_DATE|TIME_SECONDS), 
+                        symbol_name,
+                        //PERIOD_CURRENT
+                        //ref https://www.mql5.com/en/forum/133159
+                        "period = ",Period(),"",
+                        "List of 3-ups"
+                        
+                        );
+
+            //+------------------------------------------------------------------+
+            //| header                                                                 |
+            //+------------------------------------------------------------------+
+            //FileWrite(filehandle,"no.","time", "close");    // header
+            FileWrite(filehandle,"no.", "index", "time", "close", "open", "diff");    // header
+
+            //+------------------------------------------------------------------+
+            //| get: data: setup                                                                 |
+            //+------------------------------------------------------------------+
+            // vars
+            //int i;
+            double a,b;    // a => high, b => low
+            
+            double c;      // diff of a minus b
+            
+            int numof_target_bars = numof_days * 24;
+            
+            string data[][3];    // data: no., time, close
+            
+            int k = 0;      // offset used for i
+            
+            //int hit_indices[];   // indices of matched bars(i.e. 3-ups)
+            int hit_indices[];   // indices of matched bars(i.e. 3-ups)
+            
+            //ref https://docs.mql4.com/array/arrayresize
+            //ArrayResize(hit_indices, Bars);     // compile -> OK
+            ArrayResize(hit_indices, numof_days * 24);     // compile -> OK
+            
+            int numof_hit_indices = 0;  // count up the matched bars
+            
+            int numof_ups = 3;
+                     
+            //for(int i=0; i < numof_target_bars ;i++)
+            for(int i = 0; i < numof_target_bars - numof_ups ;i++)
+           {
+               
+               a = Close[i + k];    // k --> 0
+               b = Open[i + k];
+               c = a - b;
+               
+               if(c >= 0)  // 1st bar
+                 {
+                     
+                     k += 1;     // increment k; k is now --> 1
+                     
+                     // reenter each value
+                     a = Close[i + k];
+                     b = Open[i + k];
+                     c = a - b;
+                     
+                     if(c >= 0)  // 2nd bar
+                       {
+
+                           k += 1;     // increment k; k is now --> 2
+                           
+                           // reenter each value
+                           a = Close[i + k];
+                           b = Open[i + k];
+                           c = a - b;
+                           
+                           if(c >= 0)  // 3rd bar
+                             {
+                                 // Now, 3 bars are all ups.
+                                 // The value of the index i --> save to hit_indices[]
+                                 hit_indices[numof_hit_indices] = i;
+                                 
+                                 // write file
+                                 FileWrite(filehandle, 
+                                 
+                                       numof_hit_indices, 
+                                       i, 
+                                       TimeToStr(iTime(symbol_name, Period(), i)), 
+                                       a, b, c);    // data
+
+                                 
+                                 
+                                 numof_hit_indices += 1;    // increment the count
+                                 
+                                 // increment i
+                                 i += k;
+                                 
+                                 // reset k
+                                 k = 0;
+                     
+                                 // next index
+                                 continue;
+                                 
+                             }//if(c >= 0)  // 3rd bar
+                           else//if(c >= 0)  // 3rd bar
+                             {
+                              
+                                 // increment i
+                                 i += k;
+                                 
+                                 // reset k
+                                 k = 0;
+                                 
+                                 // next index
+                                 continue;
+                              
+                             }//if(c >= 0)  // 3rd bar
+                        
+                       }//if(c >= 0)  // 2nd bar
+                     else
+                       {
+                        
+                           i += 1;     // increment i by 1
+                           
+                           // reset k
+                           k = 0;
+                           
+                           continue;
+                        
+                       }//if(c >= 0)  // 2nd bar
+                     
+                 }//if(c >= 0)  // 1st bar
+               else
+                 {
+                     
+                     // reset k
+                     k = 0;
+                     
+                     continue;
+                     
+                 }//if(c >= 0)  // 1st bar
+               
+           }//for(int i=0; i < numof_target_bars ;i++)
+
+            
+            
+                 
+            //FileWrite(filehandle,"numof_hit_indices => ",numof_hit_indices,"");
+                 
+         //+------------------------------------------------------------------+
+         //| footer                                                                 |
+         //+------------------------------------------------------------------+
+         FileWrite(filehandle, 
+                  "numof_hit_indices=",numof_hit_indices,"", 
+                  "total bars=",numof_target_bars,"",
+                  
+                  "ratio=",numof_hit_indices*1.0/numof_target_bars,""
+                  
+                  );    // data
+         
+         FileClose(filehandle);
+         //Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
+
+      //+------------------------------------------------------------------+
+      //| File: can't open                                                                 |
+      //+------------------------------------------------------------------+
+      }
+      else {
+      
+         Print("File open failed, error ",GetLastError());
+         
+         //alert
+         Alert("File open failed, error");
+         
+      }
+
+      
+
+
+}//void seekPattern_3Falls3Ups__V2(int numof_days)
