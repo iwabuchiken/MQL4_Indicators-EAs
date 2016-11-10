@@ -369,15 +369,17 @@ void inspect_P7A() {
             
            }//for(int i=0;i < numof_hit_indices; i++)
 
-/*
+
          //+------------------------------------------------------------------+
-         //| write: hit data => 3-ups                                                                 |
+         //| write: hit data => 3-downs, then up                                                                 |
          //+------------------------------------------------------------------+
          //double a, b;
          
          FileWrite(filehandle, "");
          FileWrite(filehandle, "3-ups, then up");
          
+         FileWrite(filehandle, "numof_hit_indices_up => ",numof_hit_indices_up,"");
+
          for(i=0; i < numof_hit_indices_up; i++)
            {
                a = Close[hit_indices_up[i]];
@@ -387,16 +389,16 @@ void inspect_P7A() {
                   
                   (i + 1), 
                   
-                  hit_indices[i],
+                  hit_indices_up[i],
                   
-                  TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
+                  TimeToStr(iTime(Symbol(), Period(), hit_indices_up[i])),
                   
                   a, b, (a - b)
                   
                );    // data
             
            }//for(int i=0;i < numof_hit_indices; i++)
-*/
+
          //+------------------------------------------------------------------+
          //| File: close                                                                 |
          //+------------------------------------------------------------------+
