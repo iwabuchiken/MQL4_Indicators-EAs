@@ -11,8 +11,8 @@ extern int Period_MA = 21;            // Calculated MA period
 bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
 
-int NUMOF_DAYS = 3;
-//int NUMOF_DAYS = 30;
+//int NUMOF_DAYS = 3;
+int NUMOF_DAYS = 30;
 //int NUMOF_DAYS = 90;
 int NUMOF_BARS_IN_PATTERN = 3;
 
@@ -213,7 +213,7 @@ void inspect_P7A() {
                   );    // header
 
             //+------------------------------------------------------------------+
-            //| detect patterns => 3-ups                                                                 |
+            //| detect patterns => 3-downs                                                                 |
             //+------------------------------------------------------------------+
             double a,b;
             
@@ -257,7 +257,7 @@ void inspect_P7A() {
             }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
             
          //+------------------------------------------------------------------+
-         //| detect patterns => 3-ups, then up                                                                 |                                                                 |
+         //| detect patterns => 3-downs, then up                                                                 |                                                                 |
          //+------------------------------------------------------------------+
          ArrayResize(hit_indices_up, numof_hit_indices);
          
@@ -269,11 +269,24 @@ void inspect_P7A() {
            
                body = Open[hit_indices[i] - 3] - Close[hit_indices[i] - 3];
                
+               /*
+               //debug
+               FileWrite(filehandle, 
+                     "hit_indices[",i,"] => ",hit_indices[i]," / body => ",body,""
+                     //"numof_hit_indices_up => ",numof_hit_indices_up,""
+               );
+               */
                if(body <= 0)  // up
                  {
                      
                      hit_indices_up[numof_hit_indices_up] = hit_indices[i];
-                     
+/*
+                     //debug
+                     FileWrite(filehandle, 
+                           "hit_indices[",i,"] => ",hit_indices[i]," / body => ",body,""
+                           //"numof_hit_indices_up => ",numof_hit_indices_up,""
+                     );
+  */                   
                      // increment the index
                      numof_hit_indices_up += 1;
                      
