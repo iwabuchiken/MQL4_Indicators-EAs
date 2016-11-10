@@ -202,7 +202,7 @@ void seekPattern_P7A() {
             //FileWrite(filehandle,"no.","time", "close");    // header
             FileWrite(filehandle,
                   "no.", "index", "time", "close", "open", "diff",
-                  "upper shadow (3rd bar)", "lower shadow (3rd bar)"
+                  "upper shadow (3rd bar)", "body (3rd bar)", "lower shadow (3rd bar)"
                   
                   );    // header
 
@@ -311,12 +311,16 @@ void seekPattern_P7A() {
                   
                   TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
                   
-                  a, b, (a - b)
-                  //a, b, (a - b),
+                  //a, b, (a - b)
+                  a, b, (a - b),
                   
-                  //High[i - 2] - Open[i - 2],
+                  High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
                   
-                  //Close[i - 2] - Low[i - 2]
+                  Open[hit_indices[i] - 2] - Close[hit_indices[i] - 2],
+                  
+                  //High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
+                  
+                  Close[hit_indices[i] - 2] - Low[hit_indices[i] - 2]
                   
                );    // data
             
@@ -388,12 +392,18 @@ int _seekPattern_P7A__exec(int index) {
       
       //d = Low[index + offset];
       
-      lower_shadow = Close[index + offset] - Low[index + offset];
-      
       //if(! (c <= 0) ) return offset;
       //if(! (c <= 0) ) return offset;
       //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c))) return offset;
-      if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c * 1.0))) return offset;
+      //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c * 1.0))) return offset;
+      //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > -1.0 * c)) return offset;
+      // body => down
+      if(! (c <= 0) ) return offset;
+      
+      // lower shadow => longer than body
+      lower_shadow = Close[index + offset] - Low[index + offset];
+      
+      if (! (lower_shadow > 0 && lower_shadow > -1.0 * c) ) return offset;
 
       //+------------------------------------------------------------------+
       //| bar: 4 => up                                                               |
