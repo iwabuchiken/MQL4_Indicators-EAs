@@ -223,6 +223,9 @@ void inspect_P7A() {
             
             int result;
             
+            // function
+            
+
             for(int i = (numof_target_bars - 1); i >= 0; i--)
            {
            
@@ -255,7 +258,8 @@ void inspect_P7A() {
                 else continue;
 
             }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
-            
+
+/*
          //+------------------------------------------------------------------+
          //| detect patterns => 3-downs, then up                                                                 |                                                                 |
          //+------------------------------------------------------------------+
@@ -269,30 +273,19 @@ void inspect_P7A() {
            
                body = Open[hit_indices[i] - 3] - Close[hit_indices[i] - 3];
                
-               /*
-               //debug
-               FileWrite(filehandle, 
-                     "hit_indices[",i,"] => ",hit_indices[i]," / body => ",body,""
-                     //"numof_hit_indices_up => ",numof_hit_indices_up,""
-               );
-               */
+
                if(body <= 0)  // up
                  {
                      
                      hit_indices_up[numof_hit_indices_up] = hit_indices[i];
-/*
-                     //debug
-                     FileWrite(filehandle, 
-                           "hit_indices[",i,"] => ",hit_indices[i]," / body => ",body,""
-                           //"numof_hit_indices_up => ",numof_hit_indices_up,""
-                     );
-  */                   
                      // increment the index
                      numof_hit_indices_up += 1;
                      
                  }
                
            }//for(i = 0; i < numof_hit_indices; i++)
+
+*/
 
 /*               
          for(i = (numof_hit_indices - 1); i >= 0; i--)
@@ -366,7 +359,7 @@ void inspect_P7A() {
             
            }//for(int i=0;i < numof_hit_indices; i++)
 
-
+/*
          //+------------------------------------------------------------------+
          //| write: hit data => 3-ups                                                                 |
          //+------------------------------------------------------------------+
@@ -390,21 +383,10 @@ void inspect_P7A() {
                   
                   a, b, (a - b)
                   
-                  /*
-                  a, b, (a - b),
-                  
-                  High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
-                  
-                  Open[hit_indices[i] - 2] - Close[hit_indices[i] - 2],
-                  
-                  //High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
-                  
-                  Close[hit_indices[i] - 2] - Low[hit_indices[i] - 2]
-                  */
                );    // data
             
            }//for(int i=0;i < numof_hit_indices; i++)
-
+*/
          //+------------------------------------------------------------------+
          //| File: close                                                                 |
          //+------------------------------------------------------------------+
