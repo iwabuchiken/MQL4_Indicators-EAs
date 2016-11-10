@@ -10,6 +10,11 @@
 extern int Period_MA = 21;            // Calculated MA period
 bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
+
+//int numof_days = 3;
+int numof_days = 30;
+int numof_bars_in_pattern = 6;
+
 //--------------------------------------------------------------------
 int start()                           // Special function start()
   {
@@ -158,13 +163,15 @@ void seekPattern_P7A() {
             //+------------------------------------------------------------------+
             datetime d = TimeCurrent();      // current time
 
-            int numof_days = 3;
+            //int numof_days = 3;
                               
             int hours_per_day = 24;
             
             int numof_target_bars = numof_days * hours_per_day;
 
             int k = 0;      // offset used for i
+            
+            //int numof_bars_in_pattern = 2;
             
             int hit_indices[];   // indices of matched bars(i.e. 3-ups)
             
@@ -218,26 +225,46 @@ void seekPattern_P7A() {
             
             double c;
             
+            int result;
+            
             //for(int i=0; i < numof_target_bars ;i++)
             for(int i = (numof_target_bars - 1); i >= 0; i--)
            {
-               
-               a = Close[i];
-               b = Open[i];
-               
-               c = a - b;
-               
-               if(c >= 0)
+           
+               result = _seekPattern_P7A__exec(i);
+                              
+               //debug
+//               FileWrite(filehandle, "result => ",result," / i = ",i,"");
+                        
+               if(result == i && i != 0)
                  {
+                 
+                     //debug
+                     //FileWrite(filehandle, "hit bar => i = ",i,"");
                      
+                     // add to the array
                      hit_indices[numof_hit_indices] = i;
                      
+                     // increment the index
                      numof_hit_indices += 1;
                      
-                 }//if(c >= 0)
+                     // offset index i
+                     i -= (numof_bars_in_pattern - 1) < 0 ? 0 : numof_bars_in_pattern - 1;
+                     
+                     // next index value
+                     continue;
+                     
+                  }
+                else if(result < 0)//if(ret == i)
+                  {
+                     // increment i by the return value(which is, the offset value k minus -1)
+                     // next index value
+                     i += result; continue;
+                     
+                  }//if(ret == i)
+                // neither of the above
+                else continue;
 
-          
-               
             }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
             
                  
@@ -251,7 +278,9 @@ void seekPattern_P7A() {
                   
                   "total bars=",numof_target_bars,"",
                   
-                  "ratio=",numof_hit_indices*1.0/numof_target_bars,""
+                  //"ratio=",numof_hit_indices*1.0/numof_target_bars,""
+                  "ratio=",(numof_bars_in_pattern * numof_hit_indices) * 1.0/numof_target_bars,""
+                  //int numof_bars_in_pattern = 2;
                   //"ratio=", (numof_hit_indices * xups) * 1.0 / numof_target_bars,""
                   
                   );    // data
@@ -261,6 +290,7 @@ void seekPattern_P7A() {
          //| write: hit data                                                                 |
          //+------------------------------------------------------------------+
          //double a, b;
+         
          
          for(i=0; i < numof_hit_indices; i++)
            {
@@ -301,3 +331,94 @@ void seekPattern_P7A() {
 
 
 }//seekPattern_P7A()
+
+int _seekPattern_P7A__exec(int index) {
+      
+      double a,b,c;
+      
+      int offset = 0;
+
+      //+------------------------------------------------------------------+
+      //| bar: 1                                                                 |
+      //+------------------------------------------------------------------+
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      if(! (c <= 0) ) return offset;
+
+            
+      //+------------------------------------------------------------------+
+      //| bar: 2                                                                 |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return offset;
+
+      //+------------------------------------------------------------------+
+      //| bar: 3                                                                 |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return offset;
+
+      //+------------------------------------------------------------------+
+      //| bar: 4 => up                                                               |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c >= 0) ) return offset;
+
+      //+------------------------------------------------------------------+
+      //| bar: 5 => up                                                               |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c >= 0) ) return offset;
+
+      //+------------------------------------------------------------------+
+      //| bar: 6 => up                                                               |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c >= 0) ) return offset;
+
+     //+------------------------------------------------------------------+
+     //| default                                                                 |
+     //+------------------------------------------------------------------+
+     //return 0;
+     return index;
+
+
+}//_seekPattern_P7A__exec(int index)
