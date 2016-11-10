@@ -200,7 +200,11 @@ void seekPattern_P7A() {
             //| header                                                                 |
             //+------------------------------------------------------------------+
             //FileWrite(filehandle,"no.","time", "close");    // header
-            FileWrite(filehandle,"no.", "index", "time", "close", "open", "diff");    // header
+            FileWrite(filehandle,
+                  "no.", "index", "time", "close", "open", "diff",
+                  "upper shadow (3rd bar)", "lower shadow (3rd bar)"
+                  
+                  );    // header
 
             //+------------------------------------------------------------------+
             //| get: data: setup                                                                 |
@@ -222,6 +226,8 @@ void seekPattern_P7A() {
             //| detect patterns                                                                 |
             //+------------------------------------------------------------------+
             double a,b;
+            
+            double upper_shadow, lower_shadow;
             
             double c;
             
@@ -306,6 +312,11 @@ void seekPattern_P7A() {
                   TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
                   
                   a, b, (a - b)
+                  //a, b, (a - b),
+                  
+                  //High[i - 2] - Open[i - 2],
+                  
+                  //Close[i - 2] - Low[i - 2]
                   
                );    // data
             
@@ -336,6 +347,9 @@ int _seekPattern_P7A__exec(int index) {
       
       double a,b,c;
       
+      double d,e;
+      double lower_shadow;
+      
       int offset = 0;
 
       //+------------------------------------------------------------------+
@@ -363,7 +377,7 @@ int _seekPattern_P7A__exec(int index) {
       if(! (c <= 0) ) return offset;
 
       //+------------------------------------------------------------------+
-      //| bar: 3                                                                 |
+      //| bar: 3 => down, long lower shadow                                                                 |
       //+------------------------------------------------------------------+
       offset -= 1;
       
@@ -372,8 +386,14 @@ int _seekPattern_P7A__exec(int index) {
       
       c = a - b;
       
+      //d = Low[index + offset];
+      
+      lower_shadow = Close[index + offset] - Low[index + offset];
+      
       //if(! (c <= 0) ) return offset;
-      if(! (c <= 0) ) return offset;
+      //if(! (c <= 0) ) return offset;
+      //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c))) return offset;
+      if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c * 1.0))) return offset;
 
       //+------------------------------------------------------------------+
       //| bar: 4 => up                                                               |
