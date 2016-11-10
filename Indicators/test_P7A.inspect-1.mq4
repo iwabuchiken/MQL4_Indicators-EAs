@@ -11,10 +11,10 @@ extern int Period_MA = 21;            // Calculated MA period
 bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
 
-//int NUMOF_DAYS = 3;
+int NUMOF_DAYS = 3;
 //int NUMOF_DAYS = 30;
-int NUMOF_DAYS = 90;
-int NUMOF_BARS_IN_PATTERN = 6;
+//int NUMOF_DAYS = 90;
+int NUMOF_BARS_IN_PATTERN = 3;
 
 //--------------------------------------------------------------------
 int start()                           // Special function start()
@@ -24,12 +24,19 @@ int start()                           // Special function start()
    if(Fact_Up == true)           // initially, Fact_Up is set to true
      {
      
-         seekPattern_P7A();
+         inspect_P7A();
 
          Fact_Up = false;        // no more executions
          
+
+         //+------------------------------------------------------------------+
+         //| Ending                                                                 |
+         //+------------------------------------------------------------------+
+         Alert("Done");
          
      }
+
+
 
 //--------------------------------------------------------------------
    return;                            // Exit start()
@@ -100,7 +107,7 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
       //+------------------------------------------------------------------+
       //| report                                                                 |
       //+------------------------------------------------------------------+
-
+/*
       Alert("datetime_label => ",datetime_label,""
       
             + "\n"
@@ -117,16 +124,16 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
             
       );
 
-
+*/
       
       
       return time_label;
 
 }//conv_DateTime_2_SerialTimeLabel(int time)
 
-void seekPattern_P7A() {
+void inspect_P7A() {
 
-      Alert("seekPattern_P7A()");
+      Alert("inspect_P7A()");
 
       //+------------------------------------------------------------------+
       //| setup                                                                 |
@@ -146,6 +153,8 @@ void seekPattern_P7A() {
                   + "." 
                   + conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
                   + ".csv";
+      
+      string title = "List of 3-ups (inspect: p-7A)";
 
       //+------------------------------------------------------------------+
       //| File: open                                                                 |
@@ -169,8 +178,12 @@ void seekPattern_P7A() {
             int k = 0;      // offset used for i
             
             int hit_indices[];   // indices of matched bars(i.e. 3-ups)
+            int hit_indices_up[];   // 3-downs, then up
+            int hit_indices_down[]; // 3-downs, then down
             
             int numof_hit_indices = 0;  // count up the matched bars
+            int numof_hit_indices_up = 0;  // count up the matched bars
+            int numof_hit_indices_down = 0;  // count up the matched bars
 
             //ref https://docs.mql4.com/array/arrayresize
             ArrayResize(hit_indices, numof_target_bars);     // compile -> OK
@@ -187,7 +200,7 @@ void seekPattern_P7A() {
                         //PERIOD_CURRENT
                         //ref https://www.mql5.com/en/forum/133159
                         "period = ",Period(),"",
-                        "List of p-7A"
+                        title
                         
                         );
 
@@ -195,13 +208,12 @@ void seekPattern_P7A() {
             //| header                                                                 |
             //+------------------------------------------------------------------+
             FileWrite(filehandle,
-                  "no.", "index", "time", "close", "open", "diff",
-                  "upper shadow (3rd bar)", "body (3rd bar)", "lower shadow (3rd bar)"
+                  "no.", "index", "time", "close", "open", "diff"
                   
                   );    // header
 
             //+------------------------------------------------------------------+
-            //| detect patterns                                                                 |
+            //| detect patterns => 3-ups                                                                 |
             //+------------------------------------------------------------------+
             double a,b;
             
@@ -214,7 +226,7 @@ void seekPattern_P7A() {
             for(int i = (numof_target_bars - 1); i >= 0; i--)
            {
            
-               result = _seekPattern_P7A__exec(i);
+               result = _inspect_P7A__exec(i);
                               
                if(result == i && i != 0)
                  {
@@ -244,7 +256,49 @@ void seekPattern_P7A() {
 
             }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
             
-                 
+         //+------------------------------------------------------------------+
+         //| detect patterns => 3-ups, then up                                                                 |                                                                 |
+         //+------------------------------------------------------------------+
+         ArrayResize(hit_indices_up, numof_hit_indices);
+         
+         double body;
+         
+         //for(i = (numof_hit_indices - 1); i >= 0; i--)
+         for(i = 0; i < numof_hit_indices; i++)
+           {
+           
+               body = Open[hit_indices[i] - 3] - Close[hit_indices[i] - 3];
+               
+               if(body <= 0)  // up
+                 {
+                     
+                     hit_indices_up[numof_hit_indices_up] = hit_indices[i];
+                     
+                     // increment the index
+                     numof_hit_indices_up += 1;
+                     
+                 }
+               
+           }//for(i = 0; i < numof_hit_indices; i++)
+
+/*               
+         for(i = (numof_hit_indices - 1); i >= 0; i--)
+           {
+           
+               body = Open[hit_indices[i] - 3] - Close[hit_indices[i] - 3];
+               
+               if(body <= 0)  // up
+                 {
+                     
+                     hit_indices_up[numof_hit_indices_up] = hit_indices[i];
+                     
+                     // increment the index
+                     numof_hit_indices_up += 1;
+                     
+                 }
+               
+           }
+*/
          //+------------------------------------------------------------------+
          //| footer                                                                 |
          //+------------------------------------------------------------------+
@@ -264,7 +318,7 @@ void seekPattern_P7A() {
          
          
          //+------------------------------------------------------------------+
-         //| write: hit data                                                                 |
+         //| write: hit data => 3-ups                                                                 |
          //+------------------------------------------------------------------+
          //double a, b;
          
@@ -282,7 +336,9 @@ void seekPattern_P7A() {
                   
                   TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
                   
-                  //a, b, (a - b)
+                  a, b, (a - b)
+                  
+                  /*
                   a, b, (a - b),
                   
                   High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
@@ -292,10 +348,53 @@ void seekPattern_P7A() {
                   //High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
                   
                   Close[hit_indices[i] - 2] - Low[hit_indices[i] - 2]
-                  
+                  */
                );    // data
             
            }//for(int i=0;i < numof_hit_indices; i++)
+
+
+         //+------------------------------------------------------------------+
+         //| write: hit data => 3-ups                                                                 |
+         //+------------------------------------------------------------------+
+         //double a, b;
+         
+         FileWrite(filehandle, "");
+         FileWrite(filehandle, "3-ups, then up");
+         
+         for(i=0; i < numof_hit_indices_up; i++)
+           {
+               a = Close[hit_indices_up[i]];
+               b = Open[hit_indices_up[i]];
+               
+               FileWrite(filehandle, 
+                  
+                  (i + 1), 
+                  
+                  hit_indices[i],
+                  
+                  TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
+                  
+                  a, b, (a - b)
+                  
+                  /*
+                  a, b, (a - b),
+                  
+                  High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
+                  
+                  Open[hit_indices[i] - 2] - Close[hit_indices[i] - 2],
+                  
+                  //High[hit_indices[i] - 2] - Open[hit_indices[i] - 2],
+                  
+                  Close[hit_indices[i] - 2] - Low[hit_indices[i] - 2]
+                  */
+               );    // data
+            
+           }//for(int i=0;i < numof_hit_indices; i++)
+
+         //+------------------------------------------------------------------+
+         //| File: close                                                                 |
+         //+------------------------------------------------------------------+
          
          FileClose(filehandle);
          //Print("The file most be created in the folder "+terminal_data_path+"\\"+subfolder);
@@ -316,9 +415,9 @@ void seekPattern_P7A() {
       
 
 
-}//seekPattern_P7A()
+}//inspect_P7A()
 
-int _seekPattern_P7A__exec(int index) {
+int _inspect_P7A__exec(int index) {
       
       double a,b,c;
       
@@ -328,7 +427,7 @@ int _seekPattern_P7A__exec(int index) {
       int offset = 0;
 
       //+------------------------------------------------------------------+
-      //| bar: 1                                                                 |
+      //| bar: 1 => down                                                                 |
       //+------------------------------------------------------------------+
       a = Close[index + offset];
       b = Open[index + offset];
@@ -339,7 +438,7 @@ int _seekPattern_P7A__exec(int index) {
 
             
       //+------------------------------------------------------------------+
-      //| bar: 2                                                                 |
+      //| bar: 2 => down                                                                 |
       //+------------------------------------------------------------------+
       offset -= 1;
       
@@ -352,7 +451,7 @@ int _seekPattern_P7A__exec(int index) {
       if(! (c <= 0) ) return offset;
 
       //+------------------------------------------------------------------+
-      //| bar: 3 => down, long lower shadow                                                                 |
+      //| bar: 3 => down
       //+------------------------------------------------------------------+
       offset -= 1;
       
@@ -361,13 +460,6 @@ int _seekPattern_P7A__exec(int index) {
       
       c = a - b;
       
-      //d = Low[index + offset];
-      
-      //if(! (c <= 0) ) return offset;
-      //if(! (c <= 0) ) return offset;
-      //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c))) return offset;
-      //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > MathAbs(c * 1.0))) return offset;
-      //if(! (c <= 0) && (lower_shadow > 0 && lower_shadow > -1.0 * c)) return offset;
       // body => down
       if(! (c <= 0) ) return offset;
       
@@ -376,50 +468,10 @@ int _seekPattern_P7A__exec(int index) {
       
       //if (! (lower_shadow > 0 && lower_shadow > -1.0 * c) ) return offset;
 
-      //+------------------------------------------------------------------+
-      //| bar: 4 => up                                                               |
-      //+------------------------------------------------------------------+
-      offset -= 1;
-      
-      a = Close[index + offset];
-      b = Open[index + offset];
-      
-      c = a - b;
-      
-      //if(! (c <= 0) ) return offset;
-      if(! (c >= 0) ) return offset;
-
-      //+------------------------------------------------------------------+
-      //| bar: 5 => up                                                               |
-      //+------------------------------------------------------------------+
-      offset -= 1;
-      
-      a = Close[index + offset];
-      b = Open[index + offset];
-      
-      c = a - b;
-      
-      //if(! (c <= 0) ) return offset;
-      if(! (c >= 0) ) return offset;
-
-      //+------------------------------------------------------------------+
-      //| bar: 6 => up                                                               |
-      //+------------------------------------------------------------------+
-      offset -= 1;
-      
-      a = Close[index + offset];
-      b = Open[index + offset];
-      
-      c = a - b;
-      
-      //if(! (c <= 0) ) return offset;
-      if(! (c >= 0) ) return offset;
-
      //+------------------------------------------------------------------+
      //| default                                                                 |
      //+------------------------------------------------------------------+
      //return 0;
      return index;
 
-
-}//_seekPattern_P7A__exec(int index)
+}//_inspect_P7A__exec(int index)
