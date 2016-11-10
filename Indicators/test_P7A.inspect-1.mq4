@@ -259,7 +259,7 @@ void inspect_P7A() {
 
             }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
 
-/*
+
          //+------------------------------------------------------------------+
          //| detect patterns => 3-downs, then up                                                                 |                                                                 |
          //+------------------------------------------------------------------+
@@ -267,15 +267,25 @@ void inspect_P7A() {
          
          double body;
          
+         //debug
+         FileWrite(filehandle, "");
+         FileWrite(filehandle, "3-downs, then up...");
+         
          //for(i = (numof_hit_indices - 1); i >= 0; i--)
          for(i = 0; i < numof_hit_indices; i++)
            {
+           
+               //debug
+               FileWrite(filehandle, "hit_indices[",i,"] => ",hit_indices[i]," / ",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),"" );
            
                body = Open[hit_indices[i] - 3] - Close[hit_indices[i] - 3];
                
 
                if(body <= 0)  // up
                  {
+                 
+                     //debug
+                     FileWrite(filehandle, "body <= 0: ",body,"");
                      
                      hit_indices_up[numof_hit_indices_up] = hit_indices[i];
                      // increment the index
@@ -285,7 +295,7 @@ void inspect_P7A() {
                
            }//for(i = 0; i < numof_hit_indices; i++)
 
-*/
+
 
 /*               
          for(i = (numof_hit_indices - 1); i >= 0; i--)
