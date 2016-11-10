@@ -11,9 +11,10 @@ extern int Period_MA = 21;            // Calculated MA period
 bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
 
-//int numof_days = 3;
-int numof_days = 30;
-int numof_bars_in_pattern = 6;
+//int NUMOF_DAYS = 3;
+//int NUMOF_DAYS = 30;
+int NUMOF_DAYS = 90;
+int NUMOF_BARS_IN_PATTERN = 6;
 
 //--------------------------------------------------------------------
 int start()                           // Special function start()
@@ -23,10 +24,6 @@ int start()                           // Special function start()
    if(Fact_Up == true)           // initially, Fact_Up is set to true
      {
      
-         //int numof_days = 30;
-         //int numof_days = 3;
-         
-         //int xups = 4;
          seekPattern_P7A();
 
          Fact_Up = false;        // no more executions
@@ -163,15 +160,13 @@ void seekPattern_P7A() {
             //+------------------------------------------------------------------+
             datetime d = TimeCurrent();      // current time
 
-            //int numof_days = 3;
-                              
             int hours_per_day = 24;
             
-            int numof_target_bars = numof_days * hours_per_day;
+            //int numof_target_bars = NUMOF_DAYS * hours_per_day;
+            int numof_target_bars = (NUMOF_DAYS * hours_per_day > Bars) 
+                              ? Bars : NUMOF_DAYS * hours_per_day;
 
             int k = 0;      // offset used for i
-            
-            //int numof_bars_in_pattern = 2;
             
             int hit_indices[];   // indices of matched bars(i.e. 3-ups)
             
@@ -199,29 +194,12 @@ void seekPattern_P7A() {
             //+------------------------------------------------------------------+
             //| header                                                                 |
             //+------------------------------------------------------------------+
-            //FileWrite(filehandle,"no.","time", "close");    // header
             FileWrite(filehandle,
                   "no.", "index", "time", "close", "open", "diff",
                   "upper shadow (3rd bar)", "body (3rd bar)", "lower shadow (3rd bar)"
                   
                   );    // header
 
-            //+------------------------------------------------------------------+
-            //| get: data: setup                                                                 |
-            //+------------------------------------------------------------------+
-            // vars
-            //int numof_target_bars = numof_days * 24;
-            
-            
-            
-            
-            //int numof_ups = 3;
-            //int numof_ups = xups;
-            
-            //int max_depths = numof_ups - 1;
-            
-            //int current_depths = 0;
-                     
             //+------------------------------------------------------------------+
             //| detect patterns                                                                 |
             //+------------------------------------------------------------------+
@@ -233,21 +211,14 @@ void seekPattern_P7A() {
             
             int result;
             
-            //for(int i=0; i < numof_target_bars ;i++)
             for(int i = (numof_target_bars - 1); i >= 0; i--)
            {
            
                result = _seekPattern_P7A__exec(i);
                               
-               //debug
-//               FileWrite(filehandle, "result => ",result," / i = ",i,"");
-                        
                if(result == i && i != 0)
                  {
                  
-                     //debug
-                     //FileWrite(filehandle, "hit bar => i = ",i,"");
-                     
                      // add to the array
                      hit_indices[numof_hit_indices] = i;
                      
@@ -255,7 +226,7 @@ void seekPattern_P7A() {
                      numof_hit_indices += 1;
                      
                      // offset index i
-                     i -= (numof_bars_in_pattern - 1) < 0 ? 0 : numof_bars_in_pattern - 1;
+                     i -= (NUMOF_BARS_IN_PATTERN - 1) < 0 ? 0 : NUMOF_BARS_IN_PATTERN - 1;
                      
                      // next index value
                      continue;
@@ -285,8 +256,8 @@ void seekPattern_P7A() {
                   "total bars=",numof_target_bars,"",
                   
                   //"ratio=",numof_hit_indices*1.0/numof_target_bars,""
-                  "ratio=",(numof_bars_in_pattern * numof_hit_indices) * 1.0/numof_target_bars,""
-                  //int numof_bars_in_pattern = 2;
+                  "ratio=",(NUMOF_BARS_IN_PATTERN * numof_hit_indices) * 1.0/numof_target_bars,""
+                  //int NUMOF_BARS_IN_PATTERN = 2;
                   //"ratio=", (numof_hit_indices * xups) * 1.0 / numof_target_bars,""
                   
                   );    // data
