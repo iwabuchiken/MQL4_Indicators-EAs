@@ -87,8 +87,10 @@ int _inspect__exec(int index) {
       // Bollinger
       //double band_center = iBands(NULL,0,20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
       //double band_center = iBands(Symbol(), PERIOD_H1, 20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
-      double band_center = iMA(NULL, 0, 20, 0, 0, MODE_UPPER, index + offset);
-      
+                            // symbol, timeframe   period   deviation   band_shift  applied_price  mode        shift
+      //double band_center = iMA(NULL    ,PERIOD_H1  ,20      ,0          ,0          ,PRICE_CLOSE   ,MODE_UPPER ,index + offset);
+      //double band_center = iBands(NULL,0,20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+      double band_center = iBands(NULL,0, 20, 0, 0, PRICE_CLOSE, MODE_LOWER, index + offset);
       
       
       if(band_center < b)     // Open price over the center band
@@ -118,6 +120,21 @@ int _inspect__exec(int index) {
             
         }
 
+      // validate: BB center band
+                     // symbol, timeframe   period   deviation   band_shift  applied_price  mode        shift
+      //band_center = iMA(NULL,   PERIOD_H1,  20,      0,          0,          PRICE_CLOSE,   MODE_UPPER, index + offset);
+      band_center = iBands(NULL,0, 20, 0, 0, PRICE_CLOSE, MODE_LOWER, index + offset);
+      
+      
+      if(band_center < b)     // Open price over the center band
+        {
+            //
+            Alert("[index + offset: ",index + offset,"] band_center => ",band_center," / Open => ",b," (returning...)");
+            
+            return offset;
+            
+        }
+
       a = Close[index + offset];
       
       //Alert("Close => ",a," (index = ",index,")");
@@ -142,6 +159,21 @@ int _inspect__exec(int index) {
             Alert("index + offset --> less than zero");
             
             //return 0;
+            return offset;
+            
+        }
+
+      // validate: BB center band
+                     // symbol, timeframe   period   deviation   band_shift  applied_price  mode        shift
+      //band_center = iMA(NULL,   PERIOD_H1,  20,      0,          0,          PRICE_CLOSE,   MODE_UPPER, index + offset);
+      band_center = iBands(NULL,0, 20, 0, 0, PRICE_CLOSE, MODE_LOWER, index + offset);
+      
+      
+      if(band_center < b)     // Open price over the center band
+        {
+            //
+            Alert("[index + offset: ",index + offset,"] band_center => ",band_center," / Open => ",b," (returning...)");
+            
             return offset;
             
         }
