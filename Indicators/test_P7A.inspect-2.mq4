@@ -12,8 +12,9 @@
 //+------------------------------------------------------------------+
 #include <utils.mqh>
 
-
-
+//+------------------------------------------------------------------+
+//| vars                                                                 |
+//+------------------------------------------------------------------+
 extern int Period_MA = 21;            // Calculated MA period
 bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
@@ -22,6 +23,15 @@ bool Fact_Dn = true;                  //..is above or below MA
 //int NUMOF_DAYS = 30;
 int NUMOF_DAYS = 90;
 int NUMOF_BARS_IN_PATTERN = 3;
+
+int HOURS_PER_DAY = 24;
+
+int HIST_INDICES[];   // indices of matched bars(i.e. 3-ups)
+//int HIST_INDICES[NUMOF_DAYS * HOURS_PER_DAY];   // indices of matched bars(i.e. 3-ups)
+
+//ArrayResize(HIST_INDICES, Bars);
+//ArrayResize(HIST_INDICES, NUMOF_DAYS * HOURS_PER_DAY);
+//ArrayResize(HIST_INDICES, 90 * 24);
 
 //--------------------------------------------------------------------
 int start()                           // Special function start()
@@ -180,15 +190,15 @@ void inspect() {
          //datetime d = TimeCurrent();      // current time
          datetime d = TimeLocal();      // current time
 
-         int hours_per_day = 24;
+         //int HOURS_PER_DAY = 24;
          
-         //int numof_target_bars = NUMOF_DAYS * hours_per_day;
-         int numof_target_bars = (NUMOF_DAYS * hours_per_day > Bars) 
-                           ? Bars : NUMOF_DAYS * hours_per_day;
+         //int numof_target_bars = NUMOF_DAYS * HOURS_PER_DAY;
+         int numof_target_bars = (NUMOF_DAYS * HOURS_PER_DAY > Bars) 
+                           ? Bars : NUMOF_DAYS * HOURS_PER_DAY;
 
          int k = 0;      // offset used for i
          
-         int hit_indices[];   // indices of matched bars(i.e. 3-ups)
+         //int HIST_INDICES[];   // indices of matched bars(i.e. 3-ups)
          int hit_indices_up[];   // 3-downs, then up
          int hit_indices_down[]; // 3-downs, then down
          
@@ -197,7 +207,8 @@ void inspect() {
          int numof_hit_indices_down = 0;  // count up the matched bars
 
          //ref https://docs.mql4.com/array/arrayresize
-         ArrayResize(hit_indices, numof_target_bars);     // compile -> OK
+         //ArrayResize(HIST_INDICES, numof_target_bars);     // compile -> OK
+         ArrayResize(HIST_INDICES, NUMOF_DAYS * HOURS_PER_DAY);
          
          //ref https://www.mql5.com/en/forum/3239
          FileSeek(filehandle,0,SEEK_END);
@@ -214,12 +225,21 @@ void inspect() {
                      symbol_name,
                      //PERIOD_CURRENT
                      //ref https://www.mql5.com/en/forum/133159
-                     "period = ",Period(),"",
+                     "period = " + Period(),
                      title,
-                     "target bars=",numof_target_bars,"",
-                     "Bars =",Bars,""
+                     //"target bars=",numof_target_bars,"",
+                     "target bars = " + numof_target_bars,
+                     "Bars = " + Bars
                      
                      );
+                     
+         FileWrite(filehandle,
+         
+                  "start = " + TimeToStr(iTime(Symbol(), Period(), (numof_target_bars - 1))),
+                  
+                  "end = " + TimeToStr(iTime(Symbol(), Period(), 0))
+         
+         );
          
          //debug
          Alert("[",__LINE__,"] metadata => written");
@@ -260,7 +280,7 @@ void inspect() {
                  {
                  
                      // add to the array
-                     hit_indices[numof_hit_indices] = i;
+                     HIST_INDICES[numof_hit_indices] = i;
                      
                      // increment the index
                      numof_hit_indices += 1;
@@ -304,16 +324,16 @@ void inspect() {
          //for(i=0; i < numof_hit_indices; i++)
          for(int i = 0; i < numof_hit_indices; i++)
            {
-               a = Close[hit_indices[i]];
-               b = Open[hit_indices[i]];
+               a = Close[HIST_INDICES[i]];
+               b = Open[HIST_INDICES[i]];
                
                FileWrite(filehandle, 
                   
                   (i + 1), 
                   
-                  hit_indices[i],
+                  HIST_INDICES[i],
                   
-                  TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
+                  TimeToStr(iTime(Symbol(), Period(), HIST_INDICES[i])),
                   
                   a, b, (a - b)
                   
