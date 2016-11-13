@@ -371,6 +371,35 @@ int _inspect_P7A_ins_2__exec(int index) {
 
 }//_inspect_P7A__exec(int index)
 
+int _inspect__exec(int index) {
+      
+      double a,b,c;
+      
+      //double d,e;
+      //double lower_shadow;
+      
+      int offset = 0;
+
+      //+------------------------------------------------------------------+
+      //| bar: 1 => down                                                                 |
+      //+------------------------------------------------------------------+
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return 0;
+
+
+     //+------------------------------------------------------------------+
+     //| default                                                                 |
+     //+------------------------------------------------------------------+
+     //return 0;
+     return index;
+
+}//_inspect_exec(int index)
+
 void inspect() {
 
    Alert("inspect");
@@ -513,8 +542,8 @@ void inspect() {
          for(int i = (numof_target_bars - 1); i >= 0; i--)
         {
 
-               //result = _inspect_P7A_ins_2__exec(i);
-               result = i;
+               result = _inspect__exec(i);
+               //result = i;
                               
                if(result == i && i != 0)
                  {
@@ -548,7 +577,9 @@ void inspect() {
          }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
 
          //debug
-         Alert(filehandle, "[",__LINE__,"] 3 downs => detected");
+         Alert("[",__LINE__,"] 3 downs => detected");
+         
+         Alert("numof_hit_indices => ",numof_hit_indices,"");
 
          
       }//if(filehandle == INVALID_HANDLE)
