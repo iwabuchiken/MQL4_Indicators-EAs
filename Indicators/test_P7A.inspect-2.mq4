@@ -437,7 +437,8 @@ void inspect() {
          //+------------------------------------------------------------------+
          //| vars                                                                 |
          //+------------------------------------------------------------------+
-         datetime d = TimeCurrent();      // current time
+         //datetime d = TimeCurrent();      // current time
+         datetime d = TimeLocal();      // current time
 
          int hours_per_day = 24;
          
@@ -511,8 +512,9 @@ void inspect() {
          //for(int i = (numof_target_bars - 1); i >= 0; i--)
          for(int i = (numof_target_bars - 1); i >= 0; i--)
         {
-        
-               result = _inspect_P7A_ins_2__exec(i);
+
+               //result = _inspect_P7A_ins_2__exec(i);
+               result = i;
                               
                if(result == i && i != 0)
                  {
@@ -541,6 +543,7 @@ void inspect() {
                   }//if(ret == i)
                 // neither of the above
                 else continue;
+        
 
          }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
 
