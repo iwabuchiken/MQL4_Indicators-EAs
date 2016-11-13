@@ -18,9 +18,9 @@ extern int Period_MA = 21;            // Calculated MA period
 bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
 
-int NUMOF_DAYS = 3;
+//int NUMOF_DAYS = 3;
 //int NUMOF_DAYS = 30;
-//int NUMOF_DAYS = 90;
+int NUMOF_DAYS = 90;
 int NUMOF_BARS_IN_PATTERN = 3;
 
 //--------------------------------------------------------------------
