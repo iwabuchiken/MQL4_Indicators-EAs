@@ -1,11 +1,11 @@
 //--------------------------------------------------------------------
 // test_pattern-seeker-1.mq4
-// 20161108_104115
+// 2016/11/13 23:40:37
 // 
 // <Usage>
 // - Find patterns in a given symbol chart.
 // - Use H1 bars
-// - inspect()
+// 
 //--------------------------------------------------------------------
 //+------------------------------------------------------------------+
 //| Includes                                                                 |
@@ -20,7 +20,8 @@ bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
 
 //int NUMOF_DAYS = 3;
-int NUMOF_DAYS = 30;
+int NUMOF_DAYS = 10;
+//int NUMOF_DAYS = 30;
 //int NUMOF_DAYS = 90;
 int NUMOF_BARS_IN_PATTERN = 3;
 
@@ -43,7 +44,7 @@ int start()                           // Special function start()
      
          //inspect_P7A();
          //inspect_P7A_ins_2();
-         inspect();
+         detect_3Downs_Under_BB_CenterBand();
 
          Fact_Up = false;        // no more executions
          
@@ -81,15 +82,27 @@ int _inspect__exec(int index) {
       c = a - b;
       
       //if(! (c <= 0) ) return offset;
-      if(! (c <= 0) ) return 0;
+      if(! (c <= 0) ) return 0;     // down bar
 
+      // Bollinger
+      //double band_center = iBands(NULL,0,20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+      
+      
+      if(band_center < b)     // Open price over the center band
+        {
+            //
+            Alert("[index + offset: ",index + offset,"] band_center => ",band_center," / Open => ",b," (returning...)");
+            
+            return 0;
+            
+        }
 
       //+------------------------------------------------------------------+
       //| bar: 2 => down                                                                 |
       //+------------------------------------------------------------------+
       offset -= 1;
       
-      Alert("offset => -1 (now ",offset," / index = ",index,")");
+      Alert("[" + (string) __LINE__ + "] offset => -1 (now ",offset," / index = ",index,")");
 
       // validate: index + offset >= 0
       if(index + offset < 0)
@@ -149,7 +162,7 @@ int _inspect__exec(int index) {
 
 }//_inspect_exec(int index)
 
-void inspect() {
+void detect_3Downs_Under_BB_CenterBand() {
 
    Alert("inspect [",TimeToStr(TimeLocal(), TIME_DATE|TIME_SECONDS),"]");
    
@@ -172,7 +185,7 @@ void inspect() {
       //datetime t2 = GetTickCount();
       
       //string fname = "P7A_ins-2"        // file name
-      string fname = "P7A_ins_2"        // file name
+      string fname = "P7A_ins_3"        // file name
                   //+ "_" 
                   + "." 
                   //+ conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
@@ -180,19 +193,16 @@ void inspect() {
                   + conv_DateTime_2_SerialTimeLabel((int)t) 
                   + ".csv";
       
-      string title = "List of 3-downs,1-up under BB.CB(center band) (inspect: p-7A)";
+      string title = "3-downs, under BB.CB(center band) (inspect: p-7A)";
 
       //test
-      Alert("fname => ",fname,"");
+//      Alert("fname => ",fname,"");
       
-      Alert("t => ",t," / TimeLocal => ",TimeLocal(),"");
+      //Alert("t => ",t," / TimeLocal => ",TimeLocal(),"");
       
       //return;
 
       //+------------------------------------------------------------------+
-      //| File: Open                                                                 |
-      //+------------------------------------------------------------------+
-            //+------------------------------------------------------------------+
       //| File: open                                                                 |
       //+------------------------------------------------------------------+
       int filehandle = FileOpen(subfolder + "\\" + fname, FILE_WRITE|FILE_CSV);
@@ -288,14 +298,8 @@ void inspect() {
          Alert("[",__LINE__,"] header => written");
 
          //+------------------------------------------------------------------+
-         //| detect patterns => 3-downs                                                                 |
+         //| detect patterns => 3-downs under BB.CB                                                                 |
          //+------------------------------------------------------------------+
-         //double a,b;
-         
-         //double upper_shadow, lower_shadow;
-         
-         //double c;
-         
          int result;
          
          // function
@@ -308,6 +312,13 @@ void inspect() {
                result = _inspect__exec(i);
                //result = i;
                               
+               //debug
+               Alert("[" + (string) __LINE__ + "] result => ",result," / i => ",i," ["
+               
+                  + TimeToStr(iTime(Symbol(), Period(), i)) + "]"
+               
+               );
+                        
                if(result == i && i != 0)
                  {
                  
@@ -316,6 +327,9 @@ void inspect() {
                      
                      // increment the index
                      numof_HIT_INDICES += 1;
+                     
+                     //debug
+                     Alert("[" + (string) __LINE__ + "] result == i ---> i = ",i,"");
                      
                      // offset index i
                      //i -= (NUMOF_BARS_IN_PATTERN - 1) < 0 ? 0 : NUMOF_BARS_IN_PATTERN - 1;
@@ -326,20 +340,11 @@ void inspect() {
                   }
                 else if(result < 0)//if(ret == i)
                   {
-                     // increment i by the return value(which is, the offset value k minus -1)
-                     // next index value
-                     //i += result; 
-                     
-                     //continue;
                      
                   }//if(ret == i)
                 // neither of the above
                 //else continue;
         
-               //debug
-               Alert("i => ",i,"");
-
-
          }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
 
          //debug
@@ -347,6 +352,7 @@ void inspect() {
          
          Alert("[",__LINE__,"] numof_HIT_INDICES => ",numof_HIT_INDICES,"");
 
+/*
          //+------------------------------------------------------------------+
          //| detect patterns => 3-downs, then up                                                                 |                                                                 |
          //+------------------------------------------------------------------+
@@ -376,9 +382,9 @@ void inspect() {
                
            }//for(i = 0; i < numof_HIT_INDICES; i++)
 
-
+*/
          //+------------------------------------------------------------------+
-         //| write: hit data => 3-ups                                                                 |
+         //| write: hit data => 3-downs                                                                 |
          //+------------------------------------------------------------------+
          FileWrite(filehandle, "");
          
@@ -411,9 +417,7 @@ void inspect() {
             
            }//for(int i=0;i < numof_HIT_INDICES; i++)
 
-            //debug
-            //Alert("[",__LINE__,"] written => list of 3-downs");
-            
+/*
          //+------------------------------------------------------------------+
          //| write: hit data => 3-downs, then up                                                                 |
          //+------------------------------------------------------------------+
@@ -447,6 +451,7 @@ void inspect() {
             
            }//for(int i=0;i < numof_hit_indices; i++)
 
+*/
 
       }//if(filehandle == INVALID_HANDLE)
 
@@ -460,4 +465,4 @@ void inspect() {
       
       Alert("file => closed");
 
-}//inspect()
+}//detect_3Downs_Under_BB_CenterBand()
