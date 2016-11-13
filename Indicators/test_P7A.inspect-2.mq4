@@ -432,7 +432,7 @@ void inspect() {
       else
       {
          
-         Alert("file => opened!");
+         Alert("[",__LINE__,"] file => opened!");
 
          //+------------------------------------------------------------------+
          //| vars                                                                 |
@@ -461,7 +461,9 @@ void inspect() {
          //ref https://www.mql5.com/en/forum/3239
          FileSeek(filehandle,0,SEEK_END);
          
-         Alert("FileSeek => done");
+         Alert("[",__LINE__,"] FileSeek => done");
+         
+         Alert("[",__LINE__,"] numof_target_bars => ",numof_target_bars,"");
 
          //+------------------------------------------------------------------+
          //| metadata                                                                  |
@@ -472,16 +474,53 @@ void inspect() {
                      //PERIOD_CURRENT
                      //ref https://www.mql5.com/en/forum/133159
                      "period = ",Period(),"",
-                     title
+                     title,
+                     "target bars=",numof_target_bars,"",
+                     "Bars =",Bars,""
                      
                      );
          
          //debug
-         Alert("metadata => written");
+         Alert("[",__LINE__,"] metadata => written");
 
+         //+------------------------------------------------------------------+
+         //| header                                                                 |
+         //+------------------------------------------------------------------+
+         FileWrite(filehandle,
+               "no.", "index", "time", "close", "open", "diff"
+               
+               );    // header
+
+         //debug
+         Alert("[",__LINE__,"] header => written");
+
+         //+------------------------------------------------------------------+
+         //| detect patterns => 3-downs                                                                 |
+         //+------------------------------------------------------------------+
+         //double a,b;
+         
+         //double upper_shadow, lower_shadow;
+         
+         //double c;
+         
+         //int result;
+         
+         // function
+         
+
+         //for(int i = (numof_target_bars - 1); i >= 0; i--)
+         for(int i = (numof_target_bars - 1); i >= 0; i--)
+        {
+        
+
+         }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
+
+         //debug
+         Alert(filehandle, "[",__LINE__,"] 3 downs => detected");
 
          
       }//if(filehandle == INVALID_HANDLE)
+
 
 
       //+------------------------------------------------------------------+
