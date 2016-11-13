@@ -86,6 +86,9 @@ int _inspect__exec(int index) {
 
       // Bollinger
       //double band_center = iBands(NULL,0,20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+      //double band_center = iBands(Symbol(), PERIOD_H1, 20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+      double band_center = iMA(NULL, 0, 20, 0, 0, MODE_UPPER, index + offset);
+      
       
       
       if(band_center < b)     // Open price over the center band
