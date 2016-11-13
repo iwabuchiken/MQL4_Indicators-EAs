@@ -100,7 +100,7 @@ int _inspect__exec(int index) {
 
 void inspect() {
 
-   Alert("inspect");
+   Alert("inspect [",TimeToStr(TimeLocal(), TIME_DATE|TIME_SECONDS),"]");
    
       //+------------------------------------------------------------------+
       //| setup                                                                 |
@@ -240,39 +240,6 @@ void inspect() {
          for(int i = (numof_target_bars - 1); i >= 0; i--)
         {
 
-               result = _inspect__exec(i);
-               //result = i;
-                              
-               if(result == i && i != 0)
-                 {
-                 
-                     // add to the array
-                     hit_indices[numof_hit_indices] = i;
-                     
-                     // increment the index
-                     numof_hit_indices += 1;
-                     
-                     // offset index i
-                     //i -= (NUMOF_BARS_IN_PATTERN - 1) < 0 ? 0 : NUMOF_BARS_IN_PATTERN - 1;
-                     
-                     // next index value
-                     //continue;
-                     
-                  }
-                else if(result < 0)//if(ret == i)
-                  {
-                     // increment i by the return value(which is, the offset value k minus -1)
-                     // next index value
-                     //i += result; 
-                     
-                     //continue;
-                     
-                  }//if(ret == i)
-                // neither of the above
-                //else continue;
-        
-               //debug
-               Alert("i => ",i,"");
 
          }//for(int i = 0; i < numof_target_bars - numof_ups ;i++)
 
