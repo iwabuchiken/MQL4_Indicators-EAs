@@ -28,7 +28,7 @@ int start()                           // Special function start()
   {
 
    //test
-   if(Fact_Up == true)           // initially, Fact_Up is set to true
+   if(Fact_Up == true)           // initially, Fact_Up is set to be true
      {
      
          //inspect_P7A();
@@ -87,7 +87,8 @@ int _inspect__exec(int index) {
         
             Alert("index + offset --> less than zero");
             
-            return 0;
+            //return 0;
+            return offset;
             
         }
 
