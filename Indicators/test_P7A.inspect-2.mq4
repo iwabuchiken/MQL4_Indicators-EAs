@@ -73,13 +73,23 @@ int _inspect__exec(int index) {
       //if(! (c <= 0) ) return offset;
       if(! (c <= 0) ) return 0;
 
-/*
+
       //+------------------------------------------------------------------+
       //| bar: 2 => down                                                                 |
       //+------------------------------------------------------------------+
       offset -= 1;
       
       Alert("offset => -1 (now ",offset," / index = ",index,")");
+
+      // validate: index + offset >= 0
+      if(index + offset < 0)
+        {
+        
+            Alert("index + offset --> less than zero");
+            
+            return 0;
+            
+        }
 
       a = Close[index + offset];
       
@@ -90,7 +100,7 @@ int _inspect__exec(int index) {
       
       //if(! (c <= 0) ) return offset;
       if(! (c <= 0) ) return offset;
-*/
+
      //+------------------------------------------------------------------+
      //| default                                                                 |
      //+------------------------------------------------------------------+
