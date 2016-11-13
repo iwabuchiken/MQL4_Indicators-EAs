@@ -112,6 +112,34 @@ int _inspect__exec(int index) {
       //if(! (c <= 0) ) return offset;
       if(! (c <= 0) ) return offset;
 
+      //+------------------------------------------------------------------+
+      //| bar: 3 => down                                                                 |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      Alert("offset => -1 (now ",offset," / index = ",index,")");
+
+      // validate: index + offset >= 0
+      if(index + offset < 0)
+        {
+        
+            Alert("index + offset --> less than zero");
+            
+            //return 0;
+            return offset;
+            
+        }
+
+      a = Close[index + offset];
+      
+      //Alert("Close => ",a," (index = ",index,")");
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return offset;
+
 
      //+------------------------------------------------------------------+
      //| default                                                                 |
@@ -148,7 +176,8 @@ void inspect() {
                   //+ "_" 
                   + "." 
                   //+ conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
-                  + conv_DateTime_2_SerialTimeLabel(t) 
+                  //+ conv_DateTime_2_SerialTimeLabel(t) 
+                  + conv_DateTime_2_SerialTimeLabel((int)t) 
                   + ".csv";
       
       string title = "List of 3-downs,1-up under BB.CB(center band) (inspect: p-7A)";
@@ -225,11 +254,12 @@ void inspect() {
                      symbol_name,
                      //PERIOD_CURRENT
                      //ref https://www.mql5.com/en/forum/133159
-                     "period = " + Period(),
+                     "period = " + (string)Period(),
                      title,
                      //"target bars=",numof_target_bars,"",
-                     "target bars = " + numof_target_bars,
-                     "Bars = " + Bars
+                     //"target bars = " + numof_target_bars,
+                     "target bars = " + (string)numof_target_bars,
+                     "Bars = " + (string)Bars
                      
                      );
                      
