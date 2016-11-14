@@ -44,6 +44,7 @@ int start()                           // Special function start()
      
          detect_Up_XPips();
          
+         
          //detect_Get_MaxPips_Up();
 
          Fact_Up = false;        // no more executions
