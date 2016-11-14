@@ -46,6 +46,8 @@ int start()                           // Special function start()
 
          detect_3Downs_Under_BB_CenterBand();
          
+         detect_3Downs_Over_BB_CenterBand();
+         
          Fact_Up = false;        // no more executions
          
 
@@ -196,6 +198,140 @@ int _inspect__exec(int index) {
      return index;
 
 }//_inspect_exec(int index)
+
+int _inspect__exec_over_center_band(int index) {
+      
+      double a,b,c;
+      
+      //double d,e;
+      //double lower_shadow;
+      
+      int offset = 0;
+
+      //+------------------------------------------------------------------+
+      //| bar: 1 => down                                                                 |
+      //+------------------------------------------------------------------+
+      a = Close[index + offset];
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return 0;     // down bar
+
+      // Bollinger
+      //double band_center = iBands(NULL,0,20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+      //double band_center = iBands(Symbol(), PERIOD_H1, 20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+                            // symbol, timeframe   period   deviation   band_shift  applied_price  mode        shift
+      //double band_center = iMA(NULL    ,PERIOD_H1  ,20      ,0          ,0          ,PRICE_CLOSE   ,MODE_UPPER ,index + offset);
+      //double band_center = iBands(NULL,0,20,2,0,PRICE_LOW,MODE_LOWER,index + offset);
+      double band_center = iBands(NULL,0, 20, 0, 0, PRICE_CLOSE, MODE_LOWER, index + offset);
+      
+      
+      if(band_center > b)     // Open price over the center band
+        {
+            //
+            Alert("[index + offset: ",index + offset,"] band_center => ",band_center," / Open => ",b," (returning...)");
+            
+            return 0;
+            
+        }
+
+      //+------------------------------------------------------------------+
+      //| bar: 2 => down                                                                 |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      Alert("[" + (string) __LINE__ + "] offset => -1 (now ",offset," / index = ",index,")");
+
+      // validate: index + offset >= 0
+      if(index + offset < 0)
+        {
+        
+            Alert("index + offset --> less than zero");
+            
+            //return 0;
+            return offset;
+            
+        }
+
+      // validate: BB center band
+                     // symbol, timeframe   period   deviation   band_shift  applied_price  mode        shift
+      //band_center = iMA(NULL,   PERIOD_H1,  20,      0,          0,          PRICE_CLOSE,   MODE_UPPER, index + offset);
+      band_center = iBands(NULL,0, 20, 0, 0, PRICE_CLOSE, MODE_LOWER, index + offset);
+      
+      
+      if(band_center > b)     // Open price over the center band
+        {
+            //
+            Alert("[index + offset: ",index + offset,"] band_center => ",band_center," / Open => ",b," (returning...)");
+            
+            return offset;
+            
+        }
+
+      a = Close[index + offset];
+      
+      //Alert("Close => ",a," (index = ",index,")");
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return offset;
+
+      //+------------------------------------------------------------------+
+      //| bar: 3 => down                                                                 |
+      //+------------------------------------------------------------------+
+      offset -= 1;
+      
+      Alert("offset => -1 (now ",offset," / index = ",index,")");
+
+      // validate: index + offset >= 0
+      if(index + offset < 0)
+        {
+        
+            Alert("index + offset --> less than zero");
+            
+            //return 0;
+            return offset;
+            
+        }
+
+      // validate: BB center band
+                     // symbol, timeframe   period   deviation   band_shift  applied_price  mode        shift
+      //band_center = iMA(NULL,   PERIOD_H1,  20,      0,          0,          PRICE_CLOSE,   MODE_UPPER, index + offset);
+      band_center = iBands(NULL,0, 20, 0, 0, PRICE_CLOSE, MODE_LOWER, index + offset);
+      
+      
+      if(band_center > b)     // Open price over the center band
+        {
+            //
+            Alert("[index + offset: ",index + offset,"] band_center => ",band_center," / Open => ",b," (returning...)");
+            
+            return offset;
+            
+        }
+
+      a = Close[index + offset];
+      
+      //Alert("Close => ",a," (index = ",index,")");
+      b = Open[index + offset];
+      
+      c = a - b;
+      
+      //if(! (c <= 0) ) return offset;
+      if(! (c <= 0) ) return offset;
+
+
+     //+------------------------------------------------------------------+
+     //| default                                                                 |
+     //+------------------------------------------------------------------+
+     //return 0;
+     return index;
+
+}//_inspect__exec_over_center_band(int index)
+
 
 int _inspect__exec_all_location(int index) {
       
@@ -611,7 +747,7 @@ void detect_3Downs_Over_BB_CenterBand() {
       //datetime t2 = GetTickCount();
       
       //string fname = "P7A_ins-2"        // file name
-      string fname = "P7A_ins_3.detect_3Downs_Under_BB_CenterBand"        // file name
+      string fname = "P7A_ins_3.detect_3Downs_Over_BB_CenterBand"        // file name
                   //+ "_" 
                   + "." 
                   //+ conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
@@ -619,7 +755,7 @@ void detect_3Downs_Over_BB_CenterBand() {
                   + conv_DateTime_2_SerialTimeLabel((int)t) 
                   + ".csv";
       
-      string title = "3-downs, under BB.CB(center band) (inspect: p-7A)";
+      string title = "3-downs, over BB.CB(center band) (inspect: p-7A)";
 
       //test
 //      Alert("fname => ",fname,"");
@@ -735,7 +871,7 @@ void detect_3Downs_Over_BB_CenterBand() {
          for(int i = (numof_target_bars - 1); i >= 0; i--)
         {
 
-               result = _inspect__exec(i);
+               result = _inspect__exec_over_center_band(i);
                //result = i;
                               
                //debug
