@@ -22,8 +22,8 @@ bool Fact_Up = true;                  // Fact of report that price..
 bool Fact_Dn = true;                  //..is above or below MA
 
 //int NUMOF_DAYS = 3;
-//int NUMOF_DAYS = 10;
-input int NUMOF_DAYS = 30;
+input int NUMOF_DAYS = 10;
+//input int NUMOF_DAYS = 30;
 //int NUMOF_DAYS = 90;
 int NUMOF_BARS_IN_PATTERN = 3;
 
@@ -31,7 +31,8 @@ int HOURS_PER_DAY = 24;
 
 int HIT_INDICES[];   // indices of matched bars(i.e. 3-ups)
 
-input int X_UPS = 18;
+//input int X_UPS = 10;
+input double X_UPS = 0.10;
 input double discout = 0.8;
 
 //--------------------------------------------------------------------
@@ -75,12 +76,13 @@ int _inspect__exec__UpXPips(int index) {
       int offset = 0;
 
       //+------------------------------------------------------------------+
-      //| bar: 1 => down                                                                 |
+      //| bar: 1 => up
       //+------------------------------------------------------------------+
       a = Close[index + offset];
       b = Open[index + offset];
       
-      c = a - b;
+      //c = a - b;
+      c = Close[index + offset] - Open[index + offset];
       
       //if(! (c <= 0) ) return offset;
       if( c <= 0 ) return 0;     // down bar
@@ -89,7 +91,7 @@ int _inspect__exec__UpXPips(int index) {
       if(c < X_UPS)
         {
             
-            Alert("Up --> less than " + (string) X_UPS);
+            Alert("Up --> less than " + (string) X_UPS + "(diff = ",c,")" + " [index = ",index," / ",TimeToStr(iTime(Symbol(), Period(), index)),"");
             
             return 0;
             
@@ -118,14 +120,15 @@ int _inspect__exec__UpXPips(int index) {
       //Alert("Close => ",a," (index = ",index,")");
       b = Open[index + offset];
       
-      double c2 = a - b;
+      //double c2 = a - b;
+      double c2 = Close[index + offset] - Open[index + offset];
       
-      // validate: up bar
-      if(! c2 <= 0 ) return offset;
+      // validate: down bar
+      if(! c2 > 0 ) return offset;
 
       // validate: X*discount
       Alert("[" + (string) index + "] c2 = ",c2," / c = ",c," / c*discount = ",c * discout,"");
-      if( c2 < c * discout )
+      if( (c2 * -1) < c * discout )
         {
             
             Alert("c2 is less than discounted c");
@@ -137,6 +140,8 @@ int _inspect__exec__UpXPips(int index) {
      //+------------------------------------------------------------------+
      //| default                                                                 |
      //+------------------------------------------------------------------+
+     Alert("returning index... [",index," / ",TimeToStr(iTime(Symbol(), Period(), index)),"]");
+     
      //return 0;
      return index;
 
@@ -239,8 +244,9 @@ void detect_Up_XPips() {
       //datetime t2 = GetTickCount();
       
       //string fname = "P7A_ins-2"        // file name
-      string fname = "P8A_ins_1.detect_Ups_XPips"        // file name
-                  //+ "_" 
+      string fname = "P8A_ins_1.detect_UpDown_" + (string) (MathRound(X_UPS * 100)) + "-Pips"        // file name
+                  //+ "_"
+                  + "_" + (string) NUMOF_DAYS + "-Days"
                   + "." 
                   //+ conv_DateTime_2_SerialTimeLabel(TimeCurrent()) 
                   //+ conv_DateTime_2_SerialTimeLabel(t) 
