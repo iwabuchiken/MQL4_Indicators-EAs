@@ -21,8 +21,8 @@ bool Fact_Dn = true;                  //..is above or below MA
 
 //int NUMOF_DAYS = 3;
 //int NUMOF_DAYS = 10;
-int NUMOF_DAYS = 30;
-//int NUMOF_DAYS = 90;
+//int NUMOF_DAYS = 30;
+int NUMOF_DAYS = 90;
 int NUMOF_BARS_IN_PATTERN = 3;
 
 int HOURS_PER_DAY = 24;
@@ -44,7 +44,7 @@ int start()                           // Special function start()
      
          detect_3Downs();
 
-//         detect_3Downs_Under_BB_CenterBand();
+         detect_3Downs_Under_BB_CenterBand();
          
          Fact_Up = false;        // no more executions
          
