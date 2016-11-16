@@ -29,7 +29,7 @@ int HIT_INDICES[];   // indices of matched bars(i.e. 3-ups)
 //+------------------------------------------------------------------+
 //| infra vars                                                                 |
 //+------------------------------------------------------------------+
-string SUBFOLDER = "Research\\31_2";      // subfolder name
+string SUBFOLDER = "Research\\32_1";      // subfolder name
 
 
 //+------------------------------------------------------------------+
@@ -415,7 +415,9 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             
             //middle = (sum) / 2;
             // middle: half the body; also, a negative value
-            middle = (Close[hit_indices[i]] - Open[hit_indices[i]]) / 2 * (-1);
+            //middle = (Close[hit_indices[i]] - Open[hit_indices[i]]) / 2 * (-1);
+            // middle: a positive value
+            middle = (Close[hit_indices[i]] - Open[hit_indices[i]]) / 2;
             
             //debug
             Alert("[",__LINE__,"] starting: i = ",i," / target = ",hit_indices[i],"" 
@@ -481,7 +483,8 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                      
                      // judge: more than X pips plus
                      //if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
-                     if(sum > X_UPS_AFTER_BREAK)
+                     //if(sum > X_UPS_AFTER_BREAK)
+                     if(Close[hit_indices[i] + offset] > Close[hit_indices[i]] + X_UPS_AFTER_BREAK)
                        {
                            
                            // add the index
@@ -536,7 +539,8 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                      sum += body;
                      
                      // judge: sum is less than half the body
-                     if(sum < middle)
+                     //if(sum < middle)
+                     if(Close[hit_indices[i] + offset] < Open[hit_indices[i]] + middle)
                        {
                            
                            //alert
