@@ -413,6 +413,16 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             sum = Close[hit_indices[i]] - Open[hit_indices[i]];
             middle = (sum) / 2;
             
+            //debug
+            Alert("[",__LINE__,"] starting: i = ",i," / target = ",hit_indices[i],"" 
+                     + " / "
+                     + "sum = ",sum,""
+                     
+                     + " / "
+                     + "time = ",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
+                     
+                     );
+            
             //+------------------------------------------------------------------+
             //| judge: up or down
             //+------------------------------------------------------------------+
@@ -432,6 +442,27 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             //| body: up or down?
             //+------------------------------------------------------------------+
             while(true) {
+//Alert("[",__LINE__,"] File open failed, error");
+               // validate: end of the chart
+               // if it is, break the while loop; next index in for loop
+               if(hit_indices[i] + offset < 0)
+                 {
+                     Alert("[",__LINE__,"] index + offset --> less than zero: " 
+                           + "index = ",hit_indices[i],"" 
+                           + " / ",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
+                           + " / offset = ",offset,"");
+                           
+                     // reset the offset
+                     offset = -1;
+                     
+                     // reset the sum
+                     sum = 0;
+               
+                     break;
+                     
+                 }
+
+               
             
                body = Close[hit_indices[i] + offset] - Open[hit_indices[i] + offset];
                
@@ -464,6 +495,9 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            // reset the offset
                            offset = -1;
                            
+                           // reset the sum
+                           sum = 0;
+                           
                            // exit the while
                            break;
                            
@@ -473,7 +507,9 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                        {
                         
                            // incremet: offset
-                           offset += 1;
+                           // ---> no. decrement
+                           //offset += 1;
+                           offset -= 1;
                         
                        }//if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
                        
@@ -495,7 +531,10 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            
                                  + "",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
                                  
+                                 + " " 
                                  + "[offset = ",offset,""
+                                 + " / sum = ",NormalizeDouble(sum, 5),""
+                                 + " / middle = ",NormalizeDouble(middle, 5),"]"
                            );
                            
                            //+------------------------------------------------------------------+
@@ -504,6 +543,9 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            //+------------------------------------------------------------------+
                            // reset the offset
                            offset = -1;
+                           
+                           // reset the sum
+                           sum = 0;
                            
                            // break the while; continue the for loop
                            break;
@@ -514,7 +556,9 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                        {
                            
                            // incremet: offset
-                           offset += 1;
+                           // ---> no. decrement
+                           //offset += 1;
+                           offset -= 1;
                            
                        }//if(sum < middle)
                      
