@@ -358,7 +358,8 @@ void detect_Up_XPips_On_BB_Plus2s() {
                   _detect_After_Break_XPips_Up(
                         HIT_INDICES, numof_HIT_INDICES, 
                         //HIT_INDICES_AFTER_BREAK, numof_HIT_INDICES_AFTER_BREAK);
-                        HIT_INDICES_AFTER_BREAK);
+                        //HIT_INDICES_AFTER_BREAK);
+                        HIT_INDICES_AFTER_BREAK, filehandle);
             
             Alert("numof_HIT_INDICES_AFTER_BREAK = ",numof_HIT_INDICES_AFTER_BREAK,"");
 
@@ -386,8 +387,32 @@ void detect_Up_XPips_On_BB_Plus2s() {
 int _detect_After_Break_XPips_Up
 (int &hit_indices[], int numof_hit_indices, 
 //int &HIT_INDICES_AFTER_BREAK[], int &numof_hit_indices_after_break) {
-int &HIT_INDICES_AFTER_BREAK[]) {
+//int &HIT_INDICES_AFTER_BREAK[]) {
+int &HIT_INDICES_AFTER_BREAK[], int file_handle) {
       
+      //+------------------------------------------------------------------+
+      //| File: write: header                                                                 |
+      //+------------------------------------------------------------------+
+      FileWrite(file_handle, "");
+      
+      FileWrite(file_handle, 
+      
+               "List of " 
+                  + (string) (MathRound(X_UPS_AFTER_BREAK * 100))
+                  + " Pips up"
+                  + " / "
+                  + "down the half the original up of "
+                  + (string) (MathRound(X_UPS * 100))
+                  + " Pips"
+                  + " after break"
+      );
+      
+      FileWrite(file_handle, 
+               
+               "no.", "index", "time", "up/down", "offset", "time"
+      
+      );
+            
       //test
       //numof_hit_indices_after_break  = 10;
       
@@ -401,6 +426,16 @@ int &HIT_INDICES_AFTER_BREAK[]) {
       
       double middle = 0;
       
+      // count
+      int count = 0;
+      
+      int numof_ups = 0;
+      
+      int numof_downs = 0;
+      
+      //+------------------------------------------------------------------+
+      //| for loop
+      //+------------------------------------------------------------------+
       for(int i = 0; i < numof_hit_indices; i++)
         {
             
@@ -460,7 +495,7 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            + "index = ",hit_indices[i],"" 
                            + " / ",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
                            + " / offset = ",offset,"");
-                           
+                                                      
                      // reset the offset
                      offset = -1;
                      
@@ -500,6 +535,31 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                                  
                                  + " [offset = ",offset,"]"
                            );
+
+                           // write file
+                           count += 1;
+                           
+                           numof_ups += 1;
+                           
+                           
+                           //"no.", "index", "time", "offset", "time"
+                           FileWrite(file_handle,
+                                 
+                                 //(string) (i + 1),
+                                 (string) count,
+                                 
+                                 (string) hit_indices[i],
+                                 
+                                 TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
+                                 
+                                 "up",
+                                 
+                                 (string) offset,
+                                 
+                                 TimeToStr(iTime(Symbol(), Period(), hit_indices[i] + offset))
+                           
+                           );
+                       
 
                            //+------------------------------------------------------------------+
                            //| next index: reset the offset to -1,                                                                  |
@@ -555,6 +615,33 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            );
                            
                            //+------------------------------------------------------------------+
+                           //| write file
+                           //+------------------------------------------------------------------+
+                           count += 1;
+                           
+                           numof_downs += 1;
+                           
+                           
+                           //"no.", "index", "time", "offset", "time"
+                           FileWrite(file_handle,
+                                 
+                                 //(string) (i + 1),
+                                 (string) count,
+                                 
+                                 (string) hit_indices[i],
+                                 
+                                 TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),
+                                 
+                                 "down",
+                                 
+                                 (string) offset,
+                                 
+                                 TimeToStr(iTime(Symbol(), Period(), hit_indices[i] + offset))
+                           
+                           );
+
+                           
+                           //+------------------------------------------------------------------+
                            //| next index: reset the offset to -1,                                                                  |
                            //          then, break the while loop
                            //+------------------------------------------------------------------+
@@ -585,6 +672,20 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             
         }//for(int i = 0; i < numof_hit_indices; i++)
 
+   // file write
+   FileWrite(file_handle,
+   
+         "ups = " + (string) numof_ups,
+         
+         "downs = " + (string) numof_downs
+   
+   );
+   
+   FileWrite(file_handle,
+   
+         "End of list"
+   
+   );
 
    //+------------------------------------------------------------------+
    //| return: defalut
