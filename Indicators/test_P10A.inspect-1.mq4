@@ -410,8 +410,12 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             //+------------------------------------------------------------------+
             //| prep: middle value, sum                                                                 |
             //+------------------------------------------------------------------+
-            sum = Close[hit_indices[i]] - Open[hit_indices[i]];
-            middle = (sum) / 2;
+            //sum = Close[hit_indices[i]] - Open[hit_indices[i]];
+            sum = 0;
+            
+            //middle = (sum) / 2;
+            // middle: half the body; also, a negative value
+            middle = (Close[hit_indices[i]] - Open[hit_indices[i]]) / 2 * (-1);
             
             //debug
             Alert("[",__LINE__,"] starting: i = ",i," / target = ",hit_indices[i],"" 
@@ -425,6 +429,9 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             
             //+------------------------------------------------------------------+
             //| judge: up or down
+            //+------------------------------------------------------------------+
+            //+------------------------------------------------------------------+
+            //| validate: end of the chart
             //+------------------------------------------------------------------+
             // validate: end of the chart
             if(hit_indices[i] + offset < 0)
@@ -442,7 +449,7 @@ int &HIT_INDICES_AFTER_BREAK[]) {
             //| body: up or down?
             //+------------------------------------------------------------------+
             while(true) {
-//Alert("[",__LINE__,"] File open failed, error");
+
                // validate: end of the chart
                // if it is, break the while loop; next index in for loop
                if(hit_indices[i] + offset < 0)
@@ -463,7 +470,7 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                  }
 
                
-            
+               // get: the body value
                body = Close[hit_indices[i] + offset] - Open[hit_indices[i] + offset];
                
                if(body >= 0)  // bar is --> up
@@ -473,7 +480,8 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                      sum += body;
                      
                      // judge: more than X pips plus
-                     if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
+                     //if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
+                     if(sum > X_UPS_AFTER_BREAK)
                        {
                            
                            // add the index
@@ -486,6 +494,8 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            Alert("[",__LINE__,"] sum is larger: index = ",hit_indices[i]," / "
                            
                                  + "",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
+                                 
+                                 + " [offset = ",offset,"]"
                            );
 
                            //+------------------------------------------------------------------+
@@ -502,7 +512,10 @@ int &HIT_INDICES_AFTER_BREAK[]) {
                            break;
                            
                        }
-                     // sum is not yet larger than close + x pips
+                     //+------------------------------------------------------------------+
+                     //| sum is not yet larger than close + x pips
+                     //    => increment the offset; inspect the next offset bar
+                     //+------------------------------------------------------------------+
                      else   //if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
                        {
                         
