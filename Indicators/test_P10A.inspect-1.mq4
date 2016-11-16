@@ -352,11 +352,13 @@ void detect_Up_XPips_On_BB_Plus2s() {
             
             ArrayResize(HIT_INDICES_AFTER_BREAK, numof_HIT_INDICES);
             
-            int numof_HIT_INDICES_AFTER_BREAK = 0;
+            //int numof_HIT_INDICES_AFTER_BREAK = 0;
             
-            _detect_After_Break_XPips_Up(
+            int numof_HIT_INDICES_AFTER_BREAK = 
+                  _detect_After_Break_XPips_Up(
                         HIT_INDICES, numof_HIT_INDICES, 
-                        HIT_INDICES_AFTER_BREAK, numof_HIT_INDICES_AFTER_BREAK);
+                        //HIT_INDICES_AFTER_BREAK, numof_HIT_INDICES_AFTER_BREAK);
+                        HIT_INDICES_AFTER_BREAK);
             
             Alert("numof_HIT_INDICES_AFTER_BREAK = ",numof_HIT_INDICES_AFTER_BREAK,"");
 
@@ -374,12 +376,22 @@ void detect_Up_XPips_On_BB_Plus2s() {
 
 }//detect_Up_XPips_On_BB_Plus2s()
 
-void _detect_After_Break_XPips_Up
+//+------------------------------------------------------------------+
+//| _detect_After_Break_XPips_Up
+//    return:
+//       1. X pips up ==> index
+//       2. less than the middle ==> offset value (a minus number)
+//+------------------------------------------------------------------+
+
+int _detect_After_Break_XPips_Up
 (int &hit_indices[], int numof_hit_indices, 
-int &HIT_INDICES_AFTER_BREAK[], int &numof_hit_indices_after_break) {
+//int &HIT_INDICES_AFTER_BREAK[], int &numof_hit_indices_after_break) {
+int &HIT_INDICES_AFTER_BREAK[]) {
       
       //test
       //numof_hit_indices_after_break  = 10;
+      
+      int numof_hit_indices_after_break = 0;
       
       int offset = -1;
       
@@ -419,20 +431,103 @@ int &HIT_INDICES_AFTER_BREAK[], int &numof_hit_indices_after_break) {
             //+------------------------------------------------------------------+
             //| body: up or down?
             //+------------------------------------------------------------------+
-            body = Close[hit_indices[i] + offset] - Open[hit_indices[i] + offset];
+            while(true) {
             
-            if(body >= 0)  // bar is --> up
-              {
-                  
-                  // add up the sum
-                  sum += body;
-                  
-              }
-            else   //if(body >= 0)  // bar is --> down
-              {
+               body = Close[hit_indices[i] + offset] - Open[hit_indices[i] + offset];
                
-              }//if(body >= 0)  // bar is --> 
+               if(body >= 0)  // bar is --> up
+                 {
+                     
+                     // add up the sum
+                     sum += body;
+                     
+                     // judge: more than X pips plus
+                     if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
+                       {
+                           
+                           // add the index
+                           HIT_INDICES_AFTER_BREAK[numof_hit_indices_after_break] = hit_indices[i];
+                           
+                           // increment: numof_hit_indices_after_break
+                           numof_hit_indices_after_break += 1;
+                           
+                           //alert
+                           Alert("[",__LINE__,"] sum is larger: index = ",hit_indices[i]," / "
+                           
+                                 + "",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
+                           );
+
+                           //+------------------------------------------------------------------+
+                           //| next index: reset the offset to -1,                                                                  |
+                           //          then, break the while loop
+                           //+------------------------------------------------------------------+
+                           // reset the offset
+                           offset = -1;
+                           
+                           // exit the while
+                           break;
+                           
+                       }
+                     // sum is not yet larger than close + x pips
+                     else   //if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
+                       {
+                        
+                           // incremet: offset
+                           offset += 1;
+                        
+                       }//if(sum > (Close[hit_indices[i]] + X_UPS_AFTER_BREAK))
+                       
+                 }//if(body >= 0)  // bar is --> up
+                 
+               else   //if(body >= 0)  // bar is --> down
+                 {
+                     
+                     // decrement the sum by body
+                     // "body" is a minus value; hence, add up to sum
+                     sum += body;
+                     
+                     // judge: sum is less than half the body
+                     if(sum < middle)
+                       {
+                           
+                           //alert
+                           Alert("[",__LINE__,"] sum is less than middle: index = ",hit_indices[i]," / "
+                           
+                                 + "",TimeToStr(iTime(Symbol(), Period(), hit_indices[i])),""
+                                 
+                                 + "[offset = ",offset,""
+                           );
+                           
+                           //+------------------------------------------------------------------+
+                           //| next index: reset the offset to -1,                                                                  |
+                           //          then, break the while loop
+                           //+------------------------------------------------------------------+
+                           // reset the offset
+                           offset = -1;
+                           
+                           // break the while; continue the for loop
+                           break;
+                           
+                       }//if(sum < middle)
+                     // the sum is not yet less than the middle value
+                     else
+                       {
+                           
+                           // incremet: offset
+                           offset += 1;
+                           
+                       }//if(sum < middle)
+                     
+                 }//if(body >= 0)  // bar is --> 
             
-        }
+            }//while(true)
+            
+        }//for(int i = 0; i < numof_hit_indices; i++)
+
+
+   //+------------------------------------------------------------------+
+   //| return: defalut
+   //+------------------------------------------------------------------+
+   return numof_hit_indices_after_break;
 
 }//_detect_After_Break_XPips_Up(HIT_INDICES, HIT_INDICES_AFTER_BREAK)
