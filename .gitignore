@@ -1,6 +1,9 @@
 #Files/*
 Images/*
-Include/*
+#Include/*
+
+Include/*/*.mqh
+
 Libraries/*
 Logs/*
 Presets/*
