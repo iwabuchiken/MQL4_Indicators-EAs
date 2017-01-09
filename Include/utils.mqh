@@ -117,3 +117,123 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
       return time_label;
 
 }//conv_DateTime_2_SerialTimeLabel(int time)
+
+/****************************
+
+   @param target_datetime     => "2016.12.20 08:00"   (H1)
+   @param period              => 60 --> H1
+   
+   @return
+      -1    => no match
+      >=0   => hit index
+   
+   @original
+   dir: C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Indicators\lab
+   file: test_56-1_get-index-from-datetime.mq4
+   time: 2017/01/09 13:08:40
+*****************************/
+int get_index(string target_datetime, int period) {
+
+   int index = -1;
+
+   string d;
+   
+   //debug
+   int count = 0;
+   
+   int count_max = 20;
+   
+   Alert("[",__LINE__,"] NUMOF_TARGET_BARS = ",NUMOF_TARGET_BARS,"");
+   
+   for(int i = 0; i < NUMOF_TARGET_BARS; i ++) {
+
+      d = TimeToStr(iTime(Symbol(),Period(), i));
+      
+      //debug
+      Alert("[",__LINE__,"] i = ",i," / d = ",d,"");
+      
+      // judge
+      if(d == target_datetime)
+        {
+            Alert("[",__LINE__,"] match => d = '",d,"' "
+                  + "/ target_datetime = '",target_datetime,"'"
+                  + " / "
+                  + "index = ",i,""
+                  
+                  );
+                  
+            // break the for loop
+            index = i;
+            
+            break;
+            
+        }
+      else
+        {
+            Alert("[",__LINE__,"] not match");
+        }
+   
+      // debug
+//            if(count > count_max)
+//            {
+//              break;
+//        }
+      
+  //    count += 1;
+   
+   }//for(int i = 0; i < NUMOF_TARGET_BARS; i ++)
+
+/*
+   switch(period)
+     {
+      case  60:      //=> H1
+         
+         for(int i = 0; i < NUMOF_TARGET_BARS; i ++) {
+         
+            d = TimeToStr(iTime(Symbol(),Period(), i));
+            
+            //debug
+            Alert("[",__LINE__,"] i = ",i," / d = ",d,"");
+            
+            // judge
+            if(d == target_datetime)
+              {
+                  Alert("[",__LINE__,"] match => d = '",d,"' "
+                        + "/ target_datetime = '",target_datetime,"'"
+                        + " / "
+                        + "index = ",i,""
+                        
+                        );
+                        
+                  // break the for loop
+                  index = i;
+                  
+                  break;
+                  
+              }
+            else
+              {
+                  Alert("[",__LINE__,"] not match");
+              }
+         
+            // debug
+//            if(count > count_max)
+  //            {
+    //              break;
+      //        }
+            
+        //    count += 1;
+         
+         }//for(int i = 0; i < NUMOF_TARGET_BARS; i ++)
+        
+        break;
+        
+      default:
+        break;
+        
+     }
+*/
+   return index;
+   
+}//get_index(string target_datetime, int period)
+
