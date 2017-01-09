@@ -143,14 +143,14 @@ int get_index(string target_datetime, int period) {
    
    int count_max = 20;
    
-   Alert("[",__LINE__,"] NUMOF_TARGET_BARS = ",NUMOF_TARGET_BARS,"");
+   //Alert("[",__LINE__,"] NUMOF_TARGET_BARS = ",NUMOF_TARGET_BARS,"");
    
    for(int i = 0; i < NUMOF_TARGET_BARS; i ++) {
 
       d = TimeToStr(iTime(Symbol(),Period(), i));
       
       //debug
-      Alert("[",__LINE__,"] i = ",i," / d = ",d,"");
+//      Alert("[",__LINE__,"] i = ",i," / d = ",d,"");
       
       // judge
       if(d == target_datetime)
@@ -170,69 +170,11 @@ int get_index(string target_datetime, int period) {
         }
       else
         {
-            Alert("[",__LINE__,"] not match");
+//            Alert("[",__LINE__,"] not match");
         }
-   
-      // debug
-//            if(count > count_max)
-//            {
-//              break;
-//        }
-      
-  //    count += 1;
    
    }//for(int i = 0; i < NUMOF_TARGET_BARS; i ++)
 
-/*
-   switch(period)
-     {
-      case  60:      //=> H1
-         
-         for(int i = 0; i < NUMOF_TARGET_BARS; i ++) {
-         
-            d = TimeToStr(iTime(Symbol(),Period(), i));
-            
-            //debug
-            Alert("[",__LINE__,"] i = ",i," / d = ",d,"");
-            
-            // judge
-            if(d == target_datetime)
-              {
-                  Alert("[",__LINE__,"] match => d = '",d,"' "
-                        + "/ target_datetime = '",target_datetime,"'"
-                        + " / "
-                        + "index = ",i,""
-                        
-                        );
-                        
-                  // break the for loop
-                  index = i;
-                  
-                  break;
-                  
-              }
-            else
-              {
-                  Alert("[",__LINE__,"] not match");
-              }
-         
-            // debug
-//            if(count > count_max)
-  //            {
-    //              break;
-      //        }
-            
-        //    count += 1;
-         
-         }//for(int i = 0; i < NUMOF_TARGET_BARS; i ++)
-        
-        break;
-        
-      default:
-        break;
-        
-     }
-*/
    return index;
    
 }//get_index(string target_datetime, int period)
