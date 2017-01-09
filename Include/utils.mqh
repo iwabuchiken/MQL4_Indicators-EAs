@@ -178,4 +178,3 @@ int get_index(string target_datetime, int period) {
    return index;
    
 }//get_index(string target_datetime, int period)
-
