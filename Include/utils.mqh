@@ -27,6 +27,8 @@
 // #import
 //+------------------------------------------------------------------+
 
+//extern int NUMOF_TARGET_BARS;
+
 string conv_DateTime_2_SerialTimeLabel(int time) {
 
       //string datetime_label = TimeToStr(time);
@@ -132,7 +134,8 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
    file: test_56-1_get-index-from-datetime.mq4
    time: 2017/01/09 13:08:40
 *****************************/
-int get_index(string target_datetime, int period) {
+//int get_index(string target_datetime, int period) {
+int get_index(string target_datetime, int period, int NUMOF_TARGET_BARS) {
 
    int index = -1;
 
@@ -178,3 +181,41 @@ int get_index(string target_datetime, int period) {
    return index;
    
 }//get_index(string target_datetime, int period)
+
+/****************************
+   void get_BarData_Basic(int index, double &DATA[])
+   
+   @param index : int   => index in the array of tick data
+   @param DATA : double[]  => empty array
+   
+   @return
+      DATA  => [open, high, low, close]
+   
+*****************************/
+//ref pass array : https://www.mql5.com/en/forum/150076
+void get_BarData_Basic(int index, double &DATA[]) {
+//void get_BarData_Basic(int index, string &DATA[]) {
+//void get_BarData_Basic(int index, string DATA[]) {
+//void get_BarData_Basic(int index, string* DATA) {
+
+   ///string DATA[4];
+   DATA[0] = Open[index];
+   DATA[1] = High[index];
+   DATA[2] = Low[index];
+   DATA[3] = Close[index];
+/*   
+   DATA[0] = "yes";
+   DATA[1] = "no";
+   DATA[2] = "off cource";
+   DATA[3] = "certainly";
+  */ 
+   //return DATA;
+
+}//string[] get_BarData_Basic(int index)
+
+/*
+
+'DATA' - arrays are passed by reference only	utils.mqh	183	42
+
+
+*/
