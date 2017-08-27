@@ -213,9 +213,35 @@ void get_BarData_Basic(int index, double &DATA[]) {
 
 }//string[] get_BarData_Basic(int index)
 
-/*
+/****************************
+   void get_BarData_Basic(int index, double &DATA[])
+   
+   @param index : int   => index in the array of tick data
+   @param DATA : double[]  => empty array
+   
+   @return
+      DATA  => [open, high, low, close]
+   
+*****************************/
+void get_ArrayOf_BarData_Basic
+(int pastXBars, double &AryOf_BasicData[][4]) {
 
-'DATA' - arrays are passed by reference only	utils.mqh	183	42
+   //int i;
+   
+   double   aryOf_BasicData[4];
+   
+   for(int i=0;i<pastXBars;i++)
+     {
+     
+         get_BarData_Basic(i, aryOf_BasicData);
+         
+         // insert data
+         AryOf_BasicData[i][0]  = aryOf_BasicData[0];
+         AryOf_BasicData[i][1]  = aryOf_BasicData[1];
+         AryOf_BasicData[i][2]  = aryOf_BasicData[2];
+         AryOf_BasicData[i][3]  = aryOf_BasicData[3];
+         
+     }
 
-
-*/
+   //get_ArrayOf_BarData_Basic
+}//void get_ArrayOf_BarData_Basic
