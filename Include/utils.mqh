@@ -214,23 +214,36 @@ void get_BarData_Basic(int index, double &DATA[]) {
 }//string[] get_BarData_Basic(int index)
 
 /****************************
-   void get_BarData_Basic(int index, double &DATA[])
+   void get_ArrayOf_BarData_Basic(...)
    
    @param index : int   => index in the array of tick data
-   @param DATA : double[]  => empty array
+   @param AryOf_BasicData : double[][4]  => empty array
    
-   @return
-      DATA  => [open, high, low, close]
+   @processes
+      AryOf_BasicData  => [[open, high, low, close],[open, high, low, close],...]
+   
+   @infos
+      AryOf_BasicData   => resize the first dimension
+      
+   @meta infos
+      written  : 2017/08/27 15:23:23
    
 *****************************/
 void get_ArrayOf_BarData_Basic
 (int pastXBars, double &AryOf_BasicData[][4]) {
 
+   // resize
+   ArrayResize(AryOf_BasicData, pastXBars);
+   
    //int i;
    
    double   aryOf_BasicData[4];
    
-   for(int i=0;i<pastXBars;i++)
+   Alert("[",__LINE__,"] get_ArrayOf_BarData_Basic() => starting...");
+   
+   Alert("[",__LINE__,"] pastXBars => ", pastXBars);
+   
+   for(int i = 0; i < pastXBars; i++)
      {
      
          get_BarData_Basic(i, aryOf_BasicData);
@@ -241,7 +254,11 @@ void get_ArrayOf_BarData_Basic
          AryOf_BasicData[i][2]  = aryOf_BasicData[2];
          AryOf_BasicData[i][3]  = aryOf_BasicData[3];
          
+         Alert("[",__LINE__,"] loop : i = ", i, " ==> done");
+         
      }
+
+   Alert("[",__LINE__,"] for loop => done");
 
    //get_ArrayOf_BarData_Basic
 }//void get_ArrayOf_BarData_Basic
