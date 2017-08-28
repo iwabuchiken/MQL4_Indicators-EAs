@@ -262,3 +262,119 @@ void get_ArrayOf_BarData_Basic
 
    //get_ArrayOf_BarData_Basic
 }//void get_ArrayOf_BarData_Basic
+
+/****************************
+   int write2File_AryOf_BasicData
+   
+   @return
+      -1 can't open file
+
+*****************************/
+int write2File_AryOf_BasicData
+(string FNAME, string SUBFOLDER, double &AryOf_BasicData[][4], int lenOf_Array) {
+
+   //+------------------------------------------------------------------+
+   //| file: open
+   //+------------------------------------------------------------------+
+   int FILE_HANDLE = NULL;
+   
+   
+   FILE_HANDLE =_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+   //int result=_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+
+   if(FILE_HANDLE == -1)
+     {
+
+      return -1;
+
+     }
+
+   /*********************
+      write : header
+   *********************/
+   FileWrite(
+      FILE_HANDLE,
+      
+      "no"
+      , "Open"
+      , "High"
+      , "Low"
+      , "Close"
+      , "Diff"
+      , "High/Low"
+   
+   );
+
+   /*********************
+      write : data
+   *********************/
+   for(int i=0; i < lenOf_Array; i++)
+     {
+         //AryOf_BasicData[i];
+         //AryOf_BasicData[i][0];
+         FileWrite(FILE_HANDLE,
+
+          (i+1),
+
+          AryOf_BasicData[i][0]     // Open
+          , AryOf_BasicData[i][1]   // High
+          , AryOf_BasicData[i][2]   // Low
+          , AryOf_BasicData[i][3]   // Close
+          , AryOf_BasicData[i][3] - AryOf_BasicData[i][0]   // Diff
+          , AryOf_BasicData[i][1] - AryOf_BasicData[i][2]   // Range
+          );
+     }
+
+   /*********************
+      file : close
+   *********************/
+   _file_close(FILE_HANDLE);
+
+   /*********************
+      return
+   *********************/
+   return 1;
+
+}//write2File_AryOf_BasicData(FNAME, AryOf_BasicData)
+
+/****************************
+   _file_open()
+   
+   @return
+      1  file opened
+      -1 can't open file
+
+*****************************/
+int _file_open(int FILE_HANDLE, string FNAME, string SUBFOLDER) 
+  {
+
+   FILE_HANDLE = FileOpen("Research\\" + SUBFOLDER + "\\"+FNAME,FILE_WRITE|FILE_CSV);
+
+   if(FILE_HANDLE==INVALID_HANDLE) 
+     {
+
+      Alert("[",__LINE__,"] can't open file: ",FNAME,"");
+
+      // return
+      return -1;
+
+     }//if(FILE_HANDLE == INVALID_HANDLE)
+
+   //+------------------------------------------------------------------+
+   //| File: seek
+   //+------------------------------------------------------------------+
+   //ref https://www.mql5.com/en/forum/3239
+   FileSeek(FILE_HANDLE,0,SEEK_END);
+
+   return FILE_HANDLE;
+
+  }//_file_open()
+
+void _file_close(int FILE_HANDLE) 
+  {
+
+   FileClose(FILE_HANDLE);
+
+   Alert("[",__LINE__,"] file => closed : ", (string) FILE_HANDLE);
+
+  }//_file_close()
