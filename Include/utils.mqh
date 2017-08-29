@@ -254,7 +254,7 @@ void get_ArrayOf_BarData_Basic
          AryOf_BasicData[i][2]  = aryOf_BasicData[2];
          AryOf_BasicData[i][3]  = aryOf_BasicData[3];
          
-         Alert("[",__LINE__,"] loop : i = ", i, " ==> done");
+         //Alert("[",__LINE__,"] loop : i = ", i, " ==> done");
          
      }
 
@@ -292,6 +292,9 @@ int write2File_AryOf_BasicData
    /*********************
       write : header
    *********************/
+   _file_write__header(FILE_HANDLE);
+   
+   /*
    FileWrite(
       FILE_HANDLE,
       
@@ -304,7 +307,7 @@ int write2File_AryOf_BasicData
       , "High/Low"
    
    );
-
+*/
    /*********************
       write : data
    *********************/
@@ -322,6 +325,81 @@ int write2File_AryOf_BasicData
           , AryOf_BasicData[i][3]   // Close
           , AryOf_BasicData[i][3] - AryOf_BasicData[i][0]   // Diff
           , AryOf_BasicData[i][1] - AryOf_BasicData[i][2]   // Range
+          );
+     }
+
+   /*********************
+      file : close
+   *********************/
+   _file_close(FILE_HANDLE);
+
+   /*********************
+      return
+   *********************/
+   return 1;
+
+}//write2File_AryOf_BasicData(FNAME, AryOf_BasicData)
+
+/****************************
+   int write2File_AryOf_BasicData
+   
+   @return
+      -1 can't open file
+
+*****************************/
+int write2File_AryOf_BasicData_2
+(string FNAME, string SUBFOLDER, double &AryOf_BasicData[][4], int lenOf_Array,
+         string SYMBOL_STR, string CURRENT_PERIOD, 
+         int NUMOF_DAYS, int NUMOF_TARGET_BARS, 
+         string TIME_LABEL
+         
+         , int TIME_FRAME
+) {
+
+   //+------------------------------------------------------------------+
+   //| file: open
+   //+------------------------------------------------------------------+
+   int FILE_HANDLE = NULL;
+   
+   
+   FILE_HANDLE =_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+   //int result=_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+
+   if(FILE_HANDLE == -1)
+     {
+
+      return -1;
+
+     }
+
+   /*********************
+      write : header
+   *********************/
+   _file_write__header_2(FILE_HANDLE, 
+         SYMBOL_STR, CURRENT_PERIOD, 
+         NUMOF_DAYS, NUMOF_TARGET_BARS, 
+         TIME_LABEL);
+   
+   /*********************
+      write : data
+   *********************/
+   for(int i=0; i < lenOf_Array; i++)
+     {
+         //AryOf_BasicData[i];
+         //AryOf_BasicData[i][0];
+         FileWrite(FILE_HANDLE,
+
+          (i+1),
+
+          AryOf_BasicData[i][0]     // Open
+          , AryOf_BasicData[i][1]   // High
+          , AryOf_BasicData[i][2]   // Low
+          , AryOf_BasicData[i][3]   // Close
+          , AryOf_BasicData[i][3] - AryOf_BasicData[i][0]   // Diff
+          , AryOf_BasicData[i][1] - AryOf_BasicData[i][2]   // Range
+          
+          , TimeToStr(iTime(Symbol(), TIME_FRAME, i))
+          
           );
      }
 
@@ -377,4 +455,82 @@ void _file_close(int FILE_HANDLE)
 
    Alert("[",__LINE__,"] file => closed : ", (string) FILE_HANDLE);
 
-  }//_file_close()
+}//_file_close()
+
+int _file_write__header(int FILE_HANDLE) 
+  {
+
+   // column names
+   uint result = FileWrite(FILE_HANDLE,
+               
+               //"no.", "index", "kairi", "datetime", "symbol", "period"
+               "no", "Open", "High", "Low", "Close", "Diff", "High/Low"
+               
+             );    // header
+   /***************
+      validate
+   ***************/
+   if(result == 0)
+     {
+         Alert("[",__LINE__,"] header => NOT written");
+         
+         return 0;
+         
+     }
+
+//debug
+   Alert("[",__LINE__,"] header => written");
+
+// return
+   return 1;
+
+}//_file_write__header()
+
+int _file_write__header_2(int FILE_HANDLE,
+         string SYMBOL_STR, string CURRENT_PERIOD, 
+         int NUMOF_DAYS, int NUMOF_TARGET_BARS, 
+         string TIME_LABEL) 
+  {
+
+   // meta info
+   FileWrite(FILE_HANDLE,
+      
+      "Pair=" + SYMBOL_STR
+      
+      , "Period=" + CURRENT_PERIOD
+      
+      , "Days=" + (string) NUMOF_DAYS
+      
+      , "Bars=" + (string) NUMOF_TARGET_BARS
+
+      , "Time=" + TIME_LABEL
+
+   );
+   
+   // column names
+   uint result = FileWrite(FILE_HANDLE,
+               
+               //"no.", "index", "kairi", "datetime", "symbol", "period"
+               "no", "Open", "High", "Low", "Close", "Diff", "High/Low"
+               
+               , "datetime"
+               
+             );    // header
+   /***************
+      validate
+   ***************/
+   if(result == 0)
+     {
+         Alert("[",__LINE__,"] header => NOT written");
+         
+         return 0;
+         
+     }
+
+//debug
+   Alert("[",__LINE__,"] header => written");
+
+// return
+   return 1;
+
+}//_file_write__header_2()
