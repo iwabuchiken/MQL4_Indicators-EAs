@@ -35,7 +35,7 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
       string datetime_label = TimeToStr(time, TIME_DATE|TIME_SECONDS);
       
       //debug
-      Alert("[",__LINE__,"] datetime_label => ",datetime_label,"");
+//      Alert("[",__LINE__,"] datetime_label => ",datetime_label,"");
       
       //+------------------------------------------------------------------+
       //| split: date and time                                                                 |
@@ -239,9 +239,9 @@ void get_ArrayOf_BarData_Basic
    
    double   aryOf_BasicData[4];
    
-   Alert("[",__LINE__,"] get_ArrayOf_BarData_Basic() => starting...");
+//   Alert("[",__LINE__,"] get_ArrayOf_BarData_Basic() => starting...");
    
-   Alert("[",__LINE__,"] pastXBars => ", pastXBars);
+//   Alert("[",__LINE__,"] pastXBars => ", pastXBars);
    
    for(int i = 0; i < pastXBars; i++)
      {
@@ -258,7 +258,7 @@ void get_ArrayOf_BarData_Basic
          
      }
 
-   Alert("[",__LINE__,"] for loop => done");
+//   Alert("[",__LINE__,"] for loop => done");
 
    //get_ArrayOf_BarData_Basic
 }//void get_ArrayOf_BarData_Basic
@@ -453,7 +453,7 @@ void _file_close(int FILE_HANDLE)
 
    FileClose(FILE_HANDLE);
 
-   Alert("[",__LINE__,"] file => closed : ", (string) FILE_HANDLE);
+   Alert("[", __FILE__, ":",__LINE__,"] file => closed : ", (string) FILE_HANDLE);
 
 }//_file_close()
 
@@ -534,3 +534,30 @@ int _file_write__header_2(int FILE_HANDLE,
    return 1;
 
 }//_file_write__header_2()
+
+
+/****************************
+int set_Symbol(string symbol_str, int period)
+
+   @param symbol_str     => "USDJPY"
+   @param period         => e.g. 60 --> H1
+   
+   @return
+      1    => symbol set
+      -1   => otherwise
+
+*****************************/
+int set_Symbol(string symbol_str, int period) {
+
+   bool res = ChartSetSymbolPeriod(0,symbol_str, period);  // set symbol
+
+   if(res == true)
+     {
+         return 1;
+     }
+     else
+       {
+         return -1;
+       }
+
+}//int set_Symbol(string symbol_str, int period)
