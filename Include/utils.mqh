@@ -135,7 +135,8 @@ string conv_DateTime_2_SerialTimeLabel(int time) {
    time: 2017/01/09 13:08:40
 *****************************/
 //int get_index(string target_datetime, int period) {
-int get_index(string target_datetime, int period, int NUMOF_TARGET_BARS) {
+int get_index
+(string target_datetime, int period, int _NUMOF_TARGET_BARS) {
 
    int index = -1;
 
@@ -148,7 +149,7 @@ int get_index(string target_datetime, int period, int NUMOF_TARGET_BARS) {
    
    //Alert("[",__LINE__,"] NUMOF_TARGET_BARS = ",NUMOF_TARGET_BARS,"");
    
-   for(int i = 0; i < NUMOF_TARGET_BARS; i ++) {
+   for(int i = 0; i < _NUMOF_TARGET_BARS; i ++) {
 
       d = TimeToStr(iTime(Symbol(),Period(), i));
       
@@ -264,6 +265,63 @@ void get_ArrayOf_BarData_Basic
 }//void get_ArrayOf_BarData_Basic
 
 /****************************
+   void get_ArrayOf_BarData_Basic(...)
+   
+   @param index : int   => index in the array of tick data
+   @param AryOf_BasicData : double[][4]  => empty array
+   @param symbol_Str : currency pair string  => e.g. "USDJPY"
+   @param period : bar period  => e.g. "PERIOD_H1"
+   
+   @processes
+      AryOf_BasicData  => [[open, high, low, close],[open, high, low, close],...]
+   
+   @infos
+      AryOf_BasicData   => resize the first dimension
+      
+   @meta infos
+      written  : 2017/08/27 15:23:23
+   
+*****************************/
+void get_ArrayOf_BarData_Basic_2
+(int pastXBars, double &AryOf_BasicData[][4], string symbol_Str, int period) {
+
+   /****************
+      set : symbol
+   *****************/
+   set_Symbol(symbol_Str, period);
+
+   /****************
+      get : basic data
+   *****************/
+   // resize
+   ArrayResize(AryOf_BasicData, pastXBars);
+   
+   //int i;
+   
+   double   aryOf_BasicData[4];
+   
+//   Alert("[",__LINE__,"] get_ArrayOf_BarData_Basic() => starting...");
+   
+//   Alert("[",__LINE__,"] pastXBars => ", pastXBars);
+   
+   for(int i = 0; i < pastXBars; i++)
+     {
+     
+         get_BarData_Basic(i, aryOf_BasicData);
+         
+         // insert data
+         AryOf_BasicData[i][0]  = aryOf_BasicData[0];
+         AryOf_BasicData[i][1]  = aryOf_BasicData[1];
+         AryOf_BasicData[i][2]  = aryOf_BasicData[2];
+         AryOf_BasicData[i][3]  = aryOf_BasicData[3];
+         
+         //Alert("[",__LINE__,"] loop : i = ", i, " ==> done");
+         
+     }//for(int i = 0; i < pastXBars; i++)
+
+}//void get_ArrayOf_BarData_Basic(int pastXBars, double &AryOf_BasicData[][4], string symbol_Str)
+
+/****************************
    int write2File_AryOf_BasicData
    
    @return
@@ -271,18 +329,18 @@ void get_ArrayOf_BarData_Basic
 
 *****************************/
 int write2File_AryOf_BasicData
-(string FNAME, string SUBFOLDER, double &AryOf_BasicData[][4], int lenOf_Array) {
+(string _FNAME, string _SUBFOLDER, double &_AryOf_BasicData[][4], int _lenOf_Array) {
 
    //+------------------------------------------------------------------+
    //| file: open
    //+------------------------------------------------------------------+
-   int FILE_HANDLE = NULL;
+   int _FILE_HANDLE = NULL;
    
    
-   FILE_HANDLE =_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+   _FILE_HANDLE =_file_open(_FILE_HANDLE, _FNAME, _SUBFOLDER);
    //int result=_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
 
-   if(FILE_HANDLE == -1)
+   if(_FILE_HANDLE == -1)
      {
 
       return -1;
@@ -292,7 +350,7 @@ int write2File_AryOf_BasicData
    /*********************
       write : header
    *********************/
-   _file_write__header(FILE_HANDLE);
+   _file_write__header(_FILE_HANDLE);
    
    /*
    FileWrite(
@@ -311,27 +369,27 @@ int write2File_AryOf_BasicData
    /*********************
       write : data
    *********************/
-   for(int i=0; i < lenOf_Array; i++)
+   for(int i=0; i < _lenOf_Array; i++)
      {
          //AryOf_BasicData[i];
          //AryOf_BasicData[i][0];
-         FileWrite(FILE_HANDLE,
+         FileWrite(_FILE_HANDLE,
 
           (i+1),
 
-          AryOf_BasicData[i][0]     // Open
-          , AryOf_BasicData[i][1]   // High
-          , AryOf_BasicData[i][2]   // Low
-          , AryOf_BasicData[i][3]   // Close
-          , AryOf_BasicData[i][3] - AryOf_BasicData[i][0]   // Diff
-          , AryOf_BasicData[i][1] - AryOf_BasicData[i][2]   // Range
+          _AryOf_BasicData[i][0]     // Open
+          , _AryOf_BasicData[i][1]   // High
+          , _AryOf_BasicData[i][2]   // Low
+          , _AryOf_BasicData[i][3]   // Close
+          , _AryOf_BasicData[i][3] - _AryOf_BasicData[i][0]   // Diff
+          , _AryOf_BasicData[i][1] - _AryOf_BasicData[i][2]   // Range
           );
      }
 
    /*********************
       file : close
    *********************/
-   _file_close(FILE_HANDLE);
+   _file_close(_FILE_HANDLE);
 
    /*********************
       return
@@ -348,24 +406,24 @@ int write2File_AryOf_BasicData
 
 *****************************/
 int write2File_AryOf_BasicData_2
-(string FNAME, string SUBFOLDER, double &AryOf_BasicData[][4], int lenOf_Array,
-         string SYMBOL_STR, string CURRENT_PERIOD, 
-         int NUMOF_DAYS, int NUMOF_TARGET_BARS, 
-         string TIME_LABEL
+(string _FNAME, string _SUBFOLDER, double &_AryOf_BasicData[][4], int _lenOf_Array,
+         string _SYMBOL_STR, string _CURRENT_PERIOD, 
+         int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+         string _TIME_LABEL
          
-         , int TIME_FRAME
+         , int _TIME_FRAME
 ) {
 
    //+------------------------------------------------------------------+
    //| file: open
    //+------------------------------------------------------------------+
-   int FILE_HANDLE = NULL;
+   int _FILE_HANDLE = NULL;
    
    
-   FILE_HANDLE =_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+   _FILE_HANDLE =_file_open(_FILE_HANDLE, _FNAME, _SUBFOLDER);
    //int result=_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
 
-   if(FILE_HANDLE == -1)
+   if(_FILE_HANDLE == -1)
      {
 
       return -1;
@@ -375,30 +433,30 @@ int write2File_AryOf_BasicData_2
    /*********************
       write : header
    *********************/
-   _file_write__header_2(FILE_HANDLE, 
-         SYMBOL_STR, CURRENT_PERIOD, 
-         NUMOF_DAYS, NUMOF_TARGET_BARS, 
-         TIME_LABEL);
+   _file_write__header_2(_FILE_HANDLE, 
+         _SYMBOL_STR, _CURRENT_PERIOD, 
+         _NUMOF_DAYS, _NUMOF_TARGET_BARS, 
+         _TIME_LABEL);
    
    /*********************
       write : data
    *********************/
-   for(int i=0; i < lenOf_Array; i++)
+   for(int i=0; i < _lenOf_Array; i++)
      {
          //AryOf_BasicData[i];
          //AryOf_BasicData[i][0];
-         FileWrite(FILE_HANDLE,
+         FileWrite(_FILE_HANDLE,
 
           (i+1),
 
-          AryOf_BasicData[i][0]     // Open
-          , AryOf_BasicData[i][1]   // High
-          , AryOf_BasicData[i][2]   // Low
-          , AryOf_BasicData[i][3]   // Close
-          , AryOf_BasicData[i][3] - AryOf_BasicData[i][0]   // Diff
-          , AryOf_BasicData[i][1] - AryOf_BasicData[i][2]   // Range
+          _AryOf_BasicData[i][0]     // Open
+          , _AryOf_BasicData[i][1]   // High
+          , _AryOf_BasicData[i][2]   // Low
+          , _AryOf_BasicData[i][3]   // Close
+          , _AryOf_BasicData[i][3] - _AryOf_BasicData[i][0]   // Diff
+          , _AryOf_BasicData[i][1] - _AryOf_BasicData[i][2]   // Range
           
-          , TimeToStr(iTime(Symbol(), TIME_FRAME, i))
+          , TimeToStr(iTime(Symbol(), _TIME_FRAME, i))
           
           );
      }
@@ -406,7 +464,7 @@ int write2File_AryOf_BasicData_2
    /*********************
       file : close
    *********************/
-   _file_close(FILE_HANDLE);
+   _file_close(_FILE_HANDLE);
 
    /*********************
       return
@@ -423,15 +481,15 @@ int write2File_AryOf_BasicData_2
       -1 can't open file
 
 *****************************/
-int _file_open(int FILE_HANDLE, string FNAME, string SUBFOLDER) 
+int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER) 
   {
 
-   FILE_HANDLE = FileOpen("Research\\" + SUBFOLDER + "\\"+FNAME,FILE_WRITE|FILE_CSV);
+   _FILE_HANDLE = FileOpen("Research\\" + _SUBFOLDER + "\\"+ _FNAME, FILE_WRITE|FILE_CSV);
 
-   if(FILE_HANDLE==INVALID_HANDLE) 
+   if(_FILE_HANDLE == INVALID_HANDLE) 
      {
 
-      Alert("[",__LINE__,"] can't open file: ",FNAME,"");
+      Alert("[",__LINE__,"] can't open file: ",_FNAME,"");
 
       // return
       return -1;
@@ -442,26 +500,26 @@ int _file_open(int FILE_HANDLE, string FNAME, string SUBFOLDER)
    //| File: seek
    //+------------------------------------------------------------------+
    //ref https://www.mql5.com/en/forum/3239
-   FileSeek(FILE_HANDLE,0,SEEK_END);
+   FileSeek(_FILE_HANDLE,0,SEEK_END);
 
-   return FILE_HANDLE;
+   return _FILE_HANDLE;
 
   }//_file_open()
 
-void _file_close(int FILE_HANDLE) 
+void _file_close(int _FILE_HANDLE) 
   {
 
-   FileClose(FILE_HANDLE);
+   FileClose(_FILE_HANDLE);
 
-   Alert("[", __FILE__, ":",__LINE__,"] file => closed : ", (string) FILE_HANDLE);
+   Alert("[", __FILE__, ":",__LINE__,"] file => closed : ", (string) _FILE_HANDLE);
 
 }//_file_close()
 
-int _file_write__header(int FILE_HANDLE) 
+int _file_write__header(int _FILE_HANDLE) 
   {
 
    // column names
-   uint result = FileWrite(FILE_HANDLE,
+   uint result = FileWrite(_FILE_HANDLE,
                
                //"no.", "index", "kairi", "datetime", "symbol", "period"
                "no", "Open", "High", "Low", "Close", "Diff", "High/Low"
@@ -486,29 +544,29 @@ int _file_write__header(int FILE_HANDLE)
 
 }//_file_write__header()
 
-int _file_write__header_2(int FILE_HANDLE,
-         string SYMBOL_STR, string CURRENT_PERIOD, 
-         int NUMOF_DAYS, int NUMOF_TARGET_BARS, 
-         string TIME_LABEL) 
+int _file_write__header_2(int _FILE_HANDLE,
+         string _SYMBOL_STR, string _CURRENT_PERIOD, 
+         int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+         string _TIME_LABEL) 
   {
 
    // meta info
-   FileWrite(FILE_HANDLE,
+   FileWrite(_FILE_HANDLE,
       
-      "Pair=" + SYMBOL_STR
+      "Pair=" + _SYMBOL_STR
       
-      , "Period=" + CURRENT_PERIOD
+      , "Period=" + _CURRENT_PERIOD
       
-      , "Days=" + (string) NUMOF_DAYS
+      , "Days=" + (string) _NUMOF_DAYS
       
-      , "Bars=" + (string) NUMOF_TARGET_BARS
+      , "Bars=" + (string) _NUMOF_TARGET_BARS
 
-      , "Time=" + TIME_LABEL
+      , "Time=" + _TIME_LABEL
 
    );
    
    // column names
-   uint result = FileWrite(FILE_HANDLE,
+   uint result = FileWrite(_FILE_HANDLE,
                
                //"no.", "index", "kairi", "datetime", "symbol", "period"
                "no", "Open", "High", "Low", "Close", "Diff", "High/Low"
@@ -527,7 +585,7 @@ int _file_write__header_2(int FILE_HANDLE,
          
      }
 
-//debug
+   //debug
    Alert("[",__LINE__,"] header => written");
 
 // return
@@ -553,10 +611,18 @@ int set_Symbol(string symbol_str, int period) {
 
    if(res == true)
      {
+     
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", symbol_str);
+     
          return 1;
      }
      else
        {
+       
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol NOT set => ", symbol_str);
+
          return -1;
        }
 
@@ -568,6 +634,27 @@ string _get_FNAME(
                int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
                string _TIME_LABEL) {
 
+   string tmp = _SUBFOLDER
+         
+         + "_" + "file-io"
+
+         + "." + _SYMBOL_STR
+
+         + "." + "Period-" + _CURRENT_PERIOD
+
+         + "." + "Days-" + (string) _NUMOF_DAYS
+         
+         +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
+         
+         +"." + _TIME_LABEL
+         
+         +".csv";
+         
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
+
+   return tmp;
+/*         
    return _SUBFOLDER
          
          + "_" + "file-io"
@@ -583,5 +670,5 @@ string _get_FNAME(
          +"." + _TIME_LABEL
          
          +".csv";
-
+*/
 }//string _get_FNAME
