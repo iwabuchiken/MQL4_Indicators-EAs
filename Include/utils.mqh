@@ -561,3 +561,27 @@ int set_Symbol(string symbol_str, int period) {
        }
 
 }//int set_Symbol(string symbol_str, int period)
+
+string _get_FNAME(
+               string _SUBFOLDER, string main_Label, 
+               string _SYMBOL_STR, string _CURRENT_PERIOD, 
+               int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+               string _TIME_LABEL) {
+
+   return _SUBFOLDER
+         
+         + "_" + "file-io"
+
+         + "." + _SYMBOL_STR
+
+         + "." + "Period-" + _CURRENT_PERIOD
+
+         + "." + "Days-" + (string) _NUMOF_DAYS
+         
+         +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
+         
+         +"." + _TIME_LABEL
+         
+         +".csv";
+
+}//string _get_FNAME
