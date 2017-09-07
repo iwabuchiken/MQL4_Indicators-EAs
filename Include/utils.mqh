@@ -672,3 +672,92 @@ string _get_FNAME(
          +".csv";
 */
 }//string _get_FNAME
+
+
+/******************************************
+   @params
+      string       symbol,           // symbol
+      int          timeframe,        // timeframe
+      int          period,           // period
+      int          applied_price,    // applied price
+      int          shift             // shift
+   
+   @return
+      number of RSI values
+   
+******************************************/
+int get_AryOf_RSI(
+      string symbol_Str, 
+      int time_Frame, 
+      int period_RSI, 
+      int price, 
+      int shift, 
+      int length,
+      double &AryOf_Data[][5]) {
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI()");
+
+   /****************
+      array ---> resize
+   ****************/
+   ArrayResize(AryOf_Data, length);
+
+   double  rsi;
+   
+   int count = 0;
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+
+   //for(int i = shift; i<(shift + length); i++)
+   //for(int i = shift; i<(shift + length) - 1; i++)
+   for(int i = 0; i < length; i++)
+     {
+     
+         rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, i);
+         
+         // input
+         AryOf_Data[i][0] = Open[i];
+         AryOf_Data[i][1] = High[i];
+         AryOf_Data[i][2] = Low[i];
+         AryOf_Data[i][3] = Close[i];
+
+         AryOf_Data[i][4] = rsi;
+         
+         // count
+         count ++;
+
+/*
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] rsi ---> ", 
+                     rsi
+                     , "(i = ", i
+                     , " / "
+                     , "index = ", (i + shift)
+                     , ")"
+                     
+                     );
+*/
+
+     }
+   //double  rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, shift);
+   
+      //debug
+      /*
+   Alert("[", __FILE__, ":",__LINE__,"] rsi => ", 
+                  rsi, 
+                  "(shift = ", shift
+                  , " / "
+                  , "period = ", period_RSI
+                  
+                  , ")"
+                  
+   );
+*/
+   /****************
+      return
+   ****************/
+   return count;
+
+}//int get_RSI(string symbol_Str, int time_Frame, int period, int price, int shift, double &AryOf_Data[][5])
