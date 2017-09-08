@@ -474,6 +474,91 @@ int write2File_AryOf_BasicData_2
 }//write2File_AryOf_BasicData(FNAME, AryOf_BasicData)
 
 /****************************
+   int write2File_AryOf_BasicData_With_RSI
+   
+   @return
+      -1 can't open file
+
+*****************************/
+int write2File_AryOf_BasicData_With_RSI(
+   string _FNAME, string _SUBFOLDER, 
+
+   double &_AryOf_BasicData[][4], 
+
+   int _lenOf_Array, int shift,
+   
+   string _SYMBOL_STR, string _CURRENT_PERIOD, 
+   
+   int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+   
+   string _TIME_LABEL, int _TIME_FRAME
+   
+) {
+
+   //+------------------------------------------------------------------+
+   //| file: open
+   //+------------------------------------------------------------------+
+   int _FILE_HANDLE = NULL;
+   
+   
+   _FILE_HANDLE =_file_open(_FILE_HANDLE, _FNAME, _SUBFOLDER);
+   //int result=_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+
+   if(_FILE_HANDLE == -1)
+     {
+
+      return -1;
+
+     }
+
+   /*********************
+      write : header
+   *********************/
+   _file_write__header_With_RSI(_FILE_HANDLE, 
+         _SYMBOL_STR, _CURRENT_PERIOD, 
+         _NUMOF_DAYS, _NUMOF_TARGET_BARS, 
+         _TIME_LABEL, shift);
+
+   /*********************
+      write : data
+   *********************/
+   for(int i=0; i < _lenOf_Array; i++)
+     {
+         //AryOf_BasicData[i];
+         //AryOf_BasicData[i][0];
+         FileWrite(_FILE_HANDLE,
+
+          (i+1),
+
+          _AryOf_BasicData[i][0]     // Open
+          , _AryOf_BasicData[i][1]   // High
+          , _AryOf_BasicData[i][2]   // Low
+          , _AryOf_BasicData[i][3]   // Close
+          
+          , _AryOf_BasicData[i][4]   // RSI
+          
+          , _AryOf_BasicData[i][3] - _AryOf_BasicData[i][0]   // Diff
+          , _AryOf_BasicData[i][1] - _AryOf_BasicData[i][2]   // Range
+          
+          , TimeToStr(iTime(Symbol(), _TIME_FRAME, i))
+          
+          );
+     }
+
+   /*********************
+      file : close
+   *********************/
+   _file_close(_FILE_HANDLE);
+
+   /*********************
+      return
+   *********************/
+   return 1;
+
+}//write2File_AryOf_BasicData(FNAME, AryOf_BasicData)
+
+
+/****************************
    _file_open()
    
    @return
@@ -570,6 +655,61 @@ int _file_write__header_2(int _FILE_HANDLE,
                
                //"no.", "index", "kairi", "datetime", "symbol", "period"
                "no", "Open", "High", "Low", "Close", "Diff", "High/Low"
+               
+               , "datetime"
+               
+             );    // header
+   /***************
+      validate
+   ***************/
+   if(result == 0)
+     {
+         Alert("[",__LINE__,"] header => NOT written");
+         
+         return 0;
+         
+     }
+
+   //debug
+   Alert("[",__LINE__,"] header => written");
+
+// return
+   return 1;
+
+}//_file_write__header_2()
+
+
+int _file_write__header_With_RSI(
+         int _FILE_HANDLE,
+         string _SYMBOL_STR, string _CURRENT_PERIOD, 
+         int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+         string _TIME_LABEL, int shift) 
+  {
+
+   // meta info
+   FileWrite(_FILE_HANDLE,
+      
+      "Pair=" + _SYMBOL_STR
+      
+      , "Period=" + _CURRENT_PERIOD
+      
+      , "Days=" + (string) _NUMOF_DAYS
+      
+      , "Shift=" + (string) shift
+
+      , "Bars=" + (string) _NUMOF_TARGET_BARS
+
+      , "Time=" + _TIME_LABEL
+
+   );
+   
+   // column names
+   uint result = FileWrite(_FILE_HANDLE,
+               
+               //"no.", "index", "kairi", "datetime", "symbol", "period"
+               "no", "Open", "High", "Low", "Close"
+               , "RSI"
+               , "Diff", "High/Low"
                
                , "datetime"
                
