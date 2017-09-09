@@ -410,7 +410,7 @@ int write2File_AryOf_BasicData_2
          string _SYMBOL_STR, string _CURRENT_PERIOD, 
          int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
          string _TIME_LABEL
-         
+         	
          , int _TIME_FRAME
 ) {
 

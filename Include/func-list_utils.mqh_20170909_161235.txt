@@ -1,0 +1,27 @@
+Target file = utils.mqh
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include
+Entries = 17
+Created at = 2017/09/09 16:12:35
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/func-list_utils.mqh_20170909_161235.txt
+
+==========================================
+
+1	void _file_close(int _FILE_HANDLE)
+2	int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
+3	int _file_write__header(int _FILE_HANDLE)
+4	int _file_write__header_2(int _FILE_HANDLE,
+5	int _file_write__header_With_RSI(
+6	string _get_FNAME(
+7	string conv_DateTime_2_SerialTimeLabel(int time) {
+8	void get_ArrayOf_BarData_Basic
+9	void get_ArrayOf_BarData_Basic_2
+10	int get_AryOf_RSI(
+11	void get_BarData_Basic(int index, double &DATA[]) {
+12	int get_index
+13	int set_Symbol(string symbol_str, int period)
+14	int set_Symbol(string symbol_str, int period) {
+15	int write2File_AryOf_BasicData
+16	int write2File_AryOf_BasicData_2
+17	int write2File_AryOf_BasicData_With_RSI(
+
+==========================================
