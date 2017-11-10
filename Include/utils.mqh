@@ -901,3 +901,239 @@ int get_AryOf_RSI(
    return count;
 
 }//int get_RSI(string symbol_Str, int time_Frame, int period, int price, int shift, double &AryOf_Data[][5])
+
+void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
+
+   int _TIME_FRAME = TIME_FRAME;
+   
+   string label = TimeToStr(iTime(__Symbol, __TIME_FRAME, index));
+   //string label = TimeToStr(iTime(Symbol(), _TIME_FRAME, index));
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] index => ", index, " / ", "label => ", label);
+   
+
+}//void test_Conv_Index_2_TimeString(index)
+
+/*************************
+int conv_TimeString_2_Index
+
+   @param
+   
+   @return
+      -1    Not found
+
+*************************/
+int conv_TimeString_2_Index
+(string time_string, string symbol, int time_frame, int limit) {
+
+   int index;
+   
+   /*********
+      validate : time string format
+   **********/   
+   for(int i=0;i< limit; i++)
+     {
+      
+         string label = TimeToStr(iTime(symbol, time_frame, i));
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] Time label => ", label,
+                  " / ", "index => ", i);
+                  
+         // detect
+         if(label == time_string)
+           {
+
+            //debug
+            Alert("[", __FILE__, ":",__LINE__,"] Hit => ", time_string);
+               
+           }
+      
+     }//for(int i=0;i< limit; i++)
+   
+   //debug
+   //Alert("[", __FILE__, ":",__LINE__,"] index => ", index, " / ", "label => ", label);
+
+
+   // return
+   return -1;
+
+}//conv_TimeString_2_Index(string time_string, string symbol, int time_frame)
+
+/*************************
+string get_TimeLabel_Current(int type)
+
+   @param   type
+               1  Serial          '20171110_0000'
+               2  MQL4 standard   '2017.11.10 00:00'
+               3  Slash colon     '2017/11/10 00:00'
+      
+   @return
+
+*************************/
+string get_TimeLabel_Current(int type) {
+   //ref https://docs.mql4.com/constants/structures/mqldatetime
+/*   datetime date1=D'2008.03.01';
+   datetime date2=D'2009.03.01';
+ 
+   MqlDateTime str1,str2;
+   TimeToStruct(date1,str1);
+   
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] str1.day_of_year => ", str1.day_of_year);   //=> 60
+  */ 
+/*   
+//   printf("%02d.%02d.%4d, day of year = %d",str1.day,str1.mon,
+  //        str1.year,str1.day_of_year);
+
+   //ref https://docs.mql4.com/convert/timetostr
+   string var1=TimeToStr(TimeCurrent(),TIME_DATE|TIME_SECONDS);
+   
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] TimeCurrent() => ", TimeCurrent());   //=> 
+*/
+/*   
+   // test : 3
+   string time_Label = "";;
+   
+   if(type == 1)
+     {   
+         //ref concatenate https://docs.mql4.com/strings/stringconcatenate
+         time_Label = StringConcatenate(
+                        Year(), Month(), Day()
+                        
+                        , "_"
+                        , Hour(), Minute(), Seconds()
+         
+         
+         );
+         //time_Label = Year() + Month() + Day();
+     }
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] time_Label => ", time_Label);
+
+*/
+
+/*   
+   Alert("[", __FILE__, ":",__LINE__,"] TimeCurrent => "
+            , Year()
+            //, "/"
+            , Month()
+            //, "/"
+            , Day()
+            //, "/"
+
+            
+   );   //=> 
+  */        
+  
+   // test : 4
+   string time_Label = TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS);
+   //string time_Label = TimeToStr(TimeCurrent(),TIME_DATE|TIME_SECONDS);
+   
+   // prep vars
+            //ref https://docs.mql4.com/strings/stringsplit
+         // date, time
+         string to_split= time_Label;   // A string to split into substrings
+         string sep=" ";                // A separator as a character
+         ushort u_sep;                  // The code of the separator character
+         string result[];               // An array to get strings
+         //--- Get the separator code
+         u_sep=StringGetCharacter(sep,0);
+         //--- Split the string to substrings
+         int k=StringSplit(to_split,u_sep,result);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] result[0] => ", result[0]
+         
+                  , " / "
+                  
+                  , "result[1] => ", result[1]
+         
+         );
+         
+         // date --> into 3 parts
+         to_split= result[0];   // A string to split into substrings
+         sep=".";                // A separator as a character
+         //u_sep;                  // The code of the separator character
+         string res_1[];               // An array to get strings
+
+         u_sep = StringGetCharacter(sep,0);
+         //--- Split the string to substrings
+         k = StringSplit(to_split,u_sep,res_1);
+
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] res_1[0] => ", res_1[0]
+         
+                  , " / "
+                  
+                  , "res_1[1] => ", res_1[1]
+         
+         );
+
+         // time --> into 2 parts
+         to_split= result[1];   // A string to split into substrings
+         sep=":";                // A separator as a character
+         //u_sep;                  // The code of the separator character
+         string res_2[];               // An array to get strings
+
+         u_sep = StringGetCharacter(sep,0);
+         //--- Split the string to substrings
+         k = StringSplit(to_split,u_sep,res_2);
+
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] res_2[0] => ", res_2[0]
+         
+                  , " / "
+                  
+                  , "res_2[1] => ", res_2[1]
+         
+         );      
+   
+   if(type == 1)  // serial
+     {
+
+         
+         // concatenate
+         time_Label = StringConcatenate(
+                  res_1[0], res_1[1], res_1[2]
+                  
+                  , "_"
+                  
+                  , res_2[0], res_2[1], res_2[2]
+         );
+         
+     }//if(type == 1)  // serial
+   else if (type == 3)
+   //3  Slash colon     '2017/11/10 00:00'
+     {
+
+         // concatenate
+         time_Label = StringConcatenate(
+                  res_1[0]
+                  , "/"
+                  , res_1[1]
+                  , "/"
+                  , res_1[2]
+                  
+                  , " "
+                  
+                  , res_2[0]
+                  , ":"
+                  , res_2[1]
+                  , ":"
+                  , res_2[2]
+         );
+      
+     }
+  
+      //debug
+      Alert("[", __FILE__, ":",__LINE__,"] time_Label => ", time_Label);
+  
+    
+   // return
+   return NULL;
+
+}//get_TimeLabel_Current()
