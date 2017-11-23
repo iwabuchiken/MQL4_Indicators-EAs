@@ -17,6 +17,7 @@ utils.rb <directory path> <file name>
 pushd C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Research\
 ruby utils.rb
 
+pushd C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Research\
 ruby utils.rb ../../Include utils.mqh
 
 =end

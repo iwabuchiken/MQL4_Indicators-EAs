@@ -1,0 +1,32 @@
+Target file = utils.mqh
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include
+Entries = 22
+Created at = 2017/11/23 12:17:41
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/func-list_utils.mqh_20171123_121741.txt
+
+==========================================
+
+1	void _file_close(int _FILE_HANDLE)
+2	int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
+3	int _file_write__header(int _FILE_HANDLE)
+4	int _file_write__header_2(int _FILE_HANDLE,
+5	int _file_write__header_With_RSI(
+6	string _get_FNAME(
+7	string conv_DateTime_2_SerialTimeLabel(int time) {
+8	void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
+9	int conv_TimeString_2_Index
+10	int conv_TimeString_2_Index
+11	void get_ArrayOf_BarData_Basic
+12	void get_ArrayOf_BarData_Basic_2
+13	int get_AryOf_RSI(
+14	void get_BarData_Basic(int index, double &DATA[]) {
+15	string get_TimeLabel_Current(int type)
+16	string get_TimeLabel_Current(int type) {
+17	int get_index
+18	int set_Symbol(string symbol_str, int period)
+19	int set_Symbol(string symbol_str, int period) {
+20	int write2File_AryOf_BasicData
+21	int write2File_AryOf_BasicData_2
+22	int write2File_AryOf_BasicData_With_RSI(
+
+==========================================
