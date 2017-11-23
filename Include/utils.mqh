@@ -568,7 +568,7 @@ int write2File_AryOf_BasicData_With_RSI_BB(
    string _FNAME, string _SUBFOLDER, 
 
    //double &_AryOf_BasicData[][4], 
-   double &_AryOf_BasicData[][7], 
+   double &_AryOf_BasicData[][10], 
 
    int _lenOf_Array, int shift,
    
@@ -622,10 +622,12 @@ int write2File_AryOf_BasicData_With_RSI_BB(
           
           , _AryOf_BasicData[i][4]   // RSI
           
-          , _AryOf_BasicData[i][5]   // BB 1s
+          , _AryOf_BasicData[i][5]   // BB 2s
+          , _AryOf_BasicData[i][6]   // BB 1s
           
-          , _AryOf_BasicData[i][6]   // BB main
-          , _AryOf_BasicData[i][7]   // BB -1s
+          , _AryOf_BasicData[i][7]   // BB main
+          , _AryOf_BasicData[i][8]   // BB -1s
+          , _AryOf_BasicData[i][9]   // BB -2s
           
           , _AryOf_BasicData[i][3] - _AryOf_BasicData[i][0]   // Diff
           , _AryOf_BasicData[i][1] - _AryOf_BasicData[i][2]   // Range
@@ -854,7 +856,7 @@ int _file_write__header_With_RSI_BB(
                
                , "RSI"
                
-               , "BB.1s", "BB.main", "BB.-1s"
+               , "BB.2s", "BB.1s", "BB.main", "BB.-1s", "BB.-2s"
                
                , "Diff", "High/Low"
                
@@ -1067,7 +1069,7 @@ int get_AryOf_RSI_BB(
       int price, 
       int shift, 
       int length,
-      double &AryOf_Data[][8]) {
+      double &AryOf_Data[][10]) {
 
    //debug
    Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB()");
@@ -1083,6 +1085,8 @@ int get_AryOf_RSI_BB(
    double   ibands_Main;
    double   ibands_1S_Plus;
    double   ibands_1S_Minus;
+   double   ibands_2S_Plus;
+   double   ibands_2S_Minus;
    
    int   period_BB = 20;
    
@@ -1096,6 +1100,7 @@ int get_AryOf_RSI_BB(
    for(int i = 0; i < length; i++)
      {
      
+         //ref https://docs.mql4.com/indicators/irsi
          rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, i);
             
             /*
@@ -1108,12 +1113,19 @@ int get_AryOf_RSI_BB(
             int          mode,             // line index
             int          shift             // shift
             */
+         //ref https://docs.mql4.com/indicators/ibands
          ibands_Main = iBands(symbol_Str,time_Frame, period_BB, 0,0,PRICE_CLOSE,MODE_MAIN,i);
          
          ibands_1S_Plus = iBands(symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE,MODE_UPPER,i);
          
+         //ref mode lower https://docs.mql4.com/constants/indicatorconstants/lines
          ibands_1S_Minus = iBands(
                   symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         ibands_2S_Plus = iBands(symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         ibands_2S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE, MODE_LOWER,i);
          
          // input
          AryOf_Data[i][0] = Open[i];
@@ -1123,11 +1135,13 @@ int get_AryOf_RSI_BB(
 
          AryOf_Data[i][4] = rsi;
          
-         AryOf_Data[i][5] = ibands_1S_Plus;
+         AryOf_Data[i][5] = ibands_2S_Plus;
+         AryOf_Data[i][6] = ibands_1S_Plus;
          
-         AryOf_Data[i][6] = ibands_Main;
+         AryOf_Data[i][7] = ibands_Main;
          
-         AryOf_Data[i][7] = ibands_1S_Minus;
+         AryOf_Data[i][8] = ibands_1S_Minus;
+         AryOf_Data[i][9] = ibands_2S_Minus;
          
          // count
          count ++;
@@ -1527,7 +1541,7 @@ void get_BasicData_with_RSI_BB(
    int price_Target = PRICE_CLOSE;
    
    //double   AryOf_Data[][5];
-   double   AryOf_Data[][8];
+   double   AryOf_Data[][10];
    
    //int length = 5;
    int length = _NUMOF_DAYS;
