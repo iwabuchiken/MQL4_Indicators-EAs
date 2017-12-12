@@ -634,6 +634,106 @@ int write2File_AryOf_BasicData_With_RSI_BB(
           
           , TimeToStr(iTime(Symbol(), _TIME_FRAME, i))
           
+          //test
+          , TimeToStr(iTime(Symbol(), _TIME_FRAME, i) + (7 * 60 * 60))
+          
+          );
+     }
+
+   /*********************
+      file : close
+   *********************/
+   _file_close(_FILE_HANDLE);
+
+   /*********************
+      return
+   *********************/
+   return 1;
+
+}//write2File_AryOf_BasicData_With_RSI_BB
+
+/****************************
+   int write2File_AryOf_BasicData_With_RSI
+   
+   @return
+      -1 can't open file
+
+*****************************/
+int write2File_AryOf_BasicData_With_RSI_BB_MFI(
+   string _FNAME, string _SUBFOLDER, 
+
+   //double &_AryOf_BasicData[][4], 
+   double &_AryOf_BasicData[][11], 
+
+   int _lenOf_Array, int shift,
+   
+   string _SYMBOL_STR, string _CURRENT_PERIOD, 
+   
+   int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+   
+   string _TIME_LABEL, int _TIME_FRAME
+   
+) {
+
+   //+------------------------------------------------------------------+
+   //| file: open
+   //+------------------------------------------------------------------+
+   int _FILE_HANDLE = NULL;
+   
+   
+   _FILE_HANDLE =_file_open(_FILE_HANDLE, _FNAME, _SUBFOLDER);
+   //int result=_file_open(FILE_HANDLE, FNAME, SUBFOLDER);
+
+   if(_FILE_HANDLE == -1)
+     {
+
+      return -1;
+
+     }
+
+   /*********************
+      write : header
+   *********************/
+   _file_write__header_With_RSI_BB_MFI(_FILE_HANDLE, 
+         _SYMBOL_STR, _CURRENT_PERIOD, 
+         _NUMOF_DAYS, _NUMOF_TARGET_BARS, 
+         _TIME_LABEL, shift);
+
+   /*********************
+      write : data
+   *********************/
+   for(int i=0; i < _lenOf_Array; i++)
+     {
+         //AryOf_BasicData[i];
+         //AryOf_BasicData[i][0];
+         FileWrite(_FILE_HANDLE,
+
+          (i+1),
+
+          _AryOf_BasicData[i][0]     // Open
+          , _AryOf_BasicData[i][1]   // High
+          , _AryOf_BasicData[i][2]   // Low
+          , _AryOf_BasicData[i][3]   // Close
+          
+          , _AryOf_BasicData[i][4]   // RSI
+          
+          , _AryOf_BasicData[i][10]   // MFI
+          
+          , _AryOf_BasicData[i][5]   // BB 2s
+          , _AryOf_BasicData[i][6]   // BB 1s
+          
+          , _AryOf_BasicData[i][7]   // BB main
+          , _AryOf_BasicData[i][8]   // BB -1s
+          , _AryOf_BasicData[i][9]   // BB -2s
+          
+          , _AryOf_BasicData[i][3] - _AryOf_BasicData[i][0]   // Diff
+          , _AryOf_BasicData[i][1] - _AryOf_BasicData[i][2]   // Range
+          
+          , TimeToStr(iTime(Symbol(), _TIME_FRAME, i))
+          
+          //test
+          , TimeToStr(iTime(Symbol(), _TIME_FRAME, i) + (7 * 60 * 60))
+          
           );
      }
 
@@ -881,6 +981,66 @@ int _file_write__header_With_RSI_BB(
    return 1;
 
 }//int _file_write__header_With_RSI_BB
+
+int _file_write__header_With_RSI_BB_MFI(
+         int _FILE_HANDLE,
+         string _SYMBOL_STR, string _CURRENT_PERIOD, 
+         int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+         string _TIME_LABEL, int shift) 
+  {
+
+   // meta info
+   FileWrite(_FILE_HANDLE,
+      
+      "Pair=" + _SYMBOL_STR
+      
+      , "Period=" + _CURRENT_PERIOD
+      
+      , "Days=" + (string) _NUMOF_DAYS
+      
+      , "Shift=" + (string) shift
+
+      , "Bars=" + (string) _NUMOF_TARGET_BARS
+
+      , "Time=" + _TIME_LABEL
+
+   );
+   
+   // column names
+   uint result = FileWrite(_FILE_HANDLE,
+               
+               //"no.", "index", "kairi", "datetime", "symbol", "period"
+               "no", "Open", "High", "Low", "Close"
+               
+               , "RSI"
+               
+               , "MFI"
+               
+               , "BB.2s", "BB.1s", "BB.main", "BB.-1s", "BB.-2s"
+               
+               , "Diff", "High/Low"
+               
+               , "datetime"
+               
+             );    // header
+   /***************
+      validate
+   ***************/
+   if(result == 0)
+     {
+         Alert("[",__LINE__,"] header => NOT written");
+         
+         return 0;
+         
+     }
+
+   //debug
+   Alert("[",__LINE__,"] header => written");
+
+// return
+   return 1;
+
+}//int _file_write__header_With_RSI_BB_MFI
 
 /****************************
 int set_Symbol(string symbol_str, int period)
@@ -1179,6 +1339,141 @@ int get_AryOf_RSI_BB(
    return count;
 
 }//int get_AryOf_RSI_BB(string symbol_Str, int time_Frame, int period, int price, int shift, double &AryOf_Data[][5])
+
+/******************************************
+   @params
+      string       symbol,           // symbol
+      int          timeframe,        // timeframe
+      int          period,           // period
+      int          applied_price,    // applied price
+      int          shift             // shift
+   
+   @return
+      number of RSI values
+   
+******************************************/
+int get_AryOf_RSI_BB_MFI(
+      string symbol_Str, 
+      int time_Frame, 
+      int period_RSI, 
+      int price, 
+      int shift, 
+      int length,
+      double &AryOf_Data[][11]) {
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI()");
+
+   /****************
+      array ---> resize
+   ****************/
+   ArrayResize(AryOf_Data, length);
+
+   double  rsi;
+   double  mfi;
+   
+   //ref https://docs.mql4.com/indicators/ibands
+   double   ibands_Main;
+   double   ibands_1S_Plus;
+   double   ibands_1S_Minus;
+   double   ibands_2S_Plus;
+   double   ibands_2S_Minus;
+   
+   int   period_BB = 20;
+   
+   int count = 0;
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+
+   //for(int i = shift; i<(shift + length); i++)
+   //for(int i = shift; i<(shift + length) - 1; i++)
+   for(int i = 0; i < length; i++)
+     {
+     
+         //ref https://docs.mql4.com/indicators/irsi
+         rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, i);
+         
+         mfi = iMFI(symbol_Str, time_Frame, period_RSI, i);
+            
+            /*
+            string       symbol,           // symbol
+            int          timeframe,        // timeframe
+            int          period,           // averaging period
+            double       deviation,        // standard deviations
+            int          bands_shift,      // bands shift
+            int          applied_price,    // applied price
+            int          mode,             // line index
+            int          shift             // shift
+            */
+         //ref https://docs.mql4.com/indicators/ibands
+         ibands_Main = iBands(symbol_Str,time_Frame, period_BB, 0,0,PRICE_CLOSE,MODE_MAIN,i);
+         
+         ibands_1S_Plus = iBands(symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         //ref mode lower https://docs.mql4.com/constants/indicatorconstants/lines
+         ibands_1S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         ibands_2S_Plus = iBands(symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         ibands_2S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         // input
+         AryOf_Data[i][0] = Open[i];
+         AryOf_Data[i][1] = High[i];
+         AryOf_Data[i][2] = Low[i];
+         AryOf_Data[i][3] = Close[i];
+
+         AryOf_Data[i][4] = rsi;
+         
+         AryOf_Data[i][5] = ibands_2S_Plus;
+         AryOf_Data[i][6] = ibands_1S_Plus;
+         
+         AryOf_Data[i][7] = ibands_Main;
+         
+         AryOf_Data[i][8] = ibands_1S_Minus;
+         AryOf_Data[i][9] = ibands_2S_Minus;
+         
+         AryOf_Data[i][10] = mfi;
+         
+         // count
+         count ++;
+
+/*
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] rsi ---> ", 
+                     rsi
+                     , "(i = ", i
+                     , " / "
+                     , "index = ", (i + shift)
+                     , ")"
+                     
+                     );
+*/
+
+     }
+   //double  rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, shift);
+   
+      //debug
+      /*
+   Alert("[", __FILE__, ":",__LINE__,"] rsi => ", 
+                  rsi, 
+                  "(shift = ", shift
+                  , " / "
+                  , "period = ", period_RSI
+                  
+                  , ")"
+                  
+   );
+*/
+   /****************
+      return
+   ****************/
+   return count;
+
+}//get_AryOf_RSI_BB_MFI
 
 void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
 
@@ -1587,3 +1882,88 @@ void get_BasicData_with_RSI_BB(
    Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//void get_BasicData_with_RSI_BB
+
+void get_BasicData_with_RSI_BB_MFI(
+   string _symbol_Str, int _pastXBars,
+   string _SUBFOLDER, string _MAIN_LABEL,
+   string _CURRENT_PERIOD, int _NUMOF_DAYS,
+   int _NUMOF_TARGET_BARS, string _TIME_LABEL,
+   int _TIME_FRAME) {
+
+   // get data
+
+   int pastXBars = _pastXBars;
+   
+   string _FNAME = _get_FNAME(
+               _SUBFOLDER, _MAIN_LABEL, _symbol_Str, 
+               _CURRENT_PERIOD, _NUMOF_DAYS, 
+               _NUMOF_TARGET_BARS, _TIME_LABEL);
+
+    //debug
+    Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+    
+    /******************
+      iRSI
+    ******************/
+    //ref https://docs.mql4.com/indicators/irsi
+         /*
+         string       symbol,           // symbol
+         int          timeframe,        // timeframe
+         int          period,           // period
+         int          applied_price,    // applied price
+         int          shift             // shift
+         */
+   int shift = 1;
+   
+   int period_RSI = 20;
+   
+   int price_Target = PRICE_CLOSE;
+   
+   //double   AryOf_Data[][5];
+   double   AryOf_Data[][11];
+   
+   //int length = 5;
+   int length = _NUMOF_DAYS;
+   
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
+   
+
+   //get_AryOf_RSI(
+   get_AryOf_RSI_BB_MFI(
+            _symbol_Str, 
+            (int) _CURRENT_PERIOD, 
+            period_RSI, 
+            price_Target, 
+            shift, 
+            length,
+            AryOf_Data);
+
+
+    /******************
+      data ---> write to file
+    ******************/
+   write2File_AryOf_BasicData_With_RSI_BB_MFI(
+      _FNAME, _SUBFOLDER, AryOf_Data
+      
+      , length, shift
+            
+      , _symbol_Str
+      
+      , _CURRENT_PERIOD
+      
+      , _NUMOF_DAYS
+      
+      , _NUMOF_TARGET_BARS
+      
+      , _TIME_LABEL
+      
+      , _TIME_FRAME
+
+   );
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
+   
+}//get_BasicData_with_RSI_BB_MFI
+
