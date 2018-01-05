@@ -2154,34 +2154,28 @@ void get_BasicData_with_RSI_BB_MFI(
 }//get_BasicData_with_RSI_BB_MFI
 
 void get_BasicData_with_RSI_BB_MFI__Shifted(
-   string _symbol_Str         // 1
-   ,int _pastXBars
-   ,string _SUBFOLDER
-   ,string _MAIN_LABEL
-   ,string _CURRENT_PERIOD    // 5
-   , int _NUMOF_DAYS,
-   int _NUMOF_TARGET_BARS,
-   string _TIME_LABEL,
-   int _TIME_FRAME, 
-   int _SHIFT                 // 10
-   ) {
+   string _symbol_Str, int _pastXBars,
+   string _SUBFOLDER, string _MAIN_LABEL,
+   string _CURRENT_PERIOD, int _NUMOF_DAYS,
+   int _NUMOF_TARGET_BARS, string _TIME_LABEL,
+   int _TIME_FRAME) {
 
    // get data
 
    int pastXBars = _pastXBars;
    
-   string _FNAME = _get_FNAME__Shifted(
+   string _FNAME = _get_FNAME(
                _SUBFOLDER, _MAIN_LABEL, _symbol_Str, 
                _CURRENT_PERIOD, _NUMOF_DAYS, 
-               _NUMOF_TARGET_BARS, _TIME_LABEL, _SHIFT);
+               _NUMOF_TARGET_BARS, _TIME_LABEL);
 
     //debug
     Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
-
-   /***************************
-      get data
-   ***************************/
-       //ref https://docs.mql4.com/indicators/irsi
+    
+    /******************
+      iRSI
+    ******************/
+    //ref https://docs.mql4.com/indicators/irsi
          /*
          string       symbol,           // symbol
          int          timeframe,        // timeframe
@@ -2202,11 +2196,11 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
    int length = _NUMOF_DAYS;
    
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI_BB_MFI__Shifted");
+   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
    
 
    //get_AryOf_RSI(
-   get_AryOf_RSI_BB_MFI__Shifted(
+   get_AryOf_RSI_BB_MFI(
             _symbol_Str, 
             (int) _CURRENT_PERIOD, 
             period_RSI, 
@@ -2216,9 +2210,30 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
             AryOf_Data);
 
 
+    /******************
+      data ---> write to file
+    ******************/
+   write2File_AryOf_BasicData_With_RSI_BB_MFI(
+      _FNAME, _SUBFOLDER, AryOf_Data
+      
+      , length, shift
+            
+      , _symbol_Str
+      
+      , _CURRENT_PERIOD
+      
+      , _NUMOF_DAYS
+      
+      , _NUMOF_TARGET_BARS
+      
+      , _TIME_LABEL
+      
+      , _TIME_FRAME
+
+   );
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI_BB_MFI__Shifted() => done");
+   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//get_BasicData_with_RSI_BB_MFI__Shifted
 
