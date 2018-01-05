@@ -1084,7 +1084,8 @@ string _get_FNAME(
 
    string tmp = _SUBFOLDER
          
-         + "_" + "file-io"
+//         + "_" + "file-io"
+         + "_" + main_Label
 
          + "." + _SYMBOL_STR
 
@@ -1121,6 +1122,53 @@ string _get_FNAME(
 */
 }//string _get_FNAME
 
+string _get_FNAME__Shifted(
+               string _SUBFOLDER, string main_Label, 
+               string _SYMBOL_STR, string _CURRENT_PERIOD, 
+               int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
+               string _TIME_LABEL, int _SHIFT) {
+
+   string tmp = _SUBFOLDER
+         
+//         + "_" + "file-io"
+         + "_" + main_Label
+
+         + "." + _SYMBOL_STR
+
+         + "." + "Period-" + _CURRENT_PERIOD
+
+         + "." + "Days-" + (string) _NUMOF_DAYS
+         
+         +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
+         
+         +"." + "Shift-" + (string) _SHIFT
+         
+         +"." + _TIME_LABEL
+         
+         +".csv";
+         
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
+
+   return tmp;
+/*         
+   return _SUBFOLDER
+         
+         + "_" + "file-io"
+
+         + "." + _SYMBOL_STR
+
+         + "." + "Period-" + _CURRENT_PERIOD
+
+         + "." + "Days-" + (string) _NUMOF_DAYS
+         
+         +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
+         
+         +"." + _TIME_LABEL
+         
+         +".csv";
+*/
+}//_get_FNAME__Shifted
 
 /******************************************
    @params
@@ -1475,6 +1523,141 @@ int get_AryOf_RSI_BB_MFI(
 
 }//get_AryOf_RSI_BB_MFI
 
+/******************************************
+   @params
+      string       symbol,           // symbol
+      int          timeframe,        // timeframe
+      int          period,           // period
+      int          applied_price,    // applied price
+      int          shift             // shift
+   
+   @return
+      number of RSI values
+   
+******************************************/
+int get_AryOf_RSI_BB_MFI__Shifted(
+      string symbol_Str, 
+      int time_Frame, 
+      int period_RSI, 
+      int price, 
+      int shift, 
+      int length,
+      double &AryOf_Data[][11]) {
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI__Shifted() --> starting");
+
+   /****************
+      array ---> resize
+   ****************/
+   ArrayResize(AryOf_Data, length);
+
+   double  rsi;
+   double  mfi;
+   
+   //ref https://docs.mql4.com/indicators/ibands
+   double   ibands_Main;
+   double   ibands_1S_Plus;
+   double   ibands_1S_Minus;
+   double   ibands_2S_Plus;
+   double   ibands_2S_Minus;
+   
+   int   period_BB = 20;
+   
+   int count = 0;
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+
+   //for(int i = shift; i<(shift + length); i++)
+   //for(int i = shift; i<(shift + length) - 1; i++)
+   for(int i = 0; i < length; i++)
+     {
+     
+         //ref https://docs.mql4.com/indicators/irsi
+         rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, i);
+         
+         mfi = iMFI(symbol_Str, time_Frame, period_RSI, i);
+            
+            /*
+            string       symbol,           // symbol
+            int          timeframe,        // timeframe
+            int          period,           // averaging period
+            double       deviation,        // standard deviations
+            int          bands_shift,      // bands shift
+            int          applied_price,    // applied price
+            int          mode,             // line index
+            int          shift             // shift
+            */
+         //ref https://docs.mql4.com/indicators/ibands
+         ibands_Main = iBands(symbol_Str,time_Frame, period_BB, 0,0,PRICE_CLOSE,MODE_MAIN,i);
+         
+         ibands_1S_Plus = iBands(symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         //ref mode lower https://docs.mql4.com/constants/indicatorconstants/lines
+         ibands_1S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         ibands_2S_Plus = iBands(symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         ibands_2S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         // input
+         AryOf_Data[i][0] = Open[i];
+         AryOf_Data[i][1] = High[i];
+         AryOf_Data[i][2] = Low[i];
+         AryOf_Data[i][3] = Close[i];
+
+         AryOf_Data[i][4] = rsi;
+         
+         AryOf_Data[i][5] = ibands_2S_Plus;
+         AryOf_Data[i][6] = ibands_1S_Plus;
+         
+         AryOf_Data[i][7] = ibands_Main;
+         
+         AryOf_Data[i][8] = ibands_1S_Minus;
+         AryOf_Data[i][9] = ibands_2S_Minus;
+         
+         AryOf_Data[i][10] = mfi;
+         
+         // count
+         count ++;
+
+/*
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] rsi ---> ", 
+                     rsi
+                     , "(i = ", i
+                     , " / "
+                     , "index = ", (i + shift)
+                     , ")"
+                     
+                     );
+*/
+
+     }
+   //double  rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, shift);
+   
+      //debug
+      /*
+   Alert("[", __FILE__, ":",__LINE__,"] rsi => ", 
+                  rsi, 
+                  "(shift = ", shift
+                  , " / "
+                  , "period = ", period_RSI
+                  
+                  , ")"
+                  
+   );
+*/
+   /****************
+      return
+   ****************/
+   return count;
+
+}//get_AryOf_RSI_BB_MFI__Shifted
+
 void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
 
    //int _TIME_FRAME = TIME_FRAME;
@@ -1501,6 +1684,7 @@ int conv_TimeString_2_Index
 (string time_string, string symbol, int time_frame, int limit) {
 
    //int index;
+   int index = -1;
    
    /*********
       validate : time string format
@@ -1520,6 +1704,8 @@ int conv_TimeString_2_Index
 
             //debug
             Alert("[", __FILE__, ":",__LINE__,"] Hit => ", time_string);
+            
+            index = i;
                
            }
       
@@ -1530,7 +1716,7 @@ int conv_TimeString_2_Index
 
 
    // return
-   return -1;
+   return index;
 
 }//conv_TimeString_2_Index(string time_string, string symbol, int time_frame)
 
@@ -1966,4 +2152,73 @@ void get_BasicData_with_RSI_BB_MFI(
    Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//get_BasicData_with_RSI_BB_MFI
+
+void get_BasicData_with_RSI_BB_MFI__Shifted(
+   string _symbol_Str         // 1
+   ,int _pastXBars
+   ,string _SUBFOLDER
+   ,string _MAIN_LABEL
+   ,string _CURRENT_PERIOD    // 5
+   , int _NUMOF_DAYS,
+   int _NUMOF_TARGET_BARS,
+   string _TIME_LABEL,
+   int _TIME_FRAME, 
+   int _SHIFT                 // 10
+   ) {
+
+   // get data
+
+   int pastXBars = _pastXBars;
+   
+   string _FNAME = _get_FNAME__Shifted(
+               _SUBFOLDER, _MAIN_LABEL, _symbol_Str, 
+               _CURRENT_PERIOD, _NUMOF_DAYS, 
+               _NUMOF_TARGET_BARS, _TIME_LABEL, _SHIFT);
+
+    //debug
+    Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+
+   /***************************
+      get data
+   ***************************/
+       //ref https://docs.mql4.com/indicators/irsi
+         /*
+         string       symbol,           // symbol
+         int          timeframe,        // timeframe
+         int          period,           // period
+         int          applied_price,    // applied price
+         int          shift             // shift
+         */
+   int shift = 1;
+   
+   int period_RSI = 20;
+   
+   int price_Target = PRICE_CLOSE;
+   
+   //double   AryOf_Data[][5];
+   double   AryOf_Data[][11];
+   
+   //int length = 5;
+   int length = _NUMOF_DAYS;
+   
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI_BB_MFI__Shifted");
+   
+
+   //get_AryOf_RSI(
+   get_AryOf_RSI_BB_MFI__Shifted(
+            _symbol_Str, 
+            (int) _CURRENT_PERIOD, 
+            period_RSI, 
+            price_Target, 
+            shift, 
+            length,
+            AryOf_Data);
+
+
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI_BB_MFI__Shifted() => done");
+   
+}//get_BasicData_with_RSI_BB_MFI__Shifted
 
