@@ -1604,11 +1604,17 @@ int get_AryOf_RSI_BB_MFI__Shifted(
                   symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE, MODE_LOWER,i);
          
          // input
+         /*
          AryOf_Data[i][0] = Open[i];
          AryOf_Data[i][1] = High[i];
          AryOf_Data[i][2] = Low[i];
          AryOf_Data[i][3] = Close[i];
-
+         */
+         AryOf_Data[i][0] = Open[i + shift];
+         AryOf_Data[i][1] = High[i + shift];
+         AryOf_Data[i][2] = Low[i + shift];
+         AryOf_Data[i][3] = Close[i + shift];
+         
          AryOf_Data[i][4] = rsi;
          
          AryOf_Data[i][5] = ibands_2S_Plus;
@@ -2154,20 +2160,26 @@ void get_BasicData_with_RSI_BB_MFI(
 }//get_BasicData_with_RSI_BB_MFI
 
 void get_BasicData_with_RSI_BB_MFI__Shifted(
-   string _symbol_Str, int _pastXBars,
-   string _SUBFOLDER, string _MAIN_LABEL,
-   string _CURRENT_PERIOD, int _NUMOF_DAYS,
-   int _NUMOF_TARGET_BARS, string _TIME_LABEL,
-   int _TIME_FRAME) {
+   string _symbol_Str
+   , int _pastXBars,
+   string _SUBFOLDER
+   , string _MAIN_LABEL,
+   string _CURRENT_PERIOD
+   , int _NUMOF_DAYS,
+   int _NUMOF_TARGET_BARS
+   , string _TIME_LABEL,
+   int _TIME_FRAME
+   , int _SHIFT
+   ) {
 
    // get data
 
    int pastXBars = _pastXBars;
    
-   string _FNAME = _get_FNAME(
+   string _FNAME = _get_FNAME__Shifted(
                _SUBFOLDER, _MAIN_LABEL, _symbol_Str, 
                _CURRENT_PERIOD, _NUMOF_DAYS, 
-               _NUMOF_TARGET_BARS, _TIME_LABEL);
+               _NUMOF_TARGET_BARS, _TIME_LABEL, _SHIFT);
 
     //debug
     Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
@@ -2183,7 +2195,7 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
          int          applied_price,    // applied price
          int          shift             // shift
          */
-   int shift = 1;
+   int shift = _SHIFT;
    
    int period_RSI = 20;
    
@@ -2200,6 +2212,7 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
    
 
    //get_AryOf_RSI(
+   /*
    get_AryOf_RSI_BB_MFI(
             _symbol_Str, 
             (int) _CURRENT_PERIOD, 
@@ -2208,7 +2221,24 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
             shift, 
             length,
             AryOf_Data);
-
+   */
+   
+   get_AryOf_RSI_BB_MFI__Shifted(
+/*         string symbol_Str, 
+      int time_Frame, 
+      int period_RSI, 
+      int price, 
+      int shift, 
+      int length,
+      double &AryOf_Data[][11]
+      */
+            _symbol_Str, 
+            (int) _CURRENT_PERIOD, 
+            period_RSI, 
+            price_Target, 
+            shift, 
+            length,
+            AryOf_Data);
 
     /******************
       data ---> write to file
