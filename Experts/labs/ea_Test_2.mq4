@@ -18,7 +18,7 @@ input int    MovingShift   =6;
 int init() {
 
       //debug
-      Alert("[", __FILE__, ":",__LINE__,"] init...");
+      Alert("[", __FILE__, ":",__LINE__,"] init... ea_Test_2.mq4");
       
       //debug
       Alert("[", __FILE__, ":",__LINE__,"] Symbol() => '", Symbol(), "'");
@@ -35,7 +35,7 @@ int init() {
 //+------------------------------------------------------------------+
 //| __test_4_1_3__Higher_Than_Prev
 //+------------------------------------------------------------------+
-void __test_4_1_3__Higher_Than_Prev() {
+void __test_4_1_4__BUSL() {
 
    if(IsTradeAllowed() == false)
      {
@@ -49,25 +49,21 @@ void __test_4_1_3__Higher_Than_Prev() {
 
      }
    
+   //debug
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] OrderMagicNumber ==> ", OrderMagicNumber());
+   
+   
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] OrdersTotal ==> ", OrdersTotal());
+   
+   
+   
    // compare
    bool cmp = High[0] > High[1];
 
-/*   
-   // judge
-   if(cmp == true)
-     {
-         //debug
-         Alert("[", __FILE__, ":",__LINE__,"] OC is higher (curr = "
-               , High[0]
-               , " / "
-               , "prev = "
-               , High[1]
-               );
-         
-     }
-*/
    
-}//__test_4_1_3__Higher_Than_Prev()
+}//__test_4_1_4__BUSL()
 
 //+------------------------------------------------------------------+
 //| OnTick function                                                  |
@@ -75,19 +71,10 @@ void __test_4_1_3__Higher_Than_Prev() {
 void OnTick()
   {
       
-      __test_4_1_3__Higher_Than_Prev();
+      __test_4_1_4__BUSL();
    //debug
    //Alert("[", __FILE__, ":",__LINE__,"] High[0] => ", High[0]);
   
   }
 //+------------------------------------------------------------------+
 
-int start() {
-
-      //debug
-      Alert("[", __FILE__, ":",__LINE__,"] starting...");
-      
-      // return
-      return 0;
-
-}//int start()
