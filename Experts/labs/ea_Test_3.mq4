@@ -27,11 +27,12 @@ int start() {
 
 void test_OrderSend() {
 
+/*
    int ticket = OrderSend(Symbol(),OP_BUY,0.1,     Ask,  2,       Bid-15*Point,  Bid+15*Point);
 
    //debug
    Alert("[", __FILE__, ":",__LINE__,"] ticket => ", ticket);
-
+*/
 }//void test_OrderSend() {
 
 int init() {
