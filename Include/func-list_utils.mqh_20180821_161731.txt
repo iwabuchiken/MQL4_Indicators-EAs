@@ -1,0 +1,50 @@
+Target file = utils.mqh
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include
+Entries = 40
+Created at = 2018/08/21 16:17:31
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/func-list_utils.mqh_20180821_161731.txt
+
+==========================================
+
+1	string _CURRENT_PERIOD, int _NUMOF_DAYS,
+2	int _NUMOF_TARGET_BARS, string _TIME_LABEL,
+3	string _SUBFOLDER, string _MAIN_LABEL,
+4	int _TIME_FRAME) {
+5	void _file_close(int _FILE_HANDLE)
+6	int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
+7	int _file_write__header(int _FILE_HANDLE)
+8	int _file_write__header_2(int _FILE_HANDLE,
+9	int _file_write__header_With_RSI(
+10	int _file_write__header_With_RSI_BB(
+11	int _file_write__header_With_RSI_BB_MFI(
+12	string _get_FNAME(
+13	string _get_FNAME__Shifted(
+14	string _symbol_Str, int _pastXBars,
+15	string conv_DateTime_2_SerialTimeLabel(int time) {
+16	void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
+17	int conv_TimeString_2_Index
+18	int conv_TimeString_2_Index
+19	void get_ArrayOf_BarData_Basic
+20	void get_ArrayOf_BarData_Basic_2
+21	int get_AryOf_RSI(
+22	int get_AryOf_RSI_BB(
+23	int get_AryOf_RSI_BB_MFI(
+24	int get_AryOf_RSI_BB_MFI__Shifted(
+25	void get_BarData_Basic(int index, double &DATA[]) {
+26	void get_BasicData_with_RSI(
+27	void get_BasicData_with_RSI_BB(
+28	void get_BasicData_with_RSI_BB_MFI(
+29	void get_BasicData_with_RSI_BB_MFI__Shifted(
+30	string get_TimeLabel_Current(int type)
+31	string get_TimeLabel_Current(int type) {
+32	int get_index
+33	int set_Symbol(string symbol_str, int period)
+34	int set_Symbol(string symbol_str, int period) {
+35	int write2File_AryOf_BasicData
+36	int write2File_AryOf_BasicData_2
+37	int write2File_AryOf_BasicData_With_RSI(
+38	int write2File_AryOf_BasicData_With_RSI_BB(
+39	int write2File_AryOf_BasicData_With_RSI_BB_MFI(
+40	int write2File_AryOf_BasicData_With_RSI_BB_MFI__Shifted(
+
+==========================================

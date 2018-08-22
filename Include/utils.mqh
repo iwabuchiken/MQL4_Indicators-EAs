@@ -889,6 +889,47 @@ int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
 
   }//_file_open()
 
+/****************************
+   _file_open_2()
+   
+   <usage>
+   @_SUBFOLDER ==> the folder under C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files
+   
+   @return
+      1  file opened
+      -1 can't open file
+
+*****************************/
+int _file_open_2(
+   int _FILE_HANDLE
+   , string _FNAME, string _SUBFOLDER
+   , int _file_Mode, int _file_Type) 
+  {
+
+   _FILE_HANDLE = FileOpen(
+            _SUBFOLDER + "\\"+ _FNAME, _file_Mode|_file_Type);
+            //_SUBFOLDER + "\\"+ _FNAME, FILE_WRITE|FILE_CSV);
+
+   if(_FILE_HANDLE == INVALID_HANDLE) 
+     {
+
+      Alert("[", __FILE__, ":", __LINE__, "] can't open file: ",_FNAME,"");
+
+      // return
+      return -1;
+
+     }//if(FILE_HANDLE == INVALID_HANDLE)
+
+   //+------------------------------------------------------------------+
+   //| File: seek
+   //+------------------------------------------------------------------+
+   //ref https://www.mql5.com/en/forum/3239
+   FileSeek(_FILE_HANDLE,0,SEEK_END);
+
+   return _FILE_HANDLE;
+
+  }//_file_open_2()
+
 void _file_close(int _FILE_HANDLE) 
   {
 
@@ -2419,3 +2460,87 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
    
 }//get_BasicData_with_RSI_BB_MFI__Shifted
 
+//+------------------------------------------------------------------+
+//| int write_Log                                                       |
+//    @return :
+//       1  => log written
+//       -1  => file open --> failed
+//+------------------------------------------------------------------+
+int write_Log(
+   string _dpath_Log
+   , string _fname_Log
+   , string fpath_Source
+   , int line_Num
+   , string body) {
+
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] file => opening... ", _fname_Log);
+
+
+   //+----------------------------+
+   //| file : open                           |
+   //+----------------------------+
+   int _FILE_HANDLE = NULL;
+   
+
+/*          int _FILE_HANDLE
+   , string _FNAME, string _SUBFOLDER
+   , int _file_Mode, int _file_Type) */
+   
+   //int _file_Mode = FILE_WRITE;
+   //ref append https://www.mql5.com/en/forum/128204
+   int _file_Mode = FILE_WRITE|FILE_READ;
+   int _file_Type = FILE_TXT;
+   
+   _FILE_HANDLE =_file_open_2(_FILE_HANDLE, _fname_Log, _dpath_Log, _file_Mode, _file_Type);
+   //_FILE_HANDLE =_file_open(_FILE_HANDLE, _fname_Log, _dpath_Log);
+
+   // validate
+   if(_FILE_HANDLE == -1)
+     {
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] file => can't open (handle = "
+         , _FILE_HANDLE, " / dir path = ", _dpath_Log, " / file name = ", _fname_Log
+         , ")");
+         
+         return -1;
+         
+     }
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] file => opened (handle = "
+   
+      , _FILE_HANDLE
+      , " / "
+      , "file name => "
+      , _fname_Log
+      , ")"
+   
+   );
+   
+   //+----------------------------+
+   //| write : body                           |
+   //+----------------------------+
+   FileWrite(_FILE_HANDLE
+   
+         , "["
+         , TimeToStr(TimeCurrent(),TIME_SECONDS)
+         , " / "
+         , fpath_Source, ":"
+         , line_Num, "]"
+         , body
+         
+         );
+
+   //+----------------------------+
+   //| file : close                           |
+   //+----------------------------+
+   _file_close(_FILE_HANDLE);
+
+   //+----------------------------+
+   //| return                           |
+   //+----------------------------+
+   return 1;
+
+}//int write_Log(string dpath_Log, string fname_Log, string fpath_Source, int line_Num, string body)
