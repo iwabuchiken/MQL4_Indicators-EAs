@@ -47,7 +47,7 @@ int start()
 		 
                 
                                     
-bool sell_condition_1 = Close[0]  > iBs(NULL, 0, , 1, , PRICE_CLOSE, MODE_UPPER, )  ;
+      bool sell_condition_1 = Close[0]  > iBs(NULL, 0, , 1, , PRICE_CLOSE, MODE_UPPER, )  ;
 
   
                                     

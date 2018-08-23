@@ -49,7 +49,7 @@ int init() {
 
    // order
    //ref https://book.mql4.com/trading/ordersend
-   //test_OrderSend();
+   test_OrderSend();
 
       // return
       return 0;

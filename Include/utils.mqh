@@ -2525,7 +2525,8 @@ int write_Log(
    FileWrite(_FILE_HANDLE
    
          , "["
-         , TimeToStr(TimeCurrent(),TIME_SECONDS)
+         //, TimeToStr(TimeCurrent(),TIME_SECONDS)
+         , TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS)
          , " / "
          , fpath_Source, ":"
          , line_Num, "]"

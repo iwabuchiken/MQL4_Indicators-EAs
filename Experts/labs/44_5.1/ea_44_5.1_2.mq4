@@ -104,7 +104,7 @@ bool AlertFlag       = false;            //(true:false:)
 //+------------------------------------------------------------------+
 //| prototypes                                                     |
 //+------------------------------------------------------------------+
-void _inspections(void);
+//void _inspections(void);
 */
 //+------------------------------------------------------------------+
 //|                                                          |
@@ -132,6 +132,10 @@ int init()
    //debug
    Alert("[", __FILE__, ":",__LINE__,"] RealPoint => ", RealPoint);
   
+   //+----------------------------+
+   //| trading                           |
+   //+----------------------------+
+  do_Trading();
    
    return(0);
 }
@@ -241,7 +245,8 @@ void _inspections__ShowSpread_Multiple_Currencies() {
    
    // log
    // log text
-   string txt = "_inspections__ShowSpread_Multiple_Currencies ============";
+   string txt = "\n_inspections__ShowSpread_Multiple_Currencies ============";
+   //string txt = "_inspections__ShowSpread_Multiple_Currencies ============";
    
    // debug
    write_Log(
@@ -353,7 +358,6 @@ void _inspections() {
    );
 */
 
-
    //+------------------------------------------------------------------+
    //| The predefined Variables                                                         |
    //    https://docs.mql4.com/predefined
@@ -371,6 +375,8 @@ void _inspections() {
    
    
    );
+
+
    
    //+------------------------------------------------------------------+
    //| functions                                                         |
@@ -387,6 +393,19 @@ void _inspections() {
    
    );
    
+   //+-----------------------------+
+   //| func : OrderCloseTime()                |
+   //+-----------------------------+
+   datetime tmp = OrderCloseTime();
+   string res = TimeToStr(tmp,TIME_DATE|TIME_SECONDS);
+   
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] OrderCloseTime() => ", res
+   
+      , " ("
+      , tmp
+      , ")"
+   );
    
    
    
@@ -409,6 +428,112 @@ double RealPipPoint()
 		
 	}
 
+void do_Trading() {
 
+   //+------------------+
+   //| validate : allowed
+   //+------------------+
+   bool resOf_IsTradeAllowed = IsTradeAllowed();
+   
+   if(resOf_IsTradeAllowed == False)
+     {
+
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] auto trade => ", resOf_IsTradeAllowed);
+     
+         return;
+     }
+
+   int type_Op = OP_SELL;
+   double numOf_Lots = 0.1;
+   double priceOf_Op = Ask;
+   int valOf_Slippage = 2;
+   double valOf_Stoploss = Bid + RealPoint * 2;
+   double valOf_Takeprofit = Bid - RealPoint * 5;
+   
+   string comment = "sell if over BB.+1S";
+   int numOf_Magic = MagicNumber;
+   datetime dateOf_Expiration = 0;
+   color colorOf_Order = clrForestGreen;   
+   
+/*
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] valOf_Stoploss = ", valOf_Stoploss
+   
+      , " / "
+      , "valOf_Takeprofit = ", valOf_Takeprofit
+
+      , " / "
+      , "priceOf_Op = ", priceOf_Op
+   
+   );
+*/
+/*
+   int ticket = OrderSend(
+                     Symbol()
+                     , type_Op
+                     , numOf_Lots
+                     , priceOf_Op
+                     
+                     , valOf_Slippage
+                     , valOf_Stoploss
+                     , valOf_Takeprofit
+                     
+                     , comment
+                     , numOf_Magic
+                     , dateOf_Expiration
+                     , colorOf_Order
+                     
+                     );
+*/
+
+   //ref ea_Test_3.mq4
+   int ticket = OrderSend(
+            Symbol()
+            ,OP_BUY
+            ,0.1
+            ,     Ask
+            
+            ,  2
+            ,       Bid-15*Point
+            ,  Bid+15*Point);
+
+//                     Symbol()
+//                     , OP_BUY,0.1,     Ask,  2,       Bid-15*Point,  Bid+15*Point);
+
+   
+   //ticket
+   Alert("[", __FILE__, ":",__LINE__,"] ticket = ", ticket);
+
+   //ticket
+   Alert("[", __FILE__, ":",__LINE__,"] GetLastError() = ", GetLastError());
+
+//int errorno = GetLastError();
+
+   //ref ea_Test_3.mq4
+   //int ticket = OrderSend(Symbol(),OP_BUY,0.1,     Ask,  2,       Bid-15*Point,  Bid+15*Point);
+
+   //ref abc.mq4
+   //OrderSend(Symbol(),type,lots,Ask,slippage,stop_loss,take_profit,comment,magic_num,0,arrow_color);
+
+   //ref 
+   //ticket=OrderSend(Symbol(),OP_BUY,Lots,Ask,3,0,Ask+TakeProfit*Point,"macd sample",16384,0,Green);
+/*
+int  OrderSend(
+   string   symbol,              // symbol
+   int      cmd,                 // operation
+   double   volume,              // volume
+   double   price,               // price
+   int      slippage,            // slippage
+   double   stoploss,            // stop loss
+   double   takeprofit,          // take profit
+   string   comment=NULL,        // comment
+   int      magic=0,             // magic number
+   datetime expiration=0,        // pending order expiration
+   color    arrow_color=clrNONE  // color
+   );
+*/
+
+}//do_Trading()
 
 //+------------------------------------------------------------------+
