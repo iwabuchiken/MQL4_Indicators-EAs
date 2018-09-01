@@ -1565,3 +1565,875 @@ _setup__BasicParams_2 ============
 [2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
 _setup__BasicParams_2 ============
 [2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:56:31 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:135]
+****************** init() **************************
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 0 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 0
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:625]i = 1 / j = 1
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:252]
+_setup__BasicParams_2 ============
+[2018.09.01 15:57:05 / rawdata_44_3.3.mq4:269]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:03:46 / rawdata_44_3.3.mq4:138]
+****************** init() **************************
+[2018.09.01 16:05:49 / rawdata_44_3.3.mq4:138]
+****************** init() **************************
+[2018.09.01 16:09:58 / rawdata_44_3.3.mq4:138]
+****************** init() **************************
+[2018.09.01 16:10:14 / rawdata_44_3.3.mq4:138]
+****************** init() **************************
+[2018.09.01 16:14:26 / rawdata_44_3.3.mq4:140]
+****************** init() **************************
+[2018.09.01 16:14:26 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:14:26 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:14:26 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:14:26 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:16:30 / rawdata_44_3.3.mq4:140]
+****************** init() **************************
+[2018.09.01 16:16:30 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:16:30 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:16:30 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:16:30 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:17:40 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:17:40 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:17:40 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:17:40 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:17:40 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:21:55 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 200
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 100
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:22:51 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:52 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:24:53 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:26 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:140]
+****************** init() ************************************************
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:633]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:257]
+_setup__BasicParams_2 ============
+[2018.09.01 16:25:27 / rawdata_44_3.3.mq4:274]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:10 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:11 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:12 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:146]
+****************** init() ************************************************
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 0 / symbol = USDJPY / _timeframe = 5 / _numofdays = 2000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => USDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 1 / symbol = USDJPY / _timeframe = 60 / _numofdays = 2000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => USDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 2 / symbol = EURJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 3 / symbol = EURJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 4 / symbol = EURUSD / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => EURUSD
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 5 / symbol = EURUSD / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => EURUSD
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 6 / symbol = AUDJPY / _timeframe = 5 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 5 / symbol => AUDJPY
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:639]i = 7 / symbol = AUDJPY / _timeframe = 60 / _numofdays = 1000
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:263]
+_setup__BasicParams_2 ============
+[2018.09.01 16:28:13 / rawdata_44_3.3.mq4:280]time frame => 60 / symbol => AUDJPY
