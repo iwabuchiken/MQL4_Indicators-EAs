@@ -117,3 +117,1451 @@ _inspections__ShowSpread_Multiple_Currencies ============
 [2018.08.23 11:19:49 / ea_44_5.1_2.mq4:299]EURJPY => 8.0
 [2018.08.23 11:19:49 / ea_44_5.1_2.mq4:299]AUDJPY => 6.0
 [2018.08.23 11:19:49 / ea_44_5.1_2.mq4:299]EURUSD => 5.0
+[2018.09.01 06:23:19 / ea_44_5.1_2.mq4:256]
+_inspections__ShowSpread_Multiple_Currencies ============
+[2018.09.01 06:23:19 / ea_44_5.1_2.mq4:299]USDJPY => 16.0
+[2018.09.01 06:23:19 / ea_44_5.1_2.mq4:299]EURJPY => 25.0
+[2018.09.01 06:23:19 / ea_44_5.1_2.mq4:299]AUDJPY => 23.0
+[2018.09.01 06:23:19 / ea_44_5.1_2.mq4:299]EURUSD => 15.0
+[2018.09.01 06:24:05 / ea_44_5.1_2.mq4:256]
+_inspections__ShowSpread_Multiple_Currencies ============
+[2018.09.01 06:24:05 / ea_44_5.1_2.mq4:299]USDJPY => 16.0
+[2018.09.01 06:24:05 / ea_44_5.1_2.mq4:299]EURJPY => 25.0
+[2018.09.01 06:24:05 / ea_44_5.1_2.mq4:299]AUDJPY => 23.0
+[2018.09.01 06:24:05 / ea_44_5.1_2.mq4:299]EURUSD => 15.0
+[2018.09.01 07:12:12 / ea_44_5.1_2.mq4:256]
+_inspections__ShowSpread_Multiple_Currencies ============
+[2018.09.01 07:12:12 / ea_44_5.1_2.mq4:299]USDJPY => 16.0
+[2018.09.01 07:12:12 / ea_44_5.1_2.mq4:299]EURJPY => 25.0
+[2018.09.01 07:12:12 / ea_44_5.1_2.mq4:299]AUDJPY => 23.0
+[2018.09.01 07:12:12 / ea_44_5.1_2.mq4:299]EURUSD => 15.0
+[2018.09.01 07:52:43 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:52:43 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:53:00 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:53:58 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:54:32 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:55:12 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:55:37 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:56:20 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:56:41 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:57:47 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:58:03 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:59:16 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:59:16 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:59:30 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 07:59:30 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:00:06 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:00:06 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:02:05 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:02:05 / obs_49_8.mq4:308]time frame => 15
+[2018.09.01 08:02:05 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:02:05 / obs_49_8.mq4:308]time frame => 15
+[2018.09.01 08:02:48 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:02:48 / obs_49_8.mq4:308]time frame => 30
+[2018.09.01 08:02:48 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:02:48 / obs_49_8.mq4:308]time frame => 30
+[2018.09.01 08:04:40 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:04:40 / obs_49_8.mq4:308]time frame => 15
+[2018.09.01 08:04:40 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:04:40 / obs_49_8.mq4:308]time frame => 15
+[2018.09.01 08:05:41 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:05:41 / obs_49_8.mq4:308]time frame => 15
+[2018.09.01 08:05:55 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:05:55 / obs_49_8.mq4:308]time frame => 30
+[2018.09.01 08:05:55 / obs_49_8.mq4:379]breaking switch loop (CURRENT_PERIOD = M30)
+[2018.09.01 08:06:11 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:06:11 / obs_49_8.mq4:308]time frame => 30
+[2018.09.01 08:06:11 / obs_49_8.mq4:379]breaking switch loop (CURRENT_PERIOD = M30)
+[2018.09.01 08:06:44 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:06:44 / obs_49_8.mq4:308]time frame => 30
+[2018.09.01 08:06:44 / obs_49_8.mq4:379]breaking switch loop (CURRENT_PERIOD = M30)
+[2018.09.01 08:09:29 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.01 08:09:29 / obs_49_8.mq4:308]time frame => 30
+[2018.09.01 08:09:29 / obs_49_8.mq4:379]breaking switch loop (CURRENT_PERIOD = M30)
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:524]time frame => 5
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:524]time frame => 5
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:524]time frame => 5
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:22:49 / rawdata_44_3.3.mq4:524]time frame => 5
+[2018.09.01 15:23:52 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:23:52 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:23:52 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:23:52 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:512]
+_setup__BasicParams_2 ============
+[2018.09.01 15:25:56 / rawdata_44_3.3.mq4:529]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:514]
+_setup__BasicParams_2 ============
+[2018.09.01 15:31:55 / rawdata_44_3.3.mq4:531]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => EURUSD
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => AUDJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 5 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 15 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 30 / symbol => GBPJPY
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:518]
+_setup__BasicParams_2 ============
+[2018.09.01 15:33:46 / rawdata_44_3.3.mq4:535]time frame => 60 / symbol => GBPJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:517]
+_setup__BasicParams_2 ============
+[2018.09.01 15:34:39 / rawdata_44_3.3.mq4:534]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:36:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 0 / j = 0
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 0 / j = 0
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 0 / j = 1
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 1 / j = 0
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 1 / j = 1
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 0 / j = 1
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 0 / j = 0
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 0 / j = 1
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 1 / j = 0
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 1 / j = 1
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 1 / j = 0
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:585]i = 1 / j = 1
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:03 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 0 / j = 0
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 0 / j = 0
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 0 / j = 1
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 1 / j = 0
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 1 / j = 1
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 0 / j = 1
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:120]
+****************** init() **************************
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 0 / j = 0
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 0 / j = 1
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 1 / j = 0
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 1 / j = 1
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 1 / j = 0
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:585]i = 1 / j = 1
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:317]
+_setup__BasicParams_2 ============
+[2018.09.01 15:39:51 / rawdata_44_3.3.mq4:334]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:123]
+****************** init() **************************
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:123]
+****************** init() **************************
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:123]
+****************** init() **************************
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:123]
+****************** init() **************************
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:123]
+****************** init() **************************
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 0 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 0
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:510]i = 1 / j = 1
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:239]
+_setup__BasicParams_2 ============
+[2018.09.01 15:43:21 / rawdata_44_3.3.mq4:256]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:125]
+****************** init() **************************
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:512]i = 0 / j = 0
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:125]
+****************** init() **************************
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:512]i = 0 / j = 0
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:37 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:125]
+****************** init() **************************
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:125]
+****************** init() **************************
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:125]
+****************** init() **************************
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 0 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => USDJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 0
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 5 / symbol => EURJPY
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:512]i = 1 / j = 1
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:241]
+_setup__BasicParams_2 ============
+[2018.09.01 15:46:38 / rawdata_44_3.3.mq4:258]time frame => 60 / symbol => EURJPY
