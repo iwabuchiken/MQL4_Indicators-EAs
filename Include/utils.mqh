@@ -29,6 +29,8 @@
 
 //extern int NUMOF_TARGET_BARS;
 
+//extern string dpath_Log;
+
 string conv_DateTime_2_SerialTimeLabel(int time) {
 
       //string datetime_label = TimeToStr(time);
@@ -2325,6 +2327,34 @@ void get_BasicData_with_RSI_BB_MFI(
       , _TIME_FRAME
 
    );
+
+    /******************
+      Array --> free
+    ******************/
+    //ref
+    ArrayFree(AryOf_Data);
+    
+   // debug
+   string txt = "AryOf_Data --> freed ("
+            + "symbol = " + _symbol_Str
+            + " / "
+            + "period = " + _CURRENT_PERIOD
+            + ")"
+            ;
+   
+   //string dpath_Log = "Logs";
+   //C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Logs
+   //string fname_Log = "dev.log";
+
+   // debug
+   write_Log(
+         dpath_Log
+         , fname_Log
+         , __FILE__
+         , __LINE__
+         , txt);
+         //, name);
+
 
    //debug
    Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
