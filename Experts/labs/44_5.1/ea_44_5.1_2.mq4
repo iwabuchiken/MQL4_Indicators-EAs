@@ -503,7 +503,7 @@ void do_Trading() {
 
    
    //ticket
-   Alert("[", __FILE__, ":",__LINE__,"] ticket = ", ticket);
+   Alert("[", __FILE__, ":",__LINE__,"] ticket = ", (string)ticket);
 
    //ticket
    Alert("[", __FILE__, ":",__LINE__,"] GetLastError() = ", GetLastError());

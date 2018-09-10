@@ -1,0 +1,26 @@
+Target file = ea_44_5.1_2.mq4
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_5.1
+Entries = 16
+Created at = 2018/09/10 10:59:48
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_5.1/func-list_ea_44_5.1_2.mq4_20180910_105948.txt
+
+==========================================
+
+1	int OrderSend(
+2	string Currency = "EURJPY";
+3	int OrderCount       = 0;                //
+4	string PGName = "abc";     //
+5	int PLDigits         = 2;                //
+6	int RETRY_INTERVAL   = 15000;            //
+7	int RETRY_TIMEOUT    = 60;               //()
+8	int ShortTicket;
+9	void _inspections() {
+10	void _inspections__ShowSpread_Multiple_Currencies() {
+11	int deinit()
+12	void do_Trading() {
+13	string dpath_Log = "Logs";
+14	string fname_Log = "dev.log";
+15	int init()
+16	int start()
+
+==========================================
