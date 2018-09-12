@@ -82,6 +82,9 @@ int ShortTicket;
 string dpath_Log = "Logs";
 //C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Logs
 string fname_Log = "dev.log";
+
+string fname_Log_For_Session = "dev." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+
 //vars from : fxeabuilder.mq4 End--------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -101,7 +104,10 @@ bool MailFlag        = false;            //(true:false:)
 bool AlertFlag       = false;            //(true:false:)
 
 int cntOf_Ticks = 0;  // count the num of ticks -- start()
+//static int cntOf_Ticks = 0;  // count the num of ticks -- start()
 int cntOf_Ticks_In_The_Bar = 0;
+
+string txt_Msg = "";
 
 /*
 //+------------------------------------------------------------------+
@@ -236,8 +242,21 @@ int start()
    //+----------------------------------------+
    cntOf_Ticks += 1;
    cntOf_Ticks_In_The_Bar += 1;
+
+   //string txt =  "cntOf_Ticks", cntOf_Ticks
+   string txt =  "cntOf_Ticks" + (string) cntOf_Ticks
+         + " / "
+         + "cntOf_Ticks_In_The_Bar = " + (string) cntOf_Ticks_In_The_Bar
+   
+         + " ("
+         + TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS)
+         + ")"
+            ;
    
    //debug
+   Alert("[", __FILE__, ":",__LINE__, "] ", txt);
+   
+   /*
    Alert("[", __FILE__, ":",__LINE__, "] cntOf_Ticks = ", cntOf_Ticks
    
          , " / "
@@ -245,7 +264,32 @@ int start()
    
          , " (", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")"
    );
-      
+   */
+/*  
+   // debug
+   //string txt =  "cntOf_Ticks", cntOf_Ticks
+   //string txt =  "cntOf_Ticks", GlobalVariableGet(cntOf_Ticks) //=> 'GlobalVariableGet' - class type expected	ea_44_5.1_6.mq4	254	33
+   string txt =  "cntOf_Ticks", (string) cntOf_Ticks
+         , " / "
+         , "cntOf_Ticks_In_The_Bar = ", cntOf_Ticks_In_The_Bar
+   
+         , " (", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")"
+            ;
+  */ 
+   //string dpath_Log = "Logs";
+   //C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Logs
+   //string fname_Log = "dev.log";
+
+   // debug
+   write_Log(
+         dpath_Log
+         //, fname_Log
+         , fname_Log_For_Session
+         , __FILE__
+         , __LINE__
+         , txt);
+         //, name);
+
    //+----------------------------------------+
    //| new bar                                       |
    //+----------------------------------------+
