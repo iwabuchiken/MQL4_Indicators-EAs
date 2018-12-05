@@ -109,6 +109,7 @@ int cntOf_Ticks_In_The_Bar = 0;
 
 string txt_Msg = "";
 
+
 /*
 //+------------------------------------------------------------------+
 //| prototypes                                                     |
@@ -120,33 +121,61 @@ string txt_Msg = "";
 //+------------------------------------------------------------------+
 //| _is_Above_BB_1S()                                                         |
 //+------------------------------------------------------------------+
-bool _is_Above_BB_1S() {
+//
+//bool _is_Above_BB_1S() {
+//
+//   int index = 0;
+//
+//   int deviation = 1;
+//
+//   float close_Latest = (float) Close[index];
+//   
+//   int   period_BB = 20;
+//   
+//   //ref https://docs.mql4.com/indicators/ibands
+//   //float BB_1S = (float) iBands(Symbol(),Period(), period_BB, 0,0,PRICE_CLOSE,MODE_MAIN, index);
+//   float BB_1S = (float) iBands(
+//               Symbol()
+//               , Period()
+//               , period_BB
+//               , deviation   // deviation //ref https://docs.mql4.com/constants/indicatorconstants/lines
+//               , 0
+//               , PRICE_CLOSE
+//               , MODE_UPPER   // mode
+//               , index);
+//            /*   
+//               string       symbol,           // symbol
+//               int          timeframe,        // timeframe
+//               int          period,           // averaging period
+//               double       deviation,        // standard deviations
+//               int          bands_shift,      // bands shift
+//               int          applied_price,    // applied price
+//               int          mode,             // line index
+//               int          shift             // shift
+//            */
+//   // judge
+//   bool judge = (close_Latest > BB_1S);
+//   
+//   //debug
+//   //Alert("[", __FILE__, ":",__LINE__,"] "
+//   //char _char[50];
+//   //sprintf(_char, "latest close : %.03f", close_Latest);
+//         //'sprintf' - function not defined	ea-1_up-up-buy.mq4	160	4
+//
+//   Print("[", __FILE__, ":",__LINE__,"] "
+//         
+//         , "latest close => ", (string) close_Latest
+//         , " / "
+//         , "BB_1S => ", (string) BB_1S
+//         
+//         
+//         );
+//
+//   // return
+//   return judge;
+//
+//}//_is_Above_BB_1S()
 
-   int index = 0;
-
-   float close_Latest = (float) Close[index];
-   
-   int   period_BB = 20;
-   
-   float BB_1S = (float) iBands(Symbol(),Period(), period_BB, 0,0,PRICE_CLOSE,MODE_MAIN, index);
-   
-   // judge
-   bool judge = (close_Latest > BB_1S);
-   
-   //debug
-   Alert("[", __FILE__, ":",__LINE__,"] "
-         
-         , "latest close => ", (string) close_Latest
-         , " / "
-         , "BB_1S => ", (string) BB_1S
-         
-         
-         );
-   
-   // return
-   return judge;
-
-}//_is_Above_BB_1S()
 
 void setup() {
 
@@ -158,7 +187,8 @@ void setup() {
    set_Symbol(symbol_set, period);
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] symbol, period => ", Symbol(), " / ", Period());
+   //ref print https://docs.mql4.com/common/printformat
+   Print("[", __FILE__, ":",__LINE__,"] symbol, period => ", Symbol(), " / ", Period());
 
 }//setup()
 
@@ -169,7 +199,7 @@ int init()
 {
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] init... ", PGName);
+   Print("[", __FILE__, ":",__LINE__,"] init... ", PGName);
 
 
    setup();
@@ -219,40 +249,23 @@ int start()
             ;
    
    //debug
-   Alert("[", __FILE__, ":",__LINE__, "] ", txt);
+   //Alert("[", __FILE__, ":",__LINE__, "] ", txt);
+   Print("[", __FILE__, ":",__LINE__, "] ", txt);
 
-/*   
-   // debug
-   write_Log(
-         dpath_Log
-         //, fname_Log
-         , fname_Log_For_Session
-         , __FILE__
-         , __LINE__
-         , txt);
-         //, name);
-*/
    //+----------------------------------------+
    //| new bar                                       |
    //+----------------------------------------+
    // detect a new bar
    bool isNewBar = _is_NewBar();
-   
-   //debug
-   //Alert("[", __FILE__, ":",__LINE__,"] isNewBar => ", isNewBar);
-   //Alert("[", __FILE__, ":",__LINE__, "(", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")", "] isNewBar => ", isNewBar);
-   //Alert("[", __FILE__, ":",__LINE__, "] isNewBar => ", isNewBar
-   
-         //, " (", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")"
-   //);
-   //TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS)
-   
+     
    // reset : cntOf_Ticks_In_The_Bar
    if(isNewBar == true)
      {
 
          // debug
-         txt = "cntOf_Ticks = " + (string)cntOf_Ticks
+         //txt = "cntOf_Ticks = " + (string)cntOf_Ticks
+         txt = "\n" 
+                     + "cntOf_Ticks = " + (string)cntOf_Ticks
                      + " / "
                      + "cntOf_Ticks_In_The_Bar = " + (string) cntOf_Ticks_In_The_Bar
                      + "\n"
@@ -266,23 +279,65 @@ int start()
                , txt);
                //, name);
 
+         //+----------------------------------------+
+         //| new bar : above BB.+1S       |
+         //+----------------------------------------+
+         // detect a new bar
+         //Symbol(),Period(), period_BB, 0,0,PRICE_CLOSE,MODE_MAIN, index
+
+         int _shift = 1;
+         int _deviation = 1;
+         int _mode = MODE_UPPER;
+         int   period_BB = 20;
+         int _BB_price = PRICE_CLOSE;
+
+         float _target_price = (float) Close[0];
+         
+         bool is_Above_BB_1S = is_Above_BB_X(
+                              
+                                 Symbol()
+                                 , Period()
+                                 , period_BB
+                                 , _deviation   // deviation //ref https://docs.mql4.com/constants/indicatorconstants/lines
+                                 , 0
+                                 , _BB_price
+                                 , _mode   // mode
+                                 , _shift
+                                 , _target_price
+                                 , dpath_Log
+                                 , fname_Log_For_Session
+                              );
+                              //aaa
+         
+         //debug
+         //Print("[", __FILE__, ":",__LINE__,"] _is_Above_BB_1S => ", is_Above_BB_1S);
+
+         // debug
+         txt = "_is_Above_BB_1S => " + (string) is_Above_BB_1S
+                  ;
+         
+         write_Log(
+               dpath_Log
+               //, fname_Log
+               , fname_Log_For_Session
+               , __FILE__
+               , __LINE__
+               , txt);
+               
+         Print("[", __FILE__, ":",__LINE__,"] ", txt);
+
          // reset
          cntOf_Ticks_In_The_Bar = 0;
          
-         
-     }//if(isNewBar == true)
-   
-   //+----------------------------------------+
-   //| new bar : above BB.+1S       |
-   //+----------------------------------------+
-   // detect a new bar
-   bool is_Above_BB_1S = _is_Above_BB_1S();
-   
-   //debug
-   Alert("[", __FILE__, ":",__LINE__,"] _is_Above_BB_1S => ", is_Above_BB_1S);
 
+     }//if(isNewBar == true)
+/*   
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] _is_Above_BB_1S => ", is_Above_BB_1S);
+*/
    return(0);
-}
+
+}//int start()
 
 
 

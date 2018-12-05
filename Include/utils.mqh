@@ -161,7 +161,7 @@ int get_index
       // judge
       if(d == target_datetime)
         {
-            Alert("[",__LINE__,"] match => d = '",d,"' "
+            Print("[",__LINE__,"] match => d = '",d,"' "
                   + "/ target_datetime = '",target_datetime,"'"
                   + " / "
                   + "index = ",i,""
@@ -895,7 +895,7 @@ int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
    if(_FILE_HANDLE == INVALID_HANDLE) 
      {
 
-      Alert("[",__LINE__,"] can't open file: ",_FNAME,"");
+      Print("[",__LINE__,"] can't open file: ",_FNAME,"");
 
       // return
       return -1;
@@ -936,7 +936,7 @@ int _file_open_2(
    if(_FILE_HANDLE == INVALID_HANDLE) 
      {
 
-      Alert("[", __FILE__, ":", __LINE__, "] can't open file: ",_FNAME,"");
+      Print("[", __FILE__, ":", __LINE__, "] can't open file: ",_FNAME,"");
 
       // return
       return -1;
@@ -958,7 +958,7 @@ void _file_close(int _FILE_HANDLE)
 
    FileClose(_FILE_HANDLE);
 
-   Alert("[", __FILE__, ":",__LINE__,"] file => closed : ", (string) _FILE_HANDLE);
+   Print("[", __FILE__, ":",__LINE__,"] file => closed : ", (string) _FILE_HANDLE);
 
 }//_file_close()
 
@@ -977,14 +977,14 @@ int _file_write__header(int _FILE_HANDLE)
    ***************/
    if(result == 0)
      {
-         Alert("[",__LINE__,"] header => NOT written");
+         Print("[",__LINE__,"] header => NOT written");
          
          return 0;
          
      }
 
 //debug
-   Alert("[",__LINE__,"] header => written");
+   Print("[",__LINE__,"] header => written");
 
 // return
    return 1;
@@ -1026,14 +1026,14 @@ int _file_write__header_2(int _FILE_HANDLE,
    ***************/
    if(result == 0)
      {
-         Alert("[",__LINE__,"] header => NOT written");
+         Print("[",__LINE__,"] header => NOT written");
          
          return 0;
          
      }
 
    //debug
-   Alert("[",__LINE__,"] header => written");
+   Print("[",__LINE__,"] header => written");
 
 // return
    return 1;
@@ -1146,7 +1146,7 @@ int _file_write__header_With_RSI_BB(
      }
 
    //debug
-   Alert("[",__LINE__,"] header => written");
+   Print("[",__LINE__,"] header => written");
 
 // return
    return 1;
@@ -1232,7 +1232,7 @@ int set_Symbol(string symbol_str, int period) {
      {
      
          //debug
-         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", symbol_str);
+         Print("[", __FILE__, ":",__LINE__,"] symbol set => ", symbol_str);
      
          return 1;
      }
@@ -1271,7 +1271,7 @@ string _get_FNAME(
          +".csv";
          
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
+   Print("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
 
    return tmp;
 /*         
@@ -1319,7 +1319,7 @@ string _get_FNAME__Shifted(
          +".csv";
          
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
+   Print("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
 
    return tmp;
 /*         
@@ -1363,7 +1363,7 @@ int get_AryOf_RSI(
       double &AryOf_Data[][5]) {
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI()");
+   Print("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI()");
 
    /****************
       array ---> resize
@@ -1375,7 +1375,7 @@ int get_AryOf_RSI(
    int count = 0;
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+   Print("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
 
    //for(int i = shift; i<(shift + length); i++)
    //for(int i = shift; i<(shift + length) - 1; i++)
@@ -1451,7 +1451,7 @@ int get_AryOf_RSI_BB(
       double &AryOf_Data[][10]) {
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB()");
+   Print("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB()");
 
    /****************
       array ---> resize
@@ -1472,7 +1472,7 @@ int get_AryOf_RSI_BB(
    int count = 0;
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+   Print("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
 
    //for(int i = shift; i<(shift + length); i++)
    //for(int i = shift; i<(shift + length) - 1; i++)
@@ -1581,7 +1581,7 @@ int get_AryOf_RSI_BB_MFI(
       double &AryOf_Data[][11]) {
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI()");
+   Print("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI()");
 
    /****************
       array ---> resize
@@ -1603,7 +1603,7 @@ int get_AryOf_RSI_BB_MFI(
    int count = 0;
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+   Print("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
 
    //for(int i = shift; i<(shift + length); i++)
    //for(int i = shift; i<(shift + length) - 1; i++)
@@ -1716,7 +1716,7 @@ int get_AryOf_RSI_BB_MFI__Shifted(
       double &AryOf_Data[][11]) {
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI__Shifted() --> starting");
+   Print("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI__Shifted() --> starting");
 
    /****************
       array ---> resize
@@ -1738,7 +1738,7 @@ int get_AryOf_RSI_BB_MFI__Shifted(
    int count = 0;
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+   Print("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
 
    //for(int i = shift; i<(shift + length); i++)
    //for(int i = shift; i<(shift + length) - 1; i++)
@@ -1865,7 +1865,7 @@ void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
    //string label = TimeToStr(iTime(Symbol(), _TIME_FRAME, index));
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] index => ", index, " / ", "label => ", label);
+   Print("[", __FILE__, ":",__LINE__,"] index => ", index, " / ", "label => ", label);
    
 
 }//void test_Conv_Index_2_TimeString(index)
@@ -1894,7 +1894,7 @@ int conv_TimeString_2_Index
          string label = TimeToStr(iTime(symbol, time_frame, i));
          
          //debug
-         Alert("[", __FILE__, ":",__LINE__,"] Time label => ", label,
+         Print("[", __FILE__, ":",__LINE__,"] Time label => ", label,
                   " / ", "index => ", i);
                   
          // detect
@@ -1902,7 +1902,7 @@ int conv_TimeString_2_Index
            {
 
             //debug
-            Alert("[", __FILE__, ":",__LINE__,"] Hit => ", time_string);
+            Print("[", __FILE__, ":",__LINE__,"] Hit => ", time_string);
             
             index = i;
             
@@ -2006,7 +2006,7 @@ string get_TimeLabel_Current(int type) {
          int k=StringSplit(to_split,u_sep,result);
          
          //debug
-         Alert("[", __FILE__, ":",__LINE__,"] result[0] => ", result[0]
+         Print("[", __FILE__, ":",__LINE__,"] result[0] => ", result[0]
          
                   , " / "
                   
@@ -2025,7 +2025,7 @@ string get_TimeLabel_Current(int type) {
          k = StringSplit(to_split,u_sep,res_1);
 
          //debug
-         Alert("[", __FILE__, ":",__LINE__,"] res_1[0] => ", res_1[0]
+         Print("[", __FILE__, ":",__LINE__,"] res_1[0] => ", res_1[0]
          
                   , " / "
                   
@@ -2044,7 +2044,7 @@ string get_TimeLabel_Current(int type) {
          k = StringSplit(to_split,u_sep,res_2);
 
          //debug
-         Alert("[", __FILE__, ":",__LINE__,"] res_2[0] => ", res_2[0]
+         Print("[", __FILE__, ":",__LINE__,"] res_2[0] => ", res_2[0]
          
                   , " / "
                   
@@ -2090,7 +2090,7 @@ string get_TimeLabel_Current(int type) {
      }
   
       //debug
-      Alert("[", __FILE__, ":",__LINE__,"] time_Label => ", time_Label);
+      Print("[", __FILE__, ":",__LINE__,"] time_Label => ", time_Label);
   
     
    // return
@@ -2118,7 +2118,7 @@ int _TIME_FRAME) {
                _NUMOF_TARGET_BARS, _TIME_LABEL);
 
     //debug
-    Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+    Print("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
     
     /******************
       iRSI
@@ -2143,7 +2143,7 @@ int _TIME_FRAME) {
    int length = _NUMOF_DAYS;
    
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
+   Print("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
    
       
    get_AryOf_RSI(
@@ -2179,7 +2179,7 @@ int _TIME_FRAME) {
    );
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
+   Print("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//void get_BasicData_with_RSI
 
@@ -2203,7 +2203,7 @@ void get_BasicData_with_RSI_BB(
                _NUMOF_TARGET_BARS, _TIME_LABEL);
 
     //debug
-    Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+    Print("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
     
     /******************
       iRSI
@@ -2229,7 +2229,7 @@ void get_BasicData_with_RSI_BB(
    int length = _NUMOF_DAYS;
    
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
+   Print("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
    
       
    //get_AryOf_RSI(
@@ -2266,7 +2266,7 @@ void get_BasicData_with_RSI_BB(
    );
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
+   Print("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//void get_BasicData_with_RSI_BB
 
@@ -2287,7 +2287,7 @@ void get_BasicData_with_RSI_BB_MFI(
                _NUMOF_TARGET_BARS, _TIME_LABEL);
 
     //debug
-    Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+    Print("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
     
     /******************
       iRSI
@@ -2313,7 +2313,7 @@ void get_BasicData_with_RSI_BB_MFI(
    int length = _NUMOF_DAYS;
    
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
+   Print("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
    
 
    //get_AryOf_RSI(
@@ -2367,6 +2367,7 @@ void get_BasicData_with_RSI_BB_MFI(
    //C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Logs
    //string fname_Log = "dev.log";
 
+/*
    // debug
    write_Log(
          dpath_Log
@@ -2375,10 +2376,10 @@ void get_BasicData_with_RSI_BB_MFI(
          , __LINE__
          , txt);
          //, name);
-
+*/
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
+   Print("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//get_BasicData_with_RSI_BB_MFI
 
@@ -2405,7 +2406,7 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
                _NUMOF_TARGET_BARS, _TIME_LABEL, _SHIFT);
 
     //debug
-    Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+    Print("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
     
     /******************
       iRSI
@@ -2431,7 +2432,7 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
    int length = _NUMOF_DAYS;
    
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
+   Print("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
    
 
    //get_AryOf_RSI(
@@ -2507,7 +2508,7 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
    );
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
+   Print("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//get_BasicData_with_RSI_BB_MFI__Shifted
 
@@ -2526,7 +2527,7 @@ int write_Log(
 
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] file => opening... ", _fname_Log);
+   Print("[", __FILE__, ":",__LINE__,"] file => opening... ", _fname_Log);
 
 
    //+----------------------------+
@@ -2551,7 +2552,7 @@ int write_Log(
    if(_FILE_HANDLE == -1)
      {
          //debug
-         Alert("[", __FILE__, ":",__LINE__,"] file => can't open (handle = "
+         Print("[", __FILE__, ":",__LINE__,"] file => can't open (handle = "
          , _FILE_HANDLE, " / dir path = ", _dpath_Log, " / file name = ", _fname_Log
          , ")");
          
@@ -2560,7 +2561,7 @@ int write_Log(
      }
 
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] file => opened (handle = "
+   Print("[", __FILE__, ":",__LINE__,"] file => opened (handle = "
    
       , _FILE_HANDLE
       , " / "
@@ -2623,7 +2624,7 @@ bool _is_NewBar() {
          , txt);
 */
    //debug
-   Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
+   Print("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
    
 //--- if it is the first call of the function
    if(last_time==0)
@@ -2651,3 +2652,110 @@ bool _is_NewBar() {
    //Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
 
 }//_is_NewBar()
+
+//+------------------------------------------------------------------+
+//| _is_Above_BB_1S()          
+
+/*
+   params :
+         Symbol()
+         , Period()
+         , period_BB
+         , _deviation   // deviation //ref https://docs.mql4.com/constants/indicatorconstants/lines
+         
+         , 0
+         , _BB_price
+         , _mode   // mode
+         , _shift
+         , _target_price
+*/
+
+//+------------------------------------------------------------------+
+bool is_Above_BB_X(
+         string _symbol
+         , int _period
+         , int _period_BB
+         , double _deviation
+         
+         , int _band_shift
+         , int _BB_price
+         , int _mode
+         , int _shift
+         , float _target_price
+         
+         , string dpath_Log
+         , string fname_Log_For_Session
+         ) {
+
+   int index = 0;
+
+   int deviation = 1;
+
+   //float close_Latest = (float) Close[index];
+   float close_Latest = _target_price;
+   
+   int   period_BB = 20;
+   
+   //ref https://docs.mql4.com/indicators/ibands
+   //float BB_1S = (float) iBands(Symbol(),Period(), period_BB, 0,0,PRICE_CLOSE,MODE_MAIN, index);
+   //float BB_1S = (float) iBands(
+   float BB_Val = (float) iBands(
+               _symbol
+               , _period
+               , _period_BB
+               , _deviation   // deviation //ref https://docs.mql4.com/constants/indicatorconstants/lines
+               , _band_shift
+               , _BB_price
+               , _mode   // mode
+               , _shift);
+            /*   
+               string       symbol,           // symbol
+               int          timeframe,        // timeframe
+               int          period,           // averaging period
+               double       deviation,        // standard deviations
+               int          bands_shift,      // bands shift
+               int          applied_price,    // applied price
+               int          mode,             // line index
+               int          shift             // shift
+            */
+   // judge
+   bool judge = (close_Latest > BB_Val);
+   
+   //debug
+   //Alert("[", __FILE__, ":",__LINE__,"] "
+   //char _char[50];
+   //sprintf(_char, "latest close : %.03f", close_Latest);
+         //'sprintf' - function not defined	ea-1_up-up-buy.mq4	160	4
+
+   Print("[", __FILE__, ":",__LINE__,"] "
+         
+         , "target closing price => ", (string) close_Latest
+         , " / "
+         , "BB_Val => ", (string) BB_Val
+         , " ("
+         , "mode = ", (string) _mode
+         , ")"
+         );
+
+   // debug
+   string txt = "\n"
+         + "_deviation : " + (string) _deviation
+         + " / "
+         + "_target_price : " + (string) _target_price
+         + " / "
+         + "BB_Val : " + (string) BB_Val
+         + " / "
+            ;
+   
+   write_Log(
+         dpath_Log
+         //, fname_Log
+         , fname_Log_For_Session
+         , __FILE__
+         , __LINE__
+         , txt);
+
+   // return
+   return judge;
+
+}//bool is_Above_BB_X(

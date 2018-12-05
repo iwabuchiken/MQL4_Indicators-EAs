@@ -180,7 +180,8 @@ def _exec_2_MakeList(fpath, dir, fname)
     ################################
     #ref http://qiita.com/shizuma/items/4279104026964f1efca6
     #ref https://apidock.com/ruby/String/match
-    hit = line.match(/^(int|void|string) (.+)/)
+    #hit = line.match(/^(int|void|string) (.+)/)
+    hit = line.match(/^(int|void|string|bool) (.+)/)
 #    hit = line.match(/^int .+/)
     
     unless hit == nil
@@ -246,7 +247,9 @@ def _exec_2_MakeList(fpath, dir, fname)
       # func?
       #ref substring https://stackoverflow.com/questions/8258517/how-to-check-whether-a-string-contains-a-substring-in-ruby#8258571
       #ref match substring https://stackoverflow.com/questions/4115115/extract-a-substring-from-a-string-in-ruby-using-a-regular-expression#4115144
-      if elem.match(/^[a-zA-Z_]+\(.*\)/)
+      #if elem.match(/^[a-zA-Z_]+\(.*\)/)
+      #ref regex numerical https://www.regular-expressions.info/numericranges.html
+      if elem.match(/^[a-zA-Z_0-9]+\(.*\)/)
 #      if elem.match(/\(.*\)/)
 #      if elem.include?("(.*")
         
