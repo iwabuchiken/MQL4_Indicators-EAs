@@ -1,0 +1,15 @@
+Target file = fnc_CountTick.mq4
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_5.1
+Entries = 17
+Created at = 2018/12/05 10:21:06
+Created by = utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_5.1/func-list_fnc_CountTick.mq4_20181205_102106.txt
+
+==========================================
+
+1	int deinit()
+2	int init()
+3	void setup() {
+4	int start()
+
+==========================================

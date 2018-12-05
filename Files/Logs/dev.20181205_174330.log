@@ -1,0 +1,353 @@
+[2018.12.05 17:43:30 / fnc_CountTick.mq4:284]cntOf_Ticks1 / cntOf_Ticks_In_The_Bar = 1 (2018.12.05 17:43:30)
+[2018.12.05 17:43:30 / fnc_CountTick.mq4:172]last_time = 1970.01.01 00:00:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:31 / fnc_CountTick.mq4:284]cntOf_Ticks2 / cntOf_Ticks_In_The_Bar = 2 (2018.12.05 17:43:31)
+[2018.12.05 17:43:31 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:33 / fnc_CountTick.mq4:284]cntOf_Ticks3 / cntOf_Ticks_In_The_Bar = 3 (2018.12.05 17:43:33)
+[2018.12.05 17:43:33 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:34 / fnc_CountTick.mq4:284]cntOf_Ticks4 / cntOf_Ticks_In_The_Bar = 4 (2018.12.05 17:43:34)
+[2018.12.05 17:43:34 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:35 / fnc_CountTick.mq4:284]cntOf_Ticks5 / cntOf_Ticks_In_The_Bar = 5 (2018.12.05 17:43:35)
+[2018.12.05 17:43:35 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:35 / fnc_CountTick.mq4:284]cntOf_Ticks6 / cntOf_Ticks_In_The_Bar = 6 (2018.12.05 17:43:35)
+[2018.12.05 17:43:35 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:37 / fnc_CountTick.mq4:284]cntOf_Ticks7 / cntOf_Ticks_In_The_Bar = 7 (2018.12.05 17:43:37)
+[2018.12.05 17:43:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:37 / fnc_CountTick.mq4:284]cntOf_Ticks8 / cntOf_Ticks_In_The_Bar = 8 (2018.12.05 17:43:37)
+[2018.12.05 17:43:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:38 / fnc_CountTick.mq4:284]cntOf_Ticks9 / cntOf_Ticks_In_The_Bar = 9 (2018.12.05 17:43:38)
+[2018.12.05 17:43:38 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:38 / fnc_CountTick.mq4:284]cntOf_Ticks10 / cntOf_Ticks_In_The_Bar = 10 (2018.12.05 17:43:38)
+[2018.12.05 17:43:38 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:284]cntOf_Ticks11 / cntOf_Ticks_In_The_Bar = 11 (2018.12.05 17:43:39)
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:284]cntOf_Ticks12 / cntOf_Ticks_In_The_Bar = 12 (2018.12.05 17:43:39)
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:284]cntOf_Ticks13 / cntOf_Ticks_In_The_Bar = 13 (2018.12.05 17:43:39)
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:284]cntOf_Ticks14 / cntOf_Ticks_In_The_Bar = 14 (2018.12.05 17:43:39)
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:284]cntOf_Ticks15 / cntOf_Ticks_In_The_Bar = 15 (2018.12.05 17:43:39)
+[2018.12.05 17:43:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:40 / fnc_CountTick.mq4:284]cntOf_Ticks16 / cntOf_Ticks_In_The_Bar = 16 (2018.12.05 17:43:40)
+[2018.12.05 17:43:40 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:40 / fnc_CountTick.mq4:284]cntOf_Ticks17 / cntOf_Ticks_In_The_Bar = 17 (2018.12.05 17:43:40)
+[2018.12.05 17:43:40 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:284]cntOf_Ticks18 / cntOf_Ticks_In_The_Bar = 18 (2018.12.05 17:43:41)
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:284]cntOf_Ticks19 / cntOf_Ticks_In_The_Bar = 19 (2018.12.05 17:43:41)
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:284]cntOf_Ticks20 / cntOf_Ticks_In_The_Bar = 20 (2018.12.05 17:43:41)
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:284]cntOf_Ticks21 / cntOf_Ticks_In_The_Bar = 21 (2018.12.05 17:43:41)
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:284]cntOf_Ticks22 / cntOf_Ticks_In_The_Bar = 22 (2018.12.05 17:43:41)
+[2018.12.05 17:43:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:42 / fnc_CountTick.mq4:284]cntOf_Ticks23 / cntOf_Ticks_In_The_Bar = 23 (2018.12.05 17:43:42)
+[2018.12.05 17:43:42 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:45 / fnc_CountTick.mq4:284]cntOf_Ticks24 / cntOf_Ticks_In_The_Bar = 24 (2018.12.05 17:43:45)
+[2018.12.05 17:43:45 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:46 / fnc_CountTick.mq4:284]cntOf_Ticks25 / cntOf_Ticks_In_The_Bar = 25 (2018.12.05 17:43:46)
+[2018.12.05 17:43:46 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:52 / fnc_CountTick.mq4:284]cntOf_Ticks26 / cntOf_Ticks_In_The_Bar = 26 (2018.12.05 17:43:52)
+[2018.12.05 17:43:52 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:55 / fnc_CountTick.mq4:284]cntOf_Ticks27 / cntOf_Ticks_In_The_Bar = 27 (2018.12.05 17:43:55)
+[2018.12.05 17:43:55 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:55 / fnc_CountTick.mq4:284]cntOf_Ticks28 / cntOf_Ticks_In_The_Bar = 28 (2018.12.05 17:43:55)
+[2018.12.05 17:43:55 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks29 / cntOf_Ticks_In_The_Bar = 29 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks30 / cntOf_Ticks_In_The_Bar = 30 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks31 / cntOf_Ticks_In_The_Bar = 31 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks32 / cntOf_Ticks_In_The_Bar = 32 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks33 / cntOf_Ticks_In_The_Bar = 33 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks34 / cntOf_Ticks_In_The_Bar = 34 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:284]cntOf_Ticks35 / cntOf_Ticks_In_The_Bar = 35 (2018.12.05 17:43:56)
+[2018.12.05 17:43:56 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:284]cntOf_Ticks36 / cntOf_Ticks_In_The_Bar = 36 (2018.12.05 17:43:57)
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:284]cntOf_Ticks37 / cntOf_Ticks_In_The_Bar = 37 (2018.12.05 17:43:57)
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:284]cntOf_Ticks38 / cntOf_Ticks_In_The_Bar = 38 (2018.12.05 17:43:57)
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:284]cntOf_Ticks39 / cntOf_Ticks_In_The_Bar = 39 (2018.12.05 17:43:57)
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:284]cntOf_Ticks40 / cntOf_Ticks_In_The_Bar = 40 (2018.12.05 17:43:57)
+[2018.12.05 17:43:57 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:284]cntOf_Ticks41 / cntOf_Ticks_In_The_Bar = 41 (2018.12.05 17:43:58)
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:284]cntOf_Ticks42 / cntOf_Ticks_In_The_Bar = 42 (2018.12.05 17:43:58)
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:284]cntOf_Ticks44 / cntOf_Ticks_In_The_Bar = 44 (2018.12.05 17:43:58)
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:284]cntOf_Ticks45 / cntOf_Ticks_In_The_Bar = 45 (2018.12.05 17:43:58)
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:284]cntOf_Ticks46 / cntOf_Ticks_In_The_Bar = 46 (2018.12.05 17:43:58)
+[2018.12.05 17:43:58 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:44:01 / fnc_CountTick.mq4:284]cntOf_Ticks47 / cntOf_Ticks_In_The_Bar = 47 (2018.12.05 17:44:01)
+[2018.12.05 17:44:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:44:02 / fnc_CountTick.mq4:284]cntOf_Ticks48 / cntOf_Ticks_In_The_Bar = 48 (2018.12.05 17:44:02)
+[2018.12.05 17:44:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:44:02 / fnc_CountTick.mq4:284]cntOf_Ticks49 / cntOf_Ticks_In_The_Bar = 49 (2018.12.05 17:44:02)
+[2018.12.05 17:44:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:43:00
+[2018.12.05 17:44:04 / fnc_CountTick.mq4:284]cntOf_Ticks50 / cntOf_Ticks_In_The_Bar = 50 (2018.12.05 17:44:04)
+[2018.12.05 17:44:04 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:43:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:04 / fnc_CountTick.mq4:284]cntOf_Ticks51 / cntOf_Ticks_In_The_Bar = 1 (2018.12.05 17:44:04)
+[2018.12.05 17:44:04 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:284]cntOf_Ticks53 / cntOf_Ticks_In_The_Bar = 3 (2018.12.05 17:44:05)
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:284]cntOf_Ticks54 / cntOf_Ticks_In_The_Bar = 4 (2018.12.05 17:44:05)
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:284]cntOf_Ticks55 / cntOf_Ticks_In_The_Bar = 5 (2018.12.05 17:44:05)
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:284]cntOf_Ticks56 / cntOf_Ticks_In_The_Bar = 6 (2018.12.05 17:44:05)
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:284]cntOf_Ticks57 / cntOf_Ticks_In_The_Bar = 7 (2018.12.05 17:44:05)
+[2018.12.05 17:44:05 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:07 / fnc_CountTick.mq4:284]cntOf_Ticks58 / cntOf_Ticks_In_The_Bar = 8 (2018.12.05 17:44:07)
+[2018.12.05 17:44:07 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:07 / fnc_CountTick.mq4:284]cntOf_Ticks59 / cntOf_Ticks_In_The_Bar = 9 (2018.12.05 17:44:07)
+[2018.12.05 17:44:07 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:08 / fnc_CountTick.mq4:284]cntOf_Ticks61 / cntOf_Ticks_In_The_Bar = 11 (2018.12.05 17:44:08)
+[2018.12.05 17:44:08 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:09 / fnc_CountTick.mq4:284]cntOf_Ticks62 / cntOf_Ticks_In_The_Bar = 12 (2018.12.05 17:44:09)
+[2018.12.05 17:44:09 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:10 / fnc_CountTick.mq4:284]cntOf_Ticks63 / cntOf_Ticks_In_The_Bar = 13 (2018.12.05 17:44:10)
+[2018.12.05 17:44:10 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:284]cntOf_Ticks64 / cntOf_Ticks_In_The_Bar = 14 (2018.12.05 17:44:17)
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:284]cntOf_Ticks65 / cntOf_Ticks_In_The_Bar = 15 (2018.12.05 17:44:17)
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:284]cntOf_Ticks66 / cntOf_Ticks_In_The_Bar = 16 (2018.12.05 17:44:17)
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:284]cntOf_Ticks67 / cntOf_Ticks_In_The_Bar = 17 (2018.12.05 17:44:17)
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:284]cntOf_Ticks68 / cntOf_Ticks_In_The_Bar = 18 (2018.12.05 17:44:17)
+[2018.12.05 17:44:17 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:284]cntOf_Ticks69 / cntOf_Ticks_In_The_Bar = 19 (2018.12.05 17:44:20)
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:284]cntOf_Ticks70 / cntOf_Ticks_In_The_Bar = 20 (2018.12.05 17:44:20)
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:284]cntOf_Ticks71 / cntOf_Ticks_In_The_Bar = 21 (2018.12.05 17:44:20)
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:284]cntOf_Ticks72 / cntOf_Ticks_In_The_Bar = 22 (2018.12.05 17:44:20)
+[2018.12.05 17:44:20 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:22 / fnc_CountTick.mq4:284]cntOf_Ticks73 / cntOf_Ticks_In_The_Bar = 23 (2018.12.05 17:44:22)
+[2018.12.05 17:44:22 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:22 / fnc_CountTick.mq4:284]cntOf_Ticks74 / cntOf_Ticks_In_The_Bar = 24 (2018.12.05 17:44:22)
+[2018.12.05 17:44:22 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:23 / fnc_CountTick.mq4:284]cntOf_Ticks75 / cntOf_Ticks_In_The_Bar = 25 (2018.12.05 17:44:23)
+[2018.12.05 17:44:23 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:23 / fnc_CountTick.mq4:284]cntOf_Ticks76 / cntOf_Ticks_In_The_Bar = 26 (2018.12.05 17:44:23)
+[2018.12.05 17:44:23 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:23 / fnc_CountTick.mq4:284]cntOf_Ticks78 / cntOf_Ticks_In_The_Bar = 28 (2018.12.05 17:44:23)
+[2018.12.05 17:44:23 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:284]cntOf_Ticks79 / cntOf_Ticks_In_The_Bar = 29 (2018.12.05 17:44:24)
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:284]cntOf_Ticks80 / cntOf_Ticks_In_The_Bar = 30 (2018.12.05 17:44:24)
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:284]cntOf_Ticks81 / cntOf_Ticks_In_The_Bar = 31 (2018.12.05 17:44:24)
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:284]cntOf_Ticks82 / cntOf_Ticks_In_The_Bar = 32 (2018.12.05 17:44:24)
+[2018.12.05 17:44:24 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:284]cntOf_Ticks83 / cntOf_Ticks_In_The_Bar = 33 (2018.12.05 17:44:25)
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:284]cntOf_Ticks84 / cntOf_Ticks_In_The_Bar = 34 (2018.12.05 17:44:25)
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:284]cntOf_Ticks85 / cntOf_Ticks_In_The_Bar = 35 (2018.12.05 17:44:25)
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:284]cntOf_Ticks86 / cntOf_Ticks_In_The_Bar = 36 (2018.12.05 17:44:25)
+[2018.12.05 17:44:25 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:28 / fnc_CountTick.mq4:284]cntOf_Ticks87 / cntOf_Ticks_In_The_Bar = 37 (2018.12.05 17:44:28)
+[2018.12.05 17:44:28 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:29 / fnc_CountTick.mq4:284]cntOf_Ticks88 / cntOf_Ticks_In_The_Bar = 38 (2018.12.05 17:44:29)
+[2018.12.05 17:44:29 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:29 / fnc_CountTick.mq4:284]cntOf_Ticks89 / cntOf_Ticks_In_The_Bar = 39 (2018.12.05 17:44:29)
+[2018.12.05 17:44:29 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:29 / fnc_CountTick.mq4:284]cntOf_Ticks90 / cntOf_Ticks_In_The_Bar = 40 (2018.12.05 17:44:29)
+[2018.12.05 17:44:29 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:30 / fnc_CountTick.mq4:284]cntOf_Ticks91 / cntOf_Ticks_In_The_Bar = 41 (2018.12.05 17:44:30)
+[2018.12.05 17:44:30 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:30 / fnc_CountTick.mq4:284]cntOf_Ticks92 / cntOf_Ticks_In_The_Bar = 42 (2018.12.05 17:44:30)
+[2018.12.05 17:44:30 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:32 / fnc_CountTick.mq4:284]cntOf_Ticks93 / cntOf_Ticks_In_The_Bar = 43 (2018.12.05 17:44:32)
+[2018.12.05 17:44:32 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:284]cntOf_Ticks94 / cntOf_Ticks_In_The_Bar = 44 (2018.12.05 17:44:34)
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:284]cntOf_Ticks95 / cntOf_Ticks_In_The_Bar = 45 (2018.12.05 17:44:34)
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:284]cntOf_Ticks96 / cntOf_Ticks_In_The_Bar = 46 (2018.12.05 17:44:34)
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:284]cntOf_Ticks97 / cntOf_Ticks_In_The_Bar = 47 (2018.12.05 17:44:34)
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:284]cntOf_Ticks98 / cntOf_Ticks_In_The_Bar = 48 (2018.12.05 17:44:34)
+[2018.12.05 17:44:34 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:35 / fnc_CountTick.mq4:284]cntOf_Ticks99 / cntOf_Ticks_In_The_Bar = 49 (2018.12.05 17:44:35)
+[2018.12.05 17:44:35 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:36 / fnc_CountTick.mq4:284]cntOf_Ticks100 / cntOf_Ticks_In_The_Bar = 50 (2018.12.05 17:44:36)
+[2018.12.05 17:44:36 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:284]cntOf_Ticks101 / cntOf_Ticks_In_The_Bar = 51 (2018.12.05 17:44:37)
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:284]cntOf_Ticks102 / cntOf_Ticks_In_The_Bar = 52 (2018.12.05 17:44:37)
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:284]cntOf_Ticks103 / cntOf_Ticks_In_The_Bar = 53 (2018.12.05 17:44:37)
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:284]cntOf_Ticks104 / cntOf_Ticks_In_The_Bar = 54 (2018.12.05 17:44:37)
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:284]cntOf_Ticks105 / cntOf_Ticks_In_The_Bar = 55 (2018.12.05 17:44:37)
+[2018.12.05 17:44:37 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:38 / fnc_CountTick.mq4:284]cntOf_Ticks106 / cntOf_Ticks_In_The_Bar = 56 (2018.12.05 17:44:38)
+[2018.12.05 17:44:38 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:38 / fnc_CountTick.mq4:284]cntOf_Ticks107 / cntOf_Ticks_In_The_Bar = 57 (2018.12.05 17:44:38)
+[2018.12.05 17:44:38 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:39 / fnc_CountTick.mq4:284]cntOf_Ticks108 / cntOf_Ticks_In_The_Bar = 58 (2018.12.05 17:44:39)
+[2018.12.05 17:44:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:39 / fnc_CountTick.mq4:284]cntOf_Ticks109 / cntOf_Ticks_In_The_Bar = 59 (2018.12.05 17:44:39)
+[2018.12.05 17:44:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:39 / fnc_CountTick.mq4:284]cntOf_Ticks110 / cntOf_Ticks_In_The_Bar = 60 (2018.12.05 17:44:39)
+[2018.12.05 17:44:39 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:40 / fnc_CountTick.mq4:284]cntOf_Ticks111 / cntOf_Ticks_In_The_Bar = 61 (2018.12.05 17:44:40)
+[2018.12.05 17:44:40 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:40 / fnc_CountTick.mq4:284]cntOf_Ticks112 / cntOf_Ticks_In_The_Bar = 62 (2018.12.05 17:44:40)
+[2018.12.05 17:44:40 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:40 / fnc_CountTick.mq4:284]cntOf_Ticks113 / cntOf_Ticks_In_The_Bar = 63 (2018.12.05 17:44:40)
+[2018.12.05 17:44:40 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:284]cntOf_Ticks114 / cntOf_Ticks_In_The_Bar = 64 (2018.12.05 17:44:41)
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:284]cntOf_Ticks115 / cntOf_Ticks_In_The_Bar = 65 (2018.12.05 17:44:41)
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:284]cntOf_Ticks116 / cntOf_Ticks_In_The_Bar = 66 (2018.12.05 17:44:41)
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:284]cntOf_Ticks117 / cntOf_Ticks_In_The_Bar = 67 (2018.12.05 17:44:41)
+[2018.12.05 17:44:41 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:284]cntOf_Ticks118 / cntOf_Ticks_In_The_Bar = 68 (2018.12.05 17:44:42)
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:284]cntOf_Ticks119 / cntOf_Ticks_In_The_Bar = 69 (2018.12.05 17:44:42)
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:284]cntOf_Ticks120 / cntOf_Ticks_In_The_Bar = 70 (2018.12.05 17:44:42)
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:284]cntOf_Ticks121 / cntOf_Ticks_In_The_Bar = 71 (2018.12.05 17:44:42)
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:284]cntOf_Ticks122 / cntOf_Ticks_In_The_Bar = 72 (2018.12.05 17:44:42)
+[2018.12.05 17:44:42 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:284]cntOf_Ticks124 / cntOf_Ticks_In_The_Bar = 74 (2018.12.05 17:44:43)
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:284]cntOf_Ticks125 / cntOf_Ticks_In_The_Bar = 75 (2018.12.05 17:44:43)
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:284]cntOf_Ticks126 / cntOf_Ticks_In_The_Bar = 76 (2018.12.05 17:44:43)
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:284]cntOf_Ticks127 / cntOf_Ticks_In_The_Bar = 77 (2018.12.05 17:44:43)
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:284]cntOf_Ticks128 / cntOf_Ticks_In_The_Bar = 78 (2018.12.05 17:44:43)
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:284]cntOf_Ticks129 / cntOf_Ticks_In_The_Bar = 79 (2018.12.05 17:44:43)
+[2018.12.05 17:44:43 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:284]cntOf_Ticks130 / cntOf_Ticks_In_The_Bar = 80 (2018.12.05 17:44:44)
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:284]cntOf_Ticks131 / cntOf_Ticks_In_The_Bar = 81 (2018.12.05 17:44:44)
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:284]cntOf_Ticks132 / cntOf_Ticks_In_The_Bar = 82 (2018.12.05 17:44:44)
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:284]cntOf_Ticks133 / cntOf_Ticks_In_The_Bar = 83 (2018.12.05 17:44:44)
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:284]cntOf_Ticks134 / cntOf_Ticks_In_The_Bar = 84 (2018.12.05 17:44:44)
+[2018.12.05 17:44:44 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:284]cntOf_Ticks135 / cntOf_Ticks_In_The_Bar = 85 (2018.12.05 17:44:45)
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:284]cntOf_Ticks136 / cntOf_Ticks_In_The_Bar = 86 (2018.12.05 17:44:45)
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:284]cntOf_Ticks137 / cntOf_Ticks_In_The_Bar = 87 (2018.12.05 17:44:45)
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:284]cntOf_Ticks138 / cntOf_Ticks_In_The_Bar = 88 (2018.12.05 17:44:45)
+[2018.12.05 17:44:45 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:46 / fnc_CountTick.mq4:284]cntOf_Ticks139 / cntOf_Ticks_In_The_Bar = 89 (2018.12.05 17:44:46)
+[2018.12.05 17:44:46 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:46 / fnc_CountTick.mq4:284]cntOf_Ticks140 / cntOf_Ticks_In_The_Bar = 90 (2018.12.05 17:44:46)
+[2018.12.05 17:44:46 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:47 / fnc_CountTick.mq4:284]cntOf_Ticks141 / cntOf_Ticks_In_The_Bar = 91 (2018.12.05 17:44:47)
+[2018.12.05 17:44:47 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:47 / fnc_CountTick.mq4:284]cntOf_Ticks142 / cntOf_Ticks_In_The_Bar = 92 (2018.12.05 17:44:47)
+[2018.12.05 17:44:47 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:48 / fnc_CountTick.mq4:284]cntOf_Ticks143 / cntOf_Ticks_In_The_Bar = 93 (2018.12.05 17:44:48)
+[2018.12.05 17:44:48 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:48 / fnc_CountTick.mq4:284]cntOf_Ticks145 / cntOf_Ticks_In_The_Bar = 95 (2018.12.05 17:44:48)
+[2018.12.05 17:44:48 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:284]cntOf_Ticks146 / cntOf_Ticks_In_The_Bar = 96 (2018.12.05 17:44:49)
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:284]cntOf_Ticks147 / cntOf_Ticks_In_The_Bar = 97 (2018.12.05 17:44:49)
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:284]cntOf_Ticks149 / cntOf_Ticks_In_The_Bar = 99 (2018.12.05 17:44:49)
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:284]cntOf_Ticks150 / cntOf_Ticks_In_The_Bar = 100 (2018.12.05 17:44:49)
+[2018.12.05 17:44:49 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:51 / fnc_CountTick.mq4:284]cntOf_Ticks151 / cntOf_Ticks_In_The_Bar = 101 (2018.12.05 17:44:51)
+[2018.12.05 17:44:51 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:51 / fnc_CountTick.mq4:284]cntOf_Ticks152 / cntOf_Ticks_In_The_Bar = 102 (2018.12.05 17:44:51)
+[2018.12.05 17:44:51 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:51 / fnc_CountTick.mq4:284]cntOf_Ticks153 / cntOf_Ticks_In_The_Bar = 103 (2018.12.05 17:44:51)
+[2018.12.05 17:44:51 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:53 / fnc_CountTick.mq4:284]cntOf_Ticks154 / cntOf_Ticks_In_The_Bar = 104 (2018.12.05 17:44:53)
+[2018.12.05 17:44:53 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:54 / fnc_CountTick.mq4:284]cntOf_Ticks155 / cntOf_Ticks_In_The_Bar = 105 (2018.12.05 17:44:54)
+[2018.12.05 17:44:54 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:57 / fnc_CountTick.mq4:284]cntOf_Ticks156 / cntOf_Ticks_In_The_Bar = 106 (2018.12.05 17:44:57)
+[2018.12.05 17:44:57 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:284]cntOf_Ticks157 / cntOf_Ticks_In_The_Bar = 107 (2018.12.05 17:44:59)
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:284]cntOf_Ticks158 / cntOf_Ticks_In_The_Bar = 108 (2018.12.05 17:44:59)
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:284]cntOf_Ticks159 / cntOf_Ticks_In_The_Bar = 109 (2018.12.05 17:44:59)
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:284]cntOf_Ticks160 / cntOf_Ticks_In_The_Bar = 110 (2018.12.05 17:44:59)
+[2018.12.05 17:44:59 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:00 / fnc_CountTick.mq4:284]cntOf_Ticks161 / cntOf_Ticks_In_The_Bar = 111 (2018.12.05 17:45:00)
+[2018.12.05 17:45:00 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:00 / fnc_CountTick.mq4:284]cntOf_Ticks163 / cntOf_Ticks_In_The_Bar = 113 (2018.12.05 17:45:00)
+[2018.12.05 17:45:00 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:284]cntOf_Ticks164 / cntOf_Ticks_In_The_Bar = 114 (2018.12.05 17:45:01)
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:284]cntOf_Ticks165 / cntOf_Ticks_In_The_Bar = 115 (2018.12.05 17:45:01)
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:284]cntOf_Ticks166 / cntOf_Ticks_In_The_Bar = 116 (2018.12.05 17:45:01)
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:284]cntOf_Ticks168 / cntOf_Ticks_In_The_Bar = 118 (2018.12.05 17:45:01)
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:284]cntOf_Ticks169 / cntOf_Ticks_In_The_Bar = 119 (2018.12.05 17:45:01)
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:284]cntOf_Ticks170 / cntOf_Ticks_In_The_Bar = 120 (2018.12.05 17:45:01)
+[2018.12.05 17:45:01 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:284]cntOf_Ticks171 / cntOf_Ticks_In_The_Bar = 121 (2018.12.05 17:45:02)
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:284]cntOf_Ticks172 / cntOf_Ticks_In_The_Bar = 122 (2018.12.05 17:45:02)
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:284]cntOf_Ticks173 / cntOf_Ticks_In_The_Bar = 123 (2018.12.05 17:45:02)
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:284]cntOf_Ticks174 / cntOf_Ticks_In_The_Bar = 124 (2018.12.05 17:45:02)
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:284]cntOf_Ticks175 / cntOf_Ticks_In_The_Bar = 125 (2018.12.05 17:45:02)
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:284]cntOf_Ticks176 / cntOf_Ticks_In_The_Bar = 126 (2018.12.05 17:45:02)
+[2018.12.05 17:45:02 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:284]cntOf_Ticks177 / cntOf_Ticks_In_The_Bar = 127 (2018.12.05 17:45:03)
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:284]cntOf_Ticks178 / cntOf_Ticks_In_The_Bar = 128 (2018.12.05 17:45:03)
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:44:00
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:284]cntOf_Ticks179 / cntOf_Ticks_In_The_Bar = 129 (2018.12.05 17:45:03)
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:44:00 / lastbar_time = 2018.12.05 10:45:00
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:284]cntOf_Ticks180 / cntOf_Ticks_In_The_Bar = 1 (2018.12.05 17:45:03)
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:45:00 / lastbar_time = 2018.12.05 10:45:00
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:284]cntOf_Ticks181 / cntOf_Ticks_In_The_Bar = 2 (2018.12.05 17:45:03)
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:45:00 / lastbar_time = 2018.12.05 10:45:00
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:284]cntOf_Ticks182 / cntOf_Ticks_In_The_Bar = 3 (2018.12.05 17:45:03)
+[2018.12.05 17:45:03 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:45:00 / lastbar_time = 2018.12.05 10:45:00
+[2018.12.05 17:45:04 / fnc_CountTick.mq4:284]cntOf_Ticks183 / cntOf_Ticks_In_The_Bar = 4 (2018.12.05 17:45:04)
+[2018.12.05 17:45:04 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:45:00 / lastbar_time = 2018.12.05 10:45:00
+[2018.12.05 17:45:04 / fnc_CountTick.mq4:284]cntOf_Ticks184 / cntOf_Ticks_In_The_Bar = 5 (2018.12.05 17:45:04)
+[2018.12.05 17:45:04 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:45:00 / lastbar_time = 2018.12.05 10:45:00
+[2018.12.05 17:45:04 / fnc_CountTick.mq4:284]cntOf_Ticks185 / cntOf_Ticks_In_The_Bar = 6 (2018.12.05 17:45:04)
+[2018.12.05 17:45:04 / fnc_CountTick.mq4:172]last_time = 2018.12.05 10:45:00 / lastbar_time = 2018.12.05 10:45:00

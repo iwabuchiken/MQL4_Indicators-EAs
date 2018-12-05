@@ -148,61 +148,6 @@ bool _is_Above_BB_1S() {
 
 }//_is_Above_BB_1S()
 
-//+------------------------------------------------------------------+
-//|                                                          |
-//+------------------------------------------------------------------+
-bool _is_NewBar() {
-
-   //ref https://www.mql5.com/en/articles/159
-   static datetime last_time=0;
-   
-   datetime lastbar_time = (datetime) SeriesInfoInteger(Symbol(),Period(),SERIES_LASTBAR_DATE);
-
-   // debug
-   //string txt = "last_time = ", last_time, " / ", "lastbar_time = ", lastbar_time;
-   string txt = "last_time = " + (string)last_time 
-               + " / "
-                + "lastbar_time = " + (string)lastbar_time;
-
-/*   
-   write_Log(
-         dpath_Log
-         //, fname_Log
-         , fname_Log_For_Session
-         , __FILE__
-         , __LINE__
-         , txt);
-*/
-   //debug
-   Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
-   
-//--- if it is the first call of the function
-   if(last_time==0)
-     {
-      //--- set the time and exit
-      last_time=lastbar_time;
-      return(false);
-     }
-
-//--- if the time differs
-   if(last_time!=lastbar_time)
-     {
-     
-     
-      //--- memorize the time and return true
-      last_time=lastbar_time;
-      
-      
-      return(true);
-     }
-//--- if we passed to this line, then the bar is not new; return false
-   return(false);   
-   
-   //debug
-   //Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
-
-}//_is_NewBar()
-
 void setup() {
 
    string symbol_set = "EURJPY";
@@ -275,7 +220,8 @@ int start()
    
    //debug
    Alert("[", __FILE__, ":",__LINE__, "] ", txt);
-   
+
+/*   
    // debug
    write_Log(
          dpath_Log
@@ -285,7 +231,7 @@ int start()
          , __LINE__
          , txt);
          //, name);
-
+*/
    //+----------------------------------------+
    //| new bar                                       |
    //+----------------------------------------+
@@ -295,26 +241,36 @@ int start()
    //debug
    //Alert("[", __FILE__, ":",__LINE__,"] isNewBar => ", isNewBar);
    //Alert("[", __FILE__, ":",__LINE__, "(", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")", "] isNewBar => ", isNewBar);
-   Alert("[", __FILE__, ":",__LINE__, "] isNewBar => ", isNewBar
+   //Alert("[", __FILE__, ":",__LINE__, "] isNewBar => ", isNewBar
    
          //, " (", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")"
-   );
+   //);
    //TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS)
    
    // reset : cntOf_Ticks_In_The_Bar
    if(isNewBar == true)
      {
+
+         // debug
+         txt = "cntOf_Ticks = " + (string)cntOf_Ticks
+                     + " / "
+                     + "cntOf_Ticks_In_The_Bar = " + (string) cntOf_Ticks_In_The_Bar
+                     + "\n"
+                     + "cntOf_Ticks_In_The_Bar => resetting to 0...";
+         write_Log(
+               dpath_Log
+               //, fname_Log
+               , fname_Log_For_Session
+               , __FILE__
+               , __LINE__
+               , txt);
+               //, name);
+
          // reset
          cntOf_Ticks_In_The_Bar = 0;
          
-         //debug
-         Alert("[", __FILE__, ":",__LINE__, "] cntOf_Ticks_In_The_Bar => reset to 0"
          
-               //, " (", TimeToStr(TimeLocal(),TIME_DATE|TIME_SECONDS), ")"
-         );
-                  
-         
-     }
+     }//if(isNewBar == true)
    
    //+----------------------------------------+
    //| new bar : above BB.+1S       |

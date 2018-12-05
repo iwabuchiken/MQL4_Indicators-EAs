@@ -9261,3 +9261,15 @@ _inspections__ShowSpread_Multiple_Currencies ============
 [2018.09.10 11:08:21 / ea_44_5.1_2.mq4:299]EURJPY => 7.0
 [2018.09.10 11:08:21 / ea_44_5.1_2.mq4:299]AUDJPY => 7.0
 [2018.09.10 11:08:21 / ea_44_5.1_2.mq4:299]EURUSD => 5.0
+[2018.09.24 11:11:55 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.24 11:11:55 / obs_49_8.mq4:308]time frame => 60
+[2018.09.24 11:11:55 / utils.mqh:2375]AryOf_Data --> freed (symbol = EURJPY / period = H1)
+[2018.09.24 11:12:54 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.24 11:12:54 / obs_49_8.mq4:308]time frame => 60
+[2018.09.24 11:12:54 / utils.mqh:2375]AryOf_Data --> freed (symbol = EURJPY / period = H1)
+[2018.09.27 13:41:57 / obs_49_8.mq4:296]
+_setup__BasicParams ============
+[2018.09.27 13:41:57 / obs_49_8.mq4:308]time frame => 60
+[2018.09.27 13:41:57 / utils.mqh:2375]AryOf_Data --> freed (symbol = EURJPY / period = H1)

@@ -1,0 +1,28 @@
+Target file = fnc_CountTick.mq4
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_5.1
+Entries = 17
+Created at = 2018/12/05 09:49:02
+Created by = utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/utils/utils.20171123-121700.rb)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_5.1/func-list_fnc_CountTick.mq4_20181205_094902.txt
+
+==========================================
+
+1	string Currency = "EURJPY";
+2	int OrderCount       = 0;                //
+3	string PGName = "abc";     //
+4	int PLDigits         = 2;                //
+5	int RETRY_INTERVAL   = 15000;            //
+6	int RETRY_TIMEOUT    = 60;               //()
+7	int ShortTicket;
+8	int cntOf_Ticks = 0;  // count the num of ticks -- start()
+9	int cntOf_Ticks_In_The_Bar = 0;
+10	int deinit()
+11	string dpath_Log = "Logs";
+12	string fname_Log = "dev.log";
+13	string fname_Log_For_Session = "dev." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+14	int init()
+15	void setup() {
+16	int start()
+17	string txt_Msg = "";
+
+==========================================

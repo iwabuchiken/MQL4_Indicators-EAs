@@ -703,6 +703,25 @@ int write2File_AryOf_BasicData_With_RSI_BB_MFI(
 
    /*********************
       write : data
+      
+         // input
+         AryOf_Data[i][0] = Open[i];
+         AryOf_Data[i][1] = High[i];
+         AryOf_Data[i][2] = Low[i];
+         AryOf_Data[i][3] = Close[i];
+
+         AryOf_Data[i][4] = rsi;
+         
+         AryOf_Data[i][5] = ibands_2S_Plus;
+         AryOf_Data[i][6] = ibands_1S_Plus;
+         
+         AryOf_Data[i][7] = ibands_Main;
+         
+         AryOf_Data[i][8] = ibands_1S_Minus;
+         AryOf_Data[i][9] = ibands_2S_Minus;
+         
+         AryOf_Data[i][10] = mfi;
+
    *********************/
    for(int i=0; i < _lenOf_Array; i++)
      {
@@ -721,6 +740,8 @@ int write2File_AryOf_BasicData_With_RSI_BB_MFI(
           
           , _AryOf_BasicData[i][10]   // MFI
           
+          //, _AryOf_BasicData[i][6]   // BB 2s ?
+          //, _AryOf_BasicData[i][5]   // BB 1s ?
           , _AryOf_BasicData[i][5]   // BB 2s
           , _AryOf_BasicData[i][6]   // BB 1s
           
@@ -2575,3 +2596,58 @@ int write_Log(
    return 1;
 
 }//int write_Log(string dpath_Log, string fname_Log, string fpath_Source, int line_Num, string body)
+
+//+------------------------------------------------------------------+
+//|                                                          |
+//+------------------------------------------------------------------+
+bool _is_NewBar() {
+
+   //ref https://www.mql5.com/en/articles/159
+   static datetime last_time=0;
+   
+   datetime lastbar_time = (datetime) SeriesInfoInteger(Symbol(),Period(),SERIES_LASTBAR_DATE);
+
+   // debug
+   //string txt = "last_time = ", last_time, " / ", "lastbar_time = ", lastbar_time;
+   string txt = "last_time = " + (string)last_time 
+               + " / "
+                + "lastbar_time = " + (string)lastbar_time;
+
+/*   
+   write_Log(
+         dpath_Log
+         //, fname_Log
+         , fname_Log_For_Session
+         , __FILE__
+         , __LINE__
+         , txt);
+*/
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
+   
+//--- if it is the first call of the function
+   if(last_time==0)
+     {
+      //--- set the time and exit
+      last_time=lastbar_time;
+      return(false);
+     }
+
+//--- if the time differs
+   if(last_time!=lastbar_time)
+     {
+     
+     
+      //--- memorize the time and return true
+      last_time=lastbar_time;
+      
+      
+      return(true);
+     }
+//--- if we passed to this line, then the bar is not new; return false
+   return(false);   
+   
+   //debug
+   //Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
+
+}//_is_NewBar()
