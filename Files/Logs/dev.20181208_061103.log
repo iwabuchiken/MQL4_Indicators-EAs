@@ -1,0 +1,132 @@
+[2018.12.08 06:11:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 4 / cntOf_Ticks_In_The_Bar = 4
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:11:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.57401 / BB_Val : 128.55376 / 
+[2018.12.08 06:11:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => true
+[2018.12.08 06:12:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 43 / cntOf_Ticks_In_The_Bar = 39
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:12:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.571 / BB_Val : 128.55739 / 
+[2018.12.08 06:12:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => true
+[2018.12.08 06:13:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 94 / cntOf_Ticks_In_The_Bar = 51
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:13:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.575 / BB_Val : 128.56187 / 
+[2018.12.08 06:13:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => true
+[2018.12.08 06:14:08 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 123 / cntOf_Ticks_In_The_Bar = 29
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:14:08 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.57899 / BB_Val : 128.56671 / 
+[2018.12.08 06:14:08 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => true
+[2018.12.08 06:15:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 219 / cntOf_Ticks_In_The_Bar = 96
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:15:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.562 / BB_Val : 128.56938 / 
+[2018.12.08 06:15:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:16:06 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 267 / cntOf_Ticks_In_The_Bar = 48
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:16:06 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.55901 / BB_Val : 128.57132 / 
+[2018.12.08 06:16:06 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:17:09 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 287 / cntOf_Ticks_In_The_Bar = 20
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:17:09 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.55099 / BB_Val : 128.57245 / 
+[2018.12.08 06:17:09 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:18:06 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 327 / cntOf_Ticks_In_The_Bar = 40
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:18:06 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.55099 / BB_Val : 128.57339 / 
+[2018.12.08 06:18:06 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:19:17 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 340 / cntOf_Ticks_In_The_Bar = 13
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:19:17 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.54201 / BB_Val : 128.5739 / 
+[2018.12.08 06:19:17 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:20:14 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 376 / cntOf_Ticks_In_The_Bar = 36
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:20:14 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.53 / BB_Val : 128.57397 / 
+[2018.12.08 06:20:14 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:21:09 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 399 / cntOf_Ticks_In_The_Bar = 23
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:21:09 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.52699 / BB_Val : 128.57365 / 
+[2018.12.08 06:21:09 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:22:06 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 448 / cntOf_Ticks_In_The_Bar = 49
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:22:06 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.513 / BB_Val : 128.57256 / 
+[2018.12.08 06:22:06 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:23:07 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 493 / cntOf_Ticks_In_The_Bar = 45
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:23:07 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.513 / BB_Val : 128.57196 / 
+[2018.12.08 06:23:07 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:24:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 520 / cntOf_Ticks_In_The_Bar = 27
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:24:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.51601 / BB_Val : 128.57149 / 
+[2018.12.08 06:24:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:25:27 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 548 / cntOf_Ticks_In_The_Bar = 28
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:25:27 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.51601 / BB_Val : 128.57088 / 
+[2018.12.08 06:25:27 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:26:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 574 / cntOf_Ticks_In_The_Bar = 26
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:26:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.526 / BB_Val : 128.56949 / 
+[2018.12.08 06:26:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:27:06 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 610 / cntOf_Ticks_In_The_Bar = 36
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:27:06 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.532 / BB_Val : 128.56876 / 
+[2018.12.08 06:27:06 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:28:06 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 638 / cntOf_Ticks_In_The_Bar = 28
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:28:06 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.536 / BB_Val : 128.5674 / 
+[2018.12.08 06:28:06 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:29:10 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 671 / cntOf_Ticks_In_The_Bar = 33
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:29:10 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.53 / BB_Val : 128.56572 / 
+[2018.12.08 06:29:10 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:30:05 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 718 / cntOf_Ticks_In_The_Bar = 47
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:30:05 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.54201 / BB_Val : 128.56372 / 
+[2018.12.08 06:30:05 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:31:07 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 752 / cntOf_Ticks_In_The_Bar = 34
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:31:07 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.548 / BB_Val : 128.56108 / 
+[2018.12.08 06:31:07 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false
+[2018.12.08 06:32:08 / ea-1_up-up-buy.mq4:278]
+cntOf_Ticks = 786 / cntOf_Ticks_In_The_Bar = 34
+cntOf_Ticks_In_The_Bar => resetting to 0...
+[2018.12.08 06:32:08 / utils.mqh:2755]
+_deviation : 1 / _target_price : 128.536 / BB_Val : 128.55798 / 
+[2018.12.08 06:32:08 / ea-1_up-up-buy.mq4:324]_is_Above_BB_1S => false

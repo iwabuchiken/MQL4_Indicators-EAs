@@ -1262,7 +1262,8 @@ string _get_FNAME(
 
          + "." + "Period-" + _CURRENT_PERIOD
 
-         + "." + "Days-" + (string) _NUMOF_DAYS
+         + "." + "NumOfUnits-" + (string) _NUMOF_DAYS
+         //+ "." + "Days-" + (string) _NUMOF_DAYS
          
          +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
          
@@ -1274,23 +1275,7 @@ string _get_FNAME(
    Print("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
 
    return tmp;
-/*         
-   return _SUBFOLDER
-         
-         + "_" + "file-io"
 
-         + "." + _SYMBOL_STR
-
-         + "." + "Period-" + _CURRENT_PERIOD
-
-         + "." + "Days-" + (string) _NUMOF_DAYS
-         
-         +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
-         
-         +"." + _TIME_LABEL
-         
-         +".csv";
-*/
 }//string _get_FNAME
 
 string _get_FNAME__Shifted(
@@ -1322,23 +1307,7 @@ string _get_FNAME__Shifted(
    Print("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
 
    return tmp;
-/*         
-   return _SUBFOLDER
-         
-         + "_" + "file-io"
 
-         + "." + _SYMBOL_STR
-
-         + "." + "Period-" + _CURRENT_PERIOD
-
-         + "." + "Days-" + (string) _NUMOF_DAYS
-         
-         +"." + "Bars-" + (string) _NUMOF_TARGET_BARS
-         
-         +"." + _TIME_LABEL
-         
-         +".csv";
-*/
 }//_get_FNAME__Shifted
 
 /******************************************
