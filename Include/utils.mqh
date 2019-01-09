@@ -2593,7 +2593,7 @@ bool _is_NewBar() {
          , txt);
 */
    //debug
-   Print("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
+   //Print("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
    
 //--- if it is the first call of the function
    if(last_time==0)

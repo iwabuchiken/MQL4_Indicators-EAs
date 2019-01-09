@@ -70,6 +70,9 @@ extern int Exit002_MA_TimeFrame    = 0;       //
 extern int Exit002_MA_AppliedPrice = 0;    //
 //2() End--------------------------------------------------------------------------------------------------------------------------------
 
+extern int Time_period        = PERIOD_M5;
+
+
 //vars from : fxeabuilder.mq4 Start------------------------------------------------------------------------------------------------------------------------------
 double RealPoint;
 //string Currency = "USDJPY";
@@ -181,7 +184,8 @@ void setup() {
 
    string symbol_set = "EURJPY";
    
-   int period = PERIOD_M1;
+   int period = Time_period;
+   //int period = PERIOD_M1;
    //int period = PERIOD_M5;
    
    set_Symbol(symbol_set, period);
@@ -250,7 +254,7 @@ int start()
    
    //debug
    //Alert("[", __FILE__, ":",__LINE__, "] ", txt);
-   Print("[", __FILE__, ":",__LINE__, "] ", txt);
+   //Print("[", __FILE__, ":",__LINE__, "] ", txt);
 
    //+----------------------------------------+
    //| new bar                                       |
@@ -278,7 +282,10 @@ int start()
                , __LINE__
                , txt);
                //, name);
-
+         
+         //debug
+         Print("[", __FILE__, ":",__LINE__, "] ", txt);
+         
          //+----------------------------------------+
          //| new bar : above BB.+1S       |
          //+----------------------------------------+

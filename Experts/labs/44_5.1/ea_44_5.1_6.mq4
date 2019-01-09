@@ -3,6 +3,11 @@
 //|  Copyright (c) 2010 Area Creators Co., Ltd. All rights reserved. |
 //|                                          http://www.mars-fx.com/ |
 //+------------------------------------------------------------------+
+/*-------------------------------------------------
+func and vars list at
+   dir => C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Experts\labs\44_5.1
+   file => func-list_ea_44_5.1_6.mq4_20190107_105213.txt
+-------------------------------------------------*/
 #property copyright "Copyright (c) 2010 Area Creators Co., Ltd. All rights reserved."
 #property link      "http://www.mars-fx.com/"
 
@@ -51,6 +56,7 @@ extern int OpenOrderMax      = 1;           //
 extern double CloseLotsMax   = 0;           //
 extern int AutoLotsType      = 0;    //(0:1:2:3:)
 
+extern int Time_period        = PERIOD_M5;
 
 //2() Start------------------------------------------------------------------------------------------------------------------------------
 //BB
@@ -151,44 +157,45 @@ bool _is_Above_BB_1S() {
 //+------------------------------------------------------------------+
 //|                                                          |
 //+------------------------------------------------------------------+
-bool _is_NewBar() {
+//bool _is_NewBar() {
 
-   //ref https://www.mql5.com/en/articles/159
-   static datetime last_time=0;
-   
-   datetime lastbar_time = (datetime) SeriesInfoInteger(Symbol(),Period(),SERIES_LASTBAR_DATE);
+//   //ref https://www.mql5.com/en/articles/159
+//   static datetime last_time=0;
+//   
+//   datetime lastbar_time = (datetime) SeriesInfoInteger(Symbol(),Period(),SERIES_LASTBAR_DATE);
 
-   //debug
-   Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
-   
-//--- if it is the first call of the function
-   if(last_time==0)
-     {
-      //--- set the time and exit
-      last_time=lastbar_time;
-      return(false);
-     }
+//   //debug
+//   Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
+//   
+////--- if it is the first call of the function
+//   if(last_time==0)
+//     {
+//      //--- set the time and exit
+//      last_time=lastbar_time;
+//      return(false);
+//     }
 
-//--- if the time differs
-   if(last_time!=lastbar_time)
-     {
-      //--- memorize the time and return true
-      last_time=lastbar_time;
-      return(true);
-     }
-//--- if we passed to this line, then the bar is not new; return false
-   return(false);   
-   
-   //debug
-   //Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
+////--- if the time differs
+//   if(last_time!=lastbar_time)
+//     {
+//      //--- memorize the time and return true
+//      last_time=lastbar_time;
+//      return(true);
+//     }
+////--- if we passed to this line, then the bar is not new; return false
+//   return(false);   
+//   
+//   //debug
+//   //Alert("[", __FILE__, ":",__LINE__,"] SeriesInfoInteger => ", lastbar_time);
 
-}//_is_NewBar()
+//}//_is_NewBar()
 
 void setup() {
 
    string symbol_set = "EURJPY";
    
-   int period = PERIOD_M1;
+   int period = Time_period;
+   //int period = PERIOD_M1;
    //int period = PERIOD_M5;
    
    set_Symbol(symbol_set, period);
