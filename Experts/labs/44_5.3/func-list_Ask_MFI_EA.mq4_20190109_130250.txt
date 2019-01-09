@@ -1,0 +1,12 @@
+Target file = Ask_MFI_EA.mq4
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3
+Entries = 2
+Created at = 2019/01/09 13:02:50
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_Ask_MFI_EA.mq4_20190109_130250.txt
+
+==========================================
+
+1	int TotalOrdersCount()
+2	int start()
+
+==========================================

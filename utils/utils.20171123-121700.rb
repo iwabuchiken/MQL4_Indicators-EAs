@@ -23,6 +23,8 @@ pushd C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4
 ruby utils.rb ../../Include utils.mqh
 
 =end
+#tmp_Dpath = %q"C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils"
+GLOBAL_tmp_Dpath = %q"C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\utils"
 
 ################################
 #	
@@ -483,7 +485,8 @@ def exec
   #
   ################################
   #ref quote expression https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
-  tmp_Dpath = %q"C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils"
+  #tmp_Dpath = %q"C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils"
+  tmp_Dpath = GLOBAL_tmp_Dpath
   
   tmp_Fname = "utils.20171123-121700.dat"
   
