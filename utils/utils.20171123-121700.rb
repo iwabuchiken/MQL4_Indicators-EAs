@@ -16,7 +16,7 @@
 utils.rb <directory path> <file name>
 
 <Usage>
-pushd C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils
+pushd C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\utils\
 ruby utils.20171123-121700.rb
 
 pushd C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Research\
@@ -64,13 +64,20 @@ end#get_TimeLabel_Now
 
 #xxx
 #def _exec_2_MakeList__Write2File(aryOf_Funcs, dir, fname, count)
-def _exec_2_MakeList__Write2File(aryOf_Funcs, aryOf_Vars, dir, fname, count)
+def _exec_2_MakeList__Write2File( \
+      aryOf_Funcs \
+      , aryOf_Vars \
+      , dpath_Src \
+      , fname \
+      , count \
+      , dpath_Dst)
 
   time_Label = get_TimeLabel_Now
 
   time_Label_Readable = get_TimeLabel_Now("readable")
   
-  fpath_Out = dir + "/" + "func-list_#{fname}_#{time_Label}.txt"
+  fpath_Out = dpath_Dst + "/" + "func-list_#{fname}_#{time_Label}.txt"
+#  fpath_Out = dir + "/" + "func-list_#{fname}_#{time_Label}.txt"
   
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] fpath_Out => #{fpath_Out}"
   
@@ -83,7 +90,7 @@ def _exec_2_MakeList__Write2File(aryOf_Funcs, aryOf_Vars, dir, fname, count)
   fout.write("\n")
   
   #ref expand https://docs.ruby-lang.org/ja/latest/method/File/s/expand_path.html
-  fout.write("dir = #{File.expand_path(dir)}")
+  fout.write("dpath_Src = #{File.expand_path(dpath_Src)}")
 #  fout.write("dir = #{dir}")
   fout.write("\n")
   
@@ -438,6 +445,284 @@ def _exec_2_MakeList(fpath, dir, fname)
   
 end#_exec_2_MakeList
 
+def _exec_2_MakeList__V2(dpath_Src, fname_Src, dpath_Dst)
+  
+    ####################
+    # file : open
+    ####################
+  fpath_Src = "#{dpath_Src}\\#{fname_Src}"
+  
+  #ref http://uxmilk.jp/22615
+  f = File.open(fpath_Src, "r")
+#  f = File.open(fpath, "r")
+  
+  #debug
+  count = 0
+  
+  #ref http://www.sejuku.net/blog/14332
+  aryOf_FuncNames = Array.new()
+  
+#  f.each do |line|
+  #ref http://qiita.com/mogulla3/items/fbc2a46478872bebbc47
+  f.each_line do |line|
+    
+    ################################
+    #	
+    #	read lines
+    #
+    ################################
+    #ref http://qiita.com/shizuma/items/4279104026964f1efca6
+    #ref https://apidock.com/ruby/String/match
+    #hit = line.match(/^(int|void|string) (.+)/)
+    hit = line.match(/^(int|void|string|bool) (.+)/)
+#    hit = line.match(/^int .+/)
+    
+    unless hit == nil
+      
+      if hit.size == 3
+      
+        aryOf_FuncNames << [hit[1], hit[2]]
+      
+        #debug
+        count += 1
+
+      elsif hit.size == 2
+        
+        aryOf_FuncNames << [hit[1], ""]
+        
+        #debug
+        count += 1
+
+      else#if (hit.size == 3)
+      
+        puts "[#{File.basename(__FILE__)}:#{__LINE__}] unknown func name format => #{hit}"
+              
+      end#if (hit.size == 3)
+
+    end
+    
+  end
+  
+  f.close
+  
+  ################################
+  #	
+  #	array ---> funcs, vars
+  #
+  ################################
+  aryOf_Funcs = []
+  aryOf_Vars = []
+  
+  flg_IsFunc = false
+    
+  aryOf_FuncNames.each do |aryOf_tokens|
+    
+    aryOf_tokens.each do |elem|
+      
+      # func?
+      #ref substring https://stackoverflow.com/questions/8258517/how-to-check-whether-a-string-contains-a-substring-in-ruby#8258571
+      #ref match substring https://stackoverflow.com/questions/4115115/extract-a-substring-from-a-string-in-ruby-using-a-regular-expression#4115144
+      #if elem.match(/^[a-zA-Z_]+\(.*\)/)
+      #ref regex numerical https://www.regular-expressions.info/numericranges.html
+      if elem.match(/^[a-zA-Z_0-9]+\(.*\)/)
+        
+        #ref append https://stackoverflow.com/questions/12163625/create-or-append-to-array-in-ruby#12163661
+        aryOf_Funcs.push(aryOf_tokens)
+        
+        # set : flag
+        flg_IsFunc = true
+        
+        break
+        
+      end#if elem.match(/^[a-zA-Z_]+\(.*\)/)
+      
+    end#aryOf_tokens.each do |elem|
+    
+    # flag : set ?
+    if flg_IsFunc == false
+      
+      aryOf_Vars.push(aryOf_tokens)
+      
+    # flag : reset
+    else # flag is true : func
+      
+      flg_IsFunc = false
+      
+    end
+    
+  end#aryOf_FuncNames.each do |item|
+  
+  #debug
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_Funcs ==>"
+  
+  aryOf_Funcs.each do |elem|
+    
+    p elem
+    
+  end
+  
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_Vars ==>"
+  
+  aryOf_Vars.each do |elem|
+    
+    p elem
+    
+  end
+  
+  ################################
+  #	
+  #	array ---> sort
+  #
+  ################################
+  #ref http://qiita.com/hachy/items/750002ee7787485b9de7
+  aryOf_FuncNames__Sorted = aryOf_FuncNames.sort { |a, b| a[1] <=> b[1] }
+
+  #debug
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_FuncNames__Sorted ==>"
+  
+  p aryOf_FuncNames__Sorted
+
+  # aryOf_Funcs
+  aryOf_Funcs__Sorted = aryOf_Funcs.sort { |a, b| a[1] <=> b[1] }
+  aryOf_Vars__Sorted = aryOf_Vars.sort { |a, b| a[1] <=> b[1] }
+
+  #debug
+  puts ""
+  puts "(sorted)------------------------------"
+  
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_Funcs__Sorted ==>"
+  
+  aryOf_Funcs__Sorted.each do |elem|
+    
+    p elem
+    
+  end
+  
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_Vars__Sorted ==>"
+  
+  aryOf_Vars__Sorted.each do |elem|
+    
+    p elem
+    
+  end
+    
+  ################################
+  #	
+  #	write to file
+  #
+  ################################
+  _exec_2_MakeList__Write2File( \
+          aryOf_Funcs__Sorted \
+          , aryOf_Vars__Sorted \
+          , dpath_Src \
+          , fname_Src \
+          , count \
+          , dpath_Dst)
+#          aryOf_Funcs__Sorted, aryOf_Vars__Sorted, dir, fname, count)
+#  _exec_2_MakeList__Write2File(aryOf_Funcs__Sorted, dir, fname, count)
+#aryOf_Funcs \
+#, aryOf_Vars \
+#, dpath_Src \
+#, fname \
+#, count \
+#, dpath_Dst)
+          
+          #abc dpath_Src, fname_Src, dpath_Dst
+  #debug
+  return
+      
+  #aaa
+  
+#  time_Label = get_TimeLabel_Now
+#
+#  time_Label_Readable = get_TimeLabel_Now("readable")
+#  
+#  fpath_Out = dir + "/" + "func-list_#{fname}_#{time_Label}.txt"
+#  
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] fpath_Out => #{fpath_Out}"
+#  
+#  puts
+#  
+#  fout = File.open(fpath_Out, "w");
+#  
+#  # header
+#  fout.write("Target file = #{fname}")
+#  fout.write("\n")
+#  
+#  #ref expand https://docs.ruby-lang.org/ja/latest/method/File/s/expand_path.html
+#  fout.write("dir = #{File.expand_path(dir)}")
+##  fout.write("dir = #{dir}")
+#  fout.write("\n")
+#  
+#  fout.write("Entries = #{count.to_s}")
+#  fout.write("\n")
+#  
+#  fout.write("Created at = #{time_Label_Readable}")
+#  fout.write("\n")
+#  
+##  fout.write("Created by = #{__FILE__} (#{File.dirname(__FILE__)})")
+#  #ref dirpath https://stackoverflow.com/questions/1937743/how-to-get-the-current-working-directorys-absolute-path-from-irb#1937761
+#  fout.write("Created by = #{__FILE__} (#{File.dirname(File.expand_path(__FILE__))})")
+##  fout.write("Created by = #{__FILE__}")
+#  fout.write("\n")
+#  
+#  fout.write("This file = #{File.expand_path(fpath_Out)}")
+##  fout.write("This file = #{fpath_Out}")
+#  fout.write("\n")
+#  
+#  fout.write("\n")
+#  
+#  fout.write("==========================================")
+#  fout.write("\n")
+#  fout.write("\n")
+#  
+#  # write lines
+#  aryOf_FuncNames__Sorted.each_with_index {|pair, i|
+#    
+#    #ref https://ref.xaio.jp/ruby/classes/string/strip
+#    fout.write("#{(i + 1).to_s}\t#{pair[0]} #{pair[1].strip}")
+##    fout.write("#{(i + 1).to_s}\t#{pair[0]}\t#{pair[1].strip}")
+##    fout.write("#{(i + 1).to_s}\t#{pair[0]}\t#{pair[1]}")
+#    
+#    fout.write("\n")
+#    
+#  }
+#  
+#  fout.write("\n")
+#  fout.write("==========================================")
+#  fout.write("\n")
+#
+#  fout.close
+  
+  ################################
+  #	
+  #	message : final
+  #
+  ################################
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] funcs => #{count.to_s} entries"
+
+#  puts
+#  aryOf_FuncNames.each do |item|
+#  
+#    p item
+#  
+#  end
+#  
+#  # sort
+#  aryOf_FuncNames__Sorted = aryOf_FuncNames.sort { |a, b| a[1] <=> b[1] }
+#  
+#  puts
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] sorted ========================"
+#  
+#    
+#  aryOf_FuncNames__Sorted.each do |item|
+#  
+#    p item
+#  
+#  end
+  
+end#_exec_2_MakeList
+
 #xxx
 def exec
   
@@ -635,4 +920,110 @@ def exec
   
 end
 
-exec
+def exec_2
+  
+  ################################
+  #	
+  #	setup
+  #
+  ################################
+  lenOf_ARGs = ARGV.length
+  
+  ################################
+  #	
+  #	dflt values
+  #
+  ################################
+  if lenOf_ARGs < 1
+    
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] args needed ==>\n" \
+        "<Usage> utils.20171123-121700.rb <source dpath> <source file name> <dest dir path>"
+    
+    return
+  
+  else
+    
+    dpath_Src = ARGV[0]
+    
+    fname_Src = ARGV[1]
+    
+    dpath_Dst = ARGV[2]
+    
+  end#if lenOf_ARGs < 1
+
+  # report
+  #ref multi lines https://stackoverflow.com/questions/2337510/ruby-can-i-write-multi-line-string-with-no-concatenation#6032910
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] args ==>\n" \
+      "dpath_Src = #{dpath_Src}\n" \
+      "fname_Src = #{fname_Src}\n" \
+      "dpath_Dst = #{dpath_Dst}\n"
+  
+#  #debug
+#  return
+      
+  ################################
+  # 
+  # validate : source file, source dir
+  #
+  ################################
+  #ref quote expression https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
+  #tmp_Dpath = %q"C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils"
+  fpath_Src = "#{dpath_Src}\\#{fname_Src}"
+  
+  if File.exists?(fpath_Src)
+
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] file => exists : #{fpath_Src}"
+    
+  else
+    
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] file => NOT exists : #{fpath_Src}"
+    
+    return -1
+    
+  end#if File.exists?(tmp_Fpath)
+
+#  #debug
+#  return
+    
+  ################################
+  #	
+  #	validate : dest dir
+  #
+  ################################
+  if File.exists?(dpath_Dst)
+  
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] dpath_Dst => exists : #{dpath_Dst}"
+    
+  
+  else#if (File.exists?(dir))
+  
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] dpath_Dst => NOT exists : #{dpath_Dst}"
+    
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] quitting..."
+    
+    return -1
+    
+  end#if (File.exists?(dir))
+
+  ################################
+  #	
+  #	file content
+  #
+  ################################
+  _exec_2_MakeList__V2(dpath_Src, fname_Src, dpath_Dst)
+#  _exec_2_MakeList(fpath, dir, fname)
+  #abc
+  ################################
+  #	
+  #	message : final
+  #
+  ################################
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] dir = #{dir} / fname = #{fname}"
+  
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] done"
+  
+  
+end
+
+exec_2
+#exec

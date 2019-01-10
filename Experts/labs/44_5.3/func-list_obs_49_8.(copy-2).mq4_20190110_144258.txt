@@ -1,0 +1,21 @@
+Target file = obs_49_8.(copy-2).mq4
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Indicators/lab/obs/49_8
+Entries = 4
+Created at = 2019/01/10 14:42:58
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_obs_49_8.(copy-2).mq4_20190110_144258.txt
+
+==========================================
+<funcs>
+
+
+==========================================
+==========================================
+<vars>
+
+1	int FILE_HANDLE;
+2	int HIT_INDICES[];   // indices of matched bars
+3	int HOURS_PER_DAY=24;
+4	int NUMOF_HIT_INDICES=0;
+
+==========================================

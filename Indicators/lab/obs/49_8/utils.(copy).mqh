@@ -2656,8 +2656,8 @@ bool is_Above_BB_X(
          , int _shift
          , float _target_price
          
-         , string _dpath_Log
-         , string _fname_Log_For_Session
+         , string dpath_Log
+         , string fname_Log_For_Session
          ) {
 
    int index = 0;
@@ -2721,9 +2721,9 @@ bool is_Above_BB_X(
             ;
    
    write_Log(
-         _dpath_Log
+         dpath_Log
          //, fname_Log
-         , _fname_Log_For_Session
+         , fname_Log_For_Session
          , __FILE__
          , __LINE__
          , txt);
