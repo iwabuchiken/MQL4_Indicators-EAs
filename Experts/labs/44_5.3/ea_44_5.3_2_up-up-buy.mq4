@@ -17,12 +17,15 @@
 //|  : original                                             |
 //+------------------------------------------------------------------+
 #include <utils.mqh>
+#include <lib_ea.mqh>
 
 
 //+------------------------------------------------------------------+
 //| vars                                               |
 //+------------------------------------------------------------------+
 string PGName = "abc";     //
+
+string txt_Msg;
 
 //+------------------------------------------------------------------+
 //| vars : counter
@@ -75,36 +78,93 @@ bool is_Up_Bar() {
 
 //aaaa
 
-   return true;
+   //return true;
+   return (diff_Latest > 0) ? true : false;
 
 }//is_Up_Bar()
 
 void op_NewBar() {
+//abc
+   txt_Msg = "new bar (tick = "
+                + (string) cntOf_Ticks
+               + ")"
+               + " "
+               + "(period = "
+               + (string) Period()
+               + " / "
+               + "symbol = "
+               + (string) Symbol()
+               + ")"
+               ;
+                
+   write_Log(
+         dpath_Log
+         //, fname_Log
+         , fname_Log_For_Session
+         , __FILE__
+         , __LINE__
+         , txt_Msg);
 
-         string txt = "new bar (tick = "
-                      + (string) cntOf_Ticks
-                     + ")"
-                     + " "
-                     + "(period = "
-                     + (string) Period()
-                     + " / "
-                     + "symbol = "
-                     + (string) Symbol()
-                     + ")"
-                     ;
-                      
-         write_Log(
-               dpath_Log
-               //, fname_Log
-               , fname_Log_For_Session
-               , __FILE__
-               , __LINE__
-               , txt);
+   /****************
+      detect : down down buy ?
+   ****************/
+   bool res = detect_DownDown_Buy();
+   
+   txt_Msg = "detect_DownDown_Buy() => "
+               + (string) res
+               + ")"
+               + " "
+               + "(period = "
+               + (string) Period()
+               + " / "
+               + "symbol = "
+               + (string) Symbol()
+               + ")"
+               ;
+                
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);
 
    /****************
       detect : up bar ?
    ****************/
+/*
    bool bl_Is_Up_Bar = is_Up_Bar();
+   
+   if(bl_Is_Up_Bar == false)
+     {   
+
+         txt_Msg = "is_Up_Bar() ---> false"
+                     ;
+                      
+         write_Log(
+               dpath_Log
+               , fname_Log_For_Session
+               , __FILE__
+               , __LINE__
+               , txt_Msg);
+               
+         return;
+         
+     }
+   else
+     {
+         txt_Msg = "is_Up_Bar() ---> true"
+                     ;
+                      
+         write_Log(
+               dpath_Log
+               , fname_Log_For_Session
+               , __FILE__
+               , __LINE__
+               , txt_Msg);
+               
+         return;
+      
+     }
+*/     
 //abc
    /****************
       detect : above BB.+1?
