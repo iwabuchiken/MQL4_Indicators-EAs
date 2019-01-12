@@ -133,7 +133,7 @@ bool detect_DownDown_Buy() {
    double price_Close_SecondLatest = (double) Close[index + 1];
    double price_Open_SecondLatest = (double) Open[index + 1];
 
-   d = TimeToStr(iTime(Symbol(),Period(), index + 1));
+   string d2 = TimeToStr(iTime(Symbol(),Period(), index + 1));
    
    /****************
       the latest bar : down ?
@@ -149,7 +149,7 @@ bool detect_DownDown_Buy() {
                       + (string) diff_SecondLatest
                       + ")"
                       + "("
-                      + d
+                      + d2
                       + ")"
                      ;
                       
@@ -162,6 +162,21 @@ bool detect_DownDown_Buy() {
          return false;
          
       }//if(diff_SecondLatest >= 0)
+
+   /****************
+      detection ---> true
+   ****************/
+   string txt = "\ndetect_DownDown_Buy() ==> true"
+                + " (datetime = "
+                + d
+                + ")"
+               ;
+                
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt);
+   
    
    /****************
       return
