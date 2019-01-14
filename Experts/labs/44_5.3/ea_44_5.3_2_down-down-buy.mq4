@@ -144,7 +144,7 @@ void op_NewBar() {
    if(res == true)
      {
          
-         buy_DownDown_Buy(TheStopLoss, TheTakeProfit);
+         buy_DownDown_Buy(TheStopLoss, TheTakeProfit, dpath_Log, fname_Log_For_Session);
          //abc
      }//if(res == true)
 

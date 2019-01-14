@@ -120,7 +120,7 @@ void op_NewBar() {
       detect : down down buy ?
    ****************/
    bool res = detect_DownDown_Buy();
-   
+
    txt_Msg = "detect_DownDown_Buy() => "
                + (string) res
                + ")"
@@ -144,54 +144,9 @@ void op_NewBar() {
    if(res == true)
      {
          
-         buy_DownDown_Buy(TheStopLoss, TheTakeProfit);
+         //sell_UpUp_Sell(TheStopLoss, TheTakeProfit);
          //abc
      }//if(res == true)
-
-
-   /****************
-      detect : up bar ?
-   ****************/
-/*
-   bool bl_Is_Up_Bar = is_Up_Bar();
-   
-   if(bl_Is_Up_Bar == false)
-     {   
-
-         txt_Msg = "is_Up_Bar() ---> false"
-                     ;
-                      
-         write_Log(
-               dpath_Log
-               , fname_Log_For_Session
-               , __FILE__
-               , __LINE__
-               , txt_Msg);
-               
-         return;
-         
-     }
-   else
-     {
-         txt_Msg = "is_Up_Bar() ---> true"
-                     ;
-                      
-         write_Log(
-               dpath_Log
-               , fname_Log_For_Session
-               , __FILE__
-               , __LINE__
-               , txt_Msg);
-               
-         return;
-      
-     }
-*/     
-//abc
-   /****************
-      detect : above BB.+1?
-   ****************/
-
 
 }//op_NewBar()
 

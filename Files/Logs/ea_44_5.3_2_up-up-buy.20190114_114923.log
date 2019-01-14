@@ -1,0 +1,8 @@
+[2019.01.14 11:50:08 / ea_44_5.3_2_up-up-buy.mq4:116]new bar (tick = 33) (period = 1 / symbol = EURJPY_)
+[2019.01.14 11:50:08 / lib_ea.mqh:82]
+diff_Latest >= 0 (0.001000000000004775) (2019.01.14 04:49)
+[2019.01.14 11:50:08 / ea_44_5.3_2_up-up-buy.mq4:138]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.14 11:50:59 / ea_44_5.3_2_up-up-buy.mq4:116]new bar (tick = 69) (period = 1 / symbol = EURJPY_)
+[2019.01.14 11:50:59 / lib_ea.mqh:82]
+diff_Latest >= 0 (0) (2019.01.14 04:50)
+[2019.01.14 11:50:59 / ea_44_5.3_2_up-up-buy.mq4:138]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
