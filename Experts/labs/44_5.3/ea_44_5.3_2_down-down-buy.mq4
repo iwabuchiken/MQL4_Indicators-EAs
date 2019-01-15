@@ -44,8 +44,12 @@ extern int Time_period        = PERIOD_M1;
 //ref Ask_MFI_EA
 extern int MagicNumber=10001;
 extern double Lots =0.1;
-extern double StopLoss=0.03;
-extern double TakeProfit=0.05;
+extern double StopLoss=3;  // StopLoss (in pips)
+extern double TakeProfit=7;  // TakeProfit (in pips)
+
+//extern double StopLoss=0.03;
+//extern double TakeProfit=0.05;
+
 extern int TrailingStop=0.03;
 extern int Slippage=0.01;
 
@@ -92,9 +96,11 @@ bool is_Up_Bar() {
 }//is_Up_Bar()
 
 void op_NewBar() {
-   
-  double TheStopLoss=0;
-  double TheTakeProfit=0; 
+
+  double TheStopLoss    = StopLoss;
+  double TheTakeProfit  = TakeProfit; 
+//  double TheStopLoss=0;
+//  double TheTakeProfit=0; 
    
    txt_Msg = "new bar (tick = "
                 + (string) cntOf_Ticks
@@ -187,7 +193,7 @@ void op_NewBar() {
       
      }
 */     
-//abc
+
    /****************
       detect : above BB.+1?
    ****************/
@@ -214,7 +220,7 @@ int start()
    if(res == true)
      {
          op_NewBar();
-      //abc
+
      }//if(res == true)
    else
        {
@@ -237,6 +243,58 @@ int init()
    setup();
 
    //_is_NewBar();
+
+  double MyPoint=Point;
+  
+  //@_20190115_150404 
+  /*
+      MyPoint * 2 * 100  ===> + 0.20 JPY
+      MyPoint * 2 * 10  ===> + 0.02 JPY (0.01 * 2)
+      MyPoint * N * 10  ===> + 0.0N JPY (0.01 * N, N<=9)
+      
+  */
+  double _TheTakeProfit = TakeProfit;
+  double _TheStopLoss = StopLoss;
+  
+  double Level_TakeProfit = Bid + MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
+  double Level_StopLoss = Bid - MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
+  //double Level_TakeProfit = Bid + MyPoint * 2 * 100;  // +0.20 yen
+  //double Level_StopLoss = Bid - MyPoint * 100;        // -0.11 yen
+
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] "
+            , "Level_TakeProfit => ", (string) Level_TakeProfit
+            , " / "
+            , "Level_StopLoss => ", (string) Level_StopLoss
+            
+            );
+//abc
+   txt_Msg = "\n"
+            + "Level_TakeProfit => "+ (string) Level_TakeProfit
+            + " / "
+            + "Level_StopLoss => "+ (string) Level_StopLoss
+               ;
+
+   txt_Msg += "\n"
+            + "Point = " + (string) Point
+            + "\nBid = " + (string) Bid
+            ;
+                
+   txt_Msg += "\n"
+            + "MyPoint * 10 * _TheTakeProfit = " + (string) (MyPoint * 10 * _TheTakeProfit)
+            + "\nMyPoint * 10 * _TheStopLoss = " + (string) (MyPoint * 10 * _TheStopLoss)
+            ;
+
+   txt_Msg += "\n"
+            + "_TheTakeProfit = " + (string) _TheTakeProfit
+            + "\n_TheStopLoss = " + (string) _TheStopLoss
+            ;
+
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);   
+
    
    return(0);
 }

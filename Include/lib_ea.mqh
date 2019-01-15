@@ -346,9 +346,18 @@ void buy_DownDown_Buy(
      int result=0;
      
      double MyPoint=Point;
-      
-     double Level_TakeProfit = Bid + MyPoint * 2 * 100;
-     double Level_StopLoss = Bid - MyPoint * 100;
+     
+     //@_20190115_150404 
+     /*
+         MyPoint * 2 * 100  ===> + 0.20 JPY
+         MyPoint * 2 * 10  ===> + 0.02 JPY (0.01 * 2)
+         MyPoint * N * 10  ===> + 0.0N JPY (0.01 * N, N<=9)
+         
+     */
+     double Level_TakeProfit = Bid + MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
+     double Level_StopLoss = Bid - MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
+     //double Level_TakeProfit = Bid + MyPoint * 2 * 100;  // +0.20 yen
+     //double Level_StopLoss = Bid - MyPoint * 100;        // -0.11 yen
 
       //debug
       Print("[", __FILE__, ":",__LINE__,"] "
@@ -369,6 +378,16 @@ void buy_DownDown_Buy(
                + "\nBid = " + (string) Bid
                ;
                    
+      txt_Msg += "\n"
+               + "MyPoint * 10 * _TheTakeProfit = " + (string) (MyPoint * 10 * _TheTakeProfit)
+               + "\nMyPoint * 10 * _TheStopLoss = " + (string) (MyPoint * 10 * _TheStopLoss)
+               ;
+
+      txt_Msg += "\n"
+               + "_TheTakeProfit = " + (string) _TheTakeProfit
+               + "\n_TheStopLoss = " + (string) _TheStopLoss
+               ;
+
       write_Log(
             _dpath_Log, _fname_Log_For_Session
             , __FILE__, __LINE__

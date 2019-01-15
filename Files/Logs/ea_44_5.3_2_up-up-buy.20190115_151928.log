@@ -1,0 +1,13 @@
+[2019.01.15 15:19:28 / ea_44_5.3_2_down-down-buy.mq4:290][ea_44_5.3_2_down-down-buy.mq4:272] Level_TakeProfit => 124.7765 / Level_StopLoss => 124.7757
+Point = 0.001
+Bid = 124.776
+MyPoint * 10 * _TheTakeProfit = 0.0005
+MyPoint * 10 * _TheStopLoss = 0.0003
+[2019.01.15 15:20:00 / ea_44_5.3_2_down-down-buy.mq4:122]new bar (tick = 32) (period = 1 / symbol = EURJPY_)
+[2019.01.15 15:20:00 / lib_ea.mqh:234]
+diff_Latest >= 0 (0.006000000000000227) (2019.01.15 08:19)
+[2019.01.15 15:20:00 / ea_44_5.3_2_down-down-buy.mq4:144]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.15 15:21:00 / ea_44_5.3_2_down-down-buy.mq4:122]new bar (tick = 93) (period = 1 / symbol = EURJPY_)
+[2019.01.15 15:21:00 / lib_ea.mqh:234]
+diff_Latest >= 0 (0.003000000000000114) (2019.01.15 08:20)
+[2019.01.15 15:21:00 / ea_44_5.3_2_down-down-buy.mq4:144]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
