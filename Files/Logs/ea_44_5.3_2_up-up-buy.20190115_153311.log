@@ -145,3 +145,7 @@ diff_SecondLatest >= 0 (diff = 0.007999999999995566)(2019.01.15 08:49)
 [2019.01.15 15:52:00 / lib_ea.mqh:234]
 diff_Latest >= 0 (0.004999999999995453) (2019.01.15 08:51)
 [2019.01.15 15:52:00 / ea_44_5.3_2_down-down-buy.mq4:144]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.15 15:53:01 / ea_44_5.3_2_down-down-buy.mq4:122]new bar (tick = 2181) (period = 1 / symbol = EURJPY_)
+[2019.01.15 15:53:01 / lib_ea.mqh:234]
+diff_Latest >= 0 (0.02200000000000557) (2019.01.15 08:52)
+[2019.01.15 15:53:01 / ea_44_5.3_2_down-down-buy.mq4:144]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)

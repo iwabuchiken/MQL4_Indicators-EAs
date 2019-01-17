@@ -102,7 +102,7 @@ void op_NewBar() {
 //  double TheStopLoss=0;
 //  double TheTakeProfit=0; 
    
-   txt_Msg = "new bar (tick = "
+   txt_Msg = "\nnew bar (tick = "
                 + (string) cntOf_Ticks
                + ")"
                + " "
@@ -127,7 +127,7 @@ void op_NewBar() {
    ****************/
    bool res = detect_DownDown_Buy();
    
-   txt_Msg = "detect_DownDown_Buy() => "
+   txt_Msg = "\ndetect_DownDown_Buy() => "
                + (string) res
                + ")"
                + " "
@@ -150,8 +150,13 @@ void op_NewBar() {
    if(res == true)
      {
          
+         // ea : id=2 : down-down-buy
          buy_DownDown_Buy(TheStopLoss, TheTakeProfit, dpath_Log, fname_Log_For_Session);
-         //abc
+         
+         // ea : id=3 : down-down-sell
+         buy_DownDown_Sell(TheStopLoss, TheTakeProfit, dpath_Log, fname_Log_For_Session);
+         
+         
      }//if(res == true)
 
 

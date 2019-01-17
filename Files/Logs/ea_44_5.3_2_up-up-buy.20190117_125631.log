@@ -1,0 +1,8 @@
+[2019.01.17 12:56:31 / ea_44_5.3_2_down-down-buy.mq4:300]
+Level_TakeProfit => 124.184 / Level_StopLoss => 124.084
+Point = 0.001
+Bid = 124.114
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3

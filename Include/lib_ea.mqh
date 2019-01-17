@@ -410,6 +410,17 @@ void buy_DownDown_Buy(
                   , MagicNumber
                   , 0
                   , Blue);
+      
+
+      txt_Msg = "\n-------------------------------- [new order : buy_DownDown_Buy]\n"
+               + "order id = " + (string) result
+               ;
+
+      write_Log(
+            _dpath_Log, _fname_Log_For_Session
+            , __FILE__, __LINE__
+            , txt_Msg);
+      
 
 /*
 //ref https://docs.mql4.com/trading/ordersend
@@ -452,3 +463,93 @@ int  OrderSend(
 
 
 }//buy_DownDown_Buy()
+
+//xxx
+void buy_DownDown_Sell(
+         double _TheStopLoss
+         , double _TheTakeProfit
+         , string _dpath_Log, string _fname_Log_For_Session) {
+
+     int result=0;
+     
+     double MyPoint=Point;
+     
+     //@_20190115_150404 
+     /*
+         MyPoint * 2 * 100  ===> + 0.20 JPY
+         MyPoint * 2 * 10  ===> + 0.02 JPY (0.01 * 2)
+         MyPoint * N * 10  ===> + 0.0N JPY (0.01 * N, N<=9)
+         
+     */
+     double Level_TakeProfit = Ask - MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
+     double Level_StopLoss = Ask + MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
+     //double Level_TakeProfit = Bid + MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
+     //double Level_StopLoss = Bid - MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
+
+      //debug
+      Print("[", __FILE__, ":",__LINE__,"] "
+               , "Level_TakeProfit => ", (string) Level_TakeProfit
+               , " / "
+               , "Level_StopLoss => ", (string) Level_StopLoss
+               
+               );
+
+      txt_Msg = "[" + __FILE__+ ":" + __LINE__ + "] "
+               + "Level_TakeProfit => "+ (string) Level_TakeProfit
+               + " / "
+               + "Level_StopLoss => "+ (string) Level_StopLoss
+                  ;
+
+      txt_Msg += "\n"
+               + "Point = " + (string) Point
+               + "\nBid = " + (string) Ask
+               ;
+                   
+      txt_Msg += "\n"
+               + "MyPoint * 10 * _TheTakeProfit = " + (string) (MyPoint * 10 * _TheTakeProfit)
+               + "\nMyPoint * 10 * _TheStopLoss = " + (string) (MyPoint * 10 * _TheStopLoss)
+               ;
+
+      txt_Msg += "\n"
+               + "_TheTakeProfit = " + (string) _TheTakeProfit
+               + "\n_TheStopLoss = " + (string) _TheStopLoss
+               ;
+
+      write_Log(
+            _dpath_Log, _fname_Log_For_Session
+            , __FILE__, __LINE__
+            , txt_Msg);
+      
+     //if((Ask>iMFI(NULL,PERIOD_M5,20,0))) // Here is your open buy rule
+
+     {
+        result=OrderSend(
+                  Symbol()
+                  , OP_SELL
+                  , Lots
+                  , Bid
+                  , Slippage
+                  , Level_StopLoss
+                  , Level_TakeProfit
+                  //, 0
+                  //, 0
+                  , "EA Generator www.ForexEAdvisor.com"
+                  , MagicNumber
+                  , 0
+                  , Blue);
+      
+
+      txt_Msg = "\n-------------------------------- [new order : buy_DownDown_Sell]\n"
+               + "order id = " + (string) result
+               ;
+
+      write_Log(
+            _dpath_Log, _fname_Log_For_Session
+            , __FILE__, __LINE__
+            , txt_Msg);
+  
+     }
+   
+
+
+}//buy_DownDown_Sell
