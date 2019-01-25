@@ -76,7 +76,8 @@ def _exec_2_MakeList__Write2File( \
 
   time_Label_Readable = get_TimeLabel_Now("readable")
   
-  fpath_Out = dpath_Dst + "/" + "func-list_#{fname}_#{time_Label}.txt"
+  fpath_Out = dpath_Dst + "/" + "func-list.(#{fname}).#{time_Label}.txt"
+  #fpath_Out = dpath_Dst + "/" + "func-list_#{fname}_#{time_Label}.txt"
 #  fpath_Out = dir + "/" + "func-list_#{fname}_#{time_Label}.txt"
   
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] fpath_Out => #{fpath_Out}"
@@ -111,6 +112,19 @@ def _exec_2_MakeList__Write2File( \
   fout.write("\n")
   
   fout.write("\n")
+  
+  ####################
+  # meta
+  ####################
+  fout.write("/*")
+  fout.write("\n")
+  
+  fout.write("#{time_Label_Readable}")
+  fout.write("\n")
+
+  fout.write(File.basename(fpath_Out))
+  fout.write("\n")
+  
   
   ####################
   # funcs
@@ -162,6 +176,9 @@ def _exec_2_MakeList__Write2File( \
   
   fout.write("\n")
   fout.write("==========================================")
+  fout.write("\n")
+
+  fout.write("*/")
   fout.write("\n")
 
   fout.close    
@@ -474,7 +491,10 @@ def _exec_2_MakeList__V2(dpath_Src, fname_Src, dpath_Dst)
     #ref http://qiita.com/shizuma/items/4279104026964f1efca6
     #ref https://apidock.com/ruby/String/match
     #hit = line.match(/^(int|void|string) (.+)/)
-    hit = line.match(/^(int|void|string|bool) (.+)/)
+#    hit = line.match(/^(int|void|string|bool) (.+)/)
+#    hit = line.match(/^(int|void|string|bool) ([a-zA-Z0-9_]+)/)
+#    hit = line.match(/^(int|void|string|bool) ([a-zA-Z0-9_]+[ }]*[\(]*)/)  #=> working
+    hit = line.match(/^(int|void|string|bool) ([a-zA-Z0-9_]+[ }]*[\(]*[a-zA-Z0-9_ ,]*[\)]*)/)
 #    hit = line.match(/^int .+/)
     
     unless hit == nil
@@ -524,7 +544,10 @@ def _exec_2_MakeList__V2(dpath_Src, fname_Src, dpath_Dst)
       #ref match substring https://stackoverflow.com/questions/4115115/extract-a-substring-from-a-string-in-ruby-using-a-regular-expression#4115144
       #if elem.match(/^[a-zA-Z_]+\(.*\)/)
       #ref regex numerical https://www.regular-expressions.info/numericranges.html
-      if elem.match(/^[a-zA-Z_0-9]+\(.*\)/)
+      if elem.match(/^[a-zA-Z_0-9]+\(.*\)/) \
+        or elem.match(/^[a-zA-Z_0-9]+\(.*$/) \
+        or elem.match(/^[a-zA-Z_0-9]+$/)
+        
         
         #ref append https://stackoverflow.com/questions/12163625/create-or-append-to-array-in-ruby#12163661
         aryOf_Funcs.push(aryOf_tokens)

@@ -25,7 +25,7 @@
 //+------------------------------------------------------------------+
 string PGName = "abc";     //
 
-string txt_Msg;
+//string txt_Msg;
 
 //+------------------------------------------------------------------+
 //| vars : counter
@@ -96,7 +96,7 @@ void op_NewBar() {
   double TheStopLoss=0;
   double TheTakeProfit=0; 
    
-   txt_Msg = "new bar (tick = "
+   string txt_Msg = "new bar (tick = "
                 + (string) cntOf_Ticks
                + ")"
                + " "
@@ -119,7 +119,7 @@ void op_NewBar() {
    /****************
       detect : down down buy ?
    ****************/
-   bool res = detect_DownDown_Buy();
+   bool res = detect_DownDown_Buy(dpath_Log, fname_Log_For_Session);
 
    txt_Msg = "detect_DownDown_Buy() => "
                + (string) res
@@ -211,3 +211,27 @@ void setup() {
    Print("[", __FILE__, ":",__LINE__,"] symbol, period => ", Symbol(), " / ", Period());
 
 }//setup()
+
+/*
+==========================================
+<funcs>
+
+1	int init()
+2	bool is_Up_Bar() {
+3	void op_NewBar() {
+4	void setup() {
+5	int start()
+
+==========================================
+==========================================
+<vars>
+
+1	string PGName = "abc";     //
+2	int cntOf_Ticks = 0;
+3	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
+4	string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+5	string txt_Msg;
+
+==========================================
+
+*/
