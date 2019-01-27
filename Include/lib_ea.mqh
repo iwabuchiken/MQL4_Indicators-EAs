@@ -578,24 +578,20 @@ void sell_UpUp_Sell(
          MyPoint * N * 10  ===> + 0.0N JPY (0.01 * N, N<=9)
          
      */
-     double Level_TakeProfit = Bid + MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
-     double Level_StopLoss = Bid - MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
+     double Level_TakeProfit = Bid - MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
+     double Level_StopLoss = Bid + MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
      //double Level_TakeProfit = Bid + MyPoint * 2 * 100;  // +0.20 yen
      //double Level_StopLoss = Bid - MyPoint * 100;        // -0.11 yen
 
-      //debug
-      Print("[", __FILE__, ":",__LINE__,"] "
-               , "Level_TakeProfit => ", (string) Level_TakeProfit
-               , " / "
-               , "Level_StopLoss => ", (string) Level_StopLoss
-               
-               );
-
+      //debug      
       txt_Msg = "[" + __FILE__+ ":" + (string) __LINE__ + "] "
                + "Level_TakeProfit => "+ (string) Level_TakeProfit
                + " / "
                + "Level_StopLoss => "+ (string) Level_StopLoss
                   ;
+
+      Print(txt_Msg);
+
 
       txt_Msg += "\n"
                + "Point = " + (string) Point
@@ -622,10 +618,12 @@ void sell_UpUp_Sell(
      {
         result=OrderSend(
                   Symbol()
-                  , OP_BUY
+                  //, OP_BUY
+                  , OP_SELL
                   //, Lots
                   , _Lots
-                  , Ask
+                  //, Ask
+                  , Bid
                   , _Slippage
                   , Level_StopLoss
                   , Level_TakeProfit
