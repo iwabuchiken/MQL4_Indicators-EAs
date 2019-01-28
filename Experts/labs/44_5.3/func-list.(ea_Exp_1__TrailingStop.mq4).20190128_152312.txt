@@ -1,0 +1,30 @@
+Target file = ea_Exp_1__TrailingStop.mq4
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3
+Entries = 0
+Created at = 2019/01/28 15:23:12
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list.(ea_Exp_1__TrailingStop.mq4).20190128_152312.txt
+
+/*
+2019/01/28 15:23:12
+func-list.(ea_Exp_1__TrailingStop.mq4).20190128_152312.txt
+==========================================
+<funcs>
+
+1)	int init()
+2)	bool is_Up_Bar() {
+3)	void op_NewBar() {
+4)	void setup() {
+5)	int start()
+
+==========================================
+==========================================
+<vars>
+
+1)	string PGName = "abc";     //
+2)	int cntOf_Ticks = 0;
+3)	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
+4)	string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+
+==========================================
+*/

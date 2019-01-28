@@ -929,21 +929,10 @@ def _collect_Items(lines)
     ####################
     hit = _judge_Funcs(line)
     
-#    #debug
-#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] line : '#{line}'"
-#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] _judge_Funcs =>"
-#    p hit
-#    puts  ""
-    
     #judge
     if hit
       
-#      puts "[#{File.basename(__FILE__)}:#{__LINE__}] _judge_Funcs => hit"
-#      p hit
-#      puts ""
-    #ccc
       aryOf_Funcs << line.strip
-#      aryOf_Funcs << line
       
       next
     
@@ -975,7 +964,6 @@ def _collect_Items(lines)
   p aryOf_Funcs
   puts ""
   
-  #ccc
   return aryOf_Funcs, aryOf_Vars
   
 end#def _collect_Items(lines)
@@ -1007,20 +995,6 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
   aryOf_Funcs, aryOf_Vars = _collect_Items(lines)
   #cccc
 
-#  aryOf_Funcs.each do |elem|
-#    
-#    p elem
-#    
-#  end
-  
-#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_Vars ==>"
-#  
-#  aryOf_Vars.each do |elem|
-#    
-#    p elem
-#    
-#  end
-  
   ################################
   #	
   #	array ---> sort
@@ -1035,8 +1009,12 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
 #  p aryOf_FuncNames__Sorted
 
   # aryOf_Funcs
-  aryOf_Funcs__Sorted = aryOf_Funcs.sort { |a, b| a[1] <=> b[1] }
-  aryOf_Vars__Sorted = aryOf_Vars.sort { |a, b| a[1] <=> b[1] }
+  #@_20190128_152126
+  # e.g. "bool is_Up_Bar() {" ==> split(" ")
+  aryOf_Funcs__Sorted = aryOf_Funcs.sort { |a, b| a.split(" ")[1] <=> b.split(" ")[1] }
+#  aryOf_Funcs__Sorted = aryOf_Funcs.sort { |a, b| a[1] <=> b[1] }
+  aryOf_Vars__Sorted = aryOf_Vars.sort { |a, b| a.split(" ")[1] <=> b.split(" ")[1] }
+#  aryOf_Vars__Sorted = aryOf_Vars.sort { |a, b| a[1] <=> b[1] }
 
   #debug
   puts ""
