@@ -193,6 +193,7 @@ end#def _exec_2_MakeList(fpath, dir, fname)
 def _exec_2_MakeList__Write2File__V2( \
       aryOf_Funcs \
       , aryOf_Vars \
+      , aryOf_Externs \
       , dpath_Src \
       , fname \
       , count \
@@ -297,9 +298,39 @@ def _exec_2_MakeList__Write2File__V2( \
   fout.write("==========================================")
   fout.write("\n")
 
+  ####################
+  # externs
+  ####################
+  fout.write("==========================================")
+  fout.write("\n")
+  fout.write("<externs>")
+  fout.write("\n")
+  fout.write("\n")
+  
+  # write lines
+#  aryOf_FuncNames__Sorted.each_with_index {|pair, i|
+  aryOf_Externs.each_with_index {|item, i|
+    
+    #ref https://ref.xaio.jp/ruby/classes/string/strip
+    fout.write("#{(i + 1).to_s})\t#{item}")
+    
+    fout.write("\n")
+    
+  }
+  
+  fout.write("\n")
+  fout.write("==========================================")
+  fout.write("\n")
+
+  ####################
+  # footer
+  ####################
   fout.write("*/")
   fout.write("\n")
 
+  ####################
+  # close
+  ####################
   fout.close    
   
 end#def _exec_2_MakeList__Write2File__V2
@@ -911,6 +942,23 @@ def _judge_Vars(line)
   
 end#/def _judge_Vars(line)
 
+def _judge_Externs(line)
+  
+  ####################
+  # match
+  ####################
+  # e.g. "extern int Time_period        = PERIOD_M1;"
+  regex = /^extern[ ]+(int|void|string|bool|double) ([a-zA-Z0-9_]+[ ]*[ ]*=[ ]*(.)+[ ]*[;]*)/
+
+  hit = line.match(regex)
+  
+  ####################
+  # return
+  ####################
+  return hit
+  
+end#/def _judge_Externs(line)
+
 def _collect_Items(lines)
   
   ####################
@@ -918,6 +966,7 @@ def _collect_Items(lines)
   ####################
   aryOf_Funcs = []
   aryOf_Vars = []
+  aryOf_Externs = []
   
   ####################
   # judge
@@ -953,6 +1002,21 @@ def _collect_Items(lines)
     
     end#if hit
     
+    ####################
+    # judge : externs
+    ####################
+    hit = _judge_Externs(line)
+    
+    #judge
+    if hit
+    
+      aryOf_Externs << line.strip
+#      aryOf_Vars << line
+      
+      next
+    
+    end#if hit
+    
   end#lines.each do |line|
 
   ####################
@@ -964,7 +1028,7 @@ def _collect_Items(lines)
   p aryOf_Funcs
   puts ""
   
-  return aryOf_Funcs, aryOf_Vars
+  return aryOf_Funcs, aryOf_Vars, aryOf_Externs
   
 end#def _collect_Items(lines)
 
@@ -992,8 +1056,17 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
 #  puts "[#{File.basename(__FILE__)}:#{__LINE__}] readlines ==> done"
 #  return
   
-  aryOf_Funcs, aryOf_Vars = _collect_Items(lines)
-  #cccc
+  aryOf_Funcs, aryOf_Vars, aryOf_Externs = _collect_Items(lines)
+#  aryOf_Funcs, aryOf_Vars = _collect_Items(lines)
+
+  #debug
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_Externs ==>"
+  p aryOf_Externs
+  puts ""
+      #  ["extern int Time_period        = PERIOD_M1;", "extern int MagicNumber=10001;", "extern double Lots
+      #  =0.1;", "extern double StopLoss=3;  // StopLoss (in pips)", "extern double TakeProfit=7;  // TakePro
+      #  fit (in pips)", "extern int TrailingStop=0.03;", "extern int Slippage=0.01;", "extern string Sym_Set
+      #   = \"EURJPY\";"]
 
   ################################
   #	
@@ -1016,6 +1089,8 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
   aryOf_Vars__Sorted = aryOf_Vars.sort { |a, b| a.split(" ")[1] <=> b.split(" ")[1] }
 #  aryOf_Vars__Sorted = aryOf_Vars.sort { |a, b| a[1] <=> b[1] }
 
+  aryOf_Externs__Sorted = aryOf_Externs.sort { |a, b| a.split(" ")[2] <=> b.split(" ")[2] }
+    
   #debug
   puts ""
   puts "(sorted)------------------------------"
@@ -1036,12 +1111,11 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
     
   end
     
-#  ################################
-#  #	
-#  #	write to file
-#  #
-#  ################################
-#  #ccc
+  ################################
+  #	
+  #	write to file
+  #
+  ################################
 #  _exec_2_MakeList__Write2File( \
 #          aryOf_Funcs__Sorted \
 #          , aryOf_Vars__Sorted \
@@ -1049,6 +1123,7 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
 #          , fname_Src \
 #          , count \
 #          , dpath_Dst)
+          
 #          aryOf_Funcs__Sorted, aryOf_Vars__Sorted, dir, fname, count)
 #  _exec_2_MakeList__Write2File(aryOf_Funcs__Sorted, dir, fname, count)
 #aryOf_Funcs \
@@ -1063,7 +1138,8 @@ def _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
   ################################
   #  return
   ################################
-  return count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted
+  return count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted, aryOf_Externs__Sorted
+#  return count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted
 #  return
       
   #aaa
@@ -1449,7 +1525,9 @@ def exec_2
 #  _exec_2_MakeList(fpath, dir, fname)
   
   #@_20190128_112142
-  count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted = _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
+  count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted, aryOf_Externs__Sorted = \
+          _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
+#  count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted = _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
   #ccc
   ################################
   #	
@@ -1461,6 +1539,7 @@ def exec_2
   _exec_2_MakeList__Write2File__V2( \
         aryOf_Funcs__Sorted \
         , aryOf_Vars__Sorted \
+        , aryOf_Externs__Sorted \
         , dpath_Src \
         , fname_Src \
         , count \

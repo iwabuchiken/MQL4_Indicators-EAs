@@ -1,13 +1,13 @@
 Target file = ea_Exp_1__TrailingStop.mq4
 dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3
 Entries = 0
-Created at = 2019/01/28 15:23:12
+Created at = 2019/01/28 15:41:44
 Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
-This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list.(ea_Exp_1__TrailingStop.mq4).20190128_152312.txt
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list.(ea_Exp_1__TrailingStop.mq4).20190128_154144.txt
 
 /*
-2019/01/28 15:23:12
-func-list.(ea_Exp_1__TrailingStop.mq4).20190128_152312.txt
+2019/01/28 15:41:44
+func-list.(ea_Exp_1__TrailingStop.mq4).20190128_154144.txt
 ==========================================
 <funcs>
 
@@ -25,6 +25,19 @@ func-list.(ea_Exp_1__TrailingStop.mq4).20190128_152312.txt
 2)	int cntOf_Ticks = 0;
 3)	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
 4)	string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+
+==========================================
+==========================================
+<externs>
+
+1)	extern double Lots =0.1;
+2)	extern int MagicNumber=10001;
+3)	extern int Slippage=0.01;
+4)	extern double StopLoss=3;  // StopLoss (in pips)
+5)	extern string Sym_Set = "EURJPY";
+6)	extern double TakeProfit=7;  // TakeProfit (in pips)
+7)	extern int Time_period        = PERIOD_M1;
+8)	extern int TrailingStop=0.03;
 
 ==========================================
 */

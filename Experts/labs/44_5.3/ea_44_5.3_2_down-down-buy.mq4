@@ -129,7 +129,7 @@ void op_NewBar() {
       detect : down down buy ?
    ********************************/
    bool res = detect_DownDown_Buy(dpath_Log, fname_Log_For_Session);
-   
+   //ccc
    txt_Msg = "\ndetect_DownDown_Buy() => "
                + (string) res
                + ")"

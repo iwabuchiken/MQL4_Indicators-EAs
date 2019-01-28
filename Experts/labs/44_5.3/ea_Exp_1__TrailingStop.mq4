@@ -31,7 +31,7 @@ string PGName = "abc";     //
 //+------------------------------------------------------------------+
 int cntOf_Ticks = 0;
 
-string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+string fname_Log_For_Session = "[ea_Exp_1__TrailingStop].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
 
 //+------------------------------------------------------------------+
@@ -119,178 +119,62 @@ void op_NewBar() {
                ;
                 
    write_Log(
-         dpath_Log
-         //, fname_Log
-         , fname_Log_For_Session
-         , __FILE__
-         , __LINE__
-         , txt_Msg);
-
-   /********************************
-      detect : down down buy ?
-   ********************************/
-   bool res = detect_DownDown_Buy(dpath_Log, fname_Log_For_Session);
-   
-   txt_Msg = "\ndetect_DownDown_Buy() => "
-               + (string) res
-               + ")"
-               + " "
-               + "(period = "
-               + (string) Period()
-               + " / "
-               + "symbol = "
-               + (string) Symbol()
-               + ")"
-               ;
-                
-   write_Log(
          dpath_Log, fname_Log_For_Session
          , __FILE__, __LINE__
          , txt_Msg);
 
    /********************************
-      if detected ==> buy
+      detect : down or up ?
    ********************************/
-   if(res == true)
-     {
-         
-         
-         
-         // ea : id=2 : down-down-buy
-         buy_DownDown_Buy(
-                  Lots,
-                  Slippage,
-                  MagicNumber
-                  
-                  , TheStopLoss
-                  , TheTakeProfit
-                  , dpath_Log, fname_Log_For_Session);
-         /*         double _Lots
-                  , int _Slippage
-                  , int _MagicNumber
-                  , double _TheStopLoss
-                  , double _TheTakeProfit
-                  , string _dpath_Log, string _fname_Log_For_Session) {*/
-         
-         // ea : id=3 : down-down-sell
-         buy_DownDown_Sell(
-                  Lots,
-                  Slippage,
-                  MagicNumber
-                  
-                  , TheStopLoss, TheTakeProfit, dpath_Log, fname_Log_For_Session);
-         /*         double _Lots
-                  , int _Slippage
-                  , int _MagicNumber
-                  
-                  , double _TheStopLoss
-                  , double _TheTakeProfit
-                  , string _dpath_Log, string _fname_Log_For_Session) {*/
-         
-         
-     }//if(res == true)
-
    /********************************
-      detect : up-up-sell ?
+      get : the latest bar
    ********************************/
-   res = detect_UpUp_Sell(dpath_Log, fname_Log_For_Session);
-   //bool res = detect_DownDown_Buy(dpath_Log, fname_Log_For_Session);
+   int index = 1;
    
-   txt_Msg = "\ndetect_UpUp_Sell() => "
-               + (string) res
-               + ")"
-               + " "
-               + "(period = "
-               + (string) Period()
-               + " / "
-               + "symbol = "
-               + (string) Symbol()
-               + ")"
-               ;
-                
-   write_Log(
-         dpath_Log, fname_Log_For_Session
-         , __FILE__, __LINE__
-         , txt_Msg);
-
-   /********************************
-      if detected ==> sell
-   ********************************/
-   if(res == true)
-     {
-         // ea : id=1 : up-up-sell
-         buy_DownDown_Buy(
-                  Lots,
-                  Slippage,
-                  MagicNumber
-                  
-                  , TheStopLoss
-                  , TheTakeProfit
-                  , dpath_Log, fname_Log_For_Session);
-         /*         double _Lots
-                  , int _Slippage
-                  , int _MagicNumber
-                  , double _TheStopLoss
-                  , double _TheTakeProfit
-                  , string _dpath_Log, string _fname_Log_For_Session) {*/
-         
-         // ea : id=3 : down-down-sell
-         buy_DownDown_Sell(
-                  Lots,
-                  Slippage,
-                  MagicNumber
-                  
-                  , TheStopLoss, TheTakeProfit, dpath_Log, fname_Log_For_Session);
-         /*         double _Lots
-                  , int _Slippage
-                  , int _MagicNumber
-                  
-                  , double _TheStopLoss
-                  , double _TheTakeProfit
-                  , string _dpath_Log, string _fname_Log_For_Session) {*/
-         
-         
-     }//if(res == true)
-
-   /********************************
-      detect : up bar ?
-   ********************************/
-/*
-   bool bl_Is_Up_Bar = is_Up_Bar();
+   double price_Close_Latest = (double) Close[index];
+   double price_Open_Latest = (double) Open[index];
    
-   if(bl_Is_Up_Bar == false)
-     {   
+   /********************************
+      the latest bar : down ?
+   ********************************/
+   double diff_Latest = price_Close_Latest - price_Open_Latest;
+   
+   string d = TimeToStr(iTime(Symbol(),Period(), index));
 
-         txt_Msg = "is_Up_Bar() ---> false"
-                     ;
-                      
-         write_Log(
-               dpath_Log
-               , fname_Log_For_Session
-               , __FILE__
-               , __LINE__
-               , txt_Msg);
-               
-         return;
-         
-     }
-   else
+   if(diff_Latest >= 0)
      {
-         txt_Msg = "is_Up_Bar() ---> true"
-                     ;
-                      
-         write_Log(
-               dpath_Log
-               , fname_Log_For_Session
-               , __FILE__
-               , __LINE__
-               , txt_Msg);
-               
-         return;
       
-     }
-*/     
+         string txt = "\ndiff_Latest >= 0 ("
+                      + (string) diff_Latest
+                      + ") ("
+                      + d
+                      + ")"
+                     ;
+                      
+         write_Log(
+               dpath_Log, fname_Log_For_Session
+               , __FILE__, __LINE__
+               , txt);
+         
+     }//if(diff_Latest >= 0)
 
+   else
+    {
+
+         string txt = "\ndiff_Latest < 0 ("
+                      + (string) diff_Latest
+                      + ") ("
+                      + d
+                      + ")"
+                     ;
+                      
+         write_Log(
+               dpath_Log, fname_Log_For_Session
+               , __FILE__, __LINE__
+               , txt);
+     
+    }
+   
    /********************************
       detect : above BB.+1?
    ********************************/
@@ -412,25 +296,38 @@ void setup() {
 }//setup()
 
 /*
+2019/01/28 15:41:44
+func-list.(ea_Exp_1__TrailingStop.mq4).20190128_154144.txt
 ==========================================
 <funcs>
 
-1	int init()
-2	bool is_Up_Bar() {
-3	void op_NewBar() {
-4	void setup() {
-5	int start()
+1)	int init()
+2)	bool is_Up_Bar() {
+3)	void op_NewBar() {
+4)	void setup() {
+5)	int start()
 
 ==========================================
 ==========================================
 <vars>
 
-1	string PGName = "abc";     //
-2	int cntOf_Ticks = 0;
-3	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
-4	string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
-5	string txt_Msg;
+1)	string PGName = "abc";     //
+2)	int cntOf_Ticks = 0;
+3)	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
+4)	string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
 
 ==========================================
+==========================================
+<externs>
 
+1)	extern double Lots =0.1;
+2)	extern int MagicNumber=10001;
+3)	extern int Slippage=0.01;
+4)	extern double StopLoss=3;  // StopLoss (in pips)
+5)	extern string Sym_Set = "EURJPY";
+6)	extern double TakeProfit=7;  // TakeProfit (in pips)
+7)	extern int Time_period        = PERIOD_M1;
+8)	extern int TrailingStop=0.03;
+
+==========================================
 */

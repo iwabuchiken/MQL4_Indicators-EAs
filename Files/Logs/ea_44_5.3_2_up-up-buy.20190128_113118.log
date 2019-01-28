@@ -1740,3 +1740,285 @@ new bar (tick = 18417) (period = 1 / symbol = EURJPY_)
 diff_Latest >= 0 (0.01099999999999568) (2019.01.28 08:23)
 [2019.01.28 15:23:59 / ea_44_5.3_2_down-down-buy.mq4:147]
 detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:24:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 18656) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:24:59 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01600000000000534) (2019.01.28 08:24)
+[2019.01.28 15:24:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:26:00 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 18809) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:26:00 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.741) (BB.-1 = 124.7209888917459) (2019.01.28 08:25)
+[2019.01.28 15:26:00 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:27:03 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 18865) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:27:03 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.737) (BB.-1 = 124.7201811404642) (2019.01.28 08:26)
+[2019.01.28 15:27:03 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:27:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 18909) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:27:58 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.727) (BB.-1 = 124.7188763037227) (2019.01.28 08:27)
+[2019.01.28 15:27:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:28:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19011) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:28:58 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.004999999999995453) (2019.01.28 08:28)
+[2019.01.28 15:28:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:30:01 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19078) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:30:01 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.727) (BB.-1 = 124.7176852663902) (2019.01.28 08:29)
+[2019.01.28 15:30:01 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:30:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19214) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:30:59 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.726) (BB.-1 = 124.7175306229534) (2019.01.28 08:30)
+[2019.01.28 15:30:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:31:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19395) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:31:58 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01100000000000989) (2019.01.28 08:31)
+[2019.01.28 15:31:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:33:00 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19566) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:33:00 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01500000000000057) (2019.01.28 08:32)
+[2019.01.28 15:33:00 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:33:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19666) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:33:59 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.009000000000000341) (2019.01.28 08:33)
+[2019.01.28 15:33:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:34:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19745) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:34:59 / lib_ea.mqh:86]
+diff_Latest >= 0 (0) (2019.01.28 08:34)
+[2019.01.28 15:34:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:36:00 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19804) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:36:00 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.001999999999995339) (2019.01.28 08:35)
+[2019.01.28 15:36:00 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:37:05 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19849) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:37:05 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.76) (BB.-1 = 124.7246363621835) (2019.01.28 08:36)
+[2019.01.28 15:37:05 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:37:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 19956) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:37:58 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.749) (BB.-1 = 124.7250747608723) (2019.01.28 08:37)
+[2019.01.28 15:37:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:38:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20090) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:38:58 / lib_ea.mqh:126]
+price_Close_Latest >= ibands_1S_Plus (close = 124.729) (BB.-1 = 124.7249095187068) (2019.01.28 08:38)
+[2019.01.28 15:38:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:39:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20296) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:39:58 / lib_ea.mqh:181]
+detect_DownDown_Buy() ==> true (datetime = 2019.01.28 08:39)
+[2019.01.28 15:39:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => true) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:39:58 / lib_ea.mqh:250][lib_ea.mqh:227] Level_TakeProfit => 124.758 / Level_StopLoss => 124.658
+Point = 0.001
+Bid = 124.688
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:39:58 / lib_ea.mqh:279]
+-------------------------------- [new order : buy_DownDown_Buy]
+order id = 5221209
+[2019.01.28 15:39:58 / lib_ea.mqh:384][lib_ea.mqh:361] Level_TakeProfit => 124.632 / Level_StopLoss => 124.732
+Point = 0.001
+Bid = 124.702
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:39:58 / lib_ea.mqh:412]
+-------------------------------- [new order : buy_DownDown_Sell]
+order id = 5221211
+[2019.01.28 15:40:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20472) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:40:58 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01500000000000057) (2019.01.28 08:40)
+[2019.01.28 15:40:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:41:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20638) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:41:58 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01999999999999602) (2019.01.28 08:41)
+[2019.01.28 15:41:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:42:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20766) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:42:59 / lib_ea.mqh:162]
+diff_SecondLatest >= 0 (diff = 0.01999999999999602)(2019.01.28 08:41)
+[2019.01.28 15:42:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:43:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20837) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:43:58 / lib_ea.mqh:181]
+detect_DownDown_Buy() ==> true (datetime = 2019.01.28 08:43)
+[2019.01.28 15:43:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => true) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:43:58 / lib_ea.mqh:250][lib_ea.mqh:227] Level_TakeProfit => 124.774 / Level_StopLoss => 124.674
+Point = 0.001
+Bid = 124.704
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:43:58 / lib_ea.mqh:279]
+-------------------------------- [new order : buy_DownDown_Buy]
+order id = 5221217
+[2019.01.28 15:43:58 / lib_ea.mqh:384][lib_ea.mqh:361] Level_TakeProfit => 124.647 / Level_StopLoss => 124.747
+Point = 0.001
+Bid = 124.717
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:43:58 / lib_ea.mqh:412]
+-------------------------------- [new order : buy_DownDown_Sell]
+order id = 5221219
+[2019.01.28 15:44:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 20944) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:44:58 / lib_ea.mqh:181]
+detect_DownDown_Buy() ==> true (datetime = 2019.01.28 08:44)
+[2019.01.28 15:44:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => true) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:44:58 / lib_ea.mqh:250][lib_ea.mqh:227] Level_TakeProfit => 124.748 / Level_StopLoss => 124.648
+Point = 0.001
+Bid = 124.678
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:44:58 / lib_ea.mqh:279]
+-------------------------------- [new order : buy_DownDown_Buy]
+order id = 5221223
+[2019.01.28 15:44:58 / lib_ea.mqh:384][lib_ea.mqh:361] Level_TakeProfit => 124.618 / Level_StopLoss => 124.718
+Point = 0.001
+Bid = 124.688
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:44:58 / lib_ea.mqh:412]
+-------------------------------- [new order : buy_DownDown_Sell]
+order id = 5221225
+[2019.01.28 15:45:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 21156) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:45:58 / lib_ea.mqh:181]
+detect_DownDown_Buy() ==> true (datetime = 2019.01.28 08:45)
+[2019.01.28 15:45:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => true) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:45:58 / lib_ea.mqh:250][lib_ea.mqh:227] Level_TakeProfit => 124.724 / Level_StopLoss => 124.624
+Point = 0.001
+Bid = 124.654
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:45:58 / lib_ea.mqh:279]
+-------------------------------- [new order : buy_DownDown_Buy]
+order id = 5221231
+[2019.01.28 15:45:58 / lib_ea.mqh:384][lib_ea.mqh:361] Level_TakeProfit => 124.595 / Level_StopLoss => 124.695
+Point = 0.001
+Bid = 124.665
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:45:58 / lib_ea.mqh:412]
+-------------------------------- [new order : buy_DownDown_Sell]
+order id = 5221233
+[2019.01.28 15:46:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 21277) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:46:59 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01200000000000045) (2019.01.28 08:46)
+[2019.01.28 15:46:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:47:58 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 21398) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:47:58 / lib_ea.mqh:86]
+diff_Latest >= 0 (0.01000000000000512) (2019.01.28 08:47)
+[2019.01.28 15:47:58 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:48:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 21639) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:48:59 / lib_ea.mqh:162]
+diff_SecondLatest >= 0 (diff = 0.01000000000000512)(2019.01.28 08:47)
+[2019.01.28 15:48:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:49:59 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 21743) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:49:59 / lib_ea.mqh:181]
+detect_DownDown_Buy() ==> true (datetime = 2019.01.28 08:49)
+[2019.01.28 15:49:59 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => true) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:49:59 / lib_ea.mqh:250][lib_ea.mqh:227] Level_TakeProfit => 124.743 / Level_StopLoss => 124.643
+Point = 0.001
+Bid = 124.673
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:49:59 / lib_ea.mqh:279]
+-------------------------------- [new order : buy_DownDown_Buy]
+order id = 5221243
+[2019.01.28 15:49:59 / lib_ea.mqh:384][lib_ea.mqh:361] Level_TakeProfit => 124.613 / Level_StopLoss => 124.713
+Point = 0.001
+Bid = 124.683
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:49:59 / lib_ea.mqh:412]
+-------------------------------- [new order : buy_DownDown_Sell]
+order id = 5221245
+[2019.01.28 15:51:01 / ea_44_5.3_2_down-down-buy.mq4:125]
+new bar (tick = 21928) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:51:01 / lib_ea.mqh:181]
+detect_DownDown_Buy() ==> true (datetime = 2019.01.28 08:50)
+[2019.01.28 15:51:01 / ea_44_5.3_2_down-down-buy.mq4:147]
+detect_DownDown_Buy() => true) (period = 1 / symbol = EURJPY_)
+[2019.01.28 15:51:01 / lib_ea.mqh:250][lib_ea.mqh:227] Level_TakeProfit => 124.726 / Level_StopLoss => 124.626
+Point = 0.001
+Bid = 124.656
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:51:01 / lib_ea.mqh:279]
+-------------------------------- [new order : buy_DownDown_Buy]
+order id = 5221250
+[2019.01.28 15:51:01 / lib_ea.mqh:384][lib_ea.mqh:361] Level_TakeProfit => 124.596 / Level_StopLoss => 124.696
+Point = 0.001
+Bid = 124.666
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.01.28 15:51:01 / lib_ea.mqh:412]
+-------------------------------- [new order : buy_DownDown_Sell]
+order id = 5221252
