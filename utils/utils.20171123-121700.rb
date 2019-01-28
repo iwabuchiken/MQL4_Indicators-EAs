@@ -942,7 +942,8 @@ def _collect_Items(lines)
 #      p hit
 #      puts ""
     #ccc
-      aryOf_Funcs << line
+      aryOf_Funcs << line.strip
+#      aryOf_Funcs << line
       
       next
     
@@ -956,7 +957,8 @@ def _collect_Items(lines)
     #judge
     if hit
     
-      aryOf_Vars << line
+      aryOf_Vars << line.strip
+#      aryOf_Vars << line
       
       next
     
@@ -1465,10 +1467,12 @@ def exec_2
   #	file content
   #
   ################################
-  _exec_2_MakeList__V2(dpath_Src, fname_Src, dpath_Dst)
+#  _exec_2_MakeList__V2(dpath_Src, fname_Src, dpath_Dst)
 #  _exec_2_MakeList(fpath, dir, fname)
-
+  
+  #@_20190128_112142
   count, aryOf_Funcs__Sorted, aryOf_Vars__Sorted = _exec_2_MakeList__V3(dpath_Src, fname_Src, dpath_Dst)
+  #ccc
   ################################
   #	
   #	write to file
@@ -1476,13 +1480,13 @@ def exec_2
   ################################
 #  fpath_Src = "#{dpath_Src}\\#{fname_Src}"
   
-#  _exec_2_MakeList__Write2File__V2( \
-#        aryOf_Funcs__Sorted \
-#        , aryOf_Vars__Sorted \
-#        , dpath_Src \
-#        , fname_Src \
-#        , count \
-#        , dpath_Dst)  
+  _exec_2_MakeList__Write2File__V2( \
+        aryOf_Funcs__Sorted \
+        , aryOf_Vars__Sorted \
+        , dpath_Src \
+        , fname_Src \
+        , count \
+        , dpath_Dst)  
   #ccc
   ################################
   #	

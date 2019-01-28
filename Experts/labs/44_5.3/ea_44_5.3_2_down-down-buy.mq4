@@ -192,7 +192,8 @@ void op_NewBar() {
    /********************************
       detect : up-up-sell ?
    ********************************/
-   bool res = detect_UpUp_Sell(dpath_Log, fname_Log_For_Session);
+/*   
+   res = detect_UpUp_Sell(dpath_Log, fname_Log_For_Session);
    //bool res = detect_DownDown_Buy(dpath_Log, fname_Log_For_Session);
    
    txt_Msg = "\ndetect_UpUp_Sell() => "
@@ -211,45 +212,8 @@ void op_NewBar() {
          dpath_Log, fname_Log_For_Session
          , __FILE__, __LINE__
          , txt_Msg);
+*/
 
-   /********************************
-      if detected ==> sell
-   ********************************/
-   if(res == true)
-     {
-         // ea : id=1 : up-up-sell
-         buy_DownDown_Buy(
-                  Lots,
-                  Slippage,
-                  MagicNumber
-                  
-                  , TheStopLoss
-                  , TheTakeProfit
-                  , dpath_Log, fname_Log_For_Session);
-         /*         double _Lots
-                  , int _Slippage
-                  , int _MagicNumber
-                  , double _TheStopLoss
-                  , double _TheTakeProfit
-                  , string _dpath_Log, string _fname_Log_For_Session) {*/
-         
-         // ea : id=3 : down-down-sell
-         buy_DownDown_Sell(
-                  Lots,
-                  Slippage,
-                  MagicNumber
-                  
-                  , TheStopLoss, TheTakeProfit, dpath_Log, fname_Log_For_Session);
-         /*         double _Lots
-                  , int _Slippage
-                  , int _MagicNumber
-                  
-                  , double _TheStopLoss
-                  , double _TheTakeProfit
-                  , string _dpath_Log, string _fname_Log_For_Session) {*/
-         
-         
-     }//if(res == true)
    //ccc
 
    /********************************
