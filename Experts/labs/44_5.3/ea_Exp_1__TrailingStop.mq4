@@ -26,6 +26,8 @@ string PGName = "abc";     //
 
 //string txt_Msg;
 
+double __MyPoint   = 0.001;
+
 //+------------------------------------------------------------------+
 //| vars : counter
 //+------------------------------------------------------------------+
@@ -41,18 +43,18 @@ extern int Time_period        = PERIOD_M1;
 //extern int Time_period        = PERIOD_M5;
 
 //ref Ask_MFI_EA
-extern int MagicNumber=10001;
-extern double Lots =0.1;
-extern double StopLoss=3;  // StopLoss (in pips)
-extern double TakeProfit=7;  // TakeProfit (in pips)
+extern int MagicNumber  = 10001;
+extern double Lots      = 0.1;
+extern double StopLoss  = 30 * 0.001;  // StopLoss (in currency)
+extern double TakeProfit= 70 * 0.001;  // TakeProfit (in currency)
 
 //extern double StopLoss=0.03;
 //extern double TakeProfit=0.05;
 
-extern int TrailingStop=0.03;
-extern int Slippage=0.01;
+extern int TrailingStop = 0.03;
+extern int Slippage     = 0.01;
 
-extern string Sym_Set = "EURJPY";
+extern string Sym_Set   = "EURJPY";
 
 bool is_Up_Bar() {
 
@@ -212,21 +214,12 @@ int start()
 }
 
 //+------------------------------------------------------------------+
-//|                                                          |
+//|   void show_BasicData() {
 //+------------------------------------------------------------------+
-int init()
-{
+void show_BasicData() {
 
-   //debug
-   Print("[", __FILE__, ":",__LINE__,"] init... ", PGName);
+  //double MyPoint=Point;
 
-
-   setup();
-
-   //_is_NewBar();
-
-  double MyPoint=Point;
-  
   //@_20190115_150404 
   /*
       MyPoint * 2 * 100  ===> + 0.20 JPY
@@ -237,10 +230,41 @@ int init()
   double _TheTakeProfit = TakeProfit;
   double _TheStopLoss = StopLoss;
   
-  double Level_TakeProfit = Bid + MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
-  double Level_StopLoss = Bid - MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
+  double Level_TakeProfit = Bid + TakeProfit;  // (+0.01 * takeprofit pips) JPY
+  double Level_StopLoss = Bid - StopLoss;        // (-0.01 * stoploss pips) JPY
+  //double Level_TakeProfit = Bid + MyPoint * 10 * _TheTakeProfit;  // (+0.01 * takeprofit pips) JPY
+  //double Level_StopLoss = Bid - MyPoint * 10 * _TheStopLoss;        // (-0.01 * stoploss pips) JPY
   //double Level_TakeProfit = Bid + MyPoint * 2 * 100;  // +0.20 yen
   //double Level_StopLoss = Bid - MyPoint * 100;        // -0.11 yen
+
+
+   //debug
+   double num = 0.12345678;
+   
+   string txt_Msg = "\n"
+            + "Num (string): " 
+                  + (string) num
+                  + "\n"
+            + "Num (NormalizeDouble, 2): " 
+                  + (string) NormalizeDouble(0.12345678, 2)
+                  + "\n"
+            + "Digits() : "
+                  + (string) Digits()
+                  + "\n"
+            + "Point : "
+                  + (string) Point
+                  + "\n"
+            ;
+            //"_TheTakeProfit = 0.12345678"
+            //Num (string): 0.12345678
+            //Num (NormalizeDouble, 2): 0.12
+            //"Digits() : 3"
+
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);   
+   
 
    //debug
    Print("[", __FILE__, ":",__LINE__,"] "
@@ -250,21 +274,34 @@ int init()
             
             );
 //abc
-   string txt_Msg = "\n"
+   txt_Msg = "\n"
             + "Level_TakeProfit => "+ (string) Level_TakeProfit
             + " / "
             + "Level_StopLoss => "+ (string) Level_StopLoss
                ;
+               //"Level_TakeProfit => 124.982 / Level_StopLoss => 124.882"
 
    txt_Msg += "\n"
             + "Point = " + (string) Point
             + "\nBid = " + (string) Bid
             ;
+            //"Point = 0.001"
                 
    txt_Msg += "\n"
-            + "MyPoint * 10 * _TheTakeProfit = " + (string) (MyPoint * 10 * _TheTakeProfit)
-            + "\nMyPoint * 10 * _TheStopLoss = " + (string) (MyPoint * 10 * _TheStopLoss)
+            + "MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = " + (string) NormalizeDouble((__MyPoint * 10 * _TheTakeProfit), 2)
+            //+ "MyPoint * 10 * _TheTakeProfit = " + (string) (MyPoint * 10 * _TheTakeProfit)
+            //+ "MyPoint * 10 * _TheTakeProfit (DoubleToStr) = " + DoubleToStr( (MyPoint * 10 * _TheTakeProfit), 3)
+            //+ "\nMyPoint * 10 * _TheStopLoss = " + (string) (MyPoint * 10 * _TheStopLoss)
+            //+ "\nMyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=3) = " + (string) NormalizeDouble((MyPoint * 10 * _TheStopLoss),3)
+            + "\nMyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = " + (string) NormalizeDouble((__MyPoint * 10 * _TheStopLoss),2)
             ;
+            //"MyPoint * 10 * _TheTakeProfit = 0.07000000000000001"
+            //"MyPoint * 10 * _TheStopLoss = 0.03"
+            //"MyPoint * 10 * _TheTakeProfit (DoubleToStr) = 0.070"
+            //"MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=3) = 0.03"
+            //"MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0.03"
+            //"MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0.07000000000000001"
+            
 
    txt_Msg += "\n"
             + "_TheTakeProfit = " + (string) _TheTakeProfit
@@ -275,6 +312,73 @@ int init()
          dpath_Log, fname_Log_For_Session
          , __FILE__, __LINE__
          , txt_Msg);   
+
+   /************************************
+      "Point" values
+   ************************************/
+   string symbol_set = "USDJPY";
+
+   int period = Time_period;
+   
+   set_Symbol(symbol_set, period);
+   
+   //debug
+   txt_Msg = "\n"
+            + "Point (" + symbol_set + ")"
+               + " = " + (string) Point
+               + "\n"
+            ;
+
+   symbol_set = "EURJPY";
+   
+   set_Symbol(symbol_set, period);
+   
+   //debug
+   txt_Msg += "\n"
+            + "Point (" + symbol_set + ")"
+               + " = " + (string) Point
+               + "\n"
+               ;
+   
+   // EURUSD
+   symbol_set = "EURUSD";
+   
+   set_Symbol(symbol_set, period);
+   
+   //debug
+   txt_Msg += "\n"
+            + "Point (" + symbol_set + ")"
+               + " = " + (string) Point
+               + "\n"
+               ;
+               
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);   
+            /*
+            Point (USDJPY) = 0.001
+            
+            Point (EURJPY) = 0.001
+            
+            Point (EURUSD) = 0.001
+            */
+       
+}//void show_BasicData() {
+
+int init()
+{
+
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] init... ", PGName);
+
+   // basic data
+   show_BasicData();
+
+   // setup
+   setup();
+
+   //_is_NewBar();
 
    
    return(0);
