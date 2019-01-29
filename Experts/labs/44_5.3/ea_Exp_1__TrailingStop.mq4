@@ -215,7 +215,9 @@ void test_TrailingStop(double diff_Latest) {
    /********************************
       j2 : order opened ?
    ********************************/
-   if(flg_OrderOpened == true)
+   if(OrdersTotal() >= 1)
+   //if(flg_OrderOpened == true)
+   //ccc
      {
          /********************************
             j2 : Y
@@ -225,7 +227,8 @@ void test_TrailingStop(double diff_Latest) {
             j2 : Y : 1
                nop
          ********************************/
-         txt = "\nflg_OrderOpened == true (total ="
+         //txt = "\nflg_OrderOpened == true (total ="
+         txt = "\nOrdersTotal() >= 1 (total ="
                      + (string) OrdersTotal()
                      + ")"
                      + "\n"
@@ -235,6 +238,29 @@ void test_TrailingStop(double diff_Latest) {
                dpath_Log, fname_Log_For_Session
                , __FILE__, __LINE__
                , txt);
+
+         /********************************
+            j2.0.1
+               flag ---> UP ?
+         ********************************/
+         if(flg_OrderOpened == false)
+           {
+            /********************************
+               j2.0.1 : Y : 1
+                  flag ---> not UP; UP
+            ********************************/
+            flg_OrderOpened == true;              
+            
+            txt = "\nflg_OrderOpened is now : true"
+                        + "\n"
+                         ;
+                         
+            write_Log(
+                  dpath_Log, fname_Log_For_Session
+                  , __FILE__, __LINE__
+                  , txt);
+                  
+           }//if(flg_OrderOpened == false)
          
          return;
 
@@ -319,8 +345,6 @@ void test_TrailingStop(double diff_Latest) {
                ********************************/
                flg_OrderOpened = true;
 
-               //ccc
-               
                /********************************
                   return
                ********************************/
