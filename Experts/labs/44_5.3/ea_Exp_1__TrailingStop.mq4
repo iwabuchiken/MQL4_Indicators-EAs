@@ -29,6 +29,13 @@ string PGName = "abc";     //
 double __MyPoint   = 0.001;
 
 //+------------------------------------------------------------------+
+//| vars : flags
+//+------------------------------------------------------------------+
+bool flg_OrderOpened = false;
+
+int num_Ticket = 0;
+
+//+------------------------------------------------------------------+
 //| vars : counter
 //+------------------------------------------------------------------+
 int cntOf_Ticks = 0;
@@ -143,6 +150,11 @@ void op_NewBar() {
    
    string d = TimeToStr(iTime(Symbol(),Period(), index));
 
+   /********************************
+      test_TrailingStop()
+   ********************************/
+   test_TrailingStop(diff_Latest);
+
    if(diff_Latest >= 0)
      {
       
@@ -160,7 +172,7 @@ void op_NewBar() {
          
      }//if(diff_Latest >= 0)
 
-   else
+   else//if(diff_Latest >= 0)
     {
 
          string txt = "\ndiff_Latest < 0 ("
@@ -175,14 +187,201 @@ void op_NewBar() {
                , __FILE__, __LINE__
                , txt);
      
-    }
+    }//if(diff_Latest >= 0)
+   
+}//op_NewBar()
+
+//xxx
+void test_TrailingStop(double diff_Latest) {
+
+   /********************************
+      vars
+   ********************************/
+   string txt;
    
    /********************************
-      detect : above BB.+1?
+      message : function starts
    ********************************/
+   //txt = "\ntest_TrailingStop ------------------"
+   txt = "\n//test_TrailingStop ------------------"
+               + "\n"
+                ;
+                
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt);
 
+   /********************************
+      j2 : order opened ?
+   ********************************/
+   if(flg_OrderOpened == true)
+     {
+         /********************************
+            j2 : Y
+               order opened
+         ********************************/
+         /********************************
+            j2 : Y : 1
+               nop
+         ********************************/
+         txt = "\nflg_OrderOpened == true (total ="
+                     + (string) OrdersTotal()
+                     + ")"
+                     + "\n"
+                      ;
+                      
+         write_Log(
+               dpath_Log, fname_Log_For_Session
+               , __FILE__, __LINE__
+               , txt);
+         
+         return;
 
-}//op_NewBar()
+     }
+   else//if(flg_OrderOpened == true)
+     {
+         /********************************
+            j2 : N
+               order NOT opened
+         ********************************/
+         /********************************
+            j2.1
+               flga ---> UP ?
+         ********************************/
+         if(flg_OrderOpened == true)
+           {
+               /********************************
+                  j2.1 : Y
+                     flga ---> UP
+               ********************************/
+               /********************************
+                  j2.1 : Y : 1
+                     flag ---> down
+               ********************************/
+               flg_OrderOpened = false;
+               
+           }//if(flg_OrderOpened == true)
+
+         /********************************
+            j3 : diff --> up/down ?
+         ********************************/
+         if(diff_Latest > 0.0)
+           {
+               /********************************
+                  j3 : Y
+                     diff --> up
+               ********************************/
+               txt = "\ndiff_Latest ==> UP ("
+                           + (string) DoubleToStr(diff_Latest, 3)
+                           + ")"
+                           + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+               
+               /********************************
+                  j3 : Y : 1
+                     buy
+               ********************************/
+              double Level_TakeProfit = Bid + 0.04;  // (+0.01 * takeprofit pips) JPY
+              double Level_StopLoss = Bid - 0.02;        // (-0.01 * stoploss pips) JPY
+               
+              num_Ticket = OrderSend(
+                  Symbol(), OP_BUY
+                  , Lots, Ask
+                  , Slippage
+                  , NormalizeDouble(Level_StopLoss, Digits())
+                  , NormalizeDouble(Level_TakeProfit, Digits())
+                  //, Level_StopLoss
+                  //, Level_TakeProfit
+                  , "EA Generator www.ForexEAdvisor.com"
+                  , MagicNumber
+                  , 0
+                  , Blue);
+
+               txt = "\nnum_Ticket : "
+                           + (string) num_Ticket
+                           + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+
+               /********************************
+                  j3 : Y : 2
+                     flag ---> UP
+               ********************************/
+               flg_OrderOpened = true;
+
+               //ccc
+               
+               /********************************
+                  return
+               ********************************/
+               return;
+            
+           }
+         else if (diff_Latest < 0.0)//if(diff_Latest > 0.0)
+           {
+               /********************************
+                  j3 : N
+                     diff --> down
+               ********************************/
+               txt = "\ndiff_Latest ==> DOWN ("
+                           + (string) DoubleToStr(diff_Latest, 3)
+                           + ")"
+                           + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+               
+               return;
+            
+           }
+         else//if(diff_Latest > 0.0)
+           {
+               /********************************
+                  j3 : None
+                     diff --> zero
+               ********************************/
+
+               txt = "\ndiff_Latest ==> "
+                           + (string) DoubleToStr(diff_Latest, 3)
+                           + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+               
+               return;
+            
+           }//if(diff_Latest > 0.0)
+/*         
+         string txt = "\nflg_OrderOpened == false"
+                     + "\n"
+                      ;
+                      
+         write_Log(
+               dpath_Log, fname_Log_For_Session
+               , __FILE__, __LINE__
+               , txt);
+*/
+         return;
+      
+     }//if(flg_OrderOpened == true)
+   
+}//test_TrailingStop(double diff_Latest)
 
 //+------------------------------------------------------------------+
 //    expert start function
@@ -202,6 +401,7 @@ int start()
    // valid : is a new bar ?
    if(res == true)
      {
+
          op_NewBar();
 
      }//if(res == true)
@@ -289,19 +489,8 @@ void show_BasicData() {
                 
    txt_Msg += "\n"
             + "MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = " + (string) NormalizeDouble((__MyPoint * 10 * _TheTakeProfit), 2)
-            //+ "MyPoint * 10 * _TheTakeProfit = " + (string) (MyPoint * 10 * _TheTakeProfit)
-            //+ "MyPoint * 10 * _TheTakeProfit (DoubleToStr) = " + DoubleToStr( (MyPoint * 10 * _TheTakeProfit), 3)
-            //+ "\nMyPoint * 10 * _TheStopLoss = " + (string) (MyPoint * 10 * _TheStopLoss)
-            //+ "\nMyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=3) = " + (string) NormalizeDouble((MyPoint * 10 * _TheStopLoss),3)
             + "\nMyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = " + (string) NormalizeDouble((__MyPoint * 10 * _TheStopLoss),2)
             ;
-            //"MyPoint * 10 * _TheTakeProfit = 0.07000000000000001"
-            //"MyPoint * 10 * _TheStopLoss = 0.03"
-            //"MyPoint * 10 * _TheTakeProfit (DoubleToStr) = 0.070"
-            //"MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=3) = 0.03"
-            //"MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0.03"
-            //"MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0.07000000000000001"
-            
 
    txt_Msg += "\n"
             + "_TheTakeProfit = " + (string) _TheTakeProfit
@@ -366,6 +555,38 @@ void show_BasicData() {
        
 }//void show_BasicData() {
 
+void show_OrderData() {
+
+   //debug
+   string txt_Msg = "\n"
+            + "show_OrderData()----------------"
+               + "\n"
+               ;
+/*               
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);   
+*/
+   /************************************
+      OrdersTotal()
+   ************************************/
+   int numOf_OpenedOrders = OrdersTotal();
+
+   //debug
+   txt_Msg += "\n"
+            + "OrdersTotal : " + (string) numOf_OpenedOrders
+               + "\n"
+               ;
+            //OrdersTotal : 0               
+   
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);   
+
+}//show_OrderData()
+
 int init()
 {
 
@@ -375,6 +596,11 @@ int init()
    // basic data
    show_BasicData();
 
+
+   // basic data : order-related
+   show_OrderData();
+   
+   
    // setup
    setup();
 
@@ -400,8 +626,8 @@ void setup() {
 }//setup()
 
 /*
-2019/01/28 15:41:44
-func-list.(ea_Exp_1__TrailingStop.mq4).20190128_154144.txt
+2019/01/29 17:49:03
+func-list.(ea_Exp_1__TrailingStop.mq4).20190129_174903.txt
 ==========================================
 <funcs>
 
@@ -409,7 +635,10 @@ func-list.(ea_Exp_1__TrailingStop.mq4).20190128_154144.txt
 2)	bool is_Up_Bar() {
 3)	void op_NewBar() {
 4)	void setup() {
-5)	int start()
+5)	void show_BasicData() {
+6)	void show_OrderData() {
+7)	int start()
+8)	void test_TrailingStop(double diff_Latest) {
 
 ==========================================
 ==========================================
@@ -418,20 +647,21 @@ func-list.(ea_Exp_1__TrailingStop.mq4).20190128_154144.txt
 1)	string PGName = "abc";     //
 2)	int cntOf_Ticks = 0;
 3)	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
-4)	string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+4)	bool flg_OrderOpened = false;
+5)	string fname_Log_For_Session = "[ea_Exp_1__TrailingStop].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 
 ==========================================
 ==========================================
 <externs>
 
-1)	extern double Lots =0.1;
-2)	extern int MagicNumber=10001;
-3)	extern int Slippage=0.01;
-4)	extern double StopLoss=3;  // StopLoss (in pips)
-5)	extern string Sym_Set = "EURJPY";
-6)	extern double TakeProfit=7;  // TakeProfit (in pips)
+1)	extern double Lots      = 0.1;
+2)	extern int MagicNumber  = 10001;
+3)	extern int Slippage     = 0.01;
+4)	extern double StopLoss  = 30 * 0.001;  // StopLoss (in currency)
+5)	extern string Sym_Set   = "EURJPY";
+6)	extern double TakeProfit= 70 * 0.001;  // TakeProfit (in currency)
 7)	extern int Time_period        = PERIOD_M1;
-8)	extern int TrailingStop=0.03;
+8)	extern int TrailingStop = 0.03;
 
 ==========================================
 */
