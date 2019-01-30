@@ -227,7 +227,7 @@ void test_TrailingStop(double diff_Latest) {
          ********************************/
          /********************************
             j2 : Y : 1
-               nop
+               select order
          ********************************/
          //txt = "\n(j2 : Y : 1) flg_OrderOpened == true (total ="
          txt = "\nOrdersTotal() >= 1 (total ="
@@ -240,6 +240,78 @@ void test_TrailingStop(double diff_Latest) {
                dpath_Log, fname_Log_For_Session
                , __FILE__, __LINE__
                , txt);
+
+         // select
+         if(OrderSelect(num_Ticket, SELECT_BY_TICKET) == true)
+          {
+               
+               //ccc
+               /********************************
+                  data
+               ********************************/
+               double price_Open = OrderOpenPrice();
+               double price_Close = OrderClosePrice();
+               double price_TP = OrderTakeProfit();
+               double price_SL = OrderStopLoss();
+               
+               txt = "\nOrder selected : "
+                        + (string) num_Ticket + "\n"
+
+                        //+ "OrderType() = " 
+                        //+ (string) OrderType() + "\n"
+
+                        + "OrderType() = "
+                        + (string) OrderType()
+                        + " / " 
+                        + listOf_OrderTypes[OrderType()] + "\n"
+
+                        + "OrderOpenPrice() = " 
+                        + (string) price_Open + "\n"
+
+                        + "OrderClosePrice() = " 
+                        + (string) price_Close + "\n"
+
+                        + "OrderTakeProfit() = " 
+                        + (string) price_TP + "\n"
+
+                        + "OrderStopLoss() = " 
+                        + (string) price_SL + "\n"
+
+                        + "Close - SL = " 
+                        + (string) (price_Close - price_SL) + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+
+           //Print("order #12470 open price is ", OrderOpenPrice());
+           //Print("order #12470 close price is ", OrderClosePrice());
+          }
+         else
+           {
+
+               txt = "\nOrderSelect()(ticket = " 
+                        + (string) num_Ticket
+                        + ")"
+                        + " ==> returned error : "
+                        + (string) GetLastError()
+                        + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+
+               /********************************
+                  return
+               ********************************/
+               return;
+            
+           }//if(OrderSelect(num_Ticket, SELECT_BY_TICKET) == true)
+          //Print("OrderSelect returned the error of ",GetLastError());
 
          /********************************
             j2.0.1
@@ -541,6 +613,26 @@ void show_BasicData() {
          , __FILE__, __LINE__
          , txt_Msg);   
    
+   //debug : order types
+   txt_Msg = "\n"
+            + "OP_BUY : " 
+                  + (string) OP_BUY
+                  + "\n"
+            + "OP_SELL : " 
+                  + (string) OP_SELL
+                  + "\n"
+            ;
+            //"_TheTakeProfit = 0.12345678"
+            //Num (string): 0.12345678
+            //Num (NormalizeDouble, 2): 0.12
+            //"Digits() : 3"
+
+   write_Log(
+         dpath_Log, fname_Log_For_Session
+         , __FILE__, __LINE__
+         , txt_Msg);   
+
+
 
    //debug
    Print("[", __FILE__, ":",__LINE__,"] "
