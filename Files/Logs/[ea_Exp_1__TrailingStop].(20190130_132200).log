@@ -1,0 +1,39 @@
+[2019.01.30 13:22:00 / ea_Exp_1__TrailingStop.mq4:541]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.01.30 13:22:00 / ea_Exp_1__TrailingStop.mq4:578]
+Level_TakeProfit => 125.184 / Level_StopLoss => 125.084
+Point = 0.001
+Bid = 125.114
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.07000000000000001
+_TheStopLoss = 0.03
+[2019.01.30 13:22:00 / ea_Exp_1__TrailingStop.mq4:622]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.01.30 13:22:00 / ea_Exp_1__TrailingStop.mq4:661]
+show_OrderData()----------------
+
+OrdersTotal : 1
+
+[2019.01.30 13:23:05 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 34) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:23:05 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:23:05 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:23:05 / ea_Exp_1__TrailingStop.mq4:262]
+(j2.0.1 : Y : 1) flg_OrderOpened is now : true
+
+[2019.01.30 13:23:05 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.003000000000000114) (2019.01.30 06:22)

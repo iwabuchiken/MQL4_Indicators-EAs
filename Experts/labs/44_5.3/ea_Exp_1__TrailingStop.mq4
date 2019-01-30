@@ -199,6 +199,9 @@ void test_TrailingStop(double diff_Latest) {
    ********************************/
    string txt;
    
+   double val_TakeProfit = 0.04; // in currency
+   double val_StopLoss = 0.02; // in currency
+   
    /********************************
       message : function starts
    ********************************/
@@ -217,7 +220,6 @@ void test_TrailingStop(double diff_Latest) {
    ********************************/
    if(OrdersTotal() >= 1)
    //if(flg_OrderOpened == true)
-   //ccc
      {
          /********************************
             j2 : Y
@@ -227,7 +229,7 @@ void test_TrailingStop(double diff_Latest) {
             j2 : Y : 1
                nop
          ********************************/
-         //txt = "\nflg_OrderOpened == true (total ="
+         //txt = "\n(j2 : Y : 1) flg_OrderOpened == true (total ="
          txt = "\nOrdersTotal() >= 1 (total ="
                      + (string) OrdersTotal()
                      + ")"
@@ -249,9 +251,9 @@ void test_TrailingStop(double diff_Latest) {
                j2.0.1 : Y : 1
                   flag ---> not UP; UP
             ********************************/
-            flg_OrderOpened == true;              
+            flg_OrderOpened = true;              
             
-            txt = "\nflg_OrderOpened is now : true"
+            txt = "\n(j2.0.1 : Y : 1) flg_OrderOpened is now : true"
                         + "\n"
                          ;
                          
@@ -292,7 +294,7 @@ void test_TrailingStop(double diff_Latest) {
          /********************************
             j3 : diff --> up/down ?
          ********************************/
-         if(diff_Latest > 0.0)
+         if(diff_Latest > 0.0)//j3 : diff --> up/down ?
            {
                /********************************
                   j3 : Y
@@ -329,7 +331,7 @@ void test_TrailingStop(double diff_Latest) {
                   , 0
                   , Blue);
 
-               txt = "\nnum_Ticket : "
+               txt = "\n(j3 : Y : 1) num_Ticket (buy) : "
                            + (string) num_Ticket
                            + "\n"
                             ;
@@ -351,7 +353,7 @@ void test_TrailingStop(double diff_Latest) {
                return;
             
            }
-         else if (diff_Latest < 0.0)//if(diff_Latest > 0.0)
+         else if (diff_Latest < 0.0)//if(diff_Latest > 0.0) "j3 : diff --> up/down ?"
            {
                /********************************
                   j3 : N
@@ -367,11 +369,61 @@ void test_TrailingStop(double diff_Latest) {
                      dpath_Log, fname_Log_For_Session
                      , __FILE__, __LINE__
                      , txt);
-               
+
+               /********************************
+                  j3 : N : 1
+                     sell
+               ********************************/
+              double Level_TakeProfit = Ask - val_TakeProfit;  // (+0.01 * takeprofit pips) JPY
+              double Level_StopLoss = Ask + val_StopLoss;        // (-0.01 * stoploss pips) JPY
+
+              num_Ticket = OrderSend(
+                  Symbol(), OP_SELL
+                  , Lots, Bid
+                  , Slippage
+                  , NormalizeDouble(Level_StopLoss, Digits())
+                  , NormalizeDouble(Level_TakeProfit, Digits())
+                  //, Level_StopLoss
+                  //, Level_TakeProfit
+                  , "EA Generator www.ForexEAdvisor.com"
+                  , MagicNumber
+                  , 0
+                  , Blue);
+/*                  Symbol(), OP_BUY
+                  , Lots, Ask
+                  , Slippage
+                  , NormalizeDouble(Level_StopLoss, Digits())
+                  , NormalizeDouble(Level_TakeProfit, Digits())
+                  //, Level_StopLoss
+                  //, Level_TakeProfit
+                  , "EA Generator www.ForexEAdvisor.com"
+                  , MagicNumber
+                  , 0
+                  , Blue);
+*/
+               txt = "\n(j3 : N : 1) num_Ticket (sell) : "
+                           + (string) num_Ticket
+                           + "\n"
+                            ;
+                            //ccc
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+
+               /********************************
+                  j3 : Y : 2
+                     flag ---> UP
+               ********************************/
+               flg_OrderOpened = true;
+
+               /********************************
+                  return
+               ********************************/               
                return;
             
            }
-         else//if(diff_Latest > 0.0)
+         else//if(diff_Latest > 0.0) "j3 : diff --> up/down ?"
            {
                /********************************
                   j3 : None
@@ -390,7 +442,7 @@ void test_TrailingStop(double diff_Latest) {
                
                return;
             
-           }//if(diff_Latest > 0.0)
+           }//if(diff_Latest > 0.0) "j3 : diff --> up/down ?"
 /*         
          string txt = "\nflg_OrderOpened == false"
                      + "\n"

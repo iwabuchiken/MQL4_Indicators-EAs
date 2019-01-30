@@ -1,0 +1,419 @@
+[2019.01.30 13:24:52 / ea_Exp_1__TrailingStop.mq4:541]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.01.30 13:24:52 / ea_Exp_1__TrailingStop.mq4:578]
+Level_TakeProfit => 125.177 / Level_StopLoss => 125.077
+Point = 0.001
+Bid = 125.107
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.07000000000000001
+_TheStopLoss = 0.03
+[2019.01.30 13:24:52 / ea_Exp_1__TrailingStop.mq4:622]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.01.30 13:24:52 / ea_Exp_1__TrailingStop.mq4:661]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.01.30 13:25:11 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 3) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:25:11 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:25:11 / ea_Exp_1__TrailingStop.mq4:370]
+diff_Latest ==> DOWN (-0.006)
+
+[2019.01.30 13:25:11 / ea_Exp_1__TrailingStop.mq4:411]
+(j3 : N : 1) num_Ticket (sell) : 5226268
+
+[2019.01.30 13:25:11 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.006000000000000227) (2019.01.30 06:24)
+[2019.01.30 13:26:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 99) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:26:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:26:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:26:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.007000000000005002) (2019.01.30 06:25)
+[2019.01.30 13:27:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 186) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:27:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:27:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:27:01 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0) (2019.01.30 06:26)
+[2019.01.30 13:28:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 253) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:28:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:28:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:28:01 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007000000000005002) (2019.01.30 06:27)
+[2019.01.30 13:29:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 290) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:29:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:29:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:29:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.004999999999995453) (2019.01.30 06:28)
+[2019.01.30 13:29:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 393) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:29:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:29:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:29:59 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007999999999995566) (2019.01.30 06:29)
+[2019.01.30 13:31:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 435) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:31:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:31:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:31:01 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.001999999999995339) (2019.01.30 06:30)
+[2019.01.30 13:31:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 490) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:31:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:31:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:31:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.007000000000005002) (2019.01.30 06:31)
+[2019.01.30 13:33:06 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 618) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:33:06 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:33:06 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:33:06 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.01500000000000057) (2019.01.30 06:32)
+[2019.01.30 13:34:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 692) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:34:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:34:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:34:00 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.001999999999995339) (2019.01.30 06:33)
+[2019.01.30 13:34:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 737) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:34:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:34:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:34:59 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.001000000000004775) (2019.01.30 06:34)
+[2019.01.30 13:35:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 864) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:35:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:35:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:35:59 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.006000000000000227) (2019.01.30 06:35)
+[2019.01.30 13:36:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 923) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:36:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:36:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:36:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.001000000000004775) (2019.01.30 06:36)
+[2019.01.30 13:38:04 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 971) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:38:04 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:38:04 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:38:04 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.003000000000000114) (2019.01.30 06:37)
+[2019.01.30 13:39:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1010) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:39:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:39:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:39:01 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0) (2019.01.30 06:38)
+[2019.01.30 13:40:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1074) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:40:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:40:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:40:01 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.004000000000004889) (2019.01.30 06:39)
+[2019.01.30 13:41:02 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1177) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:41:02 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:41:02 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:41:02 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.004999999999995453) (2019.01.30 06:40)
+[2019.01.30 13:41:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1230) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:41:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:41:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:41:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.007000000000005002) (2019.01.30 06:41)
+[2019.01.30 13:43:06 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1312) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:43:06 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:43:06 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:43:06 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007000000000005002) (2019.01.30 06:42)
+[2019.01.30 13:44:03 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1347) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:44:03 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:44:03 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:44:03 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.009999999999990905) (2019.01.30 06:43)
+[2019.01.30 13:44:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1433) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:44:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:44:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:44:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.004000000000004889) (2019.01.30 06:44)
+[2019.01.30 13:46:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1455) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:46:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:46:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:46:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0) (2019.01.30 06:45)
+[2019.01.30 13:47:03 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1540) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:47:03 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:47:03 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:47:03 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.006000000000000227) (2019.01.30 06:46)
+[2019.01.30 13:48:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1613) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:48:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:48:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:48:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.009000000000000341) (2019.01.30 06:47)
+[2019.01.30 13:48:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1663) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:48:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:48:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:48:59 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.008000000000009777) (2019.01.30 06:48)
+[2019.01.30 13:49:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1714) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:49:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:49:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:49:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.007000000000005002) (2019.01.30 06:49)
+[2019.01.30 13:51:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1774) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:51:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:51:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:51:01 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.006000000000000227) (2019.01.30 06:50)
+[2019.01.30 13:51:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1826) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:51:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:51:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:51:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.001000000000004775) (2019.01.30 06:51)
+[2019.01.30 13:53:02 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1868) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:53:02 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:53:02 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:53:02 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0) (2019.01.30 06:52)
+[2019.01.30 13:54:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1927) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:54:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:54:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:54:00 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007999999999995566) (2019.01.30 06:53)
+[2019.01.30 13:55:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1954) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:55:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:55:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:55:01 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.007000000000005002) (2019.01.30 06:54)
+[2019.01.30 13:56:02 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 1993) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:56:02 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:56:02 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:56:02 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.001999999999995339) (2019.01.30 06:55)
+[2019.01.30 13:57:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2063) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:57:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:57:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:57:00 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007999999999995566) (2019.01.30 06:56)
+[2019.01.30 13:58:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2126) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:58:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:58:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:58:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.00200000000000955) (2019.01.30 06:57)
+[2019.01.30 13:59:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2152) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:59:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:59:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:59:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.006999999999990791) (2019.01.30 06:58)
+[2019.01.30 13:59:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2212) (period = 1 / symbol = EURJPY_)
+[2019.01.30 13:59:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 13:59:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 13:59:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.003000000000000114) (2019.01.30 06:59)
+[2019.01.30 14:01:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2300) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:01:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:01:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:01:01 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.001000000000004775) (2019.01.30 07:00)
+[2019.01.30 14:01:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2397) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:01:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:01:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:01:59 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007999999999995566) (2019.01.30 07:01)
+[2019.01.30 14:02:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 2484) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:02:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:02:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:02:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.00200000000000955) (2019.01.30 07:02)
