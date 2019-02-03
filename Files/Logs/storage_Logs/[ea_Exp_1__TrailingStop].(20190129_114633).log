@@ -1,0 +1,41 @@
+[2019.01.29 11:46:33 / ea_Exp_1__TrailingStop.mq4:265]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.01.29 11:46:33 / ea_Exp_1__TrailingStop.mq4:313]
+Level_TakeProfit => 124.842 / Level_StopLoss => 124.742
+Point = 0.001
+Bid = 124.772
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.07000000000000001
+_TheStopLoss = 0.03
+[2019.01.29 11:46:33 / ea_Exp_1__TrailingStop.mq4:357]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.01.29 11:47:00 / ea_Exp_1__TrailingStop.mq4:125]
+new bar (tick = 39) (period = 1 / symbol = EURJPY_)
+[2019.01.29 11:47:00 / ea_Exp_1__TrailingStop.mq4:158]
+diff_Latest >= 0 (0.003999999999990678) (2019.01.29 04:46)
+[2019.01.29 11:48:03 / ea_Exp_1__TrailingStop.mq4:125]
+new bar (tick = 99) (period = 1 / symbol = EURJPY_)
+[2019.01.29 11:48:03 / ea_Exp_1__TrailingStop.mq4:158]
+diff_Latest >= 0 (0.004000000000004889) (2019.01.29 04:47)
+[2019.01.29 11:49:00 / ea_Exp_1__TrailingStop.mq4:125]
+new bar (tick = 160) (period = 1 / symbol = EURJPY_)
+[2019.01.29 11:49:00 / ea_Exp_1__TrailingStop.mq4:158]
+diff_Latest >= 0 (0.0210000000000008) (2019.01.29 04:48)
+[2019.01.29 11:50:00 / ea_Exp_1__TrailingStop.mq4:125]
+new bar (tick = 408) (period = 1 / symbol = EURJPY_)
+[2019.01.29 11:50:00 / ea_Exp_1__TrailingStop.mq4:158]
+diff_Latest >= 0 (0.01899999999999125) (2019.01.29 04:49)
+[2019.01.29 11:51:01 / ea_Exp_1__TrailingStop.mq4:125]
+new bar (tick = 662) (period = 1 / symbol = EURJPY_)
+[2019.01.29 11:51:01 / ea_Exp_1__TrailingStop.mq4:158]
+diff_Latest >= 0 (0.001000000000004775) (2019.01.29 04:50)

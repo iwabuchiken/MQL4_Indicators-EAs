@@ -1,0 +1,36 @@
+Target file = ea-1_up-up-buy.mq4
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3
+Entries = 19
+Created at = 2019/01/09 13:34:31
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_ea-1_up-up-buy.mq4_20190109_133431.txt
+
+==========================================
+<funcs>
+
+1	int deinit()
+2	int init()
+3	void setup() {
+4	int start()
+
+==========================================
+==========================================
+<vars>
+
+1	bool AlertFlag       = false;            //(true:false:)
+2	string Currency = "EURJPY";
+3	bool MailFlag        = false;            //(true:false:)
+4	int OrderCount       = 0;                //
+5	string PGName = "abc";     //
+6	int PLDigits         = 2;                //
+7	int RETRY_INTERVAL   = 15000;            //
+8	int RETRY_TIMEOUT    = 60;               //()
+9	int ShortTicket;
+10	int cntOf_Ticks = 0;  // count the num of ticks -- start()
+11	int cntOf_Ticks_In_The_Bar = 0;
+12	string dpath_Log = "Logs";
+13	string fname_Log = "dev.log";
+14	string fname_Log_For_Session = "dev." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+15	string txt_Msg = "";
+
+==========================================

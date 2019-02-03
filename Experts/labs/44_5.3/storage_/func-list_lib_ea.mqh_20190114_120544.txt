@@ -1,0 +1,19 @@
+Target file = lib_ea.mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Include
+Entries = 2
+Created at = 2019/01/14 12:05:44
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_lib_ea.mqh_20190114_120544.txt
+
+==========================================
+<funcs>
+
+1	void buy_DownDown_Buy(double _TheStopLoss, double _TheTakeProfit) {
+2	bool detect_DownDown_Buy() {
+
+==========================================
+==========================================
+<vars>
+
+
+==========================================

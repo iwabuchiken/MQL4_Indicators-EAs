@@ -1,0 +1,65 @@
+[2019.01.29 18:13:31 / ea_Exp_1__TrailingStop.mq4:440]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.01.29 18:13:31 / ea_Exp_1__TrailingStop.mq4:477]
+Level_TakeProfit => 125.162 / Level_StopLoss => 125.062
+Point = 0.001
+Bid = 125.092
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.07000000000000001
+_TheStopLoss = 0.03
+[2019.01.29 18:13:31 / ea_Exp_1__TrailingStop.mq4:521]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.01.29 18:13:31 / ea_Exp_1__TrailingStop.mq4:560]
+show_OrderData()----------------
+
+OrdersTotal : 2
+
+[2019.01.29 18:14:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 154) (period = 1 / symbol = EURJPY_)
+[2019.01.29 18:14:01 / ea_Exp_1__TrailingStop.mq4:211]
+test_TrailingStop ------------------
+
+[2019.01.29 18:14:01 / ea_Exp_1__TrailingStop.mq4:264]
+diff_Latest ==> UP (0.026)
+
+[2019.01.29 18:14:01 / ea_Exp_1__TrailingStop.mq4:294]
+num_Ticket : 5224243
+
+[2019.01.29 18:14:01 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.02599999999999625) (2019.01.29 11:13)
+[2019.01.29 18:14:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 400) (period = 1 / symbol = EURJPY_)
+[2019.01.29 18:14:59 / ea_Exp_1__TrailingStop.mq4:211]
+test_TrailingStop ------------------
+
+[2019.01.29 18:14:59 / ea_Exp_1__TrailingStop.mq4:264]
+diff_Latest ==> UP (0.025)
+
+[2019.01.29 18:15:00 / ea_Exp_1__TrailingStop.mq4:294]
+num_Ticket : 5224246
+
+[2019.01.29 18:15:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.02500000000000568) (2019.01.29 11:14)
+[2019.01.29 18:15:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 635) (period = 1 / symbol = EURJPY_)
+[2019.01.29 18:15:59 / ea_Exp_1__TrailingStop.mq4:211]
+test_TrailingStop ------------------
+
+[2019.01.29 18:15:59 / ea_Exp_1__TrailingStop.mq4:264]
+diff_Latest ==> UP (0.021)
+
+[2019.01.29 18:16:00 / ea_Exp_1__TrailingStop.mq4:294]
+num_Ticket : 5224252
+
+[2019.01.29 18:16:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.0210000000000008) (2019.01.29 11:15)

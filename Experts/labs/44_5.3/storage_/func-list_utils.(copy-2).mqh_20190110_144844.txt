@@ -1,0 +1,32 @@
+Target file = utils.(copy-2).mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Indicators/lab/obs/49_8
+Entries = 15
+Created at = 2019/01/10 14:48:44
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_utils.(copy-2).mqh_20190110_144844.txt
+
+==========================================
+<funcs>
+
+
+==========================================
+==========================================
+<vars>
+
+1	int NUMOF_BARS_PER_HOURÅ@=1;        // default: 1 bar per hour
+2	int NUMOF_DATA;
+3	int NUMOF_TARGET_BARS=0;
+4	string CURRENT_PERIOD = "";   // "D1", "H1", etc.
+5	string FNAME;
+6	string FNAME_THIS = "t_" + session_ID + ".(1).mq4";
+7	string STRING_TIME;
+8	string TIME_LABEL = "";
+9	string session_ID = "24_16";
+10	int FILE_HANDLE;
+11	int HIT_INDICES[];   // indices of matched bars
+12	int HOURS_PER_DAY=24;
+13	int NUMOF_HIT_INDICES=0;
+14	string dpath_Log = "Logs";
+15	string fname_Log = "dev.log";
+
+==========================================

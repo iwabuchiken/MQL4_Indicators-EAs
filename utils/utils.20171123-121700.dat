@@ -1,2 +1,26 @@
 dpath_Target=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Experts\labs\44_5.3
+=======
+##########################
+#
+#	copied at : 2019/01/09 13:39:21
+#	orig : 
+#		C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils
+#			utils.20171123-121700.dat
+#			utils.20171123-121700.rb
+#	used from :
+#		C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\utils
+#			utils.20171123-121700.rb
+#
+#	<Usage>
+#		utils.20171123-121700.rb <dir path> <file name>
+#			==> func list file gen-ed at : <dir path>\func-list_<orig file name>_<datetime>.txt
+#
+#	<Notes>
+#		1, The line starting with the char '#' ==> omitted
+#		2. ruby file located at : C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\utils
+#		3. dat file(this file) located at : C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\utils
+#
+##########################
+dpath_Target=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Experts\labs\44_5.3
+#fname_Target=ea_44_5.3_2_up-up-buy.mq4
 fname_Target=ea-1_up-up-buy.mq4
