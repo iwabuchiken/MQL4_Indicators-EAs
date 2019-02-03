@@ -1,0 +1,12 @@
+Target file = ea_44_5.3_2_up-up-buy.mq4
+dir = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3
+Entries = 2
+Created at = 2019/01/09 13:06:20
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_ea_44_5.3_2_up-up-buy.mq4_20190109_130620.txt
+
+==========================================
+
+1	int TotalOrdersCount()
+2	int start()
+
+==========================================

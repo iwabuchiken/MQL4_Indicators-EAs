@@ -1,0 +1,4 @@
+[2019.01.14 11:53:59 / ea_44_5.3_2_down-down-sell.mq4:116]new bar (tick = 10) (period = 1 / symbol = EURJPY_)
+[2019.01.14 11:53:59 / lib_ea.mqh:122]
+price_Close_Latest >= ibands_1S_Plus (close = 124.141) (BB.-1 = 124.1315919951629) (2019.01.14 04:53)
+[2019.01.14 11:53:59 / ea_44_5.3_2_down-down-sell.mq4:138]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)

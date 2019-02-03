@@ -1,0 +1,25 @@
+Target file = lib_ea.mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Include
+Entries = 4
+Created at = 2019/01/25 11:18:46
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list.(lib_ea.mqh).20190125_111846.txt
+
+/*
+2019/01/25 11:18:46
+func-list.(lib_ea.mqh).20190125_111846.txt
+==========================================
+<funcs>
+
+1	void buy_DownDown_Buy(
+2	void buy_DownDown_Sell(
+3	bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session)
+4	bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session)
+
+==========================================
+==========================================
+<vars>
+
+
+==========================================
+*/

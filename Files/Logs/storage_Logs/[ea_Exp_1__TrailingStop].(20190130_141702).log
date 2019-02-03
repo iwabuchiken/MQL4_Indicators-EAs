@@ -1,0 +1,129 @@
+[2019.01.30 14:17:02 / ea_Exp_1__TrailingStop.mq4:589]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.01.30 14:17:02 / ea_Exp_1__TrailingStop.mq4:626]
+Level_TakeProfit => 125.146 / Level_StopLoss => 125.046
+Point = 0.001
+Bid = 125.076
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.07000000000000001
+_TheStopLoss = 0.03
+[2019.01.30 14:17:02 / ea_Exp_1__TrailingStop.mq4:670]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.01.30 14:17:02 / ea_Exp_1__TrailingStop.mq4:709]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.01.30 14:18:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 46) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:18:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:18:00 / ea_Exp_1__TrailingStop.mq4:418]
+diff_Latest ==> DOWN (-0.005)
+
+[2019.01.30 14:18:00 / ea_Exp_1__TrailingStop.mq4:459]
+(j3 : N : 1) num_Ticket (sell) : 5226355
+
+[2019.01.30 14:18:00 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.004999999999995453) (2019.01.30 07:17)
+[2019.01.30 14:19:01 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 152) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:19:01 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:19:01 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:19:01 / ea_Exp_1__TrailingStop.mq4:262]
+Order selected : 5226355
+OrderOpenPrice() = 125.07
+OrderClosePrice() = 125.075
+
+[2019.01.30 14:19:01 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.007999999999995566) (2019.01.30 07:18)
+[2019.01.30 14:19:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 224) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:19:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:19:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:19:59 / ea_Exp_1__TrailingStop.mq4:262]
+Order selected : 5226355
+OrderOpenPrice() = 125.07
+OrderClosePrice() = 125.076
+
+[2019.01.30 14:19:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.004000000000004889) (2019.01.30 07:19)
+[2019.01.30 14:21:00 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 300) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:21:00 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:21:00 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:21:00 / ea_Exp_1__TrailingStop.mq4:262]
+Order selected : 5226355
+OrderOpenPrice() = 125.07
+OrderClosePrice() = 125.078
+
+[2019.01.30 14:21:00 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0) (2019.01.30 07:20)
+[2019.01.30 14:22:04 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 349) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:22:04 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:22:04 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:22:04 / ea_Exp_1__TrailingStop.mq4:262]
+Order selected : 5226355
+OrderOpenPrice() = 125.07
+OrderClosePrice() = 125.076
+
+[2019.01.30 14:22:04 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.001000000000004775) (2019.01.30 07:21)
+[2019.01.30 14:23:06 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 389) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:23:06 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:23:06 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:23:06 / ea_Exp_1__TrailingStop.mq4:262]
+Order selected : 5226355
+OrderOpenPrice() = 125.07
+OrderClosePrice() = 125.073
+
+[2019.01.30 14:23:06 / ea_Exp_1__TrailingStop.mq4:187]
+diff_Latest < 0 (-0.006000000000000227) (2019.01.30 07:22)
+[2019.01.30 14:23:59 / ea_Exp_1__TrailingStop.mq4:132]
+new bar (tick = 448) (period = 1 / symbol = EURJPY_)
+[2019.01.30 14:23:59 / ea_Exp_1__TrailingStop.mq4:215]
+//test_TrailingStop ------------------
+
+[2019.01.30 14:23:59 / ea_Exp_1__TrailingStop.mq4:241]
+OrdersTotal() >= 1 (total =1)
+
+[2019.01.30 14:23:59 / ea_Exp_1__TrailingStop.mq4:262]
+Order selected : 5226355
+OrderOpenPrice() = 125.07
+OrderClosePrice() = 125.077
+
+[2019.01.30 14:23:59 / ea_Exp_1__TrailingStop.mq4:170]
+diff_Latest >= 0 (0.009000000000000341) (2019.01.30 07:23)

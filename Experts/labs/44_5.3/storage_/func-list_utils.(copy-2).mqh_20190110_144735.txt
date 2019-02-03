@@ -1,0 +1,60 @@
+Target file = utils.(copy-2).mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Indicators/lab/obs/49_8
+Entries = 43
+Created at = 2019/01/10 14:47:35
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Experts/labs/44_5.3/func-list_utils.(copy-2).mqh_20190110_144735.txt
+
+==========================================
+<funcs>
+
+1	void _file_close(int _FILE_HANDLE)
+2	int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
+3	int _file_write__header(int _FILE_HANDLE)
+4	bool _is_NewBar() {
+5	string conv_DateTime_2_SerialTimeLabel(int time) {
+6	void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
+7	void get_BarData_Basic(int index, double &DATA[]) {
+8	string get_TimeLabel_Current(int type)
+9	string get_TimeLabel_Current(int type) {
+10	int set_Symbol(string symbol_str, int period) {
+
+==========================================
+==========================================
+<vars>
+
+1	string _CURRENT_PERIOD, int _NUMOF_DAYS,
+2	int _NUMOF_TARGET_BARS, string _TIME_LABEL,
+3	string _SUBFOLDER, string _MAIN_LABEL,
+4	int _TIME_FRAME) {
+5	int _file_open_2(
+6	int _file_write__header_2(int _FILE_HANDLE,
+7	int _file_write__header_With_RSI(
+8	int _file_write__header_With_RSI_BB(
+9	int _file_write__header_With_RSI_BB_MFI(
+10	string _get_FNAME(
+11	string _get_FNAME__Shifted(
+12	string _symbol_Str, int _pastXBars,
+13	int conv_TimeString_2_Index
+14	int conv_TimeString_2_Index
+15	void get_ArrayOf_BarData_Basic
+16	void get_ArrayOf_BarData_Basic_2
+17	int get_AryOf_RSI(
+18	int get_AryOf_RSI_BB(
+19	int get_AryOf_RSI_BB_MFI(
+20	int get_AryOf_RSI_BB_MFI__Shifted(
+21	void get_BasicData_with_RSI(
+22	void get_BasicData_with_RSI_BB(
+23	void get_BasicData_with_RSI_BB_MFI(
+24	void get_BasicData_with_RSI_BB_MFI__Shifted(
+25	int get_index
+26	bool is_Above_BB_X(
+27	int write2File_AryOf_BasicData
+28	int write2File_AryOf_BasicData_2
+29	int write2File_AryOf_BasicData_With_RSI(
+30	int write2File_AryOf_BasicData_With_RSI_BB(
+31	int write2File_AryOf_BasicData_With_RSI_BB_MFI(
+32	int write2File_AryOf_BasicData_With_RSI_BB_MFI__Shifted(
+33	int write_Log(
+
+==========================================
