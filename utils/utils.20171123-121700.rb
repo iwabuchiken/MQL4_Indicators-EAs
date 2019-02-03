@@ -482,12 +482,31 @@ def exec
   # dat file
   #
   ################################
+  #debug
+  #p ARGV
+  #exit
+  
+  #exit
+  
+  # validate : args
+  if ARGV.length < 2
+  	
+  	puts "[#{File.basename(__FILE__)}:#{__LINE__}] args needed\n<Usage> utils...rb <dirpath> <file name>" \
+      "\ndir : #{dir}" \
+      "\nfname : #{fname}"
+      
+      return -1 #abc
+  
+  end#if
+  
   #ref quote expression https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
   tmp_Dpath = %q"C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\utils"
   
-  tmp_Fname = "utils.20171123-121700.dat"
+  #tmp_Fname = "utils.20171123-121700.dat"
+  tmp_Fname = ARGV[1]
   
-  tmp_Fpath = "#{tmp_Dpath}\\#{tmp_Fname}"
+  #tmp_Fpath = "#{tmp_Dpath}\\#{tmp_Fname}"
+  tmp_Fpath = ARGV[0]
   
   if File.exists?(tmp_Fpath)
 
