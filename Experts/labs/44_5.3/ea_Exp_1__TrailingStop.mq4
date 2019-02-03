@@ -52,14 +52,18 @@ extern int Time_period        = PERIOD_M1;
 //ref Ask_MFI_EA
 extern int MagicNumber  = 10001;
 extern double Lots      = 0.1;
-extern double StopLoss  = 30 * 0.001;  // StopLoss (in currency)
-extern double TakeProfit= 70 * 0.001;  // TakeProfit (in currency)
+extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
+extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+//extern double StopLoss  = 30 * 0.001;  // StopLoss (in currency)
+//extern double TakeProfit= 70 * 0.001;  // TakeProfit (in currency)
 
 //extern double StopLoss=0.03;
 //extern double TakeProfit=0.05;
 
-extern int TrailingStop = 0.03;
-extern int Slippage     = 0.01;
+extern double TrailingStop = 0.03;  // TrailingStop (in currency)
+extern double Slippage     = 0.01;  // Slippage (in currency)
+
+extern double TrailingStop_Margin     = 0.01;
 
 extern string Sym_Set   = "EURJPY";
 
@@ -159,7 +163,7 @@ void op_NewBar() {
      {
       
          string txt = "\ndiff_Latest >= 0 ("
-                      + (string) diff_Latest
+                      + (string) NormalizeDouble(diff_Latest,3)
                       + ") ("
                       + d
                       + ")"
@@ -225,10 +229,6 @@ void test_TrailingStop(double diff_Latest) {
             j2 : Y
                order opened
          ********************************/
-         /********************************
-            j2 : Y : 1
-               select order
-         ********************************/
          //txt = "\n(j2 : Y : 1) flg_OrderOpened == true (total ="
          txt = "\nOrdersTotal() >= 1 (total ="
                      + (string) OrdersTotal()
@@ -240,14 +240,29 @@ void test_TrailingStop(double diff_Latest) {
                dpath_Log, fname_Log_For_Session
                , __FILE__, __LINE__
                , txt);
-
+         
+         /********************************
+            j2 : Y : 1
+               select order
+         ********************************/
+         bool res = OrderSelect(num_Ticket, SELECT_BY_TICKET);
+         
+         /********************************
+            j2.2
+               select order --> error ?
+         ********************************/
          // select
          if(OrderSelect(num_Ticket, SELECT_BY_TICKET) == true)
+         //if(OrderSelect(num_Ticket, SELECT_BY_TICKET) == true)
           {
+            /********************************
+               j2.2 : N
+                  select order --> error : NO
+            ********************************/
                
-               //ccc
                /********************************
-                  data
+                  j2.2 : N : 1
+                     show : data
                ********************************/
                double price_Open = OrderOpenPrice();
                double price_Close = OrderClosePrice();
@@ -286,11 +301,83 @@ void test_TrailingStop(double diff_Latest) {
                      , __FILE__, __LINE__
                      , txt);
 
-           //Print("order #12470 open price is ", OrderOpenPrice());
-           //Print("order #12470 close price is ", OrderClosePrice());
-          }
+               /********************************
+                  j2.2 : N : 2
+                     calc : condition for trailing
+                     ref : http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/view/31351
+               ********************************/
+               double trailingStop_Threshold;
+               bool cond_Exec_Trailing = false;
+               
+               if(OrderType() == OP_BUY)
+                 {
+                  
+                     trailingStop_Threshold = price_SL + TrailingStop + TrailingStop_Margin;
+
+                     txt = "\nOrderType ==> buy"
+                              + "\n"
+                                  ;
+                                  
+                     write_Log(
+                           dpath_Log, fname_Log_For_Session
+                           , __FILE__, __LINE__
+                           , txt);
+                           
+                     // condition
+                     cond_Exec_Trailing = (price_Close > trailingStop_Threshold);
+                  
+                 }
+               else
+                 {
+
+                     trailingStop_Threshold = price_SL - TrailingStop - TrailingStop_Margin;
+
+                     txt = "\nOrderType ==> sell"
+                              + "\n"
+                                  ;
+                                  
+                     write_Log(
+                           dpath_Log, fname_Log_For_Session
+                           , __FILE__, __LINE__
+                           , txt);
+
+                     // condition
+                     cond_Exec_Trailing = (price_Close < trailingStop_Threshold);
+                  
+                 }
+               
+               
+               
+               txt = "\nTrailingStop_Threshold : "
+                        + (string) trailingStop_Threshold + "\n"
+                        
+                        + "\nprice_Close : "
+                        + (string) price_Close + "\n"
+
+                        + "\nClose - Threshold : "
+                        + (string) NormalizeDouble((price_Close - trailingStop_Threshold),3) + "\n"
+                        
+                        + "\ncond_Exec_Trailing : "
+                        + (string) cond_Exec_Trailing + "\n"
+                        
+                        + "\n"
+                            ;
+                            
+               write_Log(
+                     dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__
+                     , txt);
+               
+               
+               //ccc
+               
+          }//if(OrderSelect(num_Ticket, SELECT_BY_TICKET) == true)
          else
            {
+            /********************************
+               j2.2 : Y
+                  select order --> error
+            ********************************/
 
                txt = "\nOrderSelect()(ticket = " 
                         + (string) num_Ticket
@@ -339,7 +426,7 @@ void test_TrailingStop(double diff_Latest) {
          return;
 
      }
-   else//if(flg_OrderOpened == true)
+   else//if(OrdersTotal() >= 1)
      {
          /********************************
             j2 : N
@@ -392,8 +479,8 @@ void test_TrailingStop(double diff_Latest) {
                
               num_Ticket = OrderSend(
                   Symbol(), OP_BUY
-                  , Lots, Ask
-                  , Slippage
+                  , (double) Lots, (double) Ask
+                  , (double) Slippage
                   , NormalizeDouble(Level_StopLoss, Digits())
                   , NormalizeDouble(Level_TakeProfit, Digits())
                   //, Level_StopLoss
@@ -452,7 +539,7 @@ void test_TrailingStop(double diff_Latest) {
               num_Ticket = OrderSend(
                   Symbol(), OP_SELL
                   , Lots, Bid
-                  , Slippage
+                  , (double) Slippage
                   , NormalizeDouble(Level_StopLoss, Digits())
                   , NormalizeDouble(Level_TakeProfit, Digits())
                   //, Level_StopLoss
@@ -527,7 +614,7 @@ void test_TrailingStop(double diff_Latest) {
 */
          return;
       
-     }//if(flg_OrderOpened == true)
+     }//if(OrdersTotal() >= 1)
    
 }//test_TrailingStop(double diff_Latest)
 

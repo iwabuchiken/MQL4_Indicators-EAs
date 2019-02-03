@@ -264,7 +264,7 @@ def _exec_2_MakeList__Write2File__V2( \
   aryOf_Funcs.each_with_index {|item, i|
     
     #ref https://ref.xaio.jp/ruby/classes/string/strip
-    fout.write("#{(i + 1).to_s})\t#{item}")
+    fout.write("#{(i + 1).to_s}\t#{item}")
     
     fout.write("\n")
     
@@ -288,7 +288,7 @@ def _exec_2_MakeList__Write2File__V2( \
   aryOf_Vars.each_with_index {|item, i|
     
     #ref https://ref.xaio.jp/ruby/classes/string/strip
-    fout.write("#{(i + 1).to_s})\t#{item}")
+    fout.write("#{(i + 1).to_s}\t#{item}")
     
     fout.write("\n")
     
@@ -303,7 +303,8 @@ def _exec_2_MakeList__Write2File__V2( \
   ####################
   fout.write("==========================================")
   fout.write("\n")
-  fout.write("<externs>")
+  #fout.write("<externs>")
+  fout.write("<externs, inputs>")
   fout.write("\n")
   fout.write("\n")
   
@@ -312,7 +313,7 @@ def _exec_2_MakeList__Write2File__V2( \
   aryOf_Externs.each_with_index {|item, i|
     
     #ref https://ref.xaio.jp/ruby/classes/string/strip
-    fout.write("#{(i + 1).to_s})\t#{item}")
+    fout.write("#{(i + 1).to_s}\t#{item}")
     
     fout.write("\n")
     
@@ -909,9 +910,12 @@ def _judge_Funcs(line)
 #  regex = /^(int|void|string|bool) ([a-zA-Z0-9_]+[ }]*[\(]*[a-zA-Z0-9_ ,]*[\)]*)/
   regex = /^(int|void|string|bool)[ ]+([a-zA-Z0-9_]+[ ]*[}]*[\(]*[a-zA-Z0-9_ ,]*[\)]*)[ ]*[^;]$/
 
+  #debug
+  #puts "[#{File.basename(__FILE__)}:#{__LINE__}] line => #{line}"    
+
   hit = line.match(regex)
   
-#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] regex => #{regex}"    
+  #puts "[#{File.basename(__FILE__)}:#{__LINE__}] regex => #{regex}"    
 #  puts "[#{File.basename(__FILE__)}:#{__LINE__}] hit =>"    
   
 #  p hit
@@ -931,7 +935,8 @@ def _judge_Vars(line)
 #  regex = /^(int|void|string|bool) ([a-zA-Z0-9_]+[ }]*[\(]*[a-zA-Z0-9_ ,]*[\)]*)/
   # string PGName = "abc";
   
-  regex = /^(int|void|string|bool) ([a-zA-Z0-9_]+[ ]*[ ]+=[ ]+(.)+[ ]*;)/
+  #regex = /^(int|void|string|bool) ([a-zA-Z0-9_]+[ ]*[ ]+=[ ]+(.)+[ ]*;)/
+   regex = /^(int|void|string|bool) ([a-zA-Z0-9_]+[ ]*[ ]+=[ ]+(.)+[ ]*;(.)*)$/
 
   hit = line.match(regex)
   
@@ -948,7 +953,8 @@ def _judge_Externs(line)
   # match
   ####################
   # e.g. "extern int Time_period        = PERIOD_M1;"
-  regex = /^extern[ ]+(int|void|string|bool|double) ([a-zA-Z0-9_]+[ ]*[ ]*=[ ]*(.)+[ ]*[;]*)/
+  #regex = /^extern[ ]+(int|void|string|bool|double) ([a-zA-Z0-9_]+[ ]*[ ]*=[ ]*(.)+[ ]*[;]*)/
+  regex = /^(extern|input)[ ]+(int|void|string|bool|double)[ ]+([a-zA-Z0-9_]+[ ]*[ ]*=[ ]*(.)+[ ]*[;]*)/
 
   hit = line.match(regex)
   

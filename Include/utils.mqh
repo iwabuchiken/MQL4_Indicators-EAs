@@ -1679,6 +1679,141 @@ int get_AryOf_RSI_BB_MFI(
       number of RSI values
    
 ******************************************/
+int get_AryOf_RSI_BB_MFI__MQL5(
+      string symbol_Str, 
+      int time_Frame, 
+      int period_RSI, 
+      int price, 
+      int shift, 
+      int length,
+      double &AryOf_Data[][11]) {
+
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI()");
+
+   /****************
+      array ---> resize
+   ****************/
+   ArrayResize(AryOf_Data, length);
+
+   double  rsi;
+   double  mfi;
+   
+   //ref https://docs.mql4.com/indicators/ibands
+   double   ibands_Main;
+   double   ibands_1S_Plus;
+   double   ibands_1S_Minus;
+   double   ibands_2S_Plus;
+   double   ibands_2S_Minus;
+   
+   int   period_BB = 20;
+   
+   int count = 0;
+
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] starting ---> for loop");
+
+   //for(int i = shift; i<(shift + length); i++)
+   //for(int i = shift; i<(shift + length) - 1; i++)
+   for(int i = 0; i < length; i++)
+     {
+     
+         //ref https://docs.mql4.com/indicators/irsi
+         rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, i);
+         
+         mfi = iMFI(symbol_Str, time_Frame, period_RSI, i);
+            
+            /*
+            string       symbol,           // symbol
+            int          timeframe,        // timeframe
+            int          period,           // averaging period
+            double       deviation,        // standard deviations
+            int          bands_shift,      // bands shift
+            int          applied_price,    // applied price
+            int          mode,             // line index
+            int          shift             // shift
+            */
+         //ref https://docs.mql4.com/indicators/ibands
+         ibands_Main = iBands(symbol_Str,time_Frame, period_BB, 0,0,PRICE_CLOSE,MODE_MAIN,i);
+         
+         ibands_1S_Plus = iBands(symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         //ref mode lower https://docs.mql4.com/constants/indicatorconstants/lines
+         ibands_1S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 1.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         ibands_2S_Plus = iBands(symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE,MODE_UPPER,i);
+         
+         ibands_2S_Minus = iBands(
+                  symbol_Str,time_Frame, period_BB, 2.0,0,PRICE_CLOSE, MODE_LOWER,i);
+         
+         // input
+         AryOf_Data[i][0] = Open[i];
+         AryOf_Data[i][1] = High[i];
+         AryOf_Data[i][2] = Low[i];
+         AryOf_Data[i][3] = Close[i];
+
+         AryOf_Data[i][4] = rsi;
+         
+         AryOf_Data[i][5] = ibands_2S_Plus;
+         AryOf_Data[i][6] = ibands_1S_Plus;
+         
+         AryOf_Data[i][7] = ibands_Main;
+         
+         AryOf_Data[i][8] = ibands_1S_Minus;
+         AryOf_Data[i][9] = ibands_2S_Minus;
+         
+         AryOf_Data[i][10] = mfi;
+         
+         // count
+         count ++;
+
+/*
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] rsi ---> ", 
+                     rsi
+                     , "(i = ", i
+                     , " / "
+                     , "index = ", (i + shift)
+                     , ")"
+                     
+                     );
+*/
+
+     }
+   //double  rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, shift);
+   
+      //debug
+      /*
+   Alert("[", __FILE__, ":",__LINE__,"] rsi => ", 
+                  rsi, 
+                  "(shift = ", shift
+                  , " / "
+                  , "period = ", period_RSI
+                  
+                  , ")"
+                  
+   );
+*/
+   /****************
+      return
+   ****************/
+   return count;
+
+}//get_AryOf_RSI_BB_MFI__MQL5
+
+/******************************************
+   @params
+      string       symbol,           // symbol
+      int          timeframe,        // timeframe
+      int          period,           // period
+      int          applied_price,    // applied price
+      int          shift             // shift
+   
+   @return
+      number of RSI values
+   
+******************************************/
 int get_AryOf_RSI_BB_MFI__Shifted(
       string symbol_Str, 
       int time_Frame, 
@@ -2242,6 +2377,119 @@ void get_BasicData_with_RSI_BB(
    Print("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
    
 }//void get_BasicData_with_RSI_BB
+
+void get_BasicData_with_RSI_BB_MFI__MQL5(
+   string _symbol_Str, int _pastXBars,
+   string _SUBFOLDER, string _MAIN_LABEL,
+   string _CURRENT_PERIOD, int _NUMOF_DAYS,
+   int _NUMOF_TARGET_BARS, string _TIME_LABEL,
+   int _TIME_FRAME) {
+
+   // get data
+
+   int pastXBars = _pastXBars;
+   
+   string _FNAME = _get_FNAME(
+               _SUBFOLDER, _MAIN_LABEL, _symbol_Str, 
+               _CURRENT_PERIOD, _NUMOF_DAYS, 
+               _NUMOF_TARGET_BARS, _TIME_LABEL);
+
+    //debug
+    Print("[", __FILE__, ":",__LINE__,"] FNAME => ", _FNAME);
+    
+    /******************
+      iRSI
+    ******************/
+    //ref https://docs.mql4.com/indicators/irsi
+         /*
+         string       symbol,           // symbol
+         int          timeframe,        // timeframe
+         int          period,           // period
+         int          applied_price,    // applied price
+         int          shift             // shift
+         */
+   int shift = 1;
+   
+   int period_RSI = 20;
+   
+   int price_Target = PRICE_CLOSE;
+   
+   //double   AryOf_Data[][5];
+   double   AryOf_Data[][11];
+   
+   //int length = 5;
+   int length = _NUMOF_DAYS;
+   
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
+   
+
+   //get_AryOf_RSI(
+   get_AryOf_RSI_BB_MFI(
+            _symbol_Str, 
+            (int) _CURRENT_PERIOD, 
+            period_RSI, 
+            price_Target, 
+            shift, 
+            length,
+            AryOf_Data);
+
+
+    /******************
+      data ---> write to file
+    ******************/
+   write2File_AryOf_BasicData_With_RSI_BB_MFI(
+      _FNAME, _SUBFOLDER, AryOf_Data
+      
+      , length, shift
+            
+      , _symbol_Str
+      
+      , _CURRENT_PERIOD
+      
+      , _NUMOF_DAYS
+      
+      , _NUMOF_TARGET_BARS
+      
+      , _TIME_LABEL
+      
+      , _TIME_FRAME
+
+   );
+
+    /******************
+      Array --> free
+    ******************/
+    //ref
+    ArrayFree(AryOf_Data);
+    
+   // debug
+   string txt = "AryOf_Data --> freed ("
+            + "symbol = " + _symbol_Str
+            + " / "
+            + "period = " + _CURRENT_PERIOD
+            + ")"
+            ;
+   
+   //string dpath_Log = "Logs";
+   //C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Logs
+   //string fname_Log = "dev.log";
+
+/*
+   // debug
+   write_Log(
+         dpath_Log
+         , fname_Log
+         , __FILE__
+         , __LINE__
+         , txt);
+         //, name);
+*/
+
+   //debug
+   Print("[", __FILE__, ":",__LINE__,"] get_BasicData_with_RSI() => done");
+   
+}//get_BasicData_with_RSI_BB_MFI__MQL5
 
 void get_BasicData_with_RSI_BB_MFI(
    string _symbol_Str, int _pastXBars,
