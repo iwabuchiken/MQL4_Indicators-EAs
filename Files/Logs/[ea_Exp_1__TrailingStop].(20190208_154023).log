@@ -1,0 +1,708 @@
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 109.76 / Level_StopLoss => 109.7
+Point = 0.001
+Bid = 109.72
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:23 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 109.76 / Level_StopLoss => 109.7
+Point = 0.001
+Bid = 109.72
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 109.76 / Level_StopLoss => 109.7
+Point = 0.001
+Bid = 109.72
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:24 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:27 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:27 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:29 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:29 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:29 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.438 / Level_StopLoss => 124.378
+Point = 0.001
+Bid = 124.398
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:32 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:33 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:35 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 5
+Point : 1e-05
+
+[2019.02.08 15:40:35 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:35 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 1.17365 / Level_StopLoss => 1.11365
+Point = 1e-05
+Bid = 1.13365
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:38 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 1e-05
+
+Point (EURJPY) = 1e-05
+
+Point (EURUSD) = 1e-05
+
+[2019.02.08 15:40:38 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:40 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:40 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:40 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 124.453 / Level_StopLoss => 124.393
+Point = 0.001
+Bid = 124.413
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02
+[2019.02.08 15:40:43 / ea_Exp_1__TrailingStop.mq4:801]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.08 15:40:43 / ea_Exp_1__TrailingStop.mq4:840]
+show_OrderData()----------------
+
+OrdersTotal : 0
+
+[2019.02.08 15:40:45 / ea_Exp_1__TrailingStop.mq4:700]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.08 15:40:45 / ea_Exp_1__TrailingStop.mq4:719]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.08 15:40:45 / ea_Exp_1__TrailingStop.mq4:757]
+Level_TakeProfit => 109.772 / Level_StopLoss => 109.712
+Point = 0.001
+Bid = 109.732
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.04
+_TheStopLoss = 0.02

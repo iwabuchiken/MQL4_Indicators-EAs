@@ -51,7 +51,8 @@ REM ref multi line https://stackoverflow.com/questions/605686/windows-how-to-spe
 REM set dpath_Dst=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Experts\labs\44_5.3
 
 REM ------- (gen raw csv data) Indicators\lab\obs\49_8 @_20190203_091606 -------
-set dpath_Dst=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Indicators\lab\obs\49_8
+REM set dpath_Dst=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Indicators\lab\obs\49_8
+set dpath_Dst=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Indicators\lab\obs\49_8
 
 REM ------- (gen raw csv data)(utils file) ...\34B08C83A5AAE27A4079DE708E60511E\MQL4\Include -------
 REM set dpath_Dst=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Include
