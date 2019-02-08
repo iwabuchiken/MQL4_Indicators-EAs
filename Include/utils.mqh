@@ -1256,7 +1256,31 @@ string _get_FNAME(
                string _SYMBOL_STR, string _CURRENT_PERIOD, 
                int _NUMOF_DAYS, int _NUMOF_TARGET_BARS, 
                string _TIME_LABEL) {
+/*
+   string tmp = "[" + _SUBFOLDER
+         
+         + "_" + main_Label + "]"
+*/
 
+   string tmp = _SUBFOLDER
+         
+         + "_" + main_Label
+
+         + ".(" + _SYMBOL_STR + ")"
+
+         + ".(" + "Period-" + _CURRENT_PERIOD + ")"
+
+         + ".(" + "NumOfUnits-" + (string) _NUMOF_DAYS + ")"
+         //+ "." + "Days-" + (string) _NUMOF_DAYS
+         
+         +".(" + "Bars-" + (string) _NUMOF_TARGET_BARS + ")"
+         
+         +"." + _TIME_LABEL
+         
+         +".csv";
+
+
+/*
    string tmp = _SUBFOLDER
          
 //         + "_" + "file-io"
@@ -1274,7 +1298,7 @@ string _get_FNAME(
          +"." + _TIME_LABEL
          
          +".csv";
-         
+*/
    //debug
    Print("[", __FILE__, ":",__LINE__,"] file name built => ", tmp);
 
@@ -2982,6 +3006,56 @@ bool is_Above_BB_X(
 }//bool is_Above_BB_X(
 
 /*
+
+2019/02/03 08:33:22
+func-list.(utils.mqh).20190203_083322.txt
+==========================================
+<funcs>
+
+1)	string _CURRENT_PERIOD, int _NUMOF_DAYS,
+2)	int _NUMOF_TARGET_BARS, string _TIME_LABEL,
+3)	string _SUBFOLDER, string _MAIN_LABEL,
+4)	int _TIME_FRAME) {
+5)	void _file_close(int _FILE_HANDLE)
+6)	int _file_open(int _FILE_HANDLE, string _FNAME, string _SUBFOLDER)
+7)	int _file_open_2(
+8)	int _file_write__header(int _FILE_HANDLE)
+9)	int _file_write__header_2(int _FILE_HANDLE,
+10)	int _file_write__header_With_RSI(
+11)	int _file_write__header_With_RSI_BB(
+12)	int _file_write__header_With_RSI_BB_MFI(
+13)	string _get_FNAME(
+14)	string _get_FNAME__Shifted(
+15)	bool _is_NewBar() {
+16)	string _symbol_Str, int _pastXBars,
+17)	string conv_DateTime_2_SerialTimeLabel(int time) {
+18)	void conv_Index_2_TimeString(int index, int __TIME_FRAME, string __Symbol) {
+19)	int conv_TimeString_2_Index
+20)	int conv_TimeString_2_Index
+21)	void get_ArrayOf_BarData_Basic
+22)	void get_ArrayOf_BarData_Basic_2
+23)	int get_AryOf_RSI(
+24)	int get_AryOf_RSI_BB(
+25)	int get_AryOf_RSI_BB_MFI(
+26)	int get_AryOf_RSI_BB_MFI__Shifted(
+27)	void get_BasicData_with_RSI(
+28)	void get_BasicData_with_RSI_BB(
+29)	void get_BasicData_with_RSI_BB_MFI(
+30)	void get_BasicData_with_RSI_BB_MFI__Shifted(
+31)	string get_TimeLabel_Current(int type) {
+32)	string get_TimeLabel_Current(int type)
+33)	int get_index
+34)	bool is_Above_BB_X(
+35)	int set_Symbol(string symbol_str, int period) {
+36)	int set_Symbol(string symbol_str, int period)
+37)	int write2File_AryOf_BasicData
+38)	int write2File_AryOf_BasicData_2
+39)	int write2File_AryOf_BasicData_With_RSI(
+40)	int write2File_AryOf_BasicData_With_RSI_BB(
+41)	int write2File_AryOf_BasicData_With_RSI_BB_MFI(
+42)	int write2File_AryOf_BasicData_With_RSI_BB_MFI__Shifted(
+43)	int write_Log(
+=======
 2019/01/25 10:44:57
 ==========================================
 <funcs>
@@ -3033,6 +3107,11 @@ bool is_Above_BB_X(
 ==========================================
 ==========================================
 <vars>
+
+
+==========================================
+==========================================
+<externs>
 
 
 ==========================================

@@ -32,7 +32,8 @@ string PGName = "abc";     //
 //+------------------------------------------------------------------+
 int cntOf_Ticks = 0;
 
-string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+//string fname_Log_For_Session = "ea_44_5.3_2_up-up-buy." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
+string fname_Log_For_Session = "[ea_44_5.3_2].[down-down-BuyOrSell]." + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".log";
 string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
 
 //+------------------------------------------------------------------+

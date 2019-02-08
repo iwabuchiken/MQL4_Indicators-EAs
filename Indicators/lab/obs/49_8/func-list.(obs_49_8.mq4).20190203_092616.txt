@@ -1,0 +1,45 @@
+Target file = obs_49_8.mq4
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/Indicators/lab/obs/49_8
+Entries = 0
+Created at = 2019/02/03 09:26:16
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Indicators/lab/obs/49_8/func-list.(obs_49_8.mq4).20190203_092616.txt
+
+/*
+2019/02/03 09:26:16
+func-list.(obs_49_8.mq4).20190203_092616.txt
+==========================================
+<funcs>
+
+1)	void _setup__BasicParams() {
+2)	int exec() {
+3)	void get_BasicData_with_RSI(string symbol_Str) {
+4)	int init() {
+5)	void setup()
+
+==========================================
+==========================================
+<vars>
+
+1)	string dpath_Log = "Logs";
+2)	string fname_Log = "dev.log";
+
+==========================================
+==========================================
+<externs, inputs>
+
+1)	input int      BB_PERIOD = 25;
+2)	input string MAIN_LABEL = "data";
+3)	input int      NUMOF_DAYS  = 180;    // Num of bars
+4)	extern int Period_MA=21;            // Calculated MA period
+5)	input int      RSI_PERIOD     = 20;
+6)	input int      RSI_THRESHOLD  = 75;
+7)	input string   SPAN_END     = "2016.10.31 23:00";
+8)	input string   SPAN_START     = "2016.04.01 00:00";
+9)	input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
+10)	input string   SYMBOL_STR="AUDJPY";
+11)	input int      TIME_FRAME  = 43200;  // MN1
+12)	input bool     WRITE_DATA_TO_FILE = true;
+
+==========================================
+*/
