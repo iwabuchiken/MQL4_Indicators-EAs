@@ -264,7 +264,7 @@ def _exec_2_MakeList__Write2File__V2( \
   aryOf_Funcs.each_with_index {|item, i|
     
     #ref https://ref.xaio.jp/ruby/classes/string/strip
-    fout.write("#{(i + 1).to_s})\t#{item}")
+    fout.write("#{(i + 1).to_s}\t#{item}")
     
     fout.write("\n")
     
@@ -288,7 +288,7 @@ def _exec_2_MakeList__Write2File__V2( \
   aryOf_Vars.each_with_index {|item, i|
     
     #ref https://ref.xaio.jp/ruby/classes/string/strip
-    fout.write("#{(i + 1).to_s})\t#{item}")
+    fout.write("#{(i + 1).to_s}\t#{item}")
     
     fout.write("\n")
     
@@ -313,7 +313,7 @@ def _exec_2_MakeList__Write2File__V2( \
   aryOf_Externs.each_with_index {|item, i|
     
     #ref https://ref.xaio.jp/ruby/classes/string/strip
-    fout.write("#{(i + 1).to_s})\t#{item}")
+    fout.write("#{(i + 1).to_s}\t#{item}")
     
     fout.write("\n")
     

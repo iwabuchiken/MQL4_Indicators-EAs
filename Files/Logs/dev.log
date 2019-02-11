@@ -10603,6 +10603,28 @@ _setup__BasicParams ============
 [2019.01.10 15:02:34 / obs_49_8.(orig).mq4:298]
 _setup__BasicParams ============
 [2019.01.10 15:02:34 / obs_49_8.(orig).mq4:310]time frame => 5
+[2019.02.07 18:44:09 / obs_49_8.mq4:298]
+_setup__BasicParams ============
+[2019.02.07 18:44:09 / obs_49_8.mq4:310]time frame => 1
+[2019.02.07 18:44:57 / obs_49_8.mq4:298]
+_setup__BasicParams ============
+[2019.02.07 18:44:57 / obs_49_8.mq4:310]time frame => 1
+[2019.02.08 15:15:56 / test.mq4:267]
+_setup__BasicParams ============
+[2019.02.08 15:15:56 / test.mq4:279]time frame => 43200
+[2019.02.08 15:16:31 / test.mq4:267]
+_setup__BasicParams ============
+[2019.02.08 15:16:31 / test.mq4:279]time frame => 43200
+[2019.02.08 15:16:50 / test.mq4:267]
+_setup__BasicParams ============
+[2019.02.08 15:16:50 / test.mq4:279]time frame => 43200
+[2019.02.08 15:17:19 / test.mq4:267]
+_setup__BasicParams ============
+[2019.02.08 15:17:19 / test.mq4:279]time frame => 43200
+[2019.02.08 15:17:32 / test.mq4:267]
+_setup__BasicParams ============
+[2019.02.08 15:17:32 / test.mq4:279]time frame => 43200
+=======
 [2019.02.04 12:44:11 / obs_49_8.(A-J).(H1).mq4:306]
 _setup__BasicParams ============
 [2019.02.04 12:44:11 / obs_49_8.(A-J).(H1).mq4:318]time frame => 60
@@ -10729,6 +10751,7 @@ _setup__BasicParams ============
 [2019.02.04 13:20:56 / obs_49_8.(A-J).(MN).mq4:359]
 _setup__BasicParams ============
 [2019.02.04 13:20:56 / obs_49_8.(A-J).(MN).mq4:371]time frame => 43200
+<<<<<<< HEAD
 [2019.02.11 08:55:30 / obs_49_8.(U-J).mq4:306]
 _setup__BasicParams ============
 [2019.02.11 08:55:30 / obs_49_8.(U-J).mq4:318]time frame => 1
@@ -11131,3 +11154,4 @@ _setup__BasicParams ============
 [2019.02.11 10:48:12 / obs_49_8.(E-U,E-J).(M5-3000).mq4:345]
 _setup__BasicParams ============
 [2019.02.11 10:48:12 / obs_49_8.(E-U,E-J).(M5-3000).mq4:357]time frame => 5
+=======

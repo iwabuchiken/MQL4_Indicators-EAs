@@ -1,0 +1,30 @@
+[2019.02.01 13:27:41 / ea_Exp_1__TrailingStop.mq4:654]
+Num (string): 0.12345678
+Num (NormalizeDouble, 2): 0.12
+Digits() : 3
+Point : 0.001
+
+[2019.02.01 13:27:41 / ea_Exp_1__TrailingStop.mq4:673]
+OP_BUY : 0
+OP_SELL : 1
+
+[2019.02.01 13:27:41 / ea_Exp_1__TrailingStop.mq4:711]
+Level_TakeProfit => 124.628 / Level_StopLoss => 124.528
+Point = 0.001
+Bid = 124.558
+MyPoint * 10 * _TheTakeProfit (NormalizeDouble, digits=2) = 0
+MyPoint * 10 * _TheStopLoss (NormalizeDouble, digits=2) = 0
+_TheTakeProfit = 0.07000000000000001
+_TheStopLoss = 0.03
+[2019.02.01 13:27:41 / ea_Exp_1__TrailingStop.mq4:755]
+Point (USDJPY) = 0.001
+
+Point (EURJPY) = 0.001
+
+Point (EURUSD) = 0.001
+
+[2019.02.01 13:27:41 / ea_Exp_1__TrailingStop.mq4:794]
+show_OrderData()----------------
+
+OrdersTotal : 1
+
