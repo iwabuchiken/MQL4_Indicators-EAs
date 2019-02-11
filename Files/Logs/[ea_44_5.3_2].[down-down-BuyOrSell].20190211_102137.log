@@ -1,0 +1,22 @@
+[2019.02.11 10:21:37 / ea_44_5.3_2_down-down-buy.mq4:357]
+Level_TakeProfit => 1.13331 / Level_StopLoss => 1.13231
+Point = 1e-05
+Bid = 1.13261
+MyPoint * 10 * _TheTakeProfit = 0.0007
+MyPoint * 10 * _TheStopLoss = 0.0003
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.02.11 10:21:37 / ea_44_5.3_2_down-down-buy.mq4:357]
+Level_TakeProfit => 124.452 / Level_StopLoss => 124.352
+Point = 0.001
+Bid = 124.382
+MyPoint * 10 * _TheTakeProfit = 0.07000000000000001
+MyPoint * 10 * _TheStopLoss = 0.03
+_TheTakeProfit = 7
+_TheStopLoss = 3
+[2019.02.11 10:22:01 / ea_44_5.3_2_down-down-buy.mq4:126]
+new bar (tick = 19) (period = 1 / symbol = EURJPY)
+[2019.02.11 10:22:01 / lib_ea.mqh:131]
+price_Close_Latest >= ibands_1S_Plus (close = 124.378) (BB.-1 = 124.3721119160324) (2019.02.11 03:21)
+[2019.02.11 10:22:01 / ea_44_5.3_2_down-down-buy.mq4:148]
+detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY)
