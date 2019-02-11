@@ -142,7 +142,7 @@ void get_BasicData_with_RSI(string symbol_Str) {
                SUBFOLDER, MAIN_LABEL, symbol_Str, 
                CURRENT_PERIOD, NUMOF_DAYS, 
                NUMOF_TARGET_BARS, TIME_LABEL);
-//ccc
+
     //debug
     Alert("[", __FILE__, ":",__LINE__,"] FNAME => ", FNAME);
     
@@ -252,6 +252,45 @@ int exec() {
 	string _TIME_LABEL      = TIME_LABEL;
 	int _TIME_FRAME      = TIME_FRAME;
    
+   /******************************
+      EURJPY
+   ******************************/
+   string _symbol_Str_current = _symbol_Str;
+   //string _symbol_Str_new = "EURUSD";
+   string _symbol_Str_new = "EURJPY";
+
+   //debug
+   Alert("[", __FILE__, ":",__LINE__,"] "
+         , "Symbol() = ", (string) Symbol()
+         , " / "
+         , "_symbol_Str_new = ", _symbol_Str_new
+         
+         );
+   
+   // judge
+   if(Symbol() != _symbol_Str_new)
+     {
+     
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] "
+               , "changing symbol..."
+               
+               );
+         
+         // update
+         _update__BasicParams(_symbol_Str_new, _TIME_FRAME);
+
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] "
+               , "Symbol() is now = ", (string) Symbol()
+               
+               );
+      
+      //ccc
+     }
+   
+   //debug
+   return 0;
    
    get_BasicData_with_RSI_BB_MFI(
        _symbol_Str,  _pastXBars,
@@ -521,6 +560,244 @@ void _setup__BasicParams() {
      }
 
 }//void _setup__BasicParams()
+
+/***********************************
+_update__BasicParams(string _SYMBOL_STR, int _TIME_FRAME)
+
+   at : 2019/02/11 10:35:50
+
+***********************************/
+//xxx
+void _update__BasicParams(string _SYMBOL_STR, int _TIME_FRAME) {
+
+   /*
+      debug
+   */
+   string txt = "\n_setup__BasicParams ============";
+   
+   // debug
+   write_Log(
+   dpath_Log
+   , fname_Log
+   , __FILE__
+   , __LINE__
+   , txt);
+   //, name);
+
+   // debug
+   txt = "time frame => " + (string)_TIME_FRAME;
+   
+   // debug
+   write_Log(
+      dpath_Log
+      , fname_Log
+      , __FILE__
+      , __LINE__
+      , txt);
+      //, name);
+
+
+   int res;
+   
+   switch(_TIME_FRAME)
+/*
+   #ref https://www.mql5.com/en/forum/140787
+   PERIOD_M1   1
+   PERIOD_M5   5
+   PERIOD_M15  15
+   PERIOD_M30  30 
+   PERIOD_H1   60
+   PERIOD_H4   240
+   PERIOD_D1   1440
+   PERIOD_W1   10080
+   PERIOD_MN1  43200
+   */
+     {
+      case  5:      // 5 minutes
+
+         NUMOF_TARGET_BARS = NUMOF_DAYS;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_M5);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+         
+         // period name
+         CURRENT_PERIOD = "M5";
+
+         break;
+
+      case  15:      // 15 minutes
+                     // ref https://docs.mql4.com/constants/chartconstants/enum_timeframes
+
+         NUMOF_TARGET_BARS = NUMOF_DAYS;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_M15);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+         
+         // period name
+         CURRENT_PERIOD = "M15";
+
+         break;
+
+      case  30:      // 30 minutes
+
+         NUMOF_TARGET_BARS = NUMOF_DAYS;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_M30);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+         
+         // period name
+         CURRENT_PERIOD = "M30";
+
+         //debug
+         txt = "breaking switch loop (CURRENT_PERIOD = " + CURRENT_PERIOD + ")";
+         
+         // debug
+         write_Log(
+            dpath_Log, fname_Log
+            , __FILE__, __LINE__
+            , txt);
+            //, name);
+
+         break;
+
+      case  60:      // 1 hour
+
+         NUMOF_TARGET_BARS=NUMOF_DAYS*24;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_H1);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+         
+         // period name
+         CURRENT_PERIOD = "H1";
+
+         break;
+
+      case  240: // 4 hours
+
+         NUMOF_TARGET_BARS = NUMOF_DAYS * 6;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H4);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_H4);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+
+         // period name
+         CURRENT_PERIOD = "H4";
+
+         break;
+
+      case  480: // 8 hours
+
+         NUMOF_TARGET_BARS = NUMOF_DAYS*3;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H8);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_H8);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+         
+         // period name
+         CURRENT_PERIOD = "H8";
+
+         break;
+
+      case  1440: // 1 day
+
+         NUMOF_TARGET_BARS = NUMOF_DAYS;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_D1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_D1);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+
+
+         // period name
+         CURRENT_PERIOD = "D1";
+
+         break;
+
+      case  10080: // 1 week
+
+         //ref https://www.mql5.com/en/forum/151559
+         //NUMOF_TARGET_BARS = (int) NUMOF_DAYS / 7;
+         NUMOF_TARGET_BARS = NUMOF_DAYS;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_W1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_W1);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+
+         // period name
+         CURRENT_PERIOD = "W1";
+
+         break;
+
+      case  43200: // 1 month
+
+         //ref https://www.mql5.com/en/forum/151559
+         //NUMOF_TARGET_BARS = (int) NUMOF_DAYS / 7;
+         NUMOF_TARGET_BARS = NUMOF_DAYS;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_W1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_MN1);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+
+         // period name
+         CURRENT_PERIOD = "MN1";
+
+         break;
+
+      case  1: // 1 minute: "NUMOF_DAYS" value is now interpreted as
+         //             "NUMOF_HOURS"
+
+         NUMOF_TARGET_BARS=NUMOF_DAYS*60;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_M1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_M1);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+         
+
+         // period name
+         CURRENT_PERIOD = "M1";
+
+         break;
+
+      default:
+
+         NUMOF_TARGET_BARS=NUMOF_DAYS*24;
+         
+         //ChartSetSymbolPeriod(0,_SYMBOL_STR,PERIOD_H1);  // set symbol
+         res = set_Symbol(_SYMBOL_STR, PERIOD_H1);
+         
+         //debug
+         Alert("[", __FILE__, ":",__LINE__,"] symbol set => ", _SYMBOL_STR);
+
+         // period name
+         CURRENT_PERIOD = "H1";
+
+         break;
+     }
+
+}//void _update__BasicParams
 
 //ref about "tick" --> https://www.mql5.com/en/forum/109552
 void setup() 
