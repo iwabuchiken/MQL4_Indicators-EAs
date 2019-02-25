@@ -83,8 +83,8 @@ input int      NUMOF_DAYS  = 4500;    // Num of bars
 //input int      TIME_FRAME  = 10080;  // W1
 //input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
-//input int      TIME_FRAME  = 5;  // 5 min
-input int      TIME_FRAME  = 15;  // 15 min
+input int      TIME_FRAME  = 5;  // 5 min
+//input int      TIME_FRAME  = 15;  // 15 min
 //input int      TIME_FRAME  = 60;  // 60 min
 
 // BB period (Bollinger Band)
@@ -93,9 +93,9 @@ input int      BB_PERIOD = 25;
 // 
 input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
 //input string   SYMBOL_STR="AUDJPY";
-input string   SYMBOL_STR="USDJPY";
+//input string   SYMBOL_STR="USDJPY";
 //input string   SYMBOL_STR="EURUSD";
-//input string   SYMBOL_STR="EURJPY";
+input string   SYMBOL_STR="EURJPY";
 input string MAIN_LABEL = "rawdata";
 //input string MAIN_LABEL = "data";
 //input string MAIN_LABEL = "file-io";
