@@ -75,19 +75,19 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-//input int      NUMOF_DAYS  = 15;    // Num of bars
-input int      NUMOF_DAYS  = 60;    // Num of bars
-// E/U, D1, 15 bars ---> 2 weeks
+//input int      NUMOF_DAYS  = 300;    // Num of bars
+input int      NUMOF_DAYS  = 1000;    // Num of bars
+// E/U, H1, 300 ---> 2 weeks
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
 //input int      TIME_FRAME  = 43200;  // Time frame (MN1)
 //input int      TIME_FRAME  = 10080;  // W1
-input int      TIME_FRAME  = 1440;  // 1 day
+//input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
 //input int      TIME_FRAME  = 5;  // 5 min
 //input int      TIME_FRAME  = 15;  // 15 min
-//input int      TIME_FRAME  = 60;  // 60 min
+input int      TIME_FRAME  = 60;  // 60 min
 
 // BB period (Bollinger Band)
 input int      BB_PERIOD = 25;

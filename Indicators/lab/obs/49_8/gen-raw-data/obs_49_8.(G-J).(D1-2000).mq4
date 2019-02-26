@@ -75,9 +75,11 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-//input int      NUMOF_DAYS  = 15;    // Num of bars
-input int      NUMOF_DAYS  = 60;    // Num of bars
-// E/U, D1, 15 bars ---> 2 weeks
+//input int      NUMOF_DAYS  = 100;    // Num of bars
+//input int      NUMOF_DAYS  = 500;    // Num of bars
+//input int      NUMOF_DAYS  = 1000;    // Num of bars
+input int      NUMOF_DAYS  = 2000;    // Num of bars
+//input int      NUMOF_DAYS  = 2500;    // Num of bars
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
@@ -95,7 +97,7 @@ input int      BB_PERIOD = 25;
 // 
 input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
 //input string   SYMBOL_STR="AUDJPY";
-input string   SYMBOL_STR="EURUSD";
+input string   SYMBOL_STR="GBPJPY";
 //input string   SYMBOL_STR="EURUSD";
 //input string   SYMBOL_STR="EURJPY";
 input string MAIN_LABEL = "rawdata";
