@@ -75,25 +75,24 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-//input int      NUMOF_DAYS  = 300;    // Num of bars
-//input int      NUMOF_DAYS  = 1000;    // Num of bars : 2019.03.08 02:00 ~ 2019.01.09 11:00
-input int      NUMOF_DAYS  = 6000;    // Num of bars : ~ 2018.03.19 07:00
-//input int      NUMOF_DAYS  = 8000;    // Num of bars n/w
-//input int      NUMOF_DAYS  = 9000;    // Num of bars n/w
-//input int      NUMOF_DAYS  = 12000;    // Num of bars n/w
-//input int      NUMOF_DAYS  = 16000;    // Num of bars n/w
-//input int      NUMOF_DAYS  = 18000;    // Num of bars n/w
-// E/U, H1, 300 ---> 2 weeks
+//input int      NUMOF_DAYS  = 30;    // Num of bars
+//input int      NUMOF_DAYS  = 400;    // Num of bars
+//input int      NUMOF_DAYS  = 800;    // Num of bars
+//input int      NUMOF_DAYS  = 1600;    // Num of bars --> 2019.03.08 00:00 ~ 2013.10.10 00
+input int      NUMOF_DAYS  = 2000;    // Num of bars
+//input int      NUMOF_DAYS  = 2500;    // Num of bars --> n/w
+
+// D1, 15 bars ---> 3 weeks
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
 //input int      TIME_FRAME  = 43200;  // Time frame (MN1)
 //input int      TIME_FRAME  = 10080;  // W1
-//input int      TIME_FRAME  = 1440;  // 1 day
+input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
 //input int      TIME_FRAME  = 5;  // 5 min
 //input int      TIME_FRAME  = 15;  // 15 min
-input int      TIME_FRAME  = 60;  // 60 min
+//input int      TIME_FRAME  = 60;  // 60 min
 
 // BB period (Bollinger Band)
 input int      BB_PERIOD = 25;
@@ -101,9 +100,9 @@ input int      BB_PERIOD = 25;
 // 
 input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
 //input string   SYMBOL_STR="AUDJPY";
-input string   SYMBOL_STR="EURUSD";
+//input string   SYMBOL_STR="USDJPY";
 //input string   SYMBOL_STR="EURUSD";
-//input string   SYMBOL_STR="EURJPY";
+input string   SYMBOL_STR="EURJPY";
 input string MAIN_LABEL = "rawdata";
 //input string MAIN_LABEL = "data";
 //input string MAIN_LABEL = "file-io";
