@@ -75,7 +75,24 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-input int      NUMOF_DAYS  = 500;    // Num of bars
+//input int      NUMOF_DAYS  = 4500;    // Num of bars : 2019.01.03 03:00;2019.01.03 10:00 ~ 2019.03.08 23:45;2019.03.09 06:45
+//input int      NUMOF_DAYS  = 9000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 10000;    // Num of bars : 2019.01.21 05:35;2019.01.21 12:35 ~
+//input int      NUMOF_DAYS  = 12000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 13000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 14000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 15000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 16000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 18000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 20000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 22000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 25000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 30000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 35000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 40000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 50000;    // Num of bars : 
+input int      NUMOF_DAYS  = 55000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 60000;    // Num of bars : // n/w
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
@@ -83,9 +100,9 @@ input int      NUMOF_DAYS  = 500;    // Num of bars
 //input int      TIME_FRAME  = 10080;  // W1
 //input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
-//input int      TIME_FRAME  = 5;  // 5 min
+input int      TIME_FRAME  = 5;  // 5 min
 //input int      TIME_FRAME  = 15;  // 15 min
-input int      TIME_FRAME  = 60;  // 60 min
+//input int      TIME_FRAME  = 60;  // 60 min
 
 // BB period (Bollinger Band)
 input int      BB_PERIOD = 25;

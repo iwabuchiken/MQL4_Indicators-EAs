@@ -75,22 +75,22 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-//input int      NUMOF_DAYS  = 500;    // Num of bars : 2019.02.08 07:00;2019.02.08 14:00 ~ 2019.03.11 02:00;2019.03.11 09:00
-input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-//input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-//input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-//input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-
+//input int      NUMOF_DAYS  = 15;    // Num of bars
+//input int      NUMOF_DAYS  = 100;    // Num of bars
+//input int      NUMOF_DAYS  = 10;    // Num of bars
+//input int      NUMOF_DAYS  = 100;    // Num of bars : 2019.03.03 00:00;2019.03.03 07:00 ~ 2017.04.09 00:00;2017.04.09 07:00
+input int      NUMOF_DAYS  = 400;    // Num of bars : 2019.03.03 00:00;2019.03.03 07:00 ~ 2011.07.10 00:00;2011.07.10 07:00
+//input int      NUMOF_DAYS  = 600;    // Num of bars => n/w
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
 //input int      TIME_FRAME  = 43200;  // Time frame (MN1)
-//input int      TIME_FRAME  = 10080;  // W1
+input int      TIME_FRAME  = 10080;  // W1
 //input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
 //input int      TIME_FRAME  = 5;  // 5 min
 //input int      TIME_FRAME  = 15;  // 15 min
-input int      TIME_FRAME  = 60;  // 60 min
+//input int      TIME_FRAME  = 60;  // 60 min
 
 // BB period (Bollinger Band)
 input int      BB_PERIOD = 25;
@@ -98,9 +98,9 @@ input int      BB_PERIOD = 25;
 // 
 input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
 //input string   SYMBOL_STR="AUDJPY";
-//input string   SYMBOL_STR="USDJPY";
+input string   SYMBOL_STR="EURUSD";
 //input string   SYMBOL_STR="EURUSD";
-input string   SYMBOL_STR="EURJPY";
+//input string   SYMBOL_STR="EURJPY";
 input string MAIN_LABEL = "rawdata";
 //input string MAIN_LABEL = "data";
 //input string MAIN_LABEL = "file-io";

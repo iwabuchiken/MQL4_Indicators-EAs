@@ -75,12 +75,13 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-//input int      NUMOF_DAYS  = 500;    // Num of bars : 2019.02.08 07:00;2019.02.08 14:00 ~ 2019.03.11 02:00;2019.03.11 09:00
-input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-//input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-//input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-//input int      NUMOF_DAYS  = 5000;    // Num of bars : 
-
+//input int      NUMOF_DAYS  = 4500;    // Num of bars : 2019.01.03 05:00;2019.01.03 12:00 ~ 2019.03.11 01:45;2019.03.11 08:45
+//input int      NUMOF_DAYS  = 9000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 15000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 25000;    // Num of bars : n/w
+//input int      NUMOF_DAYS  = 20000;    // Num of bars : n/w
+input int      NUMOF_DAYS  = 18000;    // Num of bars : 
+//input int      NUMOF_DAYS  = 30000;    // Num of bars : => n/w
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
@@ -89,18 +90,19 @@ input int      NUMOF_DAYS  = 5000;    // Num of bars :
 //input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
 //input int      TIME_FRAME  = 5;  // 5 min
-//input int      TIME_FRAME  = 15;  // 15 min
-input int      TIME_FRAME  = 60;  // 60 min
+input int      TIME_FRAME  = 15;  // 15 min
+//input int      TIME_FRAME  = 60;  // 60 min
 
 // BB period (Bollinger Band)
 input int      BB_PERIOD = 25;
 
 // 
 input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
-//input string   SYMBOL_STR="AUDJPY";
+input string   SYMBOL_STR="AUDJPY";
 //input string   SYMBOL_STR="USDJPY";
 //input string   SYMBOL_STR="EURUSD";
-input string   SYMBOL_STR="EURJPY";
+//input string   SYMBOL_STR="EURJPY";
+
 input string MAIN_LABEL = "rawdata";
 //input string MAIN_LABEL = "data";
 //input string MAIN_LABEL = "file-io";
