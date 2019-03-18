@@ -70,13 +70,11 @@ string fname_Log = "dev.log";
 //+------------------------------------------------------------------+
 //| input vars                                                                 |
 //+------------------------------------------------------------------+
-//input int      NUMOF_DAYS  = 365; // 1 year
-//input int      NUMOF_DAYS  = 60;    // 2 months
-//input int      NUMOF_DAYS  = 180;    // 6 months
-//input int      NUMOF_DAYS  = 180;    // Num of bars
-//input int      NUMOF_DAYS  = 10000;    // Num of bars
-input int      NUMOF_DAYS  = 500;    // Num of bars
-// H1, 300 bars ---> 2 weeks
+//input int      NUMOF_DAYS  = 500;    // Num of bars
+input int      NUMOF_DAYS  = 3000;    // Num of bars
+//input int      NUMOF_DAYS  = 500;    // Num of bars
+//input int      NUMOF_DAYS  = 500;    // Num of bars
+//input int      NUMOF_DAYS  = 500;    // Num of bars
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
