@@ -75,7 +75,7 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 180;    // 6 months
 //input int      NUMOF_DAYS  = 180;    // Num of bars
 //input int      NUMOF_DAYS  = 10000;    // Num of bars
-input int      NUMOF_DAYS  = 1500;    // Num of bars
+input int      NUMOF_DAYS  = 10000;    // Num of bars
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
