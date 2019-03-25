@@ -71,7 +71,7 @@ string fname_Log = "dev.log";
 //| input vars                                                                 |
 //+------------------------------------------------------------------+
 //input int      NUMOF_DAYS  = 500;    // Num of bars
-input int      NUMOF_DAYS  = 3000;    // Num of bars
+input int      NUMOF_DAYS  = 10000;    // Num of bars
 //input int      NUMOF_DAYS  = 500;    // Num of bars
 //input int      NUMOF_DAYS  = 500;    // Num of bars
 //input int      NUMOF_DAYS  = 500;    // Num of bars
