@@ -80,7 +80,11 @@ string fname_Log = "dev.log";
 //input int      NUMOF_DAYS  = 15000;    // Num of bars : 
 //input int      NUMOF_DAYS  = 25000;    // Num of bars : n/w
 //input int      NUMOF_DAYS  = 20000;    // Num of bars : n/w
+<<<<<<< HEAD
 input int      NUMOF_DAYS  = 2500;    // Num of bars : 
+=======
+input int      NUMOF_DAYS  = 2000;    // Num of bars : 
+>>>>>>> d0ccfc2db70d449da77aaae37ba5bb0914349be6
 //input int      NUMOF_DAYS  = 30000;    // Num of bars : => n/w
 
 // default: PERIOD_H1
