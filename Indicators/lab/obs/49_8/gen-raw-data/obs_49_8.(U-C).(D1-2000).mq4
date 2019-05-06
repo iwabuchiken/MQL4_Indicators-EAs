@@ -70,20 +70,27 @@ string fname_Log = "dev.log";
 //+------------------------------------------------------------------+
 //| input vars                                                                 |
 //+------------------------------------------------------------------+
-//input int      NUMOF_DAYS  = 1;    // Num of bars : 
-//input int      NUMOF_DAYS  = 100;    // Num of bars : local : 2019.03.12 00:20 ~ 2019.03.12 08:40
-//input int      NUMOF_DAYS  = 3000;    // Num of bars : n/w
-//input int      NUMOF_DAYS  = 1000;    // Num of bars : local : 2019.03.06 21:10 ~ 
-//input int      NUMOF_DAYS  = 2500;    // Num of bars : n/w
-input int      NUMOF_DAYS  = 10000;    // Num of bars : local : 2019.03.01 09:45 ~ 2019.03.12 08:50
+//input int      NUMOF_DAYS  = 365; // 1 year
+//input int      NUMOF_DAYS  = 60;    // 2 months
+//input int      NUMOF_DAYS  = 180;    // 6 months
+//input int      NUMOF_DAYS  = 180;    // Num of bars
+//input int      NUMOF_DAYS  = 10000;    // Num of bars
+//input int      NUMOF_DAYS  = 1;    // Num of bars
+//input int      NUMOF_DAYS  = 10;    // Num of bars
+//input int      NUMOF_DAYS  = 100;    // Num of bars
+//input int      NUMOF_DAYS  = 600;    // Num of bars
+input int      NUMOF_DAYS  = 2000;    // Num of bars  2019.04.30 19:20 ~ 2019.05.04 06:50
+//input int      NUMOF_DAYS  = 2000;    // Num of bars
+//input int      NUMOF_DAYS  = 3000;    // Num of bars
+//input int      NUMOF_DAYS  = 5000;    // Num of bars
 
 // default: PERIOD_H1
 //input int      TIME_FRAME=60;
 //input int      TIME_FRAME  = 43200;  // Time frame (MN1)
 //input int      TIME_FRAME  = 10080;  // W1
-//input int      TIME_FRAME  = 1440;  // 1 day
+input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
-input int      TIME_FRAME  = 5;  // 5 min
+//input int      TIME_FRAME  = 5;  // 5 min
 //input int      TIME_FRAME  = 15;  // 15 min
 //input int      TIME_FRAME  = 60;  // 60 min
 
@@ -92,9 +99,10 @@ input int      BB_PERIOD = 25;
 
 // 
 input string   SUBFOLDER   = "obs/44_/44_5.1_10";      // subfolder name ---> same as sessin_ID
-input string   SYMBOL_STR="AUDUSD";
-
-
+//input string   SYMBOL_STR="AUDJPY";
+input string   SYMBOL_STR="USDCHF";
+//input string   SYMBOL_STR="EURUSD";
+//input string   SYMBOL_STR="EURJPY";
 input string MAIN_LABEL = "rawdata";
 //input string MAIN_LABEL = "data";
 //input string MAIN_LABEL = "file-io";
