@@ -1226,9 +1226,9 @@ func : int set_Symbol(string symbol_str, int period)
 *****************************/
 int set_Symbol(string symbol_str, int period) {
 
-   bool res = ChartSetSymbolPeriod(0,symbol_str, period);  // set symbol
+   bool res_utils = ChartSetSymbolPeriod(0,symbol_str, period);  // set symbol
 
-   if(res == true)
+   if(res_utils == true)
      {
      
          //debug
@@ -2488,7 +2488,7 @@ void get_BasicData_with_RSI_BB_MFI__MQL5(
     ArrayFree(AryOf_Data);
     
    // debug
-   string txt = "AryOf_Data --> freed ("
+   string txt_utils = "AryOf_Data --> freed ("
             + "symbol = " + _symbol_Str
             + " / "
             + "period = " + _CURRENT_PERIOD
@@ -2601,7 +2601,7 @@ void get_BasicData_with_RSI_BB_MFI(
     ArrayFree(AryOf_Data);
     
    // debug
-   string txt = "AryOf_Data --> freed ("
+   string txt_utils = "AryOf_Data --> freed ("
             + "symbol = " + _symbol_Str
             + " / "
             + "period = " + _CURRENT_PERIOD
@@ -2854,8 +2854,8 @@ bool _is_NewBar() {
    datetime lastbar_time = (datetime) SeriesInfoInteger(Symbol(),Period(),SERIES_LASTBAR_DATE);
 
    // debug
-   //string txt = "last_time = ", last_time, " / ", "lastbar_time = ", lastbar_time;
-   string txt = "last_time = " + (string)last_time 
+   //string txt_utils = "last_time = ", last_time, " / ", "lastbar_time = ", lastbar_time;
+   string txt_utils = "last_time = " + (string)last_time 
                + " / "
                 + "lastbar_time = " + (string)lastbar_time;
 
@@ -2983,7 +2983,7 @@ bool is_Above_BB_X(
          );
 
    // debug
-   string txt = "\n"
+   string txt_utils = "\n"
          + "_deviation : " + (string) _deviation
          + " / "
          + "_target_price : " + (string) _target_price

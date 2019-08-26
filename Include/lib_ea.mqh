@@ -77,7 +77,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
    if(diff_Latest >= 0)
      {
       
-         string txt = "\ndiff_Latest >= 0 ("
+         string txt_lib_ea = "\ndiff_Latest >= 0 ("
                       + (string) diff_Latest
                       + ") ("
                       + d
@@ -115,7 +115,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
    if(price_Close_Latest >= ibands_1S_Plus)
      {
 
-         string txt = "\nprice_Close_Latest >= ibands_1S_Plus"
+         string txt_lib_ea = "\nprice_Close_Latest >= ibands_1S_Plus"
                       + " (close = "
                       + (string) price_Close_Latest
                       + ")"
@@ -153,7 +153,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
    if(diff_SecondLatest >= 0)
      {
 
-         string txt = "\ndiff_SecondLatest >= 0"
+         string txt_lib_ea = "\ndiff_SecondLatest >= 0"
                       + " (diff = "
                       + (string) diff_SecondLatest
                       + ")"
@@ -175,7 +175,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
    /********************************
       detection ---> true
    ********************************/
-   string txt = "\ndetect_DownDown_Buy() ==> true"
+   string txt_lib_ea = "\ndetect_DownDown_Buy() ==> true"
                 + " (datetime = "
                 + d
                 + ")"
@@ -449,7 +449,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
    if(diff_Latest <= 0)
      {
       
-         string txt = "\ndiff_Latest <= 0 ("
+         string txt_lib_ea = "\ndiff_Latest <= 0 ("
                       + (string) diff_Latest
                       + ") ("
                       + d
@@ -485,7 +485,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
    if(price_Close_Latest < ibands_1S_Plus)
      {
 
-         string txt = "\nprice_Close_Latest < ibands_1S_Plus"
+         string txt_lib_ea = "\nprice_Close_Latest < ibands_1S_Plus"
                       + " (close = "
                       + (string) price_Close_Latest
                       + ")"
@@ -523,7 +523,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
    if(diff_SecondLatest < 0)
      {
 
-         string txt = "\ndiff_SecondLatest < 0"
+         string txt_lib_ea = "\ndiff_SecondLatest < 0"
                       + " (diff = "
                       + (string) diff_SecondLatest
                       + ")"
@@ -545,7 +545,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
    /********************************
       detection ---> true
    ********************************/
-   string txt = "\ndetect_UpUp_Sell() ==> true"
+   string txt_lib_ea = "\ndetect_UpUp_Sell() ==> true"
                 + " (datetime = "
                 + d
                 + ")"
