@@ -51,3 +51,28 @@ bool judge_1() {
    return true;
 
 }// judge_1()
+
+/*---------------------
+
+   int take_Position__Buy()
+   
+   at : 2019/08/27 13:14:21
+
+---------------------*/
+int take_Position__Buy() {
+
+//_20190827_131828:caller
+//_20190827_131835:head
+//_20190827_131838:wl
+   
+   /*******************
+      step : X
+         return
+   *******************/
+   int ret = -1;
+   
+   return ret;
+   
+
+}//take_Position__Buy()
+

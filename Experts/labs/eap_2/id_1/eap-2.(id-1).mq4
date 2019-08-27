@@ -72,6 +72,10 @@ extern double TrailingStop_Margin     = 0.01;
 
 extern string Sym_Set   = "EURJPY";
 
+//+------------------------------------------------------------------+
+//    vars
+//+------------------------------------------------------------------+
+int res_eap_2_i = 0;
 
 //+------------------------------------------------------------------+
 //    expert start function
@@ -171,7 +175,41 @@ int start()
                         , txt);
                      
                      //_20190826_135520:next   
-                  
+                     /*******************
+                        step : j3 : Y : 1
+                           take --> position
+                     *******************/
+                     //_20190827_131828:caller
+                     int res_eap_2_i = take_Position__Buy();
+
+                     txt = "(step : j3 : Y : 1) position ==> taken : "
+                           + (string) res_eap_2_i;
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     /*******************
+                        step : j3 : Y : X
+                           return
+                     *******************/
+                     txt = "(step : j3 : Y : X) returning...";
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+                     
+                     // return
+                     return(0);
+                     
                  }
                else//if(res == true)
                  {

@@ -15,3 +15,10 @@ Scripts/*
 *.ex4
 *.csv
 *.csv#
+
+### 2019/08/27 13:27:41
+Files/Logs/storage_Logs/*
+
+Files/Logs/2019*
+
+#Files/Logs/[ea_44_5.3_2].[down-down-BuyOrSell].20190208_155638.log
