@@ -89,7 +89,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
                , _fname_Log_For_Session
                , __FILE__
                , __LINE__
-               , txt);
+               , txt_lib_ea);
          
          // return
          return false;
@@ -129,7 +129,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
          write_Log(
                _dpath_Log, _fname_Log_For_Session
                , __FILE__, __LINE__
-               , txt);
+               , txt_lib_ea);
          
          // return
          return false;
@@ -165,7 +165,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
          write_Log(
                _dpath_Log, _fname_Log_For_Session
                , __FILE__, __LINE__
-               , txt);
+               , txt_lib_ea);
          
          // return
          return false;
@@ -184,7 +184,7 @@ bool detect_DownDown_Buy(string _dpath_Log, string _fname_Log_For_Session) {
    write_Log(
          _dpath_Log, _fname_Log_For_Session
          , __FILE__, __LINE__
-         , txt);
+         , txt_lib_ea);
    
    
    /********************************
@@ -317,6 +317,7 @@ int  OrderSend(
          //debug
          Print("[", __FILE__, ":",__LINE__,"] ", "OrderSelect => ", (string) res);
          
+         //_20190827_143022:ref
          OrderModify(OrderTicket(),OrderOpenPrice(),NormalizeDouble(_TheStopLoss,Digits),NormalizeDouble(_TheTakeProfit,Digits),0,Green);
         }
 */        
@@ -459,7 +460,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
          write_Log(
                _dpath_Log, _fname_Log_For_Session
                , __FILE__, __LINE__
-               , txt);
+               , txt_lib_ea);
          
          // return
          return false;
@@ -499,7 +500,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
          write_Log(
                _dpath_Log, _fname_Log_For_Session
                , __FILE__, __LINE__
-               , txt);
+               , txt_lib_ea);
          
          // return
          return false;
@@ -535,7 +536,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
          write_Log(
                _dpath_Log, _fname_Log_For_Session
                , __FILE__, __LINE__
-               , txt);
+               , txt_lib_ea);
          
          // return
          return false;
@@ -554,7 +555,7 @@ bool detect_UpUp_Sell(string _dpath_Log, string _fname_Log_For_Session){
    write_Log(
          _dpath_Log, _fname_Log_For_Session
          , __FILE__, __LINE__
-         , txt);
+         , txt_lib_ea);
    
    /********************************
       return

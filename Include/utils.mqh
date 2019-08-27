@@ -2998,7 +2998,7 @@ bool is_Above_BB_X(
          , _fname_Log_For_Session
          , __FILE__
          , __LINE__
-         , txt);
+         , txt_utils);
 
    // return
    return judge;

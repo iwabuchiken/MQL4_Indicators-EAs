@@ -222,6 +222,7 @@ void test_TrailingStop(double diff_Latest) {
    /********************************
       j2 : order opened ?
    ********************************/
+   //_20190827_143229:ref
    if(OrdersTotal() >= 1)
    //if(flg_OrderOpened == true)
      {
@@ -480,9 +481,9 @@ void test_TrailingStop(double diff_Latest) {
               num_Ticket = OrderSend(
                   Symbol(), OP_BUY
                   , (double) Lots, (double) Ask
-                  , (double) Slippage
-                  , NormalizeDouble(Level_StopLoss, Digits())
-                  , NormalizeDouble(Level_TakeProfit, Digits())
+                  , (int) Slippage
+                  , (double) NormalizeDouble(Level_StopLoss, Digits())
+                  , (double) NormalizeDouble(Level_TakeProfit, Digits())
                   //, Level_StopLoss
                   //, Level_TakeProfit
                   , "EA Generator www.ForexEAdvisor.com"
@@ -539,7 +540,7 @@ void test_TrailingStop(double diff_Latest) {
               num_Ticket = OrderSend(
                   Symbol(), OP_SELL
                   , Lots, Bid
-                  , (double) Slippage
+                  , (int) Slippage
                   , NormalizeDouble(Level_StopLoss, Digits())
                   , NormalizeDouble(Level_TakeProfit, Digits())
                   //, Level_StopLoss

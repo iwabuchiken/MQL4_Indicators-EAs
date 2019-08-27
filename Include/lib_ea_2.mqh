@@ -32,6 +32,11 @@
 //extern string dpath_Log;
 
 /*---------------------
+   vars
+---------------------*/
+bool SWITHCH_DEBUG_lib_ea_2   = true;
+
+/*---------------------
 
    bool judge_1()
    
@@ -58,18 +63,168 @@ bool judge_1() {
    
    at : 2019/08/27 13:14:21
 
+https://docs.mql4.com/trading/ordersend
+
+int  OrderSend(
+   string   symbol,              // symbol      1
+   int      cmd,                 // operation   2
+
+   double   volume,              // volume      3
+   double   price,               // price       4
+
+   int      slippage,            // slippage    5
+   double   stoploss,            // stop loss   6
+   double   takeprofit,          // take profit 7
+
+   string   comment=NULL,        // comment     8
+
+   int      magic=0,             // magic number   9
+
+   datetime expiration=0,        // pending order expiration   10
+   color    arrow_color=clrNONE  // color                      11
+
+   );
+   
 ---------------------*/
 int take_Position__Buy() {
 
 //_20190827_131828:caller
 //_20190827_131835:head
 //_20190827_131838:wl
+
+   /*******************
+      step : 1
+         prep : vars
+   *******************/
+   //ref https://docs.mql4.com/trading/ordersend
+   double price=Ask;
    
+   //double minstoplevel=MarketInfo(Symbol(),MODE_STOPLEVEL);
+   double minstoplevel     = 4.0;
+   double mintakelevel     = 8.0;
+   
+   double stoploss=NormalizeDouble(Bid-minstoplevel*Point,Digits);
+   
+   //double takeprofit=NormalizeDouble(Bid+minstoplevel*Point,Digits);
+   //double takeprofit    = NormalizeDouble(Bid + mintakelevel * Point, Digits);
+   double takeprofit    = NormalizeDouble(Bid + (Ask - Bid) + mintakelevel * Point, Digits);
+   
+   //debug
+   if(SWITHCH_DEBUG_lib_ea_2 == true)
+     {
+
+         txt = "(step : 1) vars";
+         txt += "\n";
+         
+         
+         txt += "price\t" + (string) price;
+         txt += "\n";
+                       
+         txt += "Ask\t" + (string) Ask;
+         txt += "\n";
+                       
+         txt += "Bid\t" + (string) Bid;
+         txt += "\n";
+                       
+         txt += "(Ask - Bid)\t" + (string) NormalizeDouble((Ask - Bid), Digits);
+         //NormalizeDouble(Bid + (Ask - Bid) + mintakelevel * Point, Digits)
+         txt += "\n";
+                       
+         txt += "Point\t" + (string) NormalizeDouble(Point, Digits);
+         txt += "\n";
+                       
+         txt += "Digits\t" + (string) Digits;
+         txt += "\n";
+         
+                  //price	117.358
+                  //Point	0.001
+                  //Digits	3         
+
+         txt += "minstoplevel\t" + (string) NormalizeDouble(minstoplevel, Digits);
+         txt += "\n";
+           
+         txt += "mintakelevel\t" + (string) NormalizeDouble(mintakelevel, Digits);
+         txt += "\n";
+           
+         txt += "stoploss\t" + (string) NormalizeDouble(stoploss, Digits);
+         txt += "\n";
+           
+         txt += "takeprofit\t" + (string) NormalizeDouble(takeprofit, Digits);
+         txt += "\n";
+         
+         write_Log(
+            dpath_Log
+            , fname_Log_For_Session
+            
+            , __FILE__, __LINE__
+            
+            , txt);
+      
+     }   
+   
+   
+   /*******************
+      step : 2
+         buy
+   *******************/
+   int ticket=OrderSend(
+                  Symbol()
+                  ,OP_BUY
+                  
+                  ,1
+                  ,price
+                  ,3          // slippage             5
+                  
+                  ,stoploss
+                  ,takeprofit
+                  
+                  ,"My order"
+                  ,16384
+                  
+                  ,0          // pending order expiration   10
+                  ,clrGreen
+                  );
+
+   if(ticket<0)
+     {
+      Print("OrderSend failed with error #",GetLastError());
+
+      txt = "OrderSend failed with error #" + (string) GetLastError();
+      txt += "\n";
+      
+      write_Log(
+         dpath_Log
+         , fname_Log_For_Session
+         
+         , __FILE__, __LINE__
+         
+         , txt);
+      
+     }
+   else {
+         
+         Print("OrderSend placed successfully");
+         
+         txt = "OrderSend placed successfully : " + (string) ticket;
+         txt += "\n";
+         
+         write_Log(
+            dpath_Log
+            , fname_Log_For_Session
+            
+            , __FILE__, __LINE__
+            
+            , txt);
+         
+   //---
+     }
+     
    /*******************
       step : X
          return
    *******************/
-   int ret = -1;
+   int ret = ticket;
+   //int ret = -1;
    
    return ret;
    

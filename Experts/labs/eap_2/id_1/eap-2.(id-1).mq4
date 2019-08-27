@@ -128,6 +128,18 @@ int start()
                   step : j2 : Y
                      flag --> True
                *******************/
+               txt = "(step : j2 : Y) flg_OrderOpened ==> true ("
+                     + (string) flg_OrderOpened
+                     + ")";
+                     
+               write_Log(
+                  dpath_Log
+                  //, fname_Log
+                  , fname_Log_For_Session
+                  , __FILE__
+                  , __LINE__
+                  , txt);
+               
                /*******************
                   step : j2 : Y : 1
                      continue
@@ -180,7 +192,7 @@ int start()
                            take --> position
                      *******************/
                      //_20190827_131828:caller
-                     int res_eap_2_i = take_Position__Buy();
+                     res_eap_2_i = take_Position__Buy();
 
                      txt = "(step : j3 : Y : 1) position ==> taken : "
                            + (string) res_eap_2_i;
@@ -194,10 +206,27 @@ int start()
                         , txt);
 
                      /*******************
-                        step : j3 : Y : X
+                        step : j3 : Y : 2
+                           flag --> true
+                     *******************/
+                     flg_OrderOpened = true;
+
+                     txt = "(step : j3 : Y : 2) flag ==> true : "
+                           + (string) flg_OrderOpened;
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     /*******************
+                        step : j3 : Y : 3
                            return
                      *******************/
-                     txt = "(step : j3 : Y : X) returning...";
+                     txt = "(step : j3 : Y : 3) returning...";
                            
                      write_Log(
                         dpath_Log
@@ -225,6 +254,23 @@ int start()
                         , __FILE__, __LINE__
                         
                         , txt);
+
+                     /*******************
+                        step : j3 : N : 1
+                           return
+                     *******************/
+                     txt = "(step : j3 : N : 1) returning...";
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     // return
+                     return(0);
                   
                  }//if(res == true)
           
