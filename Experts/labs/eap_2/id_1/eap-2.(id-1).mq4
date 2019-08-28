@@ -19,35 +19,6 @@
 #include <lib_ea_2.mqh>
 #include <lib_ea.mqh>
 
-
-//+------------------------------------------------------------------+
-//| vars                                               |
-//+------------------------------------------------------------------+
-string PGName = "abc";     //
-
-//string txt_Msg;
-
-double __MyPoint   = 0.001;
-
-string   txt;
-bool     res;
-
-//+------------------------------------------------------------------+
-//| vars : flags
-//+------------------------------------------------------------------+
-bool flg_OrderOpened = false;
-
-int num_Ticket = 0;
-
-//+------------------------------------------------------------------+
-//| vars : counter
-//+------------------------------------------------------------------+
-int cntOf_Ticks = 0;
-
-string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
-//string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
-string dpath_Log = "Logs/" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ".dir";
-
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
@@ -72,6 +43,52 @@ extern double TrailingStop_Margin     = 0.01;
 
 extern string Sym_Set   = "EURJPY";
 
+
+//+------------------------------------------------------------------+
+//| vars                                               |
+//+------------------------------------------------------------------+
+string PGName = "abc";     //
+
+//string txt_Msg;
+
+double __MyPoint   = 0.001;
+
+string   txt;
+bool     res;
+
+//+------------------------------------------------------------------+
+//| vars : flags
+//+------------------------------------------------------------------+
+bool flg_OrderOpened = false;
+
+
+//+------------------------------------------------------------------+
+//| vars : counter
+//+------------------------------------------------------------------+
+int num_Ticket = 0;
+
+int cntOf_Ticks = 0;
+
+string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+//string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
+
+string   strOf_EA = "eap-2.id-1";
+
+string dpath_Log = "Logs/" 
+               + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) 
+               
+               + "["
+               + strOf_EA
+               + "]"
+               + "."
+               
+               + "["
+               + Sym_Set + "-" + (string) Time_period
+               + "]"
+               
+               + ".dir";
+
+
 //+------------------------------------------------------------------+
 //    vars
 //+------------------------------------------------------------------+
@@ -80,6 +97,7 @@ int res_eap_2_i = 0;
 //+------------------------------------------------------------------+
 //    expert start function
 //+------------------------------------------------------------------+
+//_func:start
 int start()
 {
    /********************************
@@ -142,8 +160,105 @@ int start()
                
                /*******************
                   step : j2 : Y : 1
-                     continue
+                     count : orders
                *******************/
+               int cntOf_Orders = OrdersTotal();
+
+               txt = "(step : j2 : Y : 1) count ==> orders ("
+                     + (string) cntOf_Orders
+                     + ")";
+                     
+               write_Log(
+                  dpath_Log, fname_Log_For_Session
+                  , __FILE__, __LINE__
+                  , txt
+                  );
+
+               /*******************
+                  step : j2-1
+                     orders --> pending ?
+               *******************/
+               if(cntOf_Orders > 0)
+                 {
+                     /*******************
+                        step : j2-1 : Y
+                           orders --> pending
+                     *******************/
+                     txt = "(step : j2-1 : Y) orders --> pending";
+                           
+                           ;
+                           
+                     write_Log(
+                        dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__
+                        , txt
+                        );
+
+                     /*******************
+                        step : j2-1 : Y : 1
+                           return
+                     *******************/
+                     txt = "(step : j2-1 : Y : 1) returning...";
+                           
+                     write_Log(
+                        dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__
+                        , txt
+                        );
+                     
+                     // return
+                     return(0);
+                     
+                  
+                 }
+               else//if(cntOf_Orders > 0)
+                 {
+                     /*******************
+                        step : j2-1 : N
+                           orders --> NOT pending
+                     *******************/
+                     txt = "(step : j2-1 : N) orders --> NOT pending";
+                           
+                     write_Log(
+                        dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__
+                        , txt
+                        );
+
+                     /*******************
+                        step : j2-1 : N : 1
+                           flag --> reset
+                     *******************/
+                     flg_OrderOpened = false;
+
+                     txt = "(step : j2-1 : N : 1) flag --> reset done ("
+                             + (string) flg_OrderOpened
+                             + ")"
+                           ;
+                           
+                     write_Log(
+                        dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__
+                        , txt
+                        );
+
+                     /*******************
+                        step : j2-1 : N : 2
+                           return
+                     *******************/
+                     txt = "(step : j2-1 : N : 2) returning...";
+                           
+                     write_Log(
+                        dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__
+                        , txt
+                        );
+                     
+                     // return
+                     return(0);
+                     
+                 }//if(cntOf_Orders > 0)
+               
               return(0);
             
            }
@@ -211,8 +326,10 @@ int start()
                      *******************/
                      flg_OrderOpened = true;
 
-                     txt = "(step : j3 : Y : 2) flag ==> true : "
-                           + (string) flg_OrderOpened;
+                     txt = "(step : j3 : Y : 2) flag ==> true ("
+                           + (string) flg_OrderOpened
+                           + ")"
+                           ;
                            
                      write_Log(
                         dpath_Log
@@ -285,6 +402,8 @@ int start()
             step : j1 : N
                new bar --> NO
          *******************/
+         //_20190828_102028:next
+         
          /*******************
             step : j1 : N : 1
                continue
