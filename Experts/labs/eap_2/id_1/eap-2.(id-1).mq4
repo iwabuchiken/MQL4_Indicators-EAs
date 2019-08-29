@@ -63,7 +63,7 @@ bool flg_OrderOpened = false;
 
 
 //+------------------------------------------------------------------+
-//| vars : counter
+//| vars : counter, strings
 //+------------------------------------------------------------------+
 int num_Ticket = 0;
 
@@ -71,6 +71,9 @@ int cntOf_Ticks = 0;
 
 string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 //string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
+
+//_20190829_110901:tmp
+string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
 
 string   strOf_EA = "eap-2.id-1";
 
@@ -113,13 +116,20 @@ int start()
    Print("[", __FILE__, ":",__LINE__,"] ", txt);
 
    /********************************
+      step : A : 1
+         trailing
+   ********************************/
+   //_20190829_112152:next
+
+
+   /********************************
       step : j1
          new bar ?
    ********************************/
    res = _is_NewBar();
    
    // valid : is a new bar ?
-   if(res == true)
+   if(res == true)//_is_NewBar()
      {
          /*******************
             step : j1 : Y
@@ -241,21 +251,136 @@ int start()
                         , __FILE__, __LINE__
                         , txt
                         );
-
+                        
+                     //_20190829_104432:tmp
                      /*******************
-                        step : j2-1 : N : 2
-                           return
+                        step : j2-2
+                           judge_1 ==> true ?
                      *******************/
-                     txt = "(step : j2-1 : N : 2) returning...";
-                           
-                     write_Log(
-                        dpath_Log, fname_Log_For_Session
-                        , __FILE__, __LINE__
-                        , txt
-                        );
                      
-                     // return
-                     return(0);
+                     //_20190826_133747:caller
+                     res = judge_1();
+                     
+                     if(res == true)
+                       {
+                           /*******************
+                              step : j2-2 : Y
+                                 judge_1 ==> true
+                           *******************/
+                           txt = "(step : j2-2 : Y) judge_1 ==> true";
+                           write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);
+                           
+                           
+                           /*******************
+                              step : j2-2 : Y : 1
+                                 take --> position
+                           *******************/
+                           //_20190827_131828:caller
+                           res_eap_2_i = take_Position__Buy();
+      
+                           txt = "(step : j2-2 : Y : 1) position ==> taken : "
+                                 + (string) res_eap_2_i;
+                                 
+                           write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);
+      
+                           /*******************
+                              step : j2-2 : Y : 2
+                                 flag --> true
+                           *******************/
+                           flg_OrderOpened = true;
+      
+                           txt = "(step : j2-2 : Y : 2) flag ==> true ("
+                                 + (string) flg_OrderOpened
+                                 + ")"
+                                 ;
+                                 
+                           write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);
+      
+                           /*******************
+                              step : j2-2 : Y : 3
+                                 return
+                           *******************/
+                           txt = "(step : j2-2 : Y : 3) returning...";
+                                 
+                           write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);
+                           
+                           // return
+                           return(0);
+                           
+                       }
+                     else//if(res == true)
+                       {
+                           /*******************
+                              step : j2-2 : N
+                                 judge_1 ==> false
+                           *******************/
+                           txt = "(step : j2-2 : N) judge_1 ==> false";
+                           write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);
+      
+                           /*******************
+                              step : j2-2 : N : 1
+                                 return
+                           *******************/
+                           txt = "(step : j2-2 : N : 1) returning...";
+                                 
+                           write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);
+      
+                           // return
+                           return(0);
+                        
+                       }//if(res == true)
+
+                       
+//                     /*******************
+//                        step : j2-1 : N : 2
+//                           return
+//                     *******************/
+//                     txt = "(step : j2-1 : N : 2) returning...";
+//                           
+//                     write_Log(
+//                        dpath_Log, fname_Log_For_Session
+//                        , __FILE__, __LINE__
+//                        , txt
+//                        );
+//                     
+//                     // return
+//                     return(0);
                      
                  }//if(cntOf_Orders > 0)
                
@@ -395,7 +520,7 @@ int start()
                
      }//if(res == true)
      
-   else
+   else//if(res == true)//_is_NewBar()
        {
 
          /*******************
@@ -403,6 +528,163 @@ int start()
                new bar --> NO
          *******************/
          //_20190828_102028:next
+         /*******************
+            step : j1-2
+               position ==> taken ?
+         *******************/
+         if(flg_OrderOpened == true)
+           {
+               /*******************
+                  step : j1-2 : Y
+                     judge_1 ==> true
+               *******************/
+               /*******************
+                  step : j1-2 : Y : 1
+                     return
+               *******************/
+//               txt = "(step : j1-2 : Y) returning...";
+//                     
+//               write_Log(
+//                  dpath_Log
+//                  , fname_Log_For_Session
+//                  
+//                  , __FILE__, __LINE__
+//                  
+//                  , txt);
+               
+               // return
+               return(0);
+            
+           }
+         else//if(flg_OrderOpened == true)
+           {
+               /*******************
+                  step : j1-2 : N
+                     judge_1 ==> false
+               *******************/
+               /*******************
+                  step : j1-3
+                     judge_1 ==> true ?
+               *******************/
+               res = judge_1();
+               
+               if(res == true)
+                 {
+                     /*******************
+                        step : j1-3 :Y
+                           judge_1 ==> true
+                     *******************/
+                     txt = "(step : j1-3 :Y) judge_1 ==> true";
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+                     
+                     //_20190826_135520:next   
+                     /*******************
+                        step : j1-3 :Y : 1
+                           take --> position
+                     *******************/
+                     //_20190827_131828:caller
+                     res_eap_2_i = take_Position__Buy();
+      
+                     txt = "(step : j1-3 :Y : 1) position ==> taken : "
+                           + (string) res_eap_2_i;
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+      
+                     /*******************
+                        step : j1-3 :Y : 2
+                           flag --> true
+                     *******************/
+                     flg_OrderOpened = true;
+      
+                     txt = "(step : j1-3 :Y : 2) flag ==> true ("
+                           + (string) flg_OrderOpened
+                           + ")"
+                           ;
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+      
+                     /*******************
+                        step : j1-3 :Y : 3
+                           return
+                     *******************/
+                     txt = "(step : j1-3 :Y : 3) returning...";
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+                     
+                     // return
+                     return(0);
+                     
+                 }
+               else//if(res == true)
+                 {
+                     /*******************
+                        step : j1-3 :N
+                           judge_1 ==> false
+                     *******************/
+                     txt = "(step : j1-3 :N) judge_1 ==> false";
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+      
+                     /*******************
+                        step : j1-3 :N : 1
+                           return
+                     *******************/
+                     txt = "(step : j1-3 :N : 1) returning...";
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+      
+                     // return
+                     return(0);
+                  
+                 }//if(res == true)
+            
+           }//if(flg_OrderOpened == true)
+           
+         /*******************
+            step : j1-2
+               position --> to take ?
+         *******************/
+         
+
+         /*******************
+            step : j1-3
+               position --> taken ?
+         *******************/
          
          /*******************
             step : j1 : N : 1
@@ -410,7 +692,7 @@ int start()
          *******************/
         return(0);
         
-       }//if(res == true)
+       }//if(res == true)//_is_NewBar()
 
 
    return(0);

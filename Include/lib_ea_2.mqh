@@ -120,10 +120,10 @@ int take_Position__Buy() {
          txt += "price\t" + (string) price;
          txt += "\n";
                        
-         txt += "Ask\t" + (string) Ask;
+         txt += "Ask\t" + (string) NormalizeDouble(Ask, Digits);
          txt += "\n";
                        
-         txt += "Bid\t" + (string) Bid;
+         txt += "Bid\t" + (string) NormalizeDouble(Bid, Digits);
          txt += "\n";
                        
          txt += "(Ask - Bid)\t" + (string) NormalizeDouble((Ask - Bid), Digits);
@@ -215,6 +215,40 @@ int take_Position__Buy() {
             , __FILE__, __LINE__
             
             , txt);
+         
+         
+         //_20190829_110834:tmp
+         // log : data
+         // ticket num, ask, bid, minstoplevel, mintakelevel, stoploss, takeprofit
+         txt = "\t"
+               + (string) ticket
+               + "\t"
+               + (string) NormalizeDouble(Ask, Digits)
+               + "\t"
+               + (string) NormalizeDouble(Bid, Digits)
+               + "\t"
+               
+               + (string) NormalizeDouble(minstoplevel, Digits)
+               + "\t"
+               
+               + (string) NormalizeDouble(mintakelevel, Digits)
+               + "\t"
+
+               + (string) NormalizeDouble(stoploss, Digits)
+               + "\t"
+
+               + (string) NormalizeDouble(takeprofit, Digits)
+                              + "\t"
+
+               ;
+               
+         write_Log(
+            dpath_Log
+            , fname_Log_DAT_For_Session
+            
+            , __FILE__, __LINE__
+            
+            , txt);            
          
    //---
      }
