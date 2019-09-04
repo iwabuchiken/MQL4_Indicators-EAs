@@ -892,6 +892,52 @@ void show_OrderData() {
 
 }//show_OrderData()
 
+void setup_Data_File() {
+
+   /*******************
+      step : 1
+         file name
+   *******************/   
+   //_20190904_133743:tmp
+   //debug
+   txt = "# this file\t"
+            + fname_Log_DAT_For_Session
+               ;
+            //OrdersTotal : 0               
+   
+   //txt += "\n";
+   
+   write_Log__No_File_Line_Strings(
+         dpath_Log, fname_Log_DAT_For_Session
+         //, __FILE__, __LINE__
+         , txt);  
+
+   /*******************
+      step : 2
+         pair name, period
+   *******************/   
+   txt = "# Symbol\t"
+            + Symbol()
+               ;
+            //OrdersTotal : 0               
+
+   txt += "\n";
+      
+   txt += "# Period\t"
+            + (string) Period()
+               ;
+            //OrdersTotal : 0               
+   
+   txt += "\n";
+   
+   write_Log__No_File_Line_Strings(
+         dpath_Log, fname_Log_DAT_For_Session
+         //, __FILE__, __LINE__
+         , txt);  
+   
+
+}//setup_Data_File()
+
 int init()
 {
 
@@ -905,11 +951,22 @@ int init()
    // basic data : order-related
    //show_OrderData();
    
-   
+   /*******************
+      step : 1
+         setup
+   *******************/   
    // setup
    setup();
 
    //_is_NewBar();
+
+   /*******************
+      step : 2
+         data file : write : header
+   *******************/
+   setup_Data_File();
+    
+ 
 
    
    return(0);
@@ -945,42 +1002,42 @@ void setup() {
 }//setup()
 
 /*
-2019/01/29 17:49:03
-func-list.(ea_Exp_1__TrailingStop.mq4).20190129_174903.txt
+2019/09/04 13:32:05
+func-list.(eap-2.(id-1).mq4).20190904_133205.txt
 ==========================================
 <funcs>
 
-1)	int init()
-2)	bool is_Up_Bar() {
-3)	void op_NewBar() {
-4)	void setup() {
-5)	void show_BasicData() {
-6)	void show_OrderData() {
-7)	int start()
-8)	void test_TrailingStop(double diff_Latest) {
+1	int init()
+2	void setup() {
+3	void show_BasicData() {
+4	void show_OrderData() {
+5	int start()
 
 ==========================================
 ==========================================
 <vars>
 
-1)	string PGName = "abc";     //
-2)	int cntOf_Ticks = 0;
-3)	string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
-4)	bool flg_OrderOpened = false;
-5)	string fname_Log_For_Session = "[ea_Exp_1__TrailingStop].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+1	string PGName = "abc";     //
+2	int cntOf_Ticks = 0;
+3	bool flg_OrderOpened = false;
+4	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+5	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+6	int num_Ticket = 0;
+7	int res_eap_2_i = 0;
 
 ==========================================
 ==========================================
-<externs>
+<externs, inputs>
 
-1)	extern double Lots      = 0.1;
-2)	extern int MagicNumber  = 10001;
-3)	extern int Slippage     = 0.01;
-4)	extern double StopLoss  = 30 * 0.001;  // StopLoss (in currency)
-5)	extern string Sym_Set   = "EURJPY";
-6)	extern double TakeProfit= 70 * 0.001;  // TakeProfit (in currency)
-7)	extern int Time_period        = PERIOD_M1;
-8)	extern int TrailingStop = 0.03;
+1	extern double Lots      = 0.1;
+2	extern int MagicNumber  = 10001;
+3	extern double Slippage     = 0.01;  // Slippage (in currency)
+4	extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
+5	extern string Sym_Set   = "EURJPY";
+6	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+7	extern int Time_period        = PERIOD_M1;
+8	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
+9	extern double TrailingStop_Margin     = 0.01;
 
 ==========================================
 */

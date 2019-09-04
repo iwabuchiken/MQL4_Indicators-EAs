@@ -1,0 +1,47 @@
+Target file = eap-2.(id-1).mq4
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/eap_2/id_1
+Entries = 0
+Created at = 2019/09/04 13:32:05
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/eap_2/id_1/func-list.(eap-2.(id-1).mq4).20190904_133205.txt
+
+/*
+2019/09/04 13:32:05
+func-list.(eap-2.(id-1).mq4).20190904_133205.txt
+==========================================
+<funcs>
+
+1	int init()
+2	void setup() {
+3	void show_BasicData() {
+4	void show_OrderData() {
+5	int start()
+
+==========================================
+==========================================
+<vars>
+
+1	string PGName = "abc";     //
+2	int cntOf_Ticks = 0;
+3	bool flg_OrderOpened = false;
+4	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+5	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+6	int num_Ticket = 0;
+7	int res_eap_2_i = 0;
+
+==========================================
+==========================================
+<externs, inputs>
+
+1	extern double Lots      = 0.1;
+2	extern int MagicNumber  = 10001;
+3	extern double Slippage     = 0.01;  // Slippage (in currency)
+4	extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
+5	extern string Sym_Set   = "EURJPY";
+6	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+7	extern int Time_period        = PERIOD_M1;
+8	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
+9	extern double TrailingStop_Margin     = 0.01;
+
+==========================================
+*/
