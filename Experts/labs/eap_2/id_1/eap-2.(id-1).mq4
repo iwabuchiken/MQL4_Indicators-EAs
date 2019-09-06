@@ -56,6 +56,8 @@ double __MyPoint   = 0.001;
 string   txt;
 bool     res;
 
+bool SWITHCH_DEBUG_eap_2   = true;
+
 //+------------------------------------------------------------------+
 //| vars : flags
 //+------------------------------------------------------------------+
@@ -97,6 +99,8 @@ string dpath_Log = "Logs/"
 //+------------------------------------------------------------------+
 int res_eap_2_i = 0;
 
+double   priceOf_Prev_Tick__Bid = -1.0;
+
 //+------------------------------------------------------------------+
 //    expert start function
 //+------------------------------------------------------------------+
@@ -120,7 +124,8 @@ int start()
          trailing
    ********************************/
    //_20190829_112152:next
-
+   //_20190906_165225:caller
+   trail_Orders();
 
    /********************************
       step : j1
@@ -1000,6 +1005,106 @@ void setup() {
    
 
 }//setup()
+
+void trail_Orders() {
+
+//_20190906_165225:caller
+//_20190906_165231:head
+//_20190906_165238:wl
+   
+   /*******************
+      step : 1
+         vars
+   *******************/   
+
+   /*******************
+      step : 2
+         OrdersTotal
+   *******************/   
+   int numOf_Orders = OrdersTotal();
+
+   //debug
+   if(SWITHCH_DEBUG_eap_2 == true)
+     {
+
+         txt = "numOf_Orders ==> "
+               + (string) numOf_Orders
+         ;
+         
+         txt += "\n";
+         
+         Print("[", __FILE__, ":",__LINE__,"] ", txt);
+      
+     }//if(SWITHCH_DEBUG_eap_2 == true)
+
+   /*******************
+      step : 3
+         OrderSelect
+   *******************/   
+   //ref https://docs.mql4.com/trading/orderstotal
+   int pos = 0;
+   
+   /*******************
+      step : 3.1
+         OrderSelect ==> true ?
+   *******************/   
+   if(OrderSelect(pos,SELECT_BY_POS) != false) {
+
+      /*******************
+         step : 3.2
+            show : order ticket
+      *******************/   
+      if(SWITHCH_DEBUG_eap_2 == true)
+        {
+   
+            txt = "OrderTicket ==> "
+                  + (string) OrderTicket()
+            ;
+            
+            txt += "\n";
+            
+            Print("[", __FILE__, ":",__LINE__,"] ", txt);
+         
+        }//if(SWITHCH_DEBUG_eap_2 == true)   
+
+      /*******************
+         step : 3.3
+            store --> new price, if higher than the prev
+      *******************/
+      //ref https://www.mql5.com/en/forum/70074
+      MqlTick Latest_Price;
+      SymbolInfoTick(Symbol(), Latest_Price);
+      
+      double priceOf_Current_Tick__Bid = Latest_Price.bid;
+      
+      //_20190906_171140:next
+      
+      //debug
+      if(SWITHCH_DEBUG_eap_2 == true)
+        {
+   
+            txt = "priceOf_Current_Tick__Bid ==> "
+                  + (string) priceOf_Current_Tick__Bid
+            ;
+            
+            txt += "\n";
+            
+            txt = "priceOf_Prev_Tick__Bid ==> "
+                  + (string) priceOf_Prev_Tick__Bid
+            ;
+            
+            txt += "\n";
+
+            Print("[", __FILE__, ":",__LINE__,"] ", txt);
+         
+        }//if(SWITHCH_DEBUG_eap_2 == true)   
+      
+      
+         
+   }//if(OrderSelect(pos,SELECT_BY_POS) != false) {
+   
+
+}//trail_Orders()
 
 /*
 2019/09/04 13:32:05
