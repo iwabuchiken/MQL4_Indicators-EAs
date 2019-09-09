@@ -101,6 +101,7 @@ int take_Position__Buy() {
    
    //double minstoplevel=MarketInfo(Symbol(),MODE_STOPLEVEL);
    double minstoplevel     = 4.0;
+   //double mintakelevel     = 8.0;
    double mintakelevel     = 8.0;
    
    double stoploss=NormalizeDouble(Bid-minstoplevel*Point,Digits);
@@ -265,3 +266,26 @@ int take_Position__Buy() {
 
 }//take_Position__Buy()
 
+/*
+2019/09/09 13:47:44
+func-list.(lib_ea_2.mqh).20190909_134744.txt
+==========================================
+<funcs>
+
+1	int  OrderSend(
+2	bool judge_1() {
+3	int take_Position__Buy() {
+
+==========================================
+==========================================
+<vars>
+
+1	bool SWITHCH_DEBUG_lib_ea_2   = true;
+
+==========================================
+==========================================
+<externs, inputs>
+
+
+==========================================
+*/

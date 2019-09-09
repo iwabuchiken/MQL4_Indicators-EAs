@@ -99,7 +99,8 @@ string dpath_Log = "Logs/"
 //+------------------------------------------------------------------+
 int res_eap_2_i = 0;
 
-double   priceOf_Prev_Tick__Bid = -1.0;
+double   priceOf_Prev_Tick__Bid     = -1.0;
+double priceOf_Current_Tick__Bid    = -1.0;
 
 //+------------------------------------------------------------------+
 //    expert start function
@@ -1075,7 +1076,10 @@ void trail_Orders() {
       MqlTick Latest_Price;
       SymbolInfoTick(Symbol(), Latest_Price);
       
-      double priceOf_Current_Tick__Bid = Latest_Price.bid;
+      // current ---> copy to prev
+      priceOf_Prev_Tick__Bid = priceOf_Current_Tick__Bid;
+      
+      priceOf_Current_Tick__Bid = Latest_Price.bid;
       
       //_20190906_171140:next
       
@@ -1087,9 +1091,10 @@ void trail_Orders() {
                   + (string) priceOf_Current_Tick__Bid
             ;
             
-            txt += "\n";
+            //txt += "\n";
+            txt += " / ";
             
-            txt = "priceOf_Prev_Tick__Bid ==> "
+            txt += "priceOf_Prev_Tick__Bid ==> "
                   + (string) priceOf_Prev_Tick__Bid
             ;
             
@@ -1099,7 +1104,69 @@ void trail_Orders() {
          
         }//if(SWITHCH_DEBUG_eap_2 == true)   
       
+      /*******************
+         step : 4
+            trailing
+      *******************/
+      /*******************
+         step : 4.1
+            
+      *******************/
+      double pr_Open = OrderOpenPrice();
       
+      //ref https://thefxmaster.com/what-is-bid-and-ask-price-in-forex/
+      // ask --> buy ; bid --> sell ; ask > bid (always)
+      double SPREAD = NormalizeDouble(Latest_Price.ask - Latest_Price.bid, 3);
+      
+      double threshold = pr_Open + SPREAD;
+
+      //debug
+      if(SWITHCH_DEBUG_eap_2 == true)
+        {
+   
+            txt = "pr_Open ==> "
+                  + (string) pr_Open
+            ;
+            
+            //txt += "\n";
+            txt += " / ";
+            
+            txt += "SPREAD ==> "
+                  + (string) SPREAD
+            ;
+            
+            txt += " / ";
+            txt += "threshold ==> "
+                  + (string) threshold
+            ;
+            
+            // TP        
+            txt += "\n";
+            
+            txt += " / ";
+            txt += "OrderTakeProfit ==> "
+                  + (string) OrderTakeProfit()
+            ;
+
+            // SL
+            txt += "\n";
+            
+            txt += " / ";
+            txt += "OrderStopLoss ==> "
+                  + (string) OrderStopLoss()
+            ;
+            
+            txt += "\n";
+
+            Print("[", __FILE__, ":",__LINE__,"] ", txt);
+         
+        }//if(SWITHCH_DEBUG_eap_2 == true)   
+
+      /*******************
+         step : j1
+            current tick bid --> above the threshold ?
+      *******************/
+      //_20190909_135929:next
          
    }//if(OrderSelect(pos,SELECT_BY_POS) != false) {
    
@@ -1107,28 +1174,31 @@ void trail_Orders() {
 }//trail_Orders()
 
 /*
-2019/09/04 13:32:05
-func-list.(eap-2.(id-1).mq4).20190904_133205.txt
+2019/09/09 13:52:06
+func-list.(eap-2.(id-1).mq4).20190909_135206.txt
 ==========================================
 <funcs>
 
 1	int init()
 2	void setup() {
-3	void show_BasicData() {
-4	void show_OrderData() {
-5	int start()
+3	void setup_Data_File() {
+4	void show_BasicData() {
+5	void show_OrderData() {
+6	int start()
+7	void trail_Orders() {
 
 ==========================================
 ==========================================
 <vars>
 
 1	string PGName = "abc";     //
-2	int cntOf_Ticks = 0;
-3	bool flg_OrderOpened = false;
-4	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
-5	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
-6	int num_Ticket = 0;
-7	int res_eap_2_i = 0;
+2	bool SWITHCH_DEBUG_eap_2   = true;
+3	int cntOf_Ticks = 0;
+4	bool flg_OrderOpened = false;
+5	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+6	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+7	int num_Ticket = 0;
+8	int res_eap_2_i = 0;
 
 ==========================================
 ==========================================

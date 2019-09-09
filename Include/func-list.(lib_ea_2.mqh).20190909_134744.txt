@@ -1,0 +1,30 @@
+Target file = lib_ea_2.mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include
+Entries = 0
+Created at = 2019/09/09 13:47:44
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/func-list.(lib_ea_2.mqh).20190909_134744.txt
+
+/*
+2019/09/09 13:47:44
+func-list.(lib_ea_2.mqh).20190909_134744.txt
+==========================================
+<funcs>
+
+1	int  OrderSend(
+2	bool judge_1() {
+3	int take_Position__Buy() {
+
+==========================================
+==========================================
+<vars>
+
+1	bool SWITHCH_DEBUG_lib_ea_2   = true;
+
+==========================================
+==========================================
+<externs, inputs>
+
+
+==========================================
+*/
