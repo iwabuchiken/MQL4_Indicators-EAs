@@ -86,7 +86,8 @@ int  OrderSend(
    );
    
 ---------------------*/
-int take_Position__Buy() {
+//int take_Position__Buy() {
+int take_Position__Buy(double _minstoplevel, double _mintakelevel) {
 
 //_20190827_131828:caller
 //_20190827_131835:head
@@ -100,9 +101,11 @@ int take_Position__Buy() {
    double price=Ask;
    
    //double minstoplevel=MarketInfo(Symbol(),MODE_STOPLEVEL);
-   double minstoplevel     = 4.0;
+   double minstoplevel     = _minstoplevel;
+   //double minstoplevel     = 4.0;
    //double mintakelevel     = 8.0;
-   double mintakelevel     = 8.0;
+   double mintakelevel     = _mintakelevel;
+   //double mintakelevel     = 8.0;
    
    double stoploss=NormalizeDouble(Bid-minstoplevel*Point,Digits);
    

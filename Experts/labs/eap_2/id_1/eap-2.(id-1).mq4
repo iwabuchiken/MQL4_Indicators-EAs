@@ -22,8 +22,9 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-extern int Time_period        = PERIOD_M1;
+//extern int Time_period        = PERIOD_M1;
 //extern int Time_period        = PERIOD_M5;
+extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
 extern int MagicNumber  = 10001;
@@ -57,6 +58,16 @@ string   txt;
 bool     res;
 
 bool SWITHCH_DEBUG_eap_2   = true;
+
+int res_eap_2_i = 0;
+
+double   priceOf_Prev_Tick__Bid     = -1.0;
+double priceOf_Current_Tick__Bid    = -1.0;
+
+// trailing stop/take : 2019/09/10 11:53:13
+// unit : points
+extern double   TRAILING_LEVEL_STOP = 50.0;
+extern double   TRAILING_LEVEL_TAKE = 100.0;
 
 //+------------------------------------------------------------------+
 //| vars : flags
@@ -97,10 +108,6 @@ string dpath_Log = "Logs/"
 //+------------------------------------------------------------------+
 //    vars
 //+------------------------------------------------------------------+
-int res_eap_2_i = 0;
-
-double   priceOf_Prev_Tick__Bid     = -1.0;
-double priceOf_Current_Tick__Bid    = -1.0;
 
 //+------------------------------------------------------------------+
 //    expert start function
@@ -156,6 +163,7 @@ int start()
             step : j2
                flag --> True ?
          *******************/
+         //_20190910_120006:next
          if(flg_OrderOpened == true)
            {
                /*******************
@@ -288,7 +296,7 @@ int start()
                                  take --> position
                            *******************/
                            //_20190827_131828:caller
-                           res_eap_2_i = take_Position__Buy();
+                           res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
       
                            txt = "(step : j2-2 : Y : 1) position ==> taken : "
                                  + (string) res_eap_2_i;
@@ -438,7 +446,7 @@ int start()
                            take --> position
                      *******************/
                      //_20190827_131828:caller
-                     res_eap_2_i = take_Position__Buy();
+                     res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
 
                      txt = "(step : j3 : Y : 1) position ==> taken : "
                            + (string) res_eap_2_i;
@@ -595,7 +603,7 @@ int start()
                            take --> position
                      *******************/
                      //_20190827_131828:caller
-                     res_eap_2_i = take_Position__Buy();
+                     res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
       
                      txt = "(step : j1-3 :Y : 1) position ==> taken : "
                            + (string) res_eap_2_i;
