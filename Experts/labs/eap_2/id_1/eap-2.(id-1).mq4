@@ -64,10 +64,15 @@ int res_eap_2_i = 0;
 double   priceOf_Prev_Tick__Bid     = -1.0;
 double priceOf_Current_Tick__Bid    = -1.0;
 
+double   priceOf_Prev_Tick__Ask     = -1.0;
+double priceOf_Current_Tick__Ask    = -1.0;
+
 // trailing stop/take : 2019/09/10 11:53:13
 // unit : points
 extern double   TRAILING_LEVEL_STOP = 50.0;
 extern double   TRAILING_LEVEL_TAKE = 100.0;
+
+int      valOf_Threshold_Trailing = 40;   // 40 x Points (= 4 pips)
 
 //+------------------------------------------------------------------+
 //| vars : flags
@@ -127,6 +132,14 @@ int start()
    
    Print("[", __FILE__, ":",__LINE__,"] ", txt);
 
+   /********************************
+      step : A : 0
+         order --> pending?
+   ********************************/
+   //_20190918_084005:tmp
+   //_20190918_084218:caller
+   _is_Order_Pending();
+   
    /********************************
       step : A : 1
          trailing
@@ -1089,21 +1102,34 @@ void trail_Orders() {
       
       priceOf_Current_Tick__Bid = Latest_Price.bid;
       
+      priceOf_Current_Tick__Ask = Latest_Price.ask;
+      
+      //_20190918_090936:tmp
+      
       //_20190906_171140:next
       
       //debug
       if(SWITHCH_DEBUG_eap_2 == true)
         {
-   
+            //_20190918_092035:tmp
             txt = "priceOf_Current_Tick__Bid ==> "
-                  + (string) priceOf_Current_Tick__Bid
+                  + (string) NormalizeDouble(priceOf_Current_Tick__Bid, 3)
+                  //+ (string) priceOf_Current_Tick__Bid
             ;
             
             //txt += "\n";
             txt += " / ";
             
             txt += "priceOf_Prev_Tick__Bid ==> "
-                  + (string) priceOf_Prev_Tick__Bid
+                  + (string) NormalizeDouble(priceOf_Prev_Tick__Bid, 3)
+                  //+ (string) priceOf_Prev_Tick__Bid
+            ;
+            
+            txt += "\n";
+
+            txt += "priceOf_Current_Tick__Ask ==> "
+                  + (string) NormalizeDouble(priceOf_Current_Tick__Ask, 3)
+                  //+ (string) priceOf_Current_Tick__Ask
             ;
             
             txt += "\n";
@@ -1126,26 +1152,30 @@ void trail_Orders() {
       // ask --> buy ; bid --> sell ; ask > bid (always)
       double SPREAD = NormalizeDouble(Latest_Price.ask - Latest_Price.bid, 3);
       
-      double threshold = pr_Open + SPREAD;
+      //_20190918_085532:tmp
+      //double threshold = pr_Open + SPREAD;
+      double threshold = pr_Open + valOf_Threshold_Trailing * Point;
 
       //debug
       if(SWITHCH_DEBUG_eap_2 == true)
         {
-   
+            //_20190918_092435:tmp
             txt = "pr_Open ==> "
-                  + (string) pr_Open
+                  + (string) NormalizeDouble(pr_Open, 3)
+                  //+ (string) pr_Open
             ;
             
             //txt += "\n";
             txt += " / ";
             
             txt += "SPREAD ==> "
-                  + (string) SPREAD
+                  + (string) NormalizeDouble(SPREAD, 3)
+                  //+ (string) SPREAD
             ;
             
             txt += " / ";
             txt += "threshold ==> "
-                  + (string) threshold
+                  + (string) NormalizeDouble(threshold, 3)
             ;
             
             // TP        
@@ -1153,7 +1183,7 @@ void trail_Orders() {
             
             txt += " / ";
             txt += "OrderTakeProfit ==> "
-                  + (string) OrderTakeProfit()
+                  + (string) NormalizeDouble(OrderTakeProfit(), 3)
             ;
 
             // SL
@@ -1161,7 +1191,7 @@ void trail_Orders() {
             
             txt += " / ";
             txt += "OrderStopLoss ==> "
-                  + (string) OrderStopLoss()
+                  + (string) NormalizeDouble(OrderStopLoss(), 3)
             ;
             
             txt += "\n";
@@ -1180,6 +1210,387 @@ void trail_Orders() {
    
 
 }//trail_Orders()
+
+int _is_Order_Pending() {
+
+//_20190918_084218:caller
+//_20190918_084223:head
+//_20190918_084227:wl   
+
+   /*******************
+      step : j2
+         flag --> True ?
+   *******************/
+   if(flg_OrderOpened == true)
+     {
+         /*******************
+            step : j2 : Y
+               flag --> True
+         *******************/
+         txt = "(step : j2 : Y) flg_OrderOpened ==> true ("
+               + (string) flg_OrderOpened
+               + ")";
+               
+         write_Log(
+            dpath_Log
+            //, fname_Log
+            , fname_Log_For_Session
+            , __FILE__
+            , __LINE__
+            , txt);
+         
+         /*******************
+            step : j2 : Y : 1
+               count : orders
+         *******************/
+         int cntOf_Orders = OrdersTotal();
+
+         txt = "(step : j2 : Y : 1) count ==> orders ("
+               + (string) cntOf_Orders
+               + ")";
+               
+         write_Log(
+            dpath_Log, fname_Log_For_Session
+            , __FILE__, __LINE__
+            , txt
+            );
+
+         /*******************
+            step : j2-1
+               orders --> pending ?
+         *******************/
+         if(cntOf_Orders > 0)
+           {
+               /*******************
+                  step : j2-1 : Y
+                     orders --> pending
+               *******************/
+               txt = "(step : j2-1 : Y) orders --> pending";
+                     
+                     ;
+                     
+               write_Log(
+                  dpath_Log, fname_Log_For_Session
+                  , __FILE__, __LINE__
+                  , txt
+                  );
+
+               /*******************
+                  step : j2-1 : Y : 1
+                     return
+               *******************/
+               txt = "(step : j2-1 : Y : 1) returning...";
+                     
+               write_Log(
+                  dpath_Log, fname_Log_For_Session
+                  , __FILE__, __LINE__
+                  , txt
+                  );
+               
+               // return
+               return(0);
+               
+            
+           }
+         else//if(cntOf_Orders > 0)
+           {
+               /*******************
+                  step : j2-1 : N
+                     orders --> NOT pending
+               *******************/
+               txt = "(step : j2-1 : N) orders --> NOT pending";
+                     
+               write_Log(
+                  dpath_Log, fname_Log_For_Session
+                  , __FILE__, __LINE__
+                  , txt
+                  );
+
+               /*******************
+                  step : j2-1 : N : 1
+                     flag --> reset
+               *******************/
+               flg_OrderOpened = false;
+
+               txt = "(step : j2-1 : N : 1) flag --> reset done ("
+                       + (string) flg_OrderOpened
+                       + ")"
+                     ;
+                     
+               write_Log(
+                  dpath_Log, fname_Log_For_Session
+                  , __FILE__, __LINE__
+                  , txt
+                  );
+                  
+               //_20190829_104432:tmp
+               /*******************
+                  step : j2-2
+                     judge_1 ==> true ?
+               *******************/
+               
+               //_20190826_133747:caller
+               res = judge_1();
+               
+               if(res == true)
+                 {
+                     /*******************
+                        step : j2-2 : Y
+                           judge_1 ==> true
+                     *******************/
+                     txt = "(step : j2-2 : Y) judge_1 ==> true";
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+                     
+                     
+                     /*******************
+                        step : j2-2 : Y : 1
+                           take --> position
+                     *******************/
+                     //_20190827_131828:caller
+                     res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
+
+                     txt = "(step : j2-2 : Y : 1) position ==> taken : "
+                           + (string) res_eap_2_i;
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     /*******************
+                        step : j2-2 : Y : 2
+                           flag --> true
+                     *******************/
+                     flg_OrderOpened = true;
+
+                     txt = "(step : j2-2 : Y : 2) flag ==> true ("
+                           + (string) flg_OrderOpened
+                           + ")"
+                           ;
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     /*******************
+                        step : j2-2 : Y : 3
+                           return
+                     *******************/
+                     txt = "(step : j2-2 : Y : 3) returning...";
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+                     
+                     // return
+                     return(0);
+                     
+                 }
+               else//if(res == true)
+                 {
+                     /*******************
+                        step : j2-2 : N
+                           judge_1 ==> false
+                     *******************/
+                     txt = "(step : j2-2 : N) judge_1 ==> false";
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     /*******************
+                        step : j2-2 : N : 1
+                           return
+                     *******************/
+                     txt = "(step : j2-2 : N : 1) returning...";
+                           
+                     write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                     // return
+                     return(0);
+                  
+                 }//if(res == true)
+
+                 
+//                     /*******************
+//                        step : j2-1 : N : 2
+//                           return
+//                     *******************/
+//                     txt = "(step : j2-1 : N : 2) returning...";
+//                           
+//                     write_Log(
+//                        dpath_Log, fname_Log_For_Session
+//                        , __FILE__, __LINE__
+//                        , txt
+//                        );
+//                     
+//                     // return
+//                     return(0);
+               
+           }//if(cntOf_Orders > 0)
+         
+        return(0);
+      
+     }
+   else//if(flg_OrderOpened == true)
+    {
+         /*******************
+            step : j2 : N
+               flag --> False
+         *******************/
+         //
+         txt = "(step : j2 : N)";
+         write_Log(
+            dpath_Log
+            //, fname_Log
+            , fname_Log_For_Session
+            , __FILE__
+            , __LINE__
+            , txt);
+      
+         /*******************
+            step : j3
+               judge_1 ==> true ?
+         *******************/
+         //_20190826_132608:tmp
+         //_20190826_133747:caller
+         res = judge_1();
+         
+         if(res == true)
+           {
+               /*******************
+                  step : j3 : Y
+                     judge_1 ==> true
+               *******************/
+               txt = "(step : j3 : Y) judge_1 ==> true";
+               write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+               
+               //_20190826_135520:next   
+               /*******************
+                  step : j3 : Y : 1
+                     take --> position
+               *******************/
+               //_20190827_131828:caller
+               res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
+
+               txt = "(step : j3 : Y : 1) position ==> taken : "
+                     + (string) res_eap_2_i;
+                     
+               write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+
+               /*******************
+                  step : j3 : Y : 2
+                     flag --> true
+               *******************/
+               flg_OrderOpened = true;
+
+               txt = "(step : j3 : Y : 2) flag ==> true ("
+                     + (string) flg_OrderOpened
+                     + ")"
+                     ;
+                     
+               write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+
+               /*******************
+                  step : j3 : Y : 3
+                     return
+               *******************/
+               txt = "(step : j3 : Y : 3) returning...";
+                     
+               write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+               
+               // return
+               return(0);
+               
+           }
+         else//if(res == true)
+           {
+               /*******************
+                  step : j3 : N
+                     judge_1 ==> false
+               *******************/
+               txt = "(step : j3 : N) judge_1 ==> false";
+               write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+
+               /*******************
+                  step : j3 : N : 1
+                     return
+               *******************/
+               txt = "(step : j3 : N : 1) returning...";
+                     
+               write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+
+               // return
+               return(0);
+            
+           }//if(res == true)
+    
+    }//if(flg_OrderOpened == true)
+
+}//int _is_Order_Pending()
+
 
 /*
 2019/09/09 13:52:06
