@@ -67,6 +67,10 @@ double priceOf_Current_Tick__Bid    = -1.0;
 double   priceOf_Prev_Tick__Ask     = -1.0;
 double priceOf_Current_Tick__Ask    = -1.0;
 
+//_20190920_120627:tmp
+double   priceOf_Prev_Bid     = -1.0;
+double   priceOf_Bid__Max     = -1.0;
+
 // trailing stop/take : 2019/09/10 11:53:13
 // unit : points
 extern double   TRAILING_LEVEL_STOP = 50.0;
@@ -1205,12 +1209,86 @@ void trail_Orders() {
             current tick bid --> above the threshold ?
       *******************/
       //_20190909_135929:next
+ 
+      //_20190920_115150:tmp
+      /*******************
+         step : 6 : j1
+            new Bid > prev max ?
+      *******************/
+      if(priceOf_Current_Tick__Bid > priceOf_Bid__Max)
+        {
+            /*******************
+               step : 6 : j1 : Y
+                  new Bid > prev max
+            *******************/
+            /*******************
+               step : 6 : j1 : Y : 1
+                  max --> update
+            *******************/
+            priceOf_Bid__Max = priceOf_Current_Tick__Bid;
+
+            /*******************
+               step : 6 : j1 : Y : 2
+                  log
+            *******************/
+            // log
+            txt = "priceOf_Bid__Max ==> updated : "
+                  + (string) NormalizeDouble(priceOf_Bid__Max, 3)
+            ;
+            
+            txt += "\n";
+
+            Print("[", __FILE__, ":",__LINE__,"] ", txt);
+
+            write_Log(
+                  dpath_Log
+                  , fname_Log_For_Session
+                  
+                  , __FILE__, __LINE__
+                  
+                  , txt);
+
+            /*******************
+               step : 6 : j2
+                  pr_Max > pr_Open + 4 pips ?
+            *******************/
+            //_20190920_122313:next
+            
+
+            
+        }
+      else//if(priceOf_Current_Tick__Bid > priceOf_Bid__Max)
+        {
+            /*******************
+               step : 6 : j1 : N
+                  new Bid <= prev max
+            *******************/
+            /*******************
+               step : 6 : j1 : N : 1
+                  log
+            *******************/
+            // log
+            txt = "priceOf_Bid__Max ==> Remain (curr = "
+                  + (string) NormalizeDouble(priceOf_Current_Tick__Bid, 3)
+                  + " / "
+                  + "max = "
+                  + (string) NormalizeDouble(priceOf_Bid__Max, 3)
+                  + ")"
+            ;
+            
+            txt += "\n";
+
+            Print("[", __FILE__, ":",__LINE__,"] ", txt);
+         
+        }////if(priceOf_Current_Tick__Bid > priceOf_Bid__Max)
+        
          
    }//if(OrderSelect(pos,SELECT_BY_POS) != false) {
    
 
 }//trail_Orders()
 
+//func
 int _is_Order_Pending() {
 
 //_20190918_084218:caller
@@ -1589,7 +1667,7 @@ int _is_Order_Pending() {
     
     }//if(flg_OrderOpened == true)
 
-}//int _is_Order_Pending()
+}//int _is_Order_Pending() //func
 
 
 /*

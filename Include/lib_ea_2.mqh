@@ -86,6 +86,7 @@ int  OrderSend(
    );
    
 ---------------------*/
+//func
 //int take_Position__Buy() {
 int take_Position__Buy(double _minstoplevel, double _mintakelevel) {
 
@@ -111,7 +112,8 @@ int take_Position__Buy(double _minstoplevel, double _mintakelevel) {
    
    //double takeprofit=NormalizeDouble(Bid+minstoplevel*Point,Digits);
    //double takeprofit    = NormalizeDouble(Bid + mintakelevel * Point, Digits);
-   double takeprofit    = NormalizeDouble(Bid + (Ask - Bid) + mintakelevel * Point, Digits);
+   //double takeprofit    = NormalizeDouble(Bid + (Ask - Bid) + mintakelevel * Point, Digits);
+   double takeprofit    = NormalizeDouble(Bid + mintakelevel * Point, Digits);
    
    //debug
    if(SWITHCH_DEBUG_lib_ea_2 == true)
@@ -267,7 +269,7 @@ int take_Position__Buy(double _minstoplevel, double _mintakelevel) {
    return ret;
    
 
-}//take_Position__Buy()
+}//take_Position__Buy() //func
 
 /*
 2019/09/09 13:47:44
