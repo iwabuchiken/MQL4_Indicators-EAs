@@ -1232,7 +1232,7 @@ void trail_Orders() {
                   log
             *******************/
             // log
-            txt = "priceOf_Bid__Max ==> updated : "
+            txt = "(step : 6 : j1 : Y : 2) priceOf_Bid__Max ==> updated : "
                   + (string) NormalizeDouble(priceOf_Bid__Max, 3)
             ;
             
@@ -1253,7 +1253,83 @@ void trail_Orders() {
                   pr_Max > pr_Open + 4 pips ?
             *******************/
             //_20190920_122313:next
+            double ts_Trailing = pr_Open + valOf_Threshold_Trailing * Point;
             
+            bool cond_1 = priceOf_Bid__Max > ts_Trailing;
+            
+            if(cond_1 == true)
+              {
+                  /*******************
+                     step : 6 : j2 : Y
+                        pr_Max > pr_Open + 4 pips
+                  *******************/
+                  /*******************
+                     step : 6 : j2 : Y : 1
+                        log
+                  *******************/
+                  // log
+                  txt = "(step : 6 : j2 : Y : 1) pr_Max > pr_Open + 4 pips : "
+                        + (string) NormalizeDouble(priceOf_Bid__Max, 3)
+                        + " / "
+                        + (string) NormalizeDouble(pr_Open, 3)
+                  ;
+                  
+                  txt += "\n";
+      
+                  Print("[", __FILE__, ":",__LINE__,"] ", txt);
+      
+                  write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+
+                  /*******************
+                     step : 6 : j2 : Y : 2.1
+                        set : new TP, SL
+                  *******************/
+                  //_20190924_115546:next
+                  
+                  /*******************
+                     step : 6 : j2 : Y : 2.2
+                        exec : modify order
+                  *******************/
+
+
+               
+              }
+            else//if(cond_1 == true)
+              {
+                  /*******************
+                     step : 6 : j2 : N
+                        pr_Max <= pr_Open + 4 pips
+                  *******************/
+                  /*******************
+                     step : 6 : j2 : N : 1
+                        log
+                  *******************/
+                  // log
+                  txt = "(step : 6 : j2 : N : 1) pr_Max <= pr_Open + 4 pips : "
+                        + (string) NormalizeDouble(priceOf_Bid__Max, 3)
+                        + " / "
+                        + (string) NormalizeDouble(pr_Open, 3)
+                  ;
+                  
+                  txt += "\n";
+      
+                  Print("[", __FILE__, ":",__LINE__,"] ", txt);
+      
+                  write_Log(
+                        dpath_Log
+                        , fname_Log_For_Session
+                        
+                        , __FILE__, __LINE__
+                        
+                        , txt);
+               
+              }//if(cond_1 == true)
 
             
         }
