@@ -1292,11 +1292,52 @@ void trail_Orders() {
                   *******************/
                   //_20190924_115546:next
                   
+                  double priceOf_TP_new = priceOf_Bid__Max + TRAILING_LEVEL_TAKE * Point;
+                  
+                  double priceOf_SL_new = priceOf_Bid__Max - TRAILING_LEVEL_STOP * Point;
+                  
+                  
                   /*******************
                      step : 6 : j2 : Y : 2.2
                         exec : modify order
                   *******************/
-
+                  /*******************
+                     step : 6 : j2 : Y : 2.2 : 1
+                        prep
+                  *******************/
+                  num_Ticket = OrderTicket();
+                  
+                  /*******************
+                     step : 6 : j2 : Y : 2.2 : 2
+                        modify
+                  *******************/
+                  res = OrderModify(num_Ticket, pr_Open, priceOf_SL_new, priceOf_TP_new, 0, Blue);
+                  
+                  //debug
+                  if(!res)
+                     Print("Error in OrderModify. Error code = ",GetLastError());
+                  else
+                    {
+                        // log
+                        txt = "(step : 6 : j2 : Y : 2.2 : 2) order ==> modified ("
+                              + (string) num_Ticket
+                              + ")"
+                        ;
+                        
+                        txt += "\n";
+            
+                        Print("[", __FILE__, ":",__LINE__,"] ", txt);
+            
+                        write_Log(
+                              dpath_Log
+                              , fname_Log_For_Session
+                              
+                              , __FILE__, __LINE__
+                              
+                              , txt);                     
+                    }
+                     //Print("Order modified successfully.");                  
+                  
 
                
               }
