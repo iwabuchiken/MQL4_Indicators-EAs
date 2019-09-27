@@ -2226,7 +2226,8 @@ string get_TimeLabel_Current(int type) {
   
     
    // return
-   return NULL;
+   //return NULL;
+   return time_Label;
 
 }//get_TimeLabel_Current()
 
@@ -2763,6 +2764,7 @@ void get_BasicData_with_RSI_BB_MFI__Shifted(
 //       1  => log written
 //       -1  => file open --> failed
 //+------------------------------------------------------------------+
+//_20190926_094452:tmp
 int write_Log(
    string _dpath_Log
    , string _fname_Log
@@ -2776,6 +2778,7 @@ int write_Log(
 
 
    //+----------------------------+
+   // step : 1
    //| file : open                           |
    //+----------------------------+
    int _FILE_HANDLE = NULL;
@@ -2815,6 +2818,117 @@ int write_Log(
       , ")"
    
    );
+
+   //-------------------------------------
+   // step : 2
+   //    validate size
+   //-------------------------------------
+   //_20190926_095008:tmp
+   //ref https://docs.mql4.com/files/filesize
+   ulong sizeOf_File = FileSize(_FILE_HANDLE);
+   
+   //ulong sizeOf_Log_File__max = 1000;
+   ulong sizeOf_Log_File__max = 1000 * 200;  // 200k bytes
+   
+   //-------------------------------------
+   // step : 2.1
+   //    size of log file ==> more than max ?
+   //-------------------------------------
+   if(sizeOf_File > sizeOf_Log_File__max)
+   //if(false)
+     {
+      
+      //_20190926_101307:fix
+      /*-------------------------------------
+         step : 2.1 : Y : 1
+            *copy log file ==> DROP
+            *log text ==> write to a new log file /==> DROP
+      -------------------------------------*/
+      string fpath_Source__tmp = _dpath_Log + "\\" + _fname_Log;
+      //string fname_Dest__tmp = _fname_Log + "(copy)(" + get_TimeLabel_Current(1) + ").copy";
+      //string fpath_Dest__tmp = _fname_Log + "(copy)(" + get_TimeLabel_Current(1) + ").copy";
+      
+      string strOf_Time_Label = (string) get_TimeLabel_Current(1);
+      
+      string fpath_Dest__tmp = _dpath_Log 
+                              + "\\" + _fname_Log 
+                              + ".(" + strOf_Time_Label
+                              //+ "(copy).(" + strOf_Time_Label
+                              //+ "(copy).(" + (string) get_TimeLabel_Current(1) 
+                              + ").copy";
+      
+      int _FILE_HANDLE__tmp = NULL;
+      
+      /*-------------------------------------
+         step : 2.1 : Y : 1.1
+            log text ==> read
+      -------------------------------------*/
+      //string textOf_Log_File = FileReadString(
+      
+      /*-------------------------------------
+         step : 2.1 : Y : 1.2
+            new log file : copy
+      -------------------------------------*/
+      /*-------------------------------------
+         step : 2.1 : Y : 1.2 : 1
+            close ==> current log file
+      -------------------------------------*/
+      //_20190927_114131:tmp
+      _file_close(_FILE_HANDLE);
+      
+      //_FILE_HANDLE__tmp =_file_open_2(_FILE_HANDLE__tmp, fname_Dest__tmp, _dpath_Log, _file_Mode, _file_Type);      
+      
+      /*-------------------------------------
+         step : 2.1 : Y : 1.2 : 2
+            copy
+      -------------------------------------*/
+      bool res__tmp = FileCopy(fpath_Source__tmp, 0, fpath_Dest__tmp, 0);
+            //_SUBFOLDER + "\\"+ _FNAME, _file_Mode|_file_Type);
+
+      //debug
+      Print("[", __FILE__, ":",__LINE__,"] log file ==> copied "
+                        + "(" + (string) res__tmp + ")"
+                        + " : " + fpath_Dest__tmp 
+      
+      
+      );
+
+      /*-------------------------------------
+         step : 2.1 : Y : 2
+            close ==> current log file
+      -------------------------------------*/
+      //_file_close(_FILE_HANDLE);
+
+      /*-------------------------------------
+         step : 2.1 : Y : 3
+            log file --> re-open
+      -------------------------------------*/
+      _file_Mode = FILE_WRITE;
+      
+      _FILE_HANDLE =_file_open_2(_FILE_HANDLE, _fname_Log, _dpath_Log, _file_Mode, _file_Type);
+
+      /*-------------------------------------
+         step : 2.1 : Y : 4
+            log file : write ""
+      -------------------------------------*/
+      FileWrite(_FILE_HANDLE, "");
+
+      /*-------------------------------------
+         step : 2.1 : Y : 5
+            log file : close
+      -------------------------------------*/
+      _file_close(_FILE_HANDLE);
+      
+      /*-------------------------------------
+         step : 2.1 : Y : 6
+            log file : re-open --> _file_Mode = FILE_WRITE|FILE_READ
+      -------------------------------------*/
+      _file_Mode = FILE_WRITE|FILE_READ;
+      
+      _FILE_HANDLE =_file_open_2(_FILE_HANDLE, _fname_Log, _dpath_Log, _file_Mode, _file_Type);
+      
+      
+     }//if(sizeOf_File > sizeOf_Log_File__max)
    
    //+----------------------------+
    //| write : body                           |

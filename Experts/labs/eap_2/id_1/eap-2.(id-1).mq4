@@ -1318,6 +1318,7 @@ void trail_Orders() {
                      Print("Error in OrderModify. Error code = ",GetLastError());
                   else
                     {
+                        //_20190927_120146:next
                         // log
                         txt = "(step : 6 : j2 : Y : 2.2 : 2) order ==> modified ("
                               + (string) num_Ticket
@@ -1355,7 +1356,8 @@ void trail_Orders() {
                   txt = "(step : 6 : j2 : N : 1) pr_Max <= pr_Open + 4 pips : "
                         + (string) NormalizeDouble(priceOf_Bid__Max, 3)
                         + " / "
-                        + (string) NormalizeDouble(pr_Open, 3)
+                        + (string) NormalizeDouble(pr_Open + Point * valOf_Threshold_Trailing, 3)  //_20190926_094101:tmp
+                        //+ (string) NormalizeDouble(pr_Open, 3)
                   ;
                   
                   txt += "\n";
