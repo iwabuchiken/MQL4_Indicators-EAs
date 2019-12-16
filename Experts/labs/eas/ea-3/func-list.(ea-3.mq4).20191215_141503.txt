@@ -1,0 +1,53 @@
+Target file = ea-3.mq4
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/eas/ea-3
+Entries = 0
+Created at = 2019/12/15 14:15:03
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/eas/ea-3/func-list.(ea-3.mq4).20191215_141503.txt
+
+/*
+2019/12/15 14:15:03
+func-list.(ea-3.mq4).20191215_141503.txt
+==========================================
+<funcs>
+
+1	int _is_Order_Pending() {
+2	int init()
+3	void setup() {
+4	void setup_Data_File() {
+5	void show_BasicData() {
+6	void show_OrderData() {
+7	int start()
+8	void trail_Orders() {
+
+==========================================
+==========================================
+<vars>
+
+1	string PGName = "abc";     //
+2	bool SWITHCH_DEBUG_eap_2   = true;
+3	int cntOf_Ticks = 0;
+4	bool flg_OrderOpened = false;
+5	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+6	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+7	int num_Ticket = 0;
+8	int res_eap_2_i = 0;
+
+==========================================
+==========================================
+<externs, inputs>
+
+1	extern double Lots      = 0.1;
+2	extern int MagicNumber  = 10001;
+3	extern double Slippage     = 0.01;  // Slippage (in currency)
+4	extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
+5	extern string Sym_Set   = "EURJPY";
+6	extern double   TRAILING_LEVEL_STOP = 50.0;
+7	extern double   TRAILING_LEVEL_TAKE = 100.0;
+8	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+9	extern int Time_period        = PERIOD_M15;
+10	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
+11	extern double TrailingStop_Margin     = 0.01;
+
+==========================================
+*/

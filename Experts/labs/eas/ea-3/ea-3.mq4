@@ -42,7 +42,8 @@ extern double Slippage     = 0.01;  // Slippage (in currency)
 
 extern double TrailingStop_Margin     = 0.01;
 
-extern string Sym_Set   = "EURJPY";
+//extern string Sym_Set   = "EURJPY";
+extern string Sym_Set   = "AUDJPY";
 
 
 //+------------------------------------------------------------------+
@@ -91,11 +92,11 @@ int num_Ticket = 0;
 
 int cntOf_Ticks = 0;
 
-string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+string fname_Log_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 //string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
 
 //_20190829_110901:tmp
-string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+string fname_Log_DAT_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
 
 string   strOf_EA = "eap-2.id-1";
 
@@ -142,7 +143,7 @@ int start()
    ********************************/
    //_20190918_084005:tmp
    //_20190918_084218:caller
-   _is_Order_Pending();
+   //_is_Order_Pending();
    
    /********************************
       step : A : 1
@@ -165,8 +166,12 @@ int start()
             step : j1 : Y
                new bar
          *******************/
+         /*******************
+            step : j1 : Y : 1
+               log
+         *******************/
          //debug
-         txt = "(step : j1 : Y) new bar";
+         txt = "(step : j1 : Y : 1) new bar";
          write_Log(
                dpath_Log
                , fname_Log_For_Session
@@ -187,7 +192,11 @@ int start()
                   step : j2 : Y
                      flag --> True
                *******************/
-               txt = "(step : j2 : Y) flg_OrderOpened ==> true ("
+               /*******************
+                  step : j2 : Y : 1
+                     log
+               *******************/
+               txt = "(step : j2 : Y : 1) flg_OrderOpened ==> true ("
                      + (string) flg_OrderOpened
                      + ")";
                      
@@ -200,12 +209,12 @@ int start()
                   , txt);
                
                /*******************
-                  step : j2 : Y : 1
+                  step : j2 : Y : 2
                      count : orders
                *******************/
                int cntOf_Orders = OrdersTotal();
 
-               txt = "(step : j2 : Y : 1) count ==> orders ("
+               txt = "(step : j2 : Y : 2) count ==> orders ("
                      + (string) cntOf_Orders
                      + ")";
                      
@@ -215,208 +224,7 @@ int start()
                   , txt
                   );
 
-               /*******************
-                  step : j2-1
-                     orders --> pending ?
-               *******************/
-               if(cntOf_Orders > 0)
-                 {
-                     /*******************
-                        step : j2-1 : Y
-                           orders --> pending
-                     *******************/
-                     txt = "(step : j2-1 : Y) orders --> pending";
-                           
-                           ;
-                           
-                     write_Log(
-                        dpath_Log, fname_Log_For_Session
-                        , __FILE__, __LINE__
-                        , txt
-                        );
 
-                     /*******************
-                        step : j2-1 : Y : 1
-                           return
-                     *******************/
-                     txt = "(step : j2-1 : Y : 1) returning...";
-                           
-                     write_Log(
-                        dpath_Log, fname_Log_For_Session
-                        , __FILE__, __LINE__
-                        , txt
-                        );
-                     
-                     // return
-                     return(0);
-                     
-                  
-                 }
-               else//if(cntOf_Orders > 0)
-                 {
-                     /*******************
-                        step : j2-1 : N
-                           orders --> NOT pending
-                     *******************/
-                     txt = "(step : j2-1 : N) orders --> NOT pending";
-                           
-                     write_Log(
-                        dpath_Log, fname_Log_For_Session
-                        , __FILE__, __LINE__
-                        , txt
-                        );
-
-                     /*******************
-                        step : j2-1 : N : 1
-                           flag --> reset
-                     *******************/
-                     flg_OrderOpened = false;
-
-                     txt = "(step : j2-1 : N : 1) flag --> reset done ("
-                             + (string) flg_OrderOpened
-                             + ")"
-                           ;
-                           
-                     write_Log(
-                        dpath_Log, fname_Log_For_Session
-                        , __FILE__, __LINE__
-                        , txt
-                        );
-                        
-                     //_20190829_104432:tmp
-                     /*******************
-                        step : j2-2
-                           judge_1 ==> true ?
-                     *******************/
-                     //_20191216_134607:ref
-                     //_20190826_133747:caller
-                     res = judge_1();
-                     
-                     if(res == true)
-                       {
-                           /*******************
-                              step : j2-2 : Y
-                                 judge_1 ==> true
-                           *******************/
-                           txt = "(step : j2-2 : Y) judge_1 ==> true";
-                           write_Log(
-                              dpath_Log
-                              , fname_Log_For_Session
-                              
-                              , __FILE__, __LINE__
-                              
-                              , txt);
-                           
-                           
-                           /*******************
-                              step : j2-2 : Y : 1
-                                 take --> position
-                           *******************/
-                           //_20190827_131828:caller
-                           res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
-      
-                           txt = "(step : j2-2 : Y : 1) position ==> taken : "
-                                 + (string) res_eap_2_i;
-                                 
-                           write_Log(
-                              dpath_Log
-                              , fname_Log_For_Session
-                              
-                              , __FILE__, __LINE__
-                              
-                              , txt);
-      
-                           /*******************
-                              step : j2-2 : Y : 2
-                                 flag --> true
-                           *******************/
-                           flg_OrderOpened = true;
-      
-                           txt = "(step : j2-2 : Y : 2) flag ==> true ("
-                                 + (string) flg_OrderOpened
-                                 + ")"
-                                 ;
-                                 
-                           write_Log(
-                              dpath_Log
-                              , fname_Log_For_Session
-                              
-                              , __FILE__, __LINE__
-                              
-                              , txt);
-      
-                           /*******************
-                              step : j2-2 : Y : 3
-                                 return
-                           *******************/
-                           txt = "(step : j2-2 : Y : 3) returning...";
-                                 
-                           write_Log(
-                              dpath_Log
-                              , fname_Log_For_Session
-                              
-                              , __FILE__, __LINE__
-                              
-                              , txt);
-                           
-                           // return
-                           return(0);
-                           
-                       }
-                     else//if(res == true)
-                       {
-                           /*******************
-                              step : j2-2 : N
-                                 judge_1 ==> false
-                           *******************/
-                           txt = "(step : j2-2 : N) judge_1 ==> false";
-                           write_Log(
-                              dpath_Log
-                              , fname_Log_For_Session
-                              
-                              , __FILE__, __LINE__
-                              
-                              , txt);
-      
-                           /*******************
-                              step : j2-2 : N : 1
-                                 return
-                           *******************/
-                           txt = "(step : j2-2 : N : 1) returning...";
-                                 
-                           write_Log(
-                              dpath_Log
-                              , fname_Log_For_Session
-                              
-                              , __FILE__, __LINE__
-                              
-                              , txt);
-      
-                           // return
-                           return(0);
-                        
-                       }//if(res == true)
-
-                       
-//                     /*******************
-//                        step : j2-1 : N : 2
-//                           return
-//                     *******************/
-//                     txt = "(step : j2-1 : N : 2) returning...";
-//                           
-//                     write_Log(
-//                        dpath_Log, fname_Log_For_Session
-//                        , __FILE__, __LINE__
-//                        , txt
-//                        );
-//                     
-//                     // return
-//                     return(0);
-                     
-                 }//if(cntOf_Orders > 0)
-               
-              return(0);
-            
            }
          else//if(flg_OrderOpened == true)
           {
@@ -424,8 +232,14 @@ int start()
                   step : j2 : N
                      flag --> False
                *******************/
-               //
-               txt = "(step : j2 : N)";
+               /*******************
+                  step : j2 : N : 1
+                     log
+               *******************/
+               txt = "(step : j2 : N : 1) flg_OrderOpened ==> false ("
+                           + (string) flg_OrderOpened
+                           + ")";
+                     
                write_Log(
                   dpath_Log
                   //, fname_Log
@@ -433,74 +247,26 @@ int start()
                   , __FILE__
                   , __LINE__
                   , txt);
-            
+               
+               //_20191216_135445:tmp
                /*******************
                   step : j3
-                     judge_1 ==> true ?
+                     pattern ==> detected ? (judge_1)
                *******************/
-               //_20190826_132608:tmp
-               //_20190826_133747:caller
                res = judge_1();
                
-               if(res == true)
+               if(res == true)   // judge_1()
                  {
                      /*******************
                         step : j3 : Y
-                           judge_1 ==> true
+                           pattern ==> detected
                      *******************/
-                     txt = "(step : j3 : Y) judge_1 ==> true";
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-                     
-                     //_20190826_135520:next   
                      /*******************
                         step : j3 : Y : 1
-                           take --> position
+                           log
                      *******************/
-                     //_20190827_131828:caller
-                     res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
-
-                     txt = "(step : j3 : Y : 1) position ==> taken : "
-                           + (string) res_eap_2_i;
-                           
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-
-                     /*******************
-                        step : j3 : Y : 2
-                           flag --> true
-                     *******************/
-                     flg_OrderOpened = true;
-
-                     txt = "(step : j3 : Y : 2) flag ==> true ("
-                           + (string) flg_OrderOpened
-                           + ")"
-                           ;
-                           
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-
-                     /*******************
-                        step : j3 : Y : 3
-                           return
-                     *******************/
-                     txt = "(step : j3 : Y : 3) returning...";
-                           
+                     txt = "(step : j3 : Y : 1) pattern ==> detected";
+                     
                      write_Log(
                         dpath_Log
                         , fname_Log_For_Session
@@ -512,28 +278,31 @@ int start()
                      // return
                      return(0);
                      
+                     //_20191216_141526:tmp
+                     /*******************
+                        step : j3 : Y : 2
+                           position ==> take
+                     *******************/
+                     txt = "(step : j3 : Y : 2) position ==> taking...";
+                     
+                     write_Log(dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__, txt);
+                     
+                     
+                     
                  }
-               else//if(res == true)
+               else//if(res == true)   // judge_1()
                  {
                      /*******************
                         step : j3 : N
-                           judge_1 ==> false
+                           pattern ==> NOT detected
                      *******************/
-                     txt = "(step : j3 : N) judge_1 ==> false";
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-
                      /*******************
                         step : j3 : N : 1
-                           return
+                           log
                      *******************/
-                     txt = "(step : j3 : N : 1) returning...";
-                           
+                     txt = "(step : j3 : Y : 1) pattern ==> NOT detected";
+                     
                      write_Log(
                         dpath_Log
                         , fname_Log_For_Session
@@ -541,191 +310,43 @@ int start()
                         , __FILE__, __LINE__
                         
                         , txt);
-
+                     
                      // return
                      return(0);
                   
-                 }//if(res == true)
-          
+                 }//if(res == true)   // judge_1()                    
+               
           }//if(flg_OrderOpened == true)
                
      }//if(res == true)
      
    else//if(res == true)//_is_NewBar()
-      //_20191216_133250:ref
        {
 
          /*******************
             step : j1 : N
                new bar --> NO
          *******************/
-         //_20190828_102028:next
-         /*******************
-            step : j1-2
-               position ==> taken ?
-         *******************/
-         if(flg_OrderOpened == true)
-           {
-               /*******************
-                  step : j1-2 : Y
-                     judge_1 ==> true
-               *******************/
-               /*******************
-                  step : j1-2 : Y : 1
-                     return
-               *******************/
-//               txt = "(step : j1-2 : Y) returning...";
-//                     
-//               write_Log(
-//                  dpath_Log
-//                  , fname_Log_For_Session
-//                  
-//                  , __FILE__, __LINE__
-//                  
-//                  , txt);
-               
-               // return
-               return(0);
-            
-           }
-         else//if(flg_OrderOpened == true)
-           {
-               /*******************
-                  step : j1-2 : N
-                     judge_1 ==> false
-               *******************/
-               //_20191216_133428:ref
-               /*******************
-                  step : j1-3
-                     judge_1 ==> true ?
-               *******************/
-               res = judge_1();
-               
-               if(res == true)
-                 {
-                     /*******************
-                        step : j1-3 :Y
-                           judge_1 ==> true
-                     *******************/
-                     txt = "(step : j1-3 :Y) judge_1 ==> true";
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-                     
-                     //_20190826_135520:next   
-                     /*******************
-                        step : j1-3 :Y : 1
-                           take --> position
-                     *******************/
-                     //_20190827_131828:caller
-                     res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
-      
-                     txt = "(step : j1-3 :Y : 1) position ==> taken : "
-                           + (string) res_eap_2_i;
-                           
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-      
-                     /*******************
-                        step : j1-3 :Y : 2
-                           flag --> true
-                     *******************/
-                     flg_OrderOpened = true;
-      
-                     txt = "(step : j1-3 :Y : 2) flag ==> true ("
-                           + (string) flg_OrderOpened
-                           + ")"
-                           ;
-                           
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-      
-                     /*******************
-                        step : j1-3 :Y : 3
-                           return
-                     *******************/
-                     txt = "(step : j1-3 :Y : 3) returning...";
-                           
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-                     
-                     // return
-                     return(0);
-                     
-                 }
-               else//if(res == true)
-                 {
-                     /*******************
-                        step : j1-3 :N
-                           judge_1 ==> false
-                     *******************/
-                     txt = "(step : j1-3 :N) judge_1 ==> false";
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-      
-                     /*******************
-                        step : j1-3 :N : 1
-                           return
-                     *******************/
-                     txt = "(step : j1-3 :N : 1) returning...";
-                           
-                     write_Log(
-                        dpath_Log
-                        , fname_Log_For_Session
-                        
-                        , __FILE__, __LINE__
-                        
-                        , txt);
-      
-                     // return
-                     return(0);
-                  
-                 }//if(res == true)
-            
-           }//if(flg_OrderOpened == true)
-           
-         /*******************
-            step : j1-2
-               position --> to take ?
-         *******************/
-         
-
-         /*******************
-            step : j1-3
-               position --> taken ?
-         *******************/
-         
          /*******************
             step : j1 : N : 1
-               continue
+               log
          *******************/
-        return(0);
-        
-       }//if(res == true)//_is_NewBar()
+         txt = "(step : j1 : N : 1) new bar --> NO"
+                     ;
+               
+         write_Log(
+            dpath_Log
+            //, fname_Log
+            , fname_Log_For_Session
+            , __FILE__
+            , __LINE__
+            , txt);
+
+
+         
+         
+
+   }//if(res == true)//_is_NewBar()
 
 
    return(0);
@@ -1792,18 +1413,19 @@ int _is_Order_Pending() {
 
 
 /*
-2019/09/09 13:52:06
-func-list.(eap-2.(id-1).mq4).20190909_135206.txt
+2019/12/15 14:15:03
+func-list.(ea-3.mq4).20191215_141503.txt
 ==========================================
 <funcs>
 
-1	int init()
-2	void setup() {
-3	void setup_Data_File() {
-4	void show_BasicData() {
-5	void show_OrderData() {
-6	int start()
-7	void trail_Orders() {
+1	int _is_Order_Pending() {
+2	int init()
+3	void setup() {
+4	void setup_Data_File() {
+5	void show_BasicData() {
+6	void show_OrderData() {
+7	int start()
+8	void trail_Orders() {
 
 ==========================================
 ==========================================
@@ -1827,10 +1449,12 @@ func-list.(eap-2.(id-1).mq4).20190909_135206.txt
 3	extern double Slippage     = 0.01;  // Slippage (in currency)
 4	extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
 5	extern string Sym_Set   = "EURJPY";
-6	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
-7	extern int Time_period        = PERIOD_M1;
-8	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
-9	extern double TrailingStop_Margin     = 0.01;
+6	extern double   TRAILING_LEVEL_STOP = 50.0;
+7	extern double   TRAILING_LEVEL_TAKE = 100.0;
+8	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+9	extern int Time_period        = PERIOD_M15;
+10	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
+11	extern double TrailingStop_Margin     = 0.01;
 
 ==========================================
 */
