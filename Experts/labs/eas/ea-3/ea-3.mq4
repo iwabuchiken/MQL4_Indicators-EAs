@@ -22,9 +22,9 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-//extern int Time_period        = PERIOD_M1;
+extern int Time_period        = PERIOD_M1;
 //extern int Time_period        = PERIOD_M5;
-extern int Time_period        = PERIOD_M15;
+//extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
 extern int MagicNumber  = 10001;
@@ -60,7 +60,7 @@ bool     res;
 
 bool SWITHCH_DEBUG_eap_2   = true;
 
-int res_eap_2_i = 0;
+int res_ea_3_i = 0;
 
 double   priceOf_Prev_Tick__Bid     = -1.0;
 double priceOf_Current_Tick__Bid    = -1.0;
@@ -151,7 +151,7 @@ int start()
    ********************************/
    //_20190829_112152:next
    //_20190906_165225:caller
-   trail_Orders();
+   //trail_Orders();
 
    /********************************
       step : j1
@@ -276,7 +276,7 @@ int start()
                         , txt);
                      
                      // return
-                     return(0);
+                     //return(0);
                      
                      //_20191216_141526:tmp
                      /*******************
@@ -287,8 +287,34 @@ int start()
                      
                      write_Log(dpath_Log, fname_Log_For_Session
                         , __FILE__, __LINE__, txt);
+
+                     // take position
+                     res_ea_3_i = take_Position__Sell(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
+                     
+                     //log
+                     txt = "(step : j3 : Y : 2) position ==> taken : res_ea_3_i = "
+                           + (string) res_ea_3_i;
+
+                     write_Log(dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__, txt);
+
+                     /*******************
+                        step : j3 : Y : 3
+                           flg_Opened ==> true
+                     *******************/
+                     flg_OrderOpened = true;
+
+                     //log
+                     txt = "(step : j3 : Y : 3) flg_Opened ==> true ("
+                           + (string) flg_OrderOpened
+                           + ")";
+
+                     write_Log(dpath_Log, fname_Log_For_Session
+                        , __FILE__, __LINE__, txt);
                      
                      
+                     // return
+                     return(0);                     
                      
                  }
                else//if(res == true)   // judge_1()
@@ -1173,10 +1199,10 @@ int _is_Order_Pending() {
                            take --> position
                      *******************/
                      //_20190827_131828:caller
-                     res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
+                     res_ea_3_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
 
                      txt = "(step : j2-2 : Y : 1) position ==> taken : "
-                           + (string) res_eap_2_i;
+                           + (string) res_ea_3_i;
                            
                      write_Log(
                         dpath_Log
@@ -1323,10 +1349,10 @@ int _is_Order_Pending() {
                      take --> position
                *******************/
                //_20190827_131828:caller
-               res_eap_2_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
+               res_ea_3_i = take_Position__Buy(TRAILING_LEVEL_STOP, TRAILING_LEVEL_TAKE);
 
                txt = "(step : j3 : Y : 1) position ==> taken : "
-                     + (string) res_eap_2_i;
+                     + (string) res_ea_3_i;
                      
                write_Log(
                   dpath_Log
@@ -1438,7 +1464,7 @@ func-list.(ea-3.mq4).20191215_141503.txt
 5	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
 6	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 7	int num_Ticket = 0;
-8	int res_eap_2_i = 0;
+8	int res_ea_3_i = 0;
 
 ==========================================
 ==========================================
