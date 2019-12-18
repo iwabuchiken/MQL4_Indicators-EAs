@@ -118,6 +118,15 @@ string dpath_Log = "Logs/"
 //+------------------------------------------------------------------+
 //    vars
 //+------------------------------------------------------------------+
+/***************************
+   <list of funcs located in external files>
+   2019/12/18 16:46:38
+   
+   is_Order_Pending  lib_ea_2.mqh
+   judge_1           lib_ea_2.mqh
+
+*****************/
+
 
 //+------------------------------------------------------------------+
 //    expert start function
@@ -180,7 +189,46 @@ int start()
                
                , txt);
          
+         /*******************
+            step : j1-1
+               orders ==> pending ?
+         *******************/
+         /*******************
+            step : j1-1 : 1
+               check
+         *******************/
+         //_20191218_162827:tmp
+         //_20191218_163351:caller
+         int retVal_i = is_Order_Pending();
 
+         /*******************
+            step : j1-1 : 2
+               pending ?
+         *******************/
+         if(retVal_i == -1 && flg_OrderOpened == true)
+           {
+               /*******************
+                  step : j1-1 : Y
+                     pending
+               *******************/
+               /*******************
+                  step : j1-1 : Y : 1
+                     flag ==> reset
+               *******************/
+               flg_OrderOpened = false;
+      
+               //debug
+               txt = "(step : j1 : Y : 1) orders not pending; flg_OrderOpened ==> back to false ("
+                     + (string) flg_OrderOpened
+                     + ")"
+                     ;
+
+               write_Log(dpath_Log, fname_Log_For_Session
+                     , __FILE__, __LINE__, txt);
+                     
+           }//if(retVal_i == -1)
+         
+         
          /*******************
             step : j2
                flag --> True ?
@@ -253,6 +301,7 @@ int start()
                   step : j3
                      pattern ==> detected ? (judge_1)
                *******************/
+               //_20191218_170646:next
                res = judge_1();
                
                if(res == true)   // judge_1()
@@ -367,10 +416,6 @@ int start()
             , __FILE__
             , __LINE__
             , txt);
-
-
-         
-         
 
    }//if(res == true)//_is_NewBar()
 
