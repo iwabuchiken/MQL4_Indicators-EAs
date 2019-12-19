@@ -19,6 +19,8 @@
 #include <lib_ea_2.mqh>
 #include <lib_ea.mqh>
 
+#include <libfx/libfx_cons.mqh>
+
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
@@ -54,8 +56,8 @@ string PGName = "abc";     //
 
 double __MyPoint   = 0.001;
 
-string   txt;
-bool     res;
+//string   txt;
+//bool     res;
 
 bool SWITHCH_DEBUG_eap_2   = true;
 
@@ -290,7 +292,8 @@ int start()
                      *******************/
                      //_20191216_134607:ref
                      //_20190826_133747:caller
-                     res = judge_1();
+                     //res = judge_1();
+                     res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
                      
                      if(res == true)
                        {
@@ -440,7 +443,7 @@ int start()
                *******************/
                //_20190826_132608:tmp
                //_20190826_133747:caller
-               res = judge_1();
+               res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
                
                if(res == true)
                  {
@@ -599,7 +602,7 @@ int start()
                   step : j1-3
                      judge_1 ==> true ?
                *******************/
-               res = judge_1();
+               res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
                
                if(res == true)
                  {
@@ -1529,7 +1532,7 @@ int _is_Order_Pending() {
                *******************/
                
                //_20190826_133747:caller
-               res = judge_1();
+               res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
                
                if(res == true)
                  {
@@ -1679,7 +1682,7 @@ int _is_Order_Pending() {
          *******************/
          //_20190826_132608:tmp
          //_20190826_133747:caller
-         res = judge_1();
+         res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
          
          if(res == true)
            {

@@ -3,6 +3,9 @@
    origina file : 
       ea_44_5.3_2_down-down-buy.mq4
 
+   C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Experts\labs\eas\ea-3\
+   ea-3.mq4
+
 //+------------------------------------------------------------------+*/
 
 //+------------------------------------------------------------------+
@@ -18,6 +21,8 @@
 #include <utils.mqh>
 #include <lib_ea_2.mqh>
 #include <lib_ea.mqh>
+
+#include <libfx/libfx_cons.mqh>
 
 //+------------------------------------------------------------------+
 //| externs
@@ -55,8 +60,8 @@ string PGName = "abc";     //
 
 double __MyPoint   = 0.001;
 
-string   txt;
-bool     res;
+//string   txt;
+//bool     res;
 
 bool SWITHCH_DEBUG_eap_2   = true;
 
@@ -302,7 +307,8 @@ int start()
                      pattern ==> detected ? (judge_1)
                *******************/
                //_20191218_170646:next
-               res = judge_1();
+               //res = judge_1();
+               res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
                
                if(res == true)   // judge_1()
                  {
@@ -1221,7 +1227,7 @@ int _is_Order_Pending() {
                *******************/
                
                //_20190826_133747:caller
-               res = judge_1();
+               res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
                
                if(res == true)
                  {
@@ -1371,7 +1377,7 @@ int _is_Order_Pending() {
          *******************/
          //_20190826_132608:tmp
          //_20190826_133747:caller
-         res = judge_1();
+         res = judge_1(typeOf_Pattern_DP_TREND_DOWN_1);
          
          if(res == true)
            {
