@@ -2,7 +2,7 @@
 Images/*
 #Include/*
 
-Include/*/*.mqh
+#Include/*/*.mqh
 
 #Include/*
 
@@ -22,3 +22,14 @@ Files/Logs/storage_Logs/*
 Files/Logs/2019*
 
 #Files/Logs/[ea_44_5.3_2].[down-down-BuyOrSell].20190208_155638.log
+
+### 2019/12/23 17:34:51
+Include/Arrays/
+Include/Canvas/
+Include/ChartObjects/
+Include/Charts/
+Include/Controls/*.mqh
+Include/Files/
+Include/Indicators/
+Include/Strings/
+Include/Tools/
