@@ -1,0 +1,51 @@
+[2020.03.31 17:34:45 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:48 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:48 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:50 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:50 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:54 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:55 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:56 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:57 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:58 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:34:58 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:02 / ea_tester-1.mq4:193](step : j1 : Y : 1) new bar
+[2020.03.31 17:35:02 / ea_tester-1.mq4:301](step : j2 : N : 1) flg_OrderOpened ==> false (false)
+[2020.03.31 17:35:02 / lib_ea_2.mqh:90](step : 2 : 1.1) judge : typeOf_Pattern_DP_TREND_DOWN_1
+[2020.03.31 17:35:02 / libfx_dp_1.mqh:113](step : 2 : 1) get : prev 4 bars
+lower_M1 = 66.806 / lower_M2 = 66.80800000000001 / lower_M3 = 66.752 / lower_M4 = 66.753
+
+[2020.03.31 17:35:02 / lib_ea_2.mqh:107](step : 2 : 1.2) judge : dp_Trend_Down_1 => true)
+[2020.03.31 17:35:02 / ea_tester-1.mq4:329](step : j3 : Y : 1) pattern ==> detected
+[2020.03.31 17:35:02 / ea_tester-1.mq4:344](step : j3 : Y : 2) position ==> taking...
+[2020.03.31 17:35:02 / lib_ea_2.mqh:471](step : 1) vars
+price	66.80500000000001
+Ask	66.818
+Bid	66.80500000000001
+(Ask - Bid)	0.013
+Point	0.001
+Digits	3
+minstoplevel	50
+mintakelevel	100
+stoploss	66.86799999999999
+takeprofit	66.718
+
+[2020.03.31 17:35:02 / lib_ea_2.mqh:531]OrderSend failed with error #0
+
+[2020.03.31 17:35:02 / ea_tester-1.mq4:354](step : j3 : Y : 2) position ==> taken : res_ea_3_i = -1
+[2020.03.31 17:35:02 / ea_tester-1.mq4:368](step : j3 : Y : 3) flg_Opened ==> true (true)
+[2020.03.31 17:35:02 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:02 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:03 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:03 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:03 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:03 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:03 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:04 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:04 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:05 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:05 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:05 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:05 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:05 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO
+[2020.03.31 17:35:06 / ea_tester-1.mq4:423](step : j1 : N : 1) new bar --> NO

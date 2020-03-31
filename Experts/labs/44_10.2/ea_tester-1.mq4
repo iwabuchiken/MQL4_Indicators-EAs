@@ -151,6 +151,10 @@ int start()
    
    Print("[", __FILE__, ":",__LINE__,"] ", txt);
 
+   //debug
+   //_20200331_173735:tmp
+   return(0);
+
    /********************************
       step : A : 0
          order --> pending?
@@ -427,7 +431,8 @@ int start()
 
 
    return(0);
-}
+
+}//start()
 
 //+------------------------------------------------------------------+
 //|   void show_BasicData() {
@@ -675,6 +680,7 @@ int init()
    //debug
    Print("[", __FILE__, ":",__LINE__,"] init... ", PGName);
 
+   //_20200331_173857:tmp
    // basic data
    //show_BasicData();
 
@@ -687,7 +693,7 @@ int init()
          setup
    *******************/   
    // setup
-   setup();
+   //setup();
 
    //_is_NewBar();
 
@@ -695,7 +701,7 @@ int init()
       step : 2
          data file : write : header
    *******************/
-   setup_Data_File();
+   //setup_Data_File();
     
  
 
@@ -1491,8 +1497,8 @@ int _is_Order_Pending() {
 
 
 /*
-2019/12/15 14:15:03
-func-list.(ea-3.mq4).20191215_141503.txt
+2020/03/31 17:31:11
+func-list.(ea_tester-1.mq4).20200331_173111.txt
 ==========================================
 <funcs>
 
@@ -1513,8 +1519,8 @@ func-list.(ea-3.mq4).20191215_141503.txt
 2	bool SWITHCH_DEBUG_eap_2   = true;
 3	int cntOf_Ticks = 0;
 4	bool flg_OrderOpened = false;
-5	string fname_Log_DAT_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
-6	string fname_Log_For_Session = "[eap-2.id-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+5	string fname_Log_DAT_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+6	string fname_Log_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 7	int num_Ticket = 0;
 8	int res_ea_3_i = 0;
 
@@ -1526,11 +1532,11 @@ func-list.(ea-3.mq4).20191215_141503.txt
 2	extern int MagicNumber  = 10001;
 3	extern double Slippage     = 0.01;  // Slippage (in currency)
 4	extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
-5	extern string Sym_Set   = "EURJPY";
+5	extern string Sym_Set   = "AUDJPY";
 6	extern double   TRAILING_LEVEL_STOP = 50.0;
 7	extern double   TRAILING_LEVEL_TAKE = 100.0;
 8	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
-9	extern int Time_period        = PERIOD_M15;
+9	extern int Time_period        = PERIOD_M1;
 10	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
 11	extern double TrailingStop_Margin     = 0.01;
 
