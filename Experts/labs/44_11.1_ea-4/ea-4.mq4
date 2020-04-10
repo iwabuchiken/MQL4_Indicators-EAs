@@ -1,10 +1,7 @@
 /*+------------------------------------------------------------------+
-   created at : 2019/01/28 10:04:49
+   created at : 2020/04/09 14:50:29
    origina file : 
-      ea_44_5.3_2_down-down-buy.mq4
-
-   C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Experts\labs\eas\ea-3\
-   ea-3.mq4
+      ea_tester-1.mq4 // C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Experts\labs\44_10.2
 
 //+------------------------------------------------------------------+*/
 
@@ -19,6 +16,9 @@
 //|  : original                                             |
 //+------------------------------------------------------------------+
 #include <utils.mqh>
+      /*
+         _is_NewBar()
+      */
 #include <lib_ea_2.mqh>
 #include <lib_ea.mqh>
 
@@ -106,7 +106,7 @@ int num_Ticket = 0;
 
 int cntOf_Ticks = 0;
 
-string fname_Log_For_Session = "[ea_tester-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+string fname_Log_For_Session = "[ea-4_tester-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 //string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
 
 //_20190829_110901:tmp
@@ -128,6 +128,9 @@ string dpath_Log = "Logs/"
                
                + ".dir";
 
+string txt_EA_4 = "";   // for general use
+
+bool result_b;   // for general use
 
 //+------------------------------------------------------------------+
 //    vars
@@ -138,6 +141,8 @@ string dpath_Log = "Logs/"
    
    is_Order_Pending  lib_ea_2.mqh
    judge_1           lib_ea_2.mqh
+   
+   dp_2__All_True    libfx_dp_1.mqh
 
 *****************/
 
@@ -161,10 +166,19 @@ int start()
    
    Print("[", __FILE__, ":",__LINE__,"] ", txt);
    */
+   //debug
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] starting..."
+            + " (tick = "
+            + (string) cntOf_Ticks
+            + ")";
+   ;
    
    //debug
-   //_20200331_173735:tmp
-   return(0);
+   Print(txt_EA_4);
+   
+   write_Log(dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);
+   
 
    /********************************
       step : A : 0
@@ -186,7 +200,190 @@ int start()
       step : j1
          new bar ?
    ********************************/
-   res = _is_NewBar();
+   //_20200409_151057:tmp
+   result_b = _is_NewBar();
+
+   //debug
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b;
+   
+   //debug
+   Print(txt_EA_4);
+   
+   write_Log(dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);
+
+
+   //test
+   //_20200410_152021:tmp
+   if(result_b == true)//_is_NewBar
+     {
+         /********************************
+            step : 0
+               
+         ********************************/
+         //_20200410_161525:next
+     
+     
+         /********************************
+            step : j1 : Y
+               new bar
+         ********************************/
+         /********************************
+            step : j1 : Y : 1
+               log
+         ********************************/
+         //debug
+         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j1 : Y : 1) new bar";
+         
+         write_Log(dpath_Log , fname_Log_For_Session
+               , __FILE__ , __LINE__ , txt_EA_4);
+
+         /********************************
+            step : j2
+               order pending ?
+         ********************************/
+         int retVal_i_2 = is_Order_Pending();
+      
+         //debug
+         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j2) retVal_i_2 (is_Order_Pending) => "
+                   + (string) retVal_i_2;
+         
+         write_Log(dpath_Log , fname_Log_For_Session
+               , __FILE__ , __LINE__ , txt_EA_4);
+         
+         //_20200410_154418:tmp
+         if(retVal_i_2 == true)//is_Order_Pending
+           {
+               /********************************
+                  step : j2 : Y
+                     order pending
+               ********************************/
+               /********************************
+                  step : j2 : Y : 1
+                     log
+               ********************************/
+               //debug
+               txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
+                        + " (step : j2 : Y : 1) is_Order_Pending => true"
+                         ;
+               
+               write_Log(dpath_Log , fname_Log_For_Session
+                     , __FILE__ , __LINE__ , txt_EA_4);
+
+               /********************************
+                  step : j2 : Y : 2
+                     end
+               ********************************/
+               //debug
+               txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
+                        + " (step : j2 : Y : 2) end"
+                         ;
+               
+               write_Log(dpath_Log , fname_Log_For_Session
+                     , __FILE__ , __LINE__ , txt_EA_4);               
+               
+               // continue
+               //continue;
+            
+           }
+         else//if(retVal_i_2 == true)//is_Order_Pending
+          {
+               /********************************
+                  step : j2 : N
+                     order NOT pending
+               ********************************/
+               /********************************
+                  step : j2 : N : 1
+                     log
+               ********************************/
+               //debug
+               txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
+                        + " (step : j2 : N : 1) is_Order_Pending => false"
+                         ;
+               
+               write_Log(dpath_Log , fname_Log_For_Session
+                     , __FILE__ , __LINE__ , txt_EA_4);
+
+               /********************************
+                  step : j3
+                     buy : condition filled ?
+               ********************************/
+               /********************************
+                  step : j3 : 0
+                     conditions
+               ********************************/
+               bool j3_b = dp_2__All_True();
+
+               /********************************
+                  step : j3 : 0.1
+                     if sentence
+               ********************************/
+               if(j3_b == true)//dp_2__All_True
+                 {
+                     /********************************
+                        step : j3 : Y
+                           buy : condition filled
+                     ********************************/
+                     /********************************
+                        step : j3 : Y : 1
+                           log
+                     ********************************/
+                     //debug
+                     txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
+                              + " (step : j3 : Y : 1) buy : condition filled"
+                               ;
+                     
+                     write_Log(dpath_Log , fname_Log_For_Session
+                           , __FILE__ , __LINE__ , txt_EA_4);
+                     
+                     
+                 }
+               else//if(j3_b == true)//dp_2__All_True
+                 {
+                     /********************************
+                        step : j3 : N
+                           buy : condition NOT filled
+                     ********************************/
+                     /********************************
+                        step : j3 : N : 1
+                           log
+                     ********************************/
+                     //debug
+                     txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
+                              + " (step : j3 : N : 1) buy : condition NOT filled"
+                               ;
+                     
+                     write_Log(dpath_Log , fname_Log_For_Session
+                           , __FILE__ , __LINE__ , txt_EA_4);
+                     
+                  
+                 }//if(j3_b == true)//dp_2__All_True
+               
+              
+           }//if(retVal_i_2 == true)//is_Order_Pending
+      
+     }
+   else//if(result_b == true)//_is_NewBar
+    {
+         /********************************
+            step : j1 : N
+               NOT new bar
+         ********************************/
+         /********************************
+            step : j1 : N : 1
+               log
+         ********************************/
+         //debug
+         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j1 : N : 1) NOT a new bar";
+         
+         write_Log(dpath_Log , fname_Log_For_Session
+               , __FILE__ , __LINE__ , txt_EA_4);     
+
+     }//if(result_b == true)//_is_NewBar
+
+   //debug
+   //_20200331_173735:tmp
+   return(0);
    
    // valid : is a new bar ?
    if(res == true)//_is_NewBar()
@@ -692,12 +889,32 @@ int init()
    //debug
    Print("[", __FILE__, ":",__LINE__,"] init... ", PGName);
 
+   //debug
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] init ==> comp : " + PGName;
+   
+   Print(txt_EA_4);
+
+   //debug
+   write_Log(
+         dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);
+
    //test
    //_20200403_155202:test
-   bool result = is_Order_Pending(flg_OrderOpened);
+   result_b = is_Order_Pending(flg_OrderOpened);
    
    //debug
-   Print("[", __FILE__, ":",__LINE__,"] is_Order_Pending => ", result);
+   //Print("[", __FILE__, ":",__LINE__,"] is_Order_Pending => ", result);
+
+   //debug
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] is_Order_Pending => " + (string) result_b;
+   
+   Print(txt_EA_4);
+
+   //debug
+   write_Log(
+         dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);
    
    //_20200331_173857:tmp
    // basic data
@@ -714,30 +931,24 @@ int init()
    // setup
    //setup();
 
-   //_is_NewBar();
+   //_20200409_150058:tmp
+   result_b = _is_NewBar();
+
+   //debug
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b;
+   
+   //debug
+   Print(txt_EA_4);
+   
+   write_Log(dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);
 
    /*******************
       step : 2
          data file : write : header
    *******************/
    //setup_Data_File();
-    
- 
-   //debug
-   string txt_Tester_1 = "[" + __FILE__ + ":" + (string) __LINE__ + "] init ==> comp : " + PGName;
-   
-   Print(txt_Tester_1);
 
-   //debug
-   write_Log(
-         dpath_Log
-         //, fname_Log
-         , fname_Log_For_Session
-         , __FILE__
-         , __LINE__
-         , txt_Tester_1);
-
-   
    return(0);
 
 }//int init()
@@ -1530,8 +1741,8 @@ int _is_Order_Pending() {
 
 
 /*
-2020/03/31 17:31:11
-func-list.(ea_tester-1.mq4).20200331_173111.txt
+2020/04/09 14:47:15
+func-list.(ea-4.mq4).20200409_144715.txt
 ==========================================
 <funcs>
 
@@ -1553,7 +1764,7 @@ func-list.(ea_tester-1.mq4).20200331_173111.txt
 3	int cntOf_Ticks = 0;
 4	bool flg_OrderOpened = false;
 5	string fname_Log_DAT_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
-6	string fname_Log_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+6	string fname_Log_For_Session = "[ea_tester-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
 7	int num_Ticket = 0;
 8	int res_ea_3_i = 0;
 

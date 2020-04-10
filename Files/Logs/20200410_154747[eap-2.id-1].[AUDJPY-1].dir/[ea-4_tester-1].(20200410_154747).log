@@ -1,0 +1,98 @@
+[2020.04.10 15:47:47 / ea-4.mq4:822][ea-4.mq4:815] init ==> comp : abc
+[2020.04.10 15:47:47 / ea-4.mq4:839][ea-4.mq4:832] is_Order_Pending => false
+[2020.04.10 15:47:47 / ea-4.mq4:866][ea-4.mq4:860] _is_NewBar => false
+[2020.04.10 15:47:47 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 1)
+[2020.04.10 15:47:47 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:47 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:49 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 2)
+[2020.04.10 15:47:49 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:49 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:50 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 3)
+[2020.04.10 15:47:50 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:50 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:50 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 4)
+[2020.04.10 15:47:50 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:50 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:51 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 5)
+[2020.04.10 15:47:51 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:51 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:51 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 6)
+[2020.04.10 15:47:51 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:51 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:51 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 7)
+[2020.04.10 15:47:51 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:51 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:51 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 8)
+[2020.04.10 15:47:51 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:51 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:52 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 9)
+[2020.04.10 15:47:52 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:52 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:55 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 10)
+[2020.04.10 15:47:55 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:55 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:47:59 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 11)
+[2020.04.10 15:47:59 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:47:59 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:01 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 12)
+[2020.04.10 15:48:01 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:01 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:01 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 13)
+[2020.04.10 15:48:01 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:01 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:02 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 14)
+[2020.04.10 15:48:02 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:02 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:06 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 15)
+[2020.04.10 15:48:06 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => true
+[2020.04.10 15:48:06 / ea-4.mq4:230][ea-4.mq4:227] (step : j1 : Y : 1) new bar
+[2020.04.10 15:48:06 / ea-4.mq4:243][ea-4.mq4:239] (step : j2) retVal_i_2 (is_Order_Pending) => -1
+[2020.04.10 15:48:06 / ea-4.mq4:282][ea-4.mq4:277] (step : j2 : N : 1) is_Order_Pending => false-1
+[2020.04.10 15:48:06 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 16)
+[2020.04.10 15:48:06 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:06 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:06 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 17)
+[2020.04.10 15:48:06 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:06 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:07 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 18)
+[2020.04.10 15:48:07 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:07 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:07 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 19)
+[2020.04.10 15:48:07 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:07 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:07 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 20)
+[2020.04.10 15:48:07 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:07 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:08 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 21)
+[2020.04.10 15:48:08 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:08 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:08 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 22)
+[2020.04.10 15:48:08 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:08 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:10 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 23)
+[2020.04.10 15:48:10 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:10 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:10 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 24)
+[2020.04.10 15:48:10 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:10 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:15 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 25)
+[2020.04.10 15:48:15 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:15 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:17 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 26)
+[2020.04.10 15:48:17 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:17 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:19 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 27)
+[2020.04.10 15:48:19 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:19 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:21 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 28)
+[2020.04.10 15:48:21 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:21 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:24 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 29)
+[2020.04.10 15:48:24 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:24 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:27 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 30)
+[2020.04.10 15:48:27 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:27 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
+[2020.04.10 15:48:29 / ea-4.mq4:178][ea-4.mq4:168] starting... (tick = 31)
+[2020.04.10 15:48:29 / ea-4.mq4:211][ea-4.mq4:205] _is_NewBar => false
+[2020.04.10 15:48:29 / ea-4.mq4:302][ea-4.mq4:299] (step : j1 : N : 1) NOT a new bar
