@@ -54,7 +54,8 @@ extern string Sym_Set   = "AUDJPY";
 //+------------------------------------------------------------------+
 //| funcs (external)
 /*
-   is_Order_Pending()   libfx_tester-1.mqh
+   is_Order_Pending()         libfx_tester-1.mqh
+   int take_Position__Buy()   lib_ea_2.mqh
 
 */
 //+------------------------------------------------------------------+
@@ -222,7 +223,7 @@ int start()
                
          ********************************/
          //_20200410_161525:next
-     
+         
      
          /********************************
             step : j1 : Y
@@ -335,7 +336,25 @@ int start()
                      
                      write_Log(dpath_Log , fname_Log_For_Session
                            , __FILE__ , __LINE__ , txt_EA_4);
+
+                     /********************************
+                        step : j3 : Y : 2
+                           buy ==> exec
+                     ********************************/
+                     //_20200411_104528:tmp
+                     double minstoplevel    = 0.05;
+                     double mintakelevel    = 0.10;
                      
+                     int result_i = take_Position__Buy(minstoplevel, mintakelevel);
+                     
+                     //debug
+                     txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
+                              + " (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> "
+                              + (string) result_i
+                               ;
+                     
+                     write_Log(dpath_Log , fname_Log_For_Session
+                           , __FILE__ , __LINE__ , txt_EA_4);                     
                      
                  }
                else//if(j3_b == true)//dp_2__All_True
