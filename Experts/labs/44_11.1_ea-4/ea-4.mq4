@@ -23,7 +23,7 @@
 #include <lib_ea.mqh>
 
 #include <libfx/libfx_cons.mqh>
-#include <libfx/libfx_tester-1.mqh>
+//#include <libfx/libfx_tester-1.mqh>
 
 //+------------------------------------------------------------------+
 //| externs
@@ -54,10 +54,21 @@ extern string Sym_Set   = "AUDJPY";
 //+------------------------------------------------------------------+
 //| funcs (external)
 /*
-   is_Order_Pending()         libfx_tester-1.mqh
+   //is_Order_Pending()         libfx_tester-1.mqh
    int take_Position__Buy()   lib_ea_2.mqh
 
 */
+/***************************
+   <list of funcs located in external files>
+   2019/12/18 16:46:38
+   
+   is_Order_Pending  lib_ea_2.mqh
+   judge_1           lib_ea_2.mqh
+   
+   dp_2__All_True    libfx_dp_1.mqh
+
+*****************/
+
 //+------------------------------------------------------------------+
 
 
@@ -136,21 +147,13 @@ string dpath_Log = "Logs/"
 
 string txt_EA_4 = "";   // for general use
 
-bool result_b;   // for general use
+bool result_b_global;   // for general use
+
+int result_i_global;   // for general use
 
 //+------------------------------------------------------------------+
 //    vars
 //+------------------------------------------------------------------+
-/***************************
-   <list of funcs located in external files>
-   2019/12/18 16:46:38
-   
-   is_Order_Pending  lib_ea_2.mqh
-   judge_1           lib_ea_2.mqh
-   
-   dp_2__All_True    libfx_dp_1.mqh
-
-*****************/
 
 
 //+------------------------------------------------------------------+
@@ -207,10 +210,10 @@ int start()
          new bar ?
    ********************************/
    //_20200409_151057:tmp
-   result_b = _is_NewBar();
+   result_b_global = _is_NewBar();
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b;
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b_global;
    
    //debug
    Print(txt_EA_4);
@@ -218,10 +221,9 @@ int start()
    write_Log(dpath_Log , fname_Log_For_Session
          , __FILE__ , __LINE__ , txt_EA_4);
 
-
    //test
    //_20200410_152021:tmp
-   if(result_b == true)//_is_NewBar
+   if(result_b_global == true)//_is_NewBar
      {
          /********************************
             step : 0
@@ -248,18 +250,27 @@ int start()
             step : j2
                order pending ?
          ********************************/
-         bool retVal_b = is_Order_Pending();
-         //int retVal_b = is_Order_Pending();
-      
+         //_20200413_214758:tmp
+         int maxOf_NumOf_Pending_Orders = 40;
+         
+         bool retVal_b_2 = is_Order_Fully_Pending(maxOf_NumOf_Pending_Orders);
+         //int retVal_i_2 = is_Order_Pending();
+
          //debug
-         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j2) retVal_b (is_Order_Pending) => "
-                   + (string) retVal_b;
+         //txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j2) retVal_i_2 (is_Order_Pending) => "
+         //          + (string) retVal_i_2;
+         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ 
+                  + "] (step : j2) retVal_b_2 (is_Order_Fully_Pending) => "
+                   + (string) retVal_b_2;
+         
          
          write_Log(dpath_Log , fname_Log_For_Session
                , __FILE__ , __LINE__ , txt_EA_4);
          
          //_20200410_154418:tmp
-         if(retVal_b == true)//is_Order_Pending
+         //if(retVal_i_2 == true)//is_Order_Pending
+         //if(retVal_i_2 >= 1)//is_Order_Pending
+         if(retVal_b_2 == true)//is_Order_Fully_Pending
            {
                /********************************
                   step : j2 : Y
@@ -271,7 +282,12 @@ int start()
                ********************************/
                //debug
                txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
-                        + " (step : j2 : Y : 1) is_Order_Pending => true"
+                        + " (step : j2 : Y : 1) is_Order_Fully_Pending => true"
+                        + " (is_Order_Fully_Pending = "
+                        + (string) retVal_b_2
+                        //+ " (step : j2 : Y : 1) is_Order_Pending => true"
+                        //+ " (is_Order_Pending = "
+                        //+ (string) retVal_i_2
                          ;
                
                write_Log(dpath_Log , fname_Log_For_Session
@@ -293,7 +309,8 @@ int start()
                //continue;
             
            }
-         else//if(retVal_b == true)//is_Order_Pending
+         //else//if(retVal_i_2 == true)//is_Order_Pending
+         else//if(retVal_i_2 == true)//is_Order_Fully_Pending
           {
                /********************************
                   step : j2 : N
@@ -305,7 +322,8 @@ int start()
                ********************************/
                //debug
                txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
-                        + " (step : j2 : N : 1) is_Order_Pending => false"
+                        + " (step : j2 : N : 1) is_Order_Fully_Pending => false"
+                        //+ " (step : j2 : N : 1) is_Order_Pending => false"
                          ;
                
                write_Log(dpath_Log , fname_Log_For_Session
@@ -385,10 +403,11 @@ int start()
                  }//if(j3_b == true)//dp_2__All_True
                
               
-           }//if(retVal_b == true)//is_Order_Pending
+           //}//if(retVal_i_2 == true)//is_Order_Pending
+           }//if(retVal_i_2 == true)//is_Order_Fully_Pending
       
      }
-   else//if(result_b == true)//_is_NewBar
+   else//if(result_b_global == true)//_is_NewBar
     {
          /********************************
             step : j1 : N
@@ -404,7 +423,7 @@ int start()
          write_Log(dpath_Log , fname_Log_For_Session
                , __FILE__ , __LINE__ , txt_EA_4);     
 
-     }//if(result_b == true)//_is_NewBar
+     }//if(result_b_global == true)//_is_NewBar
 
    //debug
    //_20200331_173735:tmp
@@ -926,13 +945,13 @@ int init()
 
    //test
    //_20200403_155202:test
-   result_b = is_Order_Pending(flg_OrderOpened);
+   result_i_global = is_Order_Pending();
    
    //debug
    //Print("[", __FILE__, ":",__LINE__,"] is_Order_Pending => ", result);
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] is_Order_Pending => " + (string) result_b;
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] is_Order_Pending => " + (string) result_i_global;
    
    Print(txt_EA_4);
 
@@ -957,10 +976,10 @@ int init()
    //setup();
 
    //_20200409_150058:tmp
-   result_b = _is_NewBar();
+   result_b_global = _is_NewBar();
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b;
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b_global;
    
    //debug
    Print(txt_EA_4);
