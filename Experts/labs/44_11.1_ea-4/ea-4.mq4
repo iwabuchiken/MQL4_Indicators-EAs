@@ -64,7 +64,12 @@ extern string Sym_Set   = "AUDJPY";
 //+------------------------------------------------------------------+
 //| vars                                               |
 //+------------------------------------------------------------------+
-string PGName = "abc";     //
+string PGName = "file=ea-4:dp=dp_2__All_True"
+            + ":StopLoss=" + (string) StopLoss
+            + ":TakeProfit=" + (string) TakeProfit
+            + ":TrailingStop=" + (string) TrailingStop
+            ;     //
+//string PGName = "abc";     //
 
 //string txt_Msg;
 
@@ -243,17 +248,18 @@ int start()
             step : j2
                order pending ?
          ********************************/
-         int retVal_i_2 = is_Order_Pending();
+         bool retVal_b = is_Order_Pending();
+         //int retVal_b = is_Order_Pending();
       
          //debug
-         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j2) retVal_i_2 (is_Order_Pending) => "
-                   + (string) retVal_i_2;
+         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j2) retVal_b (is_Order_Pending) => "
+                   + (string) retVal_b;
          
          write_Log(dpath_Log , fname_Log_For_Session
                , __FILE__ , __LINE__ , txt_EA_4);
          
          //_20200410_154418:tmp
-         if(retVal_i_2 == true)//is_Order_Pending
+         if(retVal_b == true)//is_Order_Pending
            {
                /********************************
                   step : j2 : Y
@@ -287,7 +293,7 @@ int start()
                //continue;
             
            }
-         else//if(retVal_i_2 == true)//is_Order_Pending
+         else//if(retVal_b == true)//is_Order_Pending
           {
                /********************************
                   step : j2 : N
@@ -379,7 +385,7 @@ int start()
                  }//if(j3_b == true)//dp_2__All_True
                
               
-           }//if(retVal_i_2 == true)//is_Order_Pending
+           }//if(retVal_b == true)//is_Order_Pending
       
      }
    else//if(result_b == true)//_is_NewBar
@@ -906,7 +912,7 @@ int init()
 {
 
    //debug
-   Print("[", __FILE__, ":",__LINE__,"] init... ", PGName);
+   Print("[", __FILE__, ":",__LINE__,"] init... : PGName = ", PGName);
 
    //debug
    txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] init ==> comp : " + PGName;
