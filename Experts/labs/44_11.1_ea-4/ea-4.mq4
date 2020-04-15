@@ -53,17 +53,15 @@ extern string Sym_Set   = "AUDJPY";
 
 //+------------------------------------------------------------------+
 //| funcs (external)
-/*
-   //is_Order_Pending()         libfx_tester-1.mqh
-   int take_Position__Buy()   lib_ea_2.mqh
 
-*/
 /***************************
    <list of funcs located in external files>
    2019/12/18 16:46:38
    
    is_Order_Pending  lib_ea_2.mqh
    judge_1           lib_ea_2.mqh
+   get_BB_Loc_Num    lib_ea_2.mqh
+   take_Position__Buy
    
    dp_2__All_True    libfx_dp_1.mqh
 
@@ -76,9 +74,13 @@ extern string Sym_Set   = "AUDJPY";
 //| vars                                               |
 //+------------------------------------------------------------------+
 string PGName = "file=ea-4:dp=dp_2__All_True"
+            + "\n"
             + ":StopLoss=" + (string) StopLoss
+            + "\n"
             + ":TakeProfit=" + (string) TakeProfit
+            + "\n"
             + ":TrailingStop=" + (string) TrailingStop
+            + "\n"
             ;     //
 //string PGName = "abc";     //
 
@@ -166,6 +168,10 @@ int start()
       count : ticks
    ********************************/
    cntOf_Ticks += 1;
+
+   //test
+   return 0;
+
 
    /*
    //debug
@@ -934,8 +940,10 @@ int init()
    Print("[", __FILE__, ":",__LINE__,"] init... : PGName = ", PGName);
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] init ==> comp : " + PGName;
-   
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] "
+               + "\n"
+               + "init ==> comp : " + PGName;
+
    Print(txt_EA_4);
 
    //debug
@@ -951,15 +959,16 @@ int init()
    //Print("[", __FILE__, ":",__LINE__,"] is_Order_Pending => ", result);
 
    //debug
+   //txt_EA_4 += "[" + __FILE__ + ":" + (string) __LINE__ + "] is_Order_Pending => " + (string) result_i_global;
    txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] is_Order_Pending => " + (string) result_i_global;
-   
+  
    Print(txt_EA_4);
 
    //debug
    write_Log(
          dpath_Log , fname_Log_For_Session
          , __FILE__ , __LINE__ , txt_EA_4);
-   
+
    //_20200331_173857:tmp
    // basic data
    //show_BasicData();
@@ -979,7 +988,29 @@ int init()
    result_b_global = _is_NewBar();
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b_global;
+   //txt_EA_4 += "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b_global;
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] "
+            //+ "\n"
+            + "_is_NewBar => " + (string) result_b_global
+            + "\n"
+   ;
+   
+   /*******************
+      step : X
+         tests : get_BB_Loc_Num
+   *******************/   
+   int index = 0;
+   
+   int num_BB_Area = get_BB_Loc_Num(index);
+
+   //debug
+   txt_EA_4 += "[" + __FILE__ + ":" + (string) __LINE__ + "] num_BB_Area => "
+                + (string) num_BB_Area
+                + " ("
+                + "index = " + (string) index
+                + ")"
+                ;
+
    
    //debug
    Print(txt_EA_4);
