@@ -62,6 +62,7 @@ extern string Sym_Set   = "AUDJPY";
    judge_1           lib_ea_2.mqh
    get_BB_Loc_Num    lib_ea_2.mqh
    take_Position__Buy
+   get_BB_Loc_Nums
    
    dp_2__All_True    libfx_dp_1.mqh
 
@@ -1018,11 +1019,49 @@ int init()
    write_Log(dpath_Log , fname_Log_For_Session
          , __FILE__ , __LINE__ , txt_EA_4);
 
+   //_20200417_161938:tmp
+   int   lenOf_Bars      = 5;
+   int   num_Start_Index = 0;
+   float lo_BB_Loc_Nums[];
+   
+   get_BB_Loc_Nums(lenOf_Bars, num_Start_Index, lo_BB_Loc_Nums);
+
+   //debug
+   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] get_BB_Loc_Nums";
+   txt_EA_4 += "\n";
+   
+   for(int i = 0; i < lenOf_Bars; i++)
+     {
+         // get val
+         //debug
+         txt_EA_4 += "lo_BB_Loc_Nums[" + (string) i + "]"
+                  + "\t"
+                  + (string) lo_BB_Loc_Nums[i]
+                  + "\n"
+             ;
+      
+     }//for(int i=0; i < lenOf_Bars; i++)
+
+   write_Log(dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);
+   
    /*******************
       step : 2
          data file : write : header
    *******************/
    //setup_Data_File();
+
+   //debug
+   txt_EA_4 = StringFormat(
+            "[%s:%d] init() ==> exiting..."
+            , __FILE__
+            , __LINE__
+            
+            );
+   txt_EA_4 += "\n";
+
+   write_Log(dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);   
 
    return(0);
 
