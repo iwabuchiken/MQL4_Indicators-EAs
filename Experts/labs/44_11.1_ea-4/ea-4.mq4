@@ -113,6 +113,9 @@ extern double   TRAILING_LEVEL_TAKE = 100.0;
 
 int      valOf_Threshold_Trailing = 40;   // 40 x Points (= 4 pips)
 
+// for : get_BB_Loc_Nums
+int lenOf_Bars__Get_BB_Loc_Nums  = 6;
+
 //+------------------------------------------------------------------+
 //| vars : flags
 //+------------------------------------------------------------------+
@@ -126,8 +129,26 @@ int num_Ticket = 0;
 
 int cntOf_Ticks = 0;
 
-string fname_Log_For_Session = "[ea-4_tester-1].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").log";
+string strOf_Project_Name = "[ea-4_tester-1]";
+
+string strOf_Tlabel_Project = conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) ;
+
+string strOf_File_Extension__Log = "log";
+
+//string fname_Log_For_Session = "[ea-4_tester-1].(" 
+string fname_Log_For_Session = strOf_Project_Name
+                     + "." + "("
+                     + strOf_Tlabel_Project
+                     + ")" + "."
+                     + strOf_File_Extension__Log;
+                     //+ ").log";
 //string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
+
+string fname_Log_For_Bar_Data = strOf_Project_Name
+                     + "." + "("
+                     + "bar-data"
+                     + ")" + "."
+                     + strOf_File_Extension__Log;
 
 //_20190829_110901:tmp
 string fname_Log_DAT_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
@@ -941,7 +962,11 @@ int init()
    Print("[", __FILE__, ":",__LINE__,"] init... : PGName = ", PGName);
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] "
+   txt_EA_4 = StringFormat("[%s:%d]\nthie file\t%s\n", __FILE__, __LINE__, fname_Log_For_Session);
+   
+   txt_EA_4 += "[" + __FILE__ + ":" + (string) __LINE__ + "] "
+               + "\n"
+               + "init... : PGName = " + PGName
                + "\n"
                + "init ==> comp : " + PGName;
 
@@ -1020,11 +1045,27 @@ int init()
          , __FILE__ , __LINE__ , txt_EA_4);
 
    //_20200417_161938:tmp
-   int   lenOf_Bars      = 5;
+   //int   lenOf_Bars      = 5;
+   int   lenOf_Bars      = lenOf_Bars__Get_BB_Loc_Nums;
    int   num_Start_Index = 0;
-   float lo_BB_Loc_Nums[];
+   float _lo_Price_Close[];
+   int      lo_BB_Loc_Nums[];
+   string   lo_DateTime[];
    
-   get_BB_Loc_Nums(lenOf_Bars, num_Start_Index, lo_BB_Loc_Nums);
+      /*
+      void get_BB_Loc_Nums(
+         int _lenOf_Bars
+         , int _num_Start_Index
+         , float &_lo_Price_Close[]
+         , int &_lo_BB_Loc_Nums[]) {
+         }*/
+   //get_BB_Loc_Nums(lenOf_Bars, num_Start_Index, lo_BB_Loc_Nums);
+   get_BB_Loc_Nums(
+               lenOf_Bars, num_Start_Index
+               , _lo_Price_Close
+               , lo_BB_Loc_Nums
+               , lo_DateTime
+               );
 
    //debug
    txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] get_BB_Loc_Nums";
@@ -1047,9 +1088,63 @@ int init()
    
    /*******************
       step : 2
-         data file : write : header
+         bar data file : write
+            ==> header
+   *******************/
+   /*******************
+      step : 2.1
+         header
+   *******************/
+   string txt_Tmp;
+   
+   txt_Tmp = StringFormat("this file\t%s\n", fname_Log_For_Bar_Data);
+   
+   txt_Tmp += "\tdatetime current"
+            + "\tBB.-5\tBB.-4\tBB.-3\tBB.-2\tBB.-1\n";
+   
+   txt_Tmp += "\t";
+
+   write_Log(dpath_Log , fname_Log_For_Bar_Data
+         , __FILE__ , __LINE__ , txt_Tmp);   
+
+   /*******************
+      step : 2.2
+         body
    *******************/
    //setup_Data_File();
+   txt_Tmp = "\t" + lo_DateTime[0];
+   txt_Tmp += "\t";
+   
+   int j;
+   
+   //for(j = 1; j < lenOf_Bars; j ++)
+   //for(j = 0; j < lenOf_Bars - 1; j ++)   //=> working
+   //for(j = lenOf_Bars - 2; j > 0; j --)
+   for(j = lenOf_Bars - 1; j > 0; j --)
+   //for(j = lenOf_Bars; j > 0; j --)
+     {
+         // get val
+         //debug
+         txt_Tmp += (string) lo_BB_Loc_Nums[j]
+                  
+                  + "(" 
+                  + "j = " + (string) j
+                  + ", "
+                  + lo_DateTime[j]
+                  + ")"
+                  
+                  + "\t"
+             ;
+      
+     }//for(int i=0; i < lenOf_Bars; i++)
+   
+   // last index ==> not to add when reversing the data in for-loop
+   //                ==> index 0 designates to the current bar, which has not yet got closed.
+   //txt_Tmp += (string) lo_BB_Loc_Nums[j];
+   //txt_Tmp += "\n";
+
+   write_Log(dpath_Log , fname_Log_For_Bar_Data
+         , __FILE__ , __LINE__ , txt_Tmp);   
 
    //debug
    txt_EA_4 = StringFormat(
@@ -1059,6 +1154,7 @@ int init()
             
             );
    txt_EA_4 += "\n";
+
 
    write_Log(dpath_Log , fname_Log_For_Session
          , __FILE__ , __LINE__ , txt_EA_4);   
