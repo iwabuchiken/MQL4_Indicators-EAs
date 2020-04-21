@@ -224,8 +224,6 @@ int start()
          , __FILE__ , __LINE__ , txt_EA_4);
    
 
-   //test
-   return 0;
 
    /********************************
       step : A : 0
@@ -283,6 +281,53 @@ int start()
          
          write_Log(dpath_Log , fname_Log_For_Session
                , __FILE__ , __LINE__ , txt_EA_4);
+
+         //test:20200421_092747
+         int   lenOf_Bars      = lenOf_Bars__Get_BB_Loc_Nums;
+         int   num_Start_Index = 0;
+         float _lo_Price_Close[];
+         int      lo_BB_Loc_Nums[];
+         string   lo_DateTime[];
+         
+         int lo_Up_Down[];
+         
+         bool     flg_Write_Header = false;
+         //bool     flg_Write_Header = true;
+         
+            //_20200420_171944:tmp
+            /*
+            void op_Get_BB_Loc_Nums(
+            
+                  int   _lenOf_Bars
+                  , int _num_Start_Index
+                  , float  &_lo_Price_Close[]
+                  , int &_lo_BB_Loc_Nums[]
+                  , string &_lo_DateTime[]
+                  , string _dpath_Log
+                  , string _fname_Log_For_Bar_Data
+                  , bool   _flg_Write_Header
+                  
+                  ) {
+            */
+         
+         op_Get_BB_Loc_Nums(
+                        lenOf_Bars, num_Start_Index
+                        , _lo_Price_Close
+                        , lo_BB_Loc_Nums
+                        , lo_DateTime
+                        
+                        , dpath_Log
+                        , fname_Log_For_Bar_Data
+                        
+                        , flg_Write_Header
+                        
+                        , lo_Up_Down
+                        
+                     );
+         
+         
+         //test:20200421_092229
+         return 0;
 
          /********************************
             step : j2
@@ -1066,6 +1111,8 @@ int init()
    int      lo_BB_Loc_Nums[];
    string   lo_DateTime[];
    
+   int lo_Up_Down[];
+   
    //bool     flg_Write_Header = false;
    bool     flg_Write_Header = true;
    
@@ -1096,104 +1143,9 @@ int init()
                   
                   , flg_Write_Header
                   
+                  , lo_Up_Down
+                  
                );
-   
-   
-   
-      /*
-      void get_BB_Loc_Nums(
-         int _lenOf_Bars
-         , int _num_Start_Index
-         , float &_lo_Price_Close[]
-         , int &_lo_BB_Loc_Nums[]) {
-         }*/
-
-//   //get_BB_Loc_Nums(lenOf_Bars, num_Start_Index, lo_BB_Loc_Nums);
-//   get_BB_Loc_Nums(
-//               lenOf_Bars, num_Start_Index
-//               , _lo_Price_Close
-//               , lo_BB_Loc_Nums
-//               , lo_DateTime
-//               );
-
-//   //debug
-//   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] get_BB_Loc_Nums";
-//   txt_EA_4 += "\n";
-//   
-//   for(int i = 0; i < lenOf_Bars; i++)
-//     {
-//         // get val
-//         //debug
-//         txt_EA_4 += "lo_BB_Loc_Nums[" + (string) i + "]"
-//                  + "\t"
-//                  + (string) lo_BB_Loc_Nums[i]
-//                  + "\n"
-//             ;
-//      
-//     }//for(int i=0; i < lenOf_Bars; i++)
-
-//   write_Log(dpath_Log , fname_Log_For_Session
-//         , __FILE__ , __LINE__ , txt_EA_4);
-//   
-//   /*******************
-//      step : 2
-//         bar data file : write
-//            ==> header
-//   *******************/
-//   /*******************
-//      step : 2.1
-//         header
-//   *******************/
-//   string txt_Tmp;
-//   
-//   txt_Tmp = StringFormat("this file\t%s\n", fname_Log_For_Bar_Data);
-//   
-//   txt_Tmp += "\tdatetime current"
-//            + "\tBB.-5\tBB.-4\tBB.-3\tBB.-2\tBB.-1\n";
-//   
-//   txt_Tmp += "\t";
-
-//   write_Log(dpath_Log , fname_Log_For_Bar_Data
-//         , __FILE__ , __LINE__ , txt_Tmp);   
-
-//   /*******************
-//      step : 2.2
-//         body
-//   *******************/
-//   //setup_Data_File();
-//   txt_Tmp = "\t" + lo_DateTime[0];
-//   txt_Tmp += "\t";
-//   
-//   int j;
-//   
-//   //for(j = 1; j < lenOf_Bars; j ++)
-//   //for(j = 0; j < lenOf_Bars - 1; j ++)   //=> working
-//   //for(j = lenOf_Bars - 2; j > 0; j --)
-//   for(j = lenOf_Bars - 1; j > 0; j --)
-//   //for(j = lenOf_Bars; j > 0; j --)
-//     {
-//         // get val
-//         //debug
-//         txt_Tmp += (string) lo_BB_Loc_Nums[j]
-//                  
-//                  + "(" 
-//                  + "j = " + (string) j
-//                  + ", "
-//                  + lo_DateTime[j]
-//                  + ")"
-//                  
-//                  + "\t"
-//             ;
-//      
-//     }//for(int i=0; i < lenOf_Bars; i++)
-//   
-//   // last index ==> not to add when reversing the data in for-loop
-//   //                ==> index 0 designates to the current bar, which has not yet got closed.
-//   //txt_Tmp += (string) lo_BB_Loc_Nums[j];
-//   //txt_Tmp += "\n";
-
-//   write_Log(dpath_Log , fname_Log_For_Bar_Data
-//         , __FILE__ , __LINE__ , txt_Tmp);   
 
    //debug
    txt_EA_4 = StringFormat(
