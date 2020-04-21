@@ -291,6 +291,9 @@ int start()
          
          int lo_Up_Down[];
          
+         //_20200421_171257:tmp
+         float lo_WidthOf_Up_Down[];
+         
          bool     flg_Write_Header = false;
          //bool     flg_Write_Header = true;
          
@@ -322,6 +325,7 @@ int start()
                         , flg_Write_Header
                         
                         , lo_Up_Down
+                        , lo_WidthOf_Up_Down
                         
                      );
          
@@ -1113,6 +1117,10 @@ int init()
    
    int lo_Up_Down[];
    
+   float lo_WidthOf_Up_Down[];
+   
+   //_20200421_172325:fix
+   
    //bool     flg_Write_Header = false;
    bool     flg_Write_Header = true;
    
@@ -1144,6 +1152,7 @@ int init()
                   , flg_Write_Header
                   
                   , lo_Up_Down
+                  , lo_WidthOf_Up_Down
                   
                );
 
