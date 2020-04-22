@@ -63,6 +63,7 @@ extern string Sym_Set   = "AUDJPY";
    get_BB_Loc_Num    lib_ea_2.mqh
    take_Position__Buy
    get_BB_Loc_Nums
+   op_Get_BB_Loc_Nums
    
    dp_2__All_True    libfx_dp_1.mqh
 
@@ -313,6 +314,10 @@ int start()
                   ) {
             */
          
+         //_20200422_125831:tmp
+         string symbol = Symbol();
+         string period = (string) Period();
+
          op_Get_BB_Loc_Nums(
                         lenOf_Bars, num_Start_Index
                         , _lo_Price_Close
@@ -326,6 +331,8 @@ int start()
                         
                         , lo_Up_Down
                         , lo_WidthOf_Up_Down
+                        
+                        , symbol, period
                         
                      );
          
@@ -1140,6 +1147,10 @@ int init()
             ) {
       */
    
+   //_20200422_125607:tmp
+   string symbol = Symbol();
+   string period = (string) Period();
+   
    op_Get_BB_Loc_Nums(
                   lenOf_Bars, num_Start_Index
                   , _lo_Price_Close
@@ -1153,6 +1164,8 @@ int init()
                   
                   , lo_Up_Down
                   , lo_WidthOf_Up_Down
+                     
+                  , symbol, period
                   
                );
 
