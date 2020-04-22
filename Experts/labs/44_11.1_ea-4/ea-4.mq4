@@ -64,6 +64,7 @@ extern string Sym_Set   = "AUDJPY";
    take_Position__Buy
    get_BB_Loc_Nums
    op_Get_BB_Loc_Nums
+   get_Stats__Bar_Width
    
    dp_2__All_True    libfx_dp_1.mqh
 
@@ -146,10 +147,28 @@ string fname_Log_For_Session = strOf_Project_Name
 //string dpath_Log = "Logs"; // under the dir "C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\B9B5D4C0EA7B43E1F3A680F94F757B3D\MQL4\Files"
 
 string fname_Log_For_Bar_Data = strOf_Project_Name
+
+                     + "." + "("
+                     + strOf_Tlabel_Project
+                     + ")" + "."
+
                      + "." + "("
                      + "bar-data"
                      + ")" + "."
                      + strOf_File_Extension__Log;
+
+
+string fname_Log_For_Stats_Data = strOf_Project_Name
+                     + "."
+                     + "("
+                     + strOf_Tlabel_Project
+                     + ")"
+                     + "." 
+                     + "("
+                     + "stats-data"
+                     + ")" + "."
+                     + strOf_File_Extension__Log;
+
 
 //_20190829_110901:tmp
 string fname_Log_DAT_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
@@ -1168,6 +1187,31 @@ int init()
                   , symbol, period
                   
                );
+
+
+   /*******************
+      step : X
+         tests : get_Stats__Bar_Width
+   *******************/   
+   //_20200422_132555:fix
+   //debug
+   txt_EA_4 = StringFormat(
+            "[%s:%d] calling ==> get_Stats__Bar_Width : file = %s"
+            , __FILE__, __LINE__, fname_Log_For_Stats_Data);
+   txt_EA_4 += "\n";
+
+   write_Log(dpath_Log , fname_Log_For_Session
+         , __FILE__ , __LINE__ , txt_EA_4);   
+
+
+   get_Stats__Bar_Width(
+         
+      dpath_Log
+      , fname_Log_For_Session
+      , fname_Log_For_Stats_Data
+
+   
+   );
 
    //debug
    txt_EA_4 = StringFormat(
