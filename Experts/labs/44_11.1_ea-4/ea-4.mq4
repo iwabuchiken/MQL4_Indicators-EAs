@@ -150,9 +150,9 @@ string fname_Log_For_Bar_Data = strOf_Project_Name
 
                      + "." + "("
                      + strOf_Tlabel_Project
-                     + ")" + "."
-
-                     + "." + "("
+                     + ")" 
+                     + "."
+                     + "("
                      + "bar-data"
                      + ")" + "."
                      + strOf_File_Extension__Log;
