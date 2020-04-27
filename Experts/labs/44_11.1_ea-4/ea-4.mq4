@@ -65,6 +65,7 @@ extern string Sym_Set   = "AUDJPY";
    get_BB_Loc_Nums
    op_Get_BB_Loc_Nums
    get_Stats__Bar_Width
+   is_Order_Fully_Pending
    
    dp_2__All_True    libfx_dp_1.mqh
 
@@ -333,6 +334,7 @@ int start()
                   ) {
             */
          
+         /*
          //_20200422_125831:tmp
          string symbol = Symbol();
          string period = (string) Period();
@@ -354,17 +356,16 @@ int start()
                         , symbol, period
                         
                      );
+         */
          
-         
-         //test:20200421_092229
-         return 0;
 
          /********************************
             step : j2
                order pending ?
          ********************************/
          //_20200413_214758:tmp
-         int maxOf_NumOf_Pending_Orders = 40;
+         //int maxOf_NumOf_Pending_Orders = 40;
+         int maxOf_NumOf_Pending_Orders = 3;
          
          bool retVal_b_2 = is_Order_Fully_Pending(maxOf_NumOf_Pending_Orders);
          //int retVal_i_2 = is_Order_Pending();
@@ -374,7 +375,12 @@ int start()
          //          + (string) retVal_i_2;
          txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ 
                   + "] (step : j2) retVal_b_2 (is_Order_Fully_Pending) => "
-                   + (string) retVal_b_2;
+                   + (string) retVal_b_2
+                   + "(" 
+                   + "maxOf_NumOf_Pending_Orders = "
+                   + (string) maxOf_NumOf_Pending_Orders 
+                   + ")"
+                   ;
          
          
          write_Log(dpath_Log , fname_Log_For_Session
@@ -398,6 +404,7 @@ int start()
                         + " (step : j2 : Y : 1) is_Order_Fully_Pending => true"
                         + " (is_Order_Fully_Pending = "
                         + (string) retVal_b_2
+                        + ")"
                         //+ " (step : j2 : Y : 1) is_Order_Pending => true"
                         //+ " (is_Order_Pending = "
                         //+ (string) retVal_i_2
@@ -442,6 +449,10 @@ int start()
                write_Log(dpath_Log , fname_Log_For_Session
                      , __FILE__ , __LINE__ , txt_EA_4);
 
+               //test:20200421_092229
+               //_20200427_085047:tmp
+               
+
                /********************************
                   step : j3
                      buy : condition filled ?
@@ -473,6 +484,9 @@ int start()
                      
                      write_Log(dpath_Log , fname_Log_For_Session
                            , __FILE__ , __LINE__ , txt_EA_4);
+                     
+                     //_20200427_085700:tmp
+                     
 
                      /********************************
                         step : j3 : Y : 2
@@ -492,6 +506,9 @@ int start()
                      
                      write_Log(dpath_Log , fname_Log_For_Session
                            , __FILE__ , __LINE__ , txt_EA_4);                     
+                     
+                      //_20200427_090302:tmp
+                     return 0;
                      
                  }
                else//if(j3_b == true)//dp_2__All_True
@@ -1093,7 +1110,8 @@ int init()
          setup
    *******************/   
    // setup
-   //setup();
+   //_20200427_091446:tmp
+   setup();
 
    //_20200409_150058:tmp
    result_b_global = _is_NewBar();
