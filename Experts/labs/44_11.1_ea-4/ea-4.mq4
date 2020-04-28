@@ -77,7 +77,9 @@ extern string Sym_Set   = "AUDJPY";
 //+------------------------------------------------------------------+
 //| vars                                               |
 //+------------------------------------------------------------------+
-string PGName = "file=ea-4:dp=dp_2__All_True"
+string nameOf_Detect_Pattern = "dp_2__All_True";
+//string PGName = "file=ea-4:dp=dp_2__All_True"
+string PGName = "file=ea-4:dp=" + nameOf_Detect_Pattern
             + "\n"
             + ":StopLoss=" + (string) StopLoss
             + "\n"
@@ -167,6 +169,14 @@ string fname_Log_For_Stats_Data = strOf_Project_Name
                      + "." 
                      + "("
                      + "stats-data"
+                     + ")" + "."
+                     + strOf_File_Extension__Log;
+
+string fname_Log_For_Tickets_Data = strOf_Project_Name
+                     + "." + "("
+                     + strOf_Tlabel_Project
+                     + ")" + "." + "("
+                     + "tickets-data"
                      + ")" + "."
                      + strOf_File_Extension__Log;
 
@@ -506,6 +516,50 @@ int start()
                      
                      write_Log(dpath_Log , fname_Log_For_Session
                            , __FILE__ , __LINE__ , txt_EA_4);                     
+                     
+                     //_20200427_093423:next
+                     string _symbol = Symbol();
+                     string _period = (string) Period();
+                     
+                     string _nameOf_DetectPattern = nameOf_Detect_Pattern;
+                     
+                     int      _num_Ticket = result_i;
+                     string   _dpath_Log  = dpath_Log;
+                     string   _fname_Log_For_Ticket_Data = fname_Log_For_Tickets_Data;
+                     string   _fname_Log_For_Session     = fname_Log_For_Session;
+                     
+                     bool     _flg_Write_Meta_Data       = false;
+                     
+                           /*
+                              op_Post_Take_Position
+                                 int   _num_Ticket
+            
+                                 , string _dpath_Log
+                                 , string _fname_Log_For_Ticket_Data
+                                 , string _fname_Log_For_Session
+                                 
+                                 , string _symbol, string _period
+                                 , string _nameOf_DetectPattern
+                                 
+                                 , bool _flg_Write_Meta_Data
+                           */
+                     op_Post_Take_Position(
+                     
+                        _num_Ticket
+                        
+                        
+                        , _dpath_Log
+                        , _fname_Log_For_Ticket_Data
+                        , _fname_Log_For_Session
+                        
+                        , _symbol, _period
+                        , _nameOf_DetectPattern
+                        
+                        , _flg_Write_Meta_Data
+                     
+                     );
+                     
+                     
                      
                       //_20200427_090302:tmp
                      return 0;
