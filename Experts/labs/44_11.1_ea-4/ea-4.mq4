@@ -529,6 +529,7 @@ int start()
                      string   _fname_Log_For_Session     = fname_Log_For_Session;
                      
                      bool     _flg_Write_Meta_Data       = false;
+                     bool     _flg_Write_Body_Data       = true;
                      
                            /*
                               op_Post_Take_Position
@@ -556,6 +557,7 @@ int start()
                         , _nameOf_DetectPattern
                         
                         , _flg_Write_Meta_Data
+                        , _flg_Write_Body_Data
                      
                      );
                      
@@ -1114,6 +1116,10 @@ void setup_Data_File() {
 int init()
 {
 
+   /*******************
+      step : 1
+         log
+   *******************/   
    //debug
    Print("[", __FILE__, ":",__LINE__,"] init... : PGName = ", PGName);
 
@@ -1133,6 +1139,22 @@ int init()
          dpath_Log , fname_Log_For_Session
          , __FILE__ , __LINE__ , txt_EA_4);
 
+   /*******************
+      step : 2
+         setup
+   *******************/   
+   // setup
+   //_20200427_091446:tmp
+   setup();
+
+   /*******************
+      step : 3
+         cheques
+   *******************/   
+   /*******************
+      step : 3.1
+         cheque : order ==> pending ?
+   *******************/   
    //test
    //_20200403_155202:test
    result_i_global = is_Order_Pending();
@@ -1160,12 +1182,9 @@ int init()
    //show_OrderData();
    
    /*******************
-      step : 1
-         setup
+      step : 3.2
+         new var
    *******************/   
-   // setup
-   //_20200427_091446:tmp
-   setup();
 
    //_20200409_150058:tmp
    result_b_global = _is_NewBar();
@@ -1181,6 +1200,10 @@ int init()
    /*******************
       step : X
          tests : get_BB_Loc_Num
+   *******************/   
+   /*******************
+      step : 3.3
+         BB loc num
    *******************/   
    int index = 0;
    
@@ -1211,7 +1234,7 @@ int init()
    int   num_Start_Index = 0;
    float _lo_Price_Close[];
    int      lo_BB_Loc_Nums[];
-   string   lo_DateTime[];
+   //string   lo_DateTime[];
    
    int lo_Up_Down[];
    
@@ -1242,6 +1265,7 @@ int init()
    string symbol = Symbol();
    string period = (string) Period();
    
+   /*
    op_Get_BB_Loc_Nums(
                   lenOf_Bars, num_Start_Index
                   , _lo_Price_Close
@@ -1259,11 +1283,15 @@ int init()
                   , symbol, period
                   
                );
-
+   */
 
    /*******************
       step : X
          tests : get_Stats__Bar_Width
+   *******************/   
+   /*******************
+      step : 3.4
+         stats data
    *******************/   
    //_20200422_132555:fix
    //debug
@@ -1285,6 +1313,46 @@ int init()
    
    );
 
+   /*******************
+      step : 4
+         preps
+   *******************/   
+   /*******************
+      step : 4 : 1
+         ticket log file : header
+   *******************/
+   //_20200429_165426:tmp
+   string _symbol = Symbol();
+   string _period = (string) Period();
+   string _nameOf_DetectPattern = nameOf_Detect_Pattern;
+   
+   int      _num_Ticket = -1;
+   
+   string   _dpath_Log  = dpath_Log;
+   string   _fname_Log_For_Ticket_Data = fname_Log_For_Tickets_Data;
+   string   _fname_Log_For_Session     = fname_Log_For_Session;
+   
+   bool     _flg_Write_Meta_Data       = true;
+   bool     _flg_Write_Body_Data       = false;
+   
+   op_Post_Take_Position(
+   
+      _num_Ticket
+            
+      , _dpath_Log
+      , _fname_Log_For_Ticket_Data, _fname_Log_For_Session
+      
+      , _symbol, _period
+      , _nameOf_DetectPattern
+      
+      , _flg_Write_Meta_Data, _flg_Write_Body_Data
+   
+   );   
+   
+   /*******************
+      step : X
+         closing
+   *******************/   
    //debug
    txt_EA_4 = StringFormat(
             "[%s:%d] init() ==> exiting..."
