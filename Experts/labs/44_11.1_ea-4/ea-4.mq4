@@ -28,8 +28,8 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-extern int Time_period        = PERIOD_M1;
-//extern int Time_period        = PERIOD_M5;
+//extern int Time_period        = PERIOD_M1;
+extern int Time_period        = PERIOD_M5;
 //extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
@@ -1234,7 +1234,7 @@ int init()
    int   num_Start_Index = 0;
    float _lo_Price_Close[];
    int      lo_BB_Loc_Nums[];
-   //string   lo_DateTime[];
+   string   lo_DateTime[];
    
    int lo_Up_Down[];
    
@@ -1264,8 +1264,8 @@ int init()
    //_20200422_125607:tmp
    string symbol = Symbol();
    string period = (string) Period();
+   //_20200502_134506:tmp
    
-   /*
    op_Get_BB_Loc_Nums(
                   lenOf_Bars, num_Start_Index
                   , _lo_Price_Close
@@ -1283,7 +1283,7 @@ int init()
                   , symbol, period
                   
                );
-   */
+   
 
    /*******************
       step : X
@@ -1348,6 +1348,8 @@ int init()
       , _flg_Write_Meta_Data, _flg_Write_Body_Data
    
    );   
+   
+   //_20200502_141021:next
    
    /*******************
       step : X

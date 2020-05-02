@@ -1,0 +1,40 @@
+Target file = lib_ea_2.mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include
+Entries = 0
+Created at = 2020/05/02 13:12:20
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/func-list.(lib_ea_2.mqh).20200502_131220.txt
+
+/*
+2020/05/02 13:12:20
+func-list.(lib_ea_2.mqh).20200502_131220.txt
+==========================================
+<funcs>
+
+1	int  OrderSend(
+2	int  OrderSend(
+3	int get_BB_Loc_Num(int index) {
+4	void get_BB_Loc_Nums(
+5	string get_LO_Width_Zone_Nums(
+6	void get_Stats__Bar_Width(
+7	bool is_Order_Fully_Pending(int _maxOf_NumOf_Pending_Orders) {
+8	int is_Order_Pending() {
+9	bool judge_1(string typeOf_Pattern_s) {
+10	void op_Get_BB_Loc_Nums(
+11	void op_Post_Take_Position(
+12	int take_Position__Buy(double _minstoplevel, double _mintakelevel) {
+13	int take_Position__Sell(double _minstoplevel, double _mintakelevel) {
+
+==========================================
+==========================================
+<vars>
+
+1	bool SWITHCH_DEBUG_lib_ea_2   = true;
+
+==========================================
+==========================================
+<externs, inputs>
+
+
+==========================================
+*/
