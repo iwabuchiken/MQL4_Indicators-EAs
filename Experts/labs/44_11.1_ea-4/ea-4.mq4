@@ -544,6 +544,7 @@ int start()
                                  
                                  , bool _flg_Write_Meta_Data
                            */
+                     //_20200503_152250:next
                      op_Post_Take_Position(
                      
                         _num_Ticket
@@ -1113,6 +1114,73 @@ void setup_Data_File() {
 }//setup_Data_File()
 
 //func
+void init__Test_Width_Level()
+{
+   int lo_Thresholds_Indexes[8] = {-4, -3, -2, -1, 1, 2, 3, 4};
+
+   //20200503_151441:tmp
+   float lo_Thresholds[7] = {
+                    (float) -1, (float) -1, (float) -1
+                  , (float) -1, (float) -1, (float) -1
+                  , (float) -1
+            };
+   
+   int lenOf_LO_Thresholds = 7;
+   
+   for(int i = 0; i < lenOf_LO_Thresholds; i++) {
+      
+      if(Period() == 1)
+        {
+        
+            lo_Thresholds[i] = cons_LO_Threshold_Bar_Width_Level_A_J_M1[i];
+            
+        }
+      else if(Period() == 5)
+        {
+            lo_Thresholds[i] = cons_LO_Threshold_Bar_Width_Level_A_J_M1[i];     
+        }
+   
+   }//for(int i = 0; i < lenOf_LO_Thresholds; i++) {
+   
+   int idxOf_Target_Bar = 1;
+   
+   string txt_Tmp = "";
+   
+   int maxOf_For_Loop = 6;
+   
+   // loop
+   //for(int i = 1; i < 5; i++)
+   for(int i = 1; i <= maxOf_For_Loop; i++)
+     {
+         // level val
+         int num_Width_Level = 
+                  get_Bar_Width_Level_Nums(
+                           i
+                           , lo_Thresholds
+                           , lo_Thresholds_Indexes);
+         
+         // build : message
+         txt_Tmp += "\n";
+         
+         txt_Tmp += StringFormat(
+         
+               "i = %d / width level = %d"
+               , i
+               , num_Width_Level
+         );
+         
+         txt_Tmp += "\n";
+         
+     }//for(int i = 1; i < 5; i++)
+   
+   // log
+   write_Log(dpath_Log , fname_Log_For_Bar_Data
+         , __FILE__ , __LINE__ , txt_Tmp);   
+
+      
+}//void init__Test_Width_Level()
+
+//func
 int init()
 {
 
@@ -1266,6 +1334,7 @@ int init()
    string period = (string) Period();
    //_20200502_134506:tmp
    
+   
    op_Get_BB_Loc_Nums(
                   lenOf_Bars, num_Start_Index
                   , _lo_Price_Close
@@ -1350,7 +1419,14 @@ int init()
    );   
    
    //_20200502_141021:next
-   
+   /*******************
+      step : 5
+         test : get_Bar_Width_Level_Nums
+   *******************/   
+   //_20200503_151135:tmp
+   init__Test_Width_Level();
+
+
    /*******************
       step : X
          closing
