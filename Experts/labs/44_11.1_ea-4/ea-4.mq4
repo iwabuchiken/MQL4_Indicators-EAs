@@ -28,8 +28,8 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-//extern int Time_period        = PERIOD_M1;
-extern int Time_period        = PERIOD_M5;
+extern int Time_period        = PERIOD_M1;
+//extern int Time_period        = PERIOD_M5;
 //extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
@@ -118,6 +118,11 @@ extern double   TRAILING_LEVEL_TAKE = 100.0;
 
 int      valOf_Threshold_Trailing = 40;   // 40 x Points (= 4 pips)
 
+//double minstoplevel    = 0.05;
+//double mintakelevel    = 0.10;
+double   valOf_MinstopLevel   = 0.05;
+double   valOf_Mintakelevel   = 0.10;
+
 // for : get_BB_Loc_Nums
 int lenOf_Bars__Get_BB_Loc_Nums  = 6;
 
@@ -177,6 +182,14 @@ string fname_Log_For_Tickets_Data = strOf_Project_Name
                      + strOf_Tlabel_Project
                      + ")" + "." + "("
                      + "tickets-data"
+                     + ")" + "."
+                     + strOf_File_Extension__Log;
+
+string fname_Log_For_Trailing_Data = strOf_Project_Name
+                     + "." + "("
+                     + strOf_Tlabel_Project
+                     + ")" + "." + "("
+                     + "trail-data"
                      + ")" + "."
                      + strOf_File_Extension__Log;
 
@@ -268,9 +281,10 @@ int start()
       step : A : 1
          trailing
    ********************************/
+   //_20200505_115049:tmp
    //_20190829_112152:next
    //_20190906_165225:caller
-   //trail_Orders();
+   trail_Orders();
 
    /********************************
       step : j1
@@ -1497,19 +1511,211 @@ void trail_Orders() {
    int numOf_Orders = OrdersTotal();
 
    //debug
-   if(SWITHCH_DEBUG_eap_2 == true)
-     {
+//   if(SWITHCH_DEBUG_eap_2 == true)
+     //{
+   // vars
+   MqlTick Latest_Price;
+   SymbolInfoTick(Symbol(), Latest_Price);
+   
+   
+   txt = "numOf_Orders ==> "
+         + (string) numOf_Orders
+   ;
+   
+   txt += "\n";
 
-         txt = "numOf_Orders ==> "
-               + (string) numOf_Orders
-         ;
-         
-         txt += "\n";
-         
-         Print("[", __FILE__, ":",__LINE__,"] ", txt);
+   /*******************
+      step : 3
+         modify
+   *******************/   
+   // ticket nums
+   //ref https://mql4tradingautomation.com/mql4-scan-open-orders/
+   //for( int i = 0 ; i < OrdersTotal() ; i++ ) {
+   for( int i = 0 ; i < numOf_Orders ; i++ ) {
+   
+      /*******************
+         step : 3 : 1
+            select : order
+      *******************/   
+      //We select the order of index i selecting by position and from the pool of market/pending trades
+      bool result_b = OrderSelect( i, SELECT_BY_POS, MODE_TRADES );
       
-     }//if(SWITHCH_DEBUG_eap_2 == true)
+      //If the pair of the order (OrderSymbol() is equal to the pair where the EA is running (Symbol()) then return true
+      //if( OrderSymbol() == Symbol() ) return(true);
+      
+      if(result_b == true)
+        {
 
+            /*******************
+               step : 3 : 2
+                  check
+            *******************/   
+            /*******************
+               step : 3 : 2.1
+                  get : data
+            *******************/   
+            //_20200505_121736:tmp
+            // get : ticket num
+            //txt += "ticket num\t" + (string) OrderTicket();
+            txt += StringFormat(
+                     "OrderTicket\t%d" + "\n"
+                     + "OrderOpenPrice\t%.03f" + "\n"
+                     
+                     + "OrderTakeProfit\t%.03f" + "\n"
+                     + "OrderStopLoss\t%.03f" + "\n"
+                     + "(TP) - (SL)\t%.03f" + "\n"
+                     
+                     + "Bid,latest\t%.03f" + "\n"
+                     + "(Bid,latest) - (Open)\t%.03f" + "\n"
+                     
+                     + "valOf_Threshold_Trailing * Point\t%.03f" + "\n"
+                     
+                     + "Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)\t%.03f" + "\n"
+                     
+                     + "(Bid) - (Trail threshold)\t%.03f" + "\n"
+                     
+                     + "\n"
+                     
+                     , (int) OrderTicket()
+                     , (double) OrderOpenPrice()
+                     
+                     , (double) OrderTakeProfit()
+                     , (double) OrderStopLoss()
+                     , (double) OrderTakeProfit() - (double) OrderStopLoss()
+                     
+                     , (double) Latest_Price.bid
+                     , (double) Latest_Price.bid - (double) OrderOpenPrice()
+                     
+                     , (double) valOf_Threshold_Trailing * Point
+                     , (double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point
+                     
+                     , (double) Latest_Price.bid -
+                                  ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)
+                     
+                     );
+            
+            txt += "\n";
+
+            /*******************
+               step : 3 : 2.2
+                  judge
+            *******************/   
+            /*******************
+               step : 3 : 2.2 : 1
+                  condition
+            *******************/   
+            // vars
+            double price_Curr_SL = (double) OrderStopLoss();
+            
+            
+            // condition
+            bool cond_OrderModify_1 = ((double) Latest_Price.bid -
+                       ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)) > 0;
+            
+            bool cond_OrderModify_2 = (
+            
+                 ((double) Latest_Price.bid - (double) valOf_MinstopLevel)
+                     > price_Curr_SL
+                     
+            );
+            
+            
+            /*******************
+               step : 3 : 2.2 : 1
+                  condition ==> filled ?
+            *******************/   
+            //if(cond_OrderModify == true)
+            if(cond_OrderModify_1 == true
+                  && cond_OrderModify_2 == true )
+              {
+                  
+                  
+                  // set : vals
+                  double price_New = (double) Latest_Price.bid;
+                  
+                  double price_New_TP = (double) price_New + (double) valOf_Mintakelevel;
+                  double price_New_SL = (double) price_New - (double) valOf_MinstopLevel;
+                  
+                  
+                  
+                  int   ticket_num = OrderTicket();
+
+                  // log
+                  txt += "modifying order for : " + (string) ticket_num;
+                  txt += "\n";
+                  
+                  
+                  
+                  bool result_OrderModify_b = OrderModify(
+                  
+                        ticket_num
+                        , price_New
+                        , price_New_SL
+                        , price_New_TP
+                        //, price_New - valOf_MinstopLevel
+                        //, price_New - valOf_Mintakelevel
+                        , 0
+                        , clrPink
+                  
+                  );
+                  
+                  txt += "OrderModify result ==> " + (string) result_OrderModify_b;
+                  
+                  if(result_OrderModify_b == false)
+                    {
+                        txt+= "\n";
+                        txt+= "error code : " + (string) GetLastError();
+                    }
+                  
+                  txt += "\n";
+              
+              }
+/*            else if(cond_OrderModify_1 == false
+                  && cond_OrderModify_2 == true)
+             {
+                  txt += "cond_1 ==> false : "
+                        + "((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SL";
+             }*/
+            else if(cond_OrderModify_1 == true
+                  && cond_OrderModify_2 == false)
+             {
+                  txt += "cond_2 ==> false : "
+                        + "((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SL";
+             }
+            else
+              {
+               
+               
+              }//if(cond_OrderModify == true)
+            
+        }    
+      else////if(result_b == true)
+        {
+            
+            txt += "OrderSelect ==> error : " + (string) GetLastError();
+            
+            txt += "\n";
+
+        }//if(result_b == true)
+      
+   
+   }//for( int i = 0 ; i < OrdersTotal() ; i++ ) {
+
+   
+   //Print("[", __FILE__, ":",__LINE__,"] ", txt);
+   
+   //write_Log(dpath_Log , fname_Log_For_Tickets_Data
+   write_Log(dpath_Log , fname_Log_For_Trailing_Data
+      , __FILE__ , __LINE__ , txt);
+   
+      
+//     }//if(SWITHCH_DEBUG_eap_2 == true)
+   
+   //_20200505_115255:upto
+   //debug
+   return;
+   
+   
    /*******************
       step : 3
          OrderSelect
@@ -1545,7 +1751,8 @@ void trail_Orders() {
             store --> new price, if higher than the prev
       *******************/
       //ref https://www.mql5.com/en/forum/70074
-      MqlTick Latest_Price;
+      //MqlTick Latest_Price;
+      //Latest_Price;
       SymbolInfoTick(Symbol(), Latest_Price);
       
       // current ---> copy to prev
