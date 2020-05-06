@@ -28,8 +28,8 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-extern int Time_period        = PERIOD_M1;
-//extern int Time_period        = PERIOD_M5;
+//extern int Time_period        = PERIOD_M1;
+extern int Time_period        = PERIOD_M5;
 //extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
