@@ -1,0 +1,58 @@
+Target file = ea-5.1.mq4
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_11.3_ea/ea-5.X
+Entries = 0
+Created at = 2020/05/15 12:01:15
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Experts/labs/44_11.3_ea/ea-5.X/func-list.(ea-5.1.mq4).20200515_120115.txt
+
+/*
+2020/05/15 12:01:15
+func-list.(ea-5.1.mq4).20200515_120115.txt
+==========================================
+<funcs>
+
+1	int _is_Order_Pending() {
+2	int init()
+3	void init__Test_Width_Level()
+4	void setup() {
+5	void setup_Data_File() {
+6	void show_BasicData() {
+7	void show_OrderData() {
+8	int start()
+9	void trail_Orders() {
+
+==========================================
+==========================================
+<vars>
+
+1	bool SWITHCH_DEBUG_eap_2   = true;
+2	int cntOf_Ticks = 0;
+3	bool flg_OrderOpened = false;
+4	string fname_Log_DAT_For_Session = "[ea-3].(" + conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) + ").dat";
+5	int lenOf_Bars__Get_BB_Loc_Nums  = 6;
+6	string nameOf_Detect_Pattern = "dp_2__All_True";
+7	int num_Ticket = 0;
+8	int res_ea_3_i = 0;
+9	string strOf_File_Extension__Log = "log";
+10	string strOf_Project_Name = "[ea-4_tester-1]";
+11	string strOf_Tlabel_Project = conv_DateTime_2_SerialTimeLabel((int) TimeLocal()) ;
+12	string txt_EA_4 = "";   // for general use
+
+==========================================
+==========================================
+<externs, inputs>
+
+1	extern double Lots      = 0.1;
+2	extern int MagicNumber  = 10001;
+3	extern double Slippage     = 0.01;  // Slippage (in currency)
+4	extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
+5	extern string Sym_Set   = "AUDJPY";
+6	extern double   TRAILING_LEVEL_STOP = 50.0;
+7	extern double   TRAILING_LEVEL_TAKE = 100.0;
+8	extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+9	extern int Time_period        = PERIOD_M5;
+10	extern double TrailingStop = 0.03;  // TrailingStop (in currency)
+11	extern double TrailingStop_Margin     = 0.01;
+
+==========================================
+*/

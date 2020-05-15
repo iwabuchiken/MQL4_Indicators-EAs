@@ -1,0 +1,28 @@
+Target file = libfx_dp_1.mqh
+dpath_Src = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/libfx
+Entries = 0
+Created at = 2020/05/15 12:12:55
+Created by = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils/utils.20171123-121700.rb (C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/B9B5D4C0EA7B43E1F3A680F94F757B3D/MQL4/utils)
+This file = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Include/libfx/func-list.(libfx_dp_1.mqh).20200515_121255.txt
+
+/*
+2020/05/15 12:12:55
+func-list.(libfx_dp_1.mqh).20200515_121255.txt
+==========================================
+<funcs>
+
+1	bool dp_2__All_True() {
+2	bool dp_Trend_Down_1() {
+
+==========================================
+==========================================
+<vars>
+
+
+==========================================
+==========================================
+<externs, inputs>
+
+
+==========================================
+*/
