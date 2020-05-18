@@ -237,6 +237,20 @@ bool dp_5_1_PrevBar_BB_egt_2(
             step : 1 : 4 : Y : 2
                set : val
          *******************/
+         // set
+         valOf_Ret = true;
+         
+         txt_Tmp = "dp_5_1_PrevBar_BB_egt_2 : (step : 1 : 4 : Y : 2)";
+         
+         txt_Tmp += StringFormat(
+                  
+                        "\nsetting val : valOf_Ret => %s"
+                        , valOf_Ret
+                     )
+                  ;
+         
+         write_Log(_dpath_Log , _fname_Log_For_Session
+                     , __FILE__ , __LINE__ , txt_Tmp);
          
       
      }
@@ -258,8 +272,6 @@ bool dp_5_1_PrevBar_BB_egt_2(
       
      }//if(cond_1 == true)//(priceOf_Close_Prev_Bar >= BB_Price_1S)
    
-   
-
    /*******************
       step : X
          return

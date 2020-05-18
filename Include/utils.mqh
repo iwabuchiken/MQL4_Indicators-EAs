@@ -1607,6 +1607,7 @@ int get_AryOf_RSI_BB_MFI(
    for(int i = 0; i < length; i++)
      {
      
+         //_20200518_130129:ref
          //ref https://docs.mql4.com/indicators/irsi
          rsi = iRSI(symbol_Str, time_Frame, period_RSI, price, i);
          
