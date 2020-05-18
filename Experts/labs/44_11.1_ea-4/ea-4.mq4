@@ -58,14 +58,16 @@ extern string Sym_Set   = "AUDJPY";
    <list of funcs located in external files>
    2019/12/18 16:46:38
    
-   is_Order_Pending  lib_ea_2.mqh
-   judge_1           lib_ea_2.mqh
-   get_BB_Loc_Num    lib_ea_2.mqh
-   take_Position__Buy
-   get_BB_Loc_Nums
-   op_Get_BB_Loc_Nums
-   get_Stats__Bar_Width
-   is_Order_Fully_Pending
+   lib_ea_2.mqh
+      is_Order_Pending  
+      judge_1           lib_ea_2.mqh
+      get_BB_Loc_Num    lib_ea_2.mqh
+      take_Position__Buy
+      get_BB_Loc_Nums
+      op_Get_BB_Loc_Nums
+      get_Stats__Bar_Width
+      is_Order_Fully_Pending
+      op_Post_Take_Position
    
    dp_2__All_True    libfx_dp_1.mqh
 
@@ -1419,6 +1421,7 @@ int init()
    bool     _flg_Write_Meta_Data       = true;
    bool     _flg_Write_Body_Data       = false;
    
+   //_20200518_124428:tmp
    op_Post_Take_Position(
    
       _num_Ticket
