@@ -696,6 +696,7 @@ int write2File_AryOf_BasicData_With_RSI_BB_MFI(
    /*********************
       write : header
    *********************/
+   //_20200521_151117:tmp
    _file_write__header_With_RSI_BB_MFI(_FILE_HANDLE, 
          _SYMBOL_STR, _CURRENT_PERIOD, 
          _NUMOF_DAYS, _NUMOF_TARGET_BARS, 
@@ -723,6 +724,7 @@ int write2File_AryOf_BasicData_With_RSI_BB_MFI(
          AryOf_Data[i][10] = mfi;
 
    *********************/
+   //_20200521_151335:tmp
    for(int i=0; i < _lenOf_Array; i++)
      {
          //AryOf_BasicData[i];
@@ -731,26 +733,49 @@ int write2File_AryOf_BasicData_With_RSI_BB_MFI(
 
           (i+1),
 
-          _AryOf_BasicData[i][0]     // Open
-          , _AryOf_BasicData[i][1]   // High
-          , _AryOf_BasicData[i][2]   // Low
-          , _AryOf_BasicData[i][3]   // Close
+          //_AryOf_BasicData[i][0]     // Open
+          NormalizeDouble((double)_AryOf_BasicData[i][0],3)     // Open
+          //, _AryOf_BasicData[i][1]   // High
+          //, _AryOf_BasicData[i][2]   // Low
+          //, _AryOf_BasicData[i][3]   // Close
+          , NormalizeDouble((double)_AryOf_BasicData[i][1],3)   // High
+          , NormalizeDouble((double)_AryOf_BasicData[i][2],3)   // Low
+          , NormalizeDouble((double)_AryOf_BasicData[i][3],3)   // Close
           
-          , _AryOf_BasicData[i][4]   // RSI
+          //, _AryOf_BasicData[i][4]   // RSI
+          , NormalizeDouble((double)_AryOf_BasicData[i][4],5)   // RSI
           
-          , _AryOf_BasicData[i][10]   // MFI
+          //, _AryOf_BasicData[i][10]   // MFI
+          , NormalizeDouble((double)_AryOf_BasicData[i][10],5)   // MFI
+          
+          //_20200521_151404:tmp
+          //, _AryOf_BasicData[i][11]   // Force
+          , NormalizeDouble((double)_AryOf_BasicData[i][11],5)   // Force
           
           //, _AryOf_BasicData[i][6]   // BB 2s ?
           //, _AryOf_BasicData[i][5]   // BB 1s ?
-          , _AryOf_BasicData[i][5]   // BB 2s
-          , _AryOf_BasicData[i][6]   // BB 1s
+          //, _AryOf_BasicData[i][5]   // BB 2s
+          , NormalizeDouble((double)_AryOf_BasicData[i][5],3)
           
-          , _AryOf_BasicData[i][7]   // BB main
-          , _AryOf_BasicData[i][8]   // BB -1s
-          , _AryOf_BasicData[i][9]   // BB -2s
+          //, _AryOf_BasicData[i][6]   // BB 1s
+          , NormalizeDouble((double)_AryOf_BasicData[i][6],3)
+          
+          //, _AryOf_BasicData[i][7]   // BB main
+          , NormalizeDouble((double)_AryOf_BasicData[i][7],3)
+          
+          //, _AryOf_BasicData[i][8]   // BB -1s
+          , NormalizeDouble((double)_AryOf_BasicData[i][8],3)
+          
+          //, _AryOf_BasicData[i][9]   // BB -2s
+          , NormalizeDouble((double)_AryOf_BasicData[i][9],3)
           
           , _AryOf_BasicData[i][3] - _AryOf_BasicData[i][0]   // Diff
+          //, NormalizeDouble((double)_AryOf_BasicData[i][0],3)   //=> value not correct
+          //, NormalizeDouble(_AryOf_BasicData[i][0],3)   //=> value not correct
+          //, StringFormat("%.03f", _AryOf_BasicData[i][0])  //=> value not correct
+          
           , _AryOf_BasicData[i][1] - _AryOf_BasicData[i][2]   // Range
+          //, NormalizeDouble((double)_AryOf_BasicData[i][2],3)  //=> value not correct
           
           , TimeToStr(iTime(Symbol(), _TIME_FRAME, i))
           
@@ -1177,6 +1202,7 @@ int _file_write__header_With_RSI_BB_MFI(
 
    );
    
+   //_20200521_151203:tmp
    // column names
    uint result = FileWrite(_FILE_HANDLE,
                
@@ -1186,6 +1212,9 @@ int _file_write__header_With_RSI_BB_MFI(
                , "RSI"
                
                , "MFI"
+               
+               //_20200521_151237:tmp
+               , "Force"
                
                , "BB.2s", "BB.1s", "BB.main", "BB.-1s", "BB.-2s"
                
@@ -1575,7 +1604,8 @@ int get_AryOf_RSI_BB_MFI(
       int price, 
       int shift, 
       int length,
-      double &AryOf_Data[][11]) {
+      //_20200521_150611:tmp
+      double &AryOf_Data[][12]) {
 
    //debug
    Print("[", __FILE__, ":",__LINE__,"] get_AryOf_RSI_BB_MFI()");
@@ -1587,6 +1617,8 @@ int get_AryOf_RSI_BB_MFI(
 
    double  rsi;
    double  mfi;
+   //_20200521_145524:tmp
+   double   force;
    
    //ref https://docs.mql4.com/indicators/ibands
    double   ibands_Main;
@@ -1596,6 +1628,10 @@ int get_AryOf_RSI_BB_MFI(
    double   ibands_2S_Minus;
    
    int   period_BB = 20;
+   
+   int   period_Force = 20;
+   int   ma_Force = MODE_SMA;
+   int   applied_price_Force = PRICE_CLOSE;
    
    int count = 0;
 
@@ -1623,6 +1659,26 @@ int get_AryOf_RSI_BB_MFI(
             int          mode,             // line index
             int          shift             // shift
             */
+         
+         //_20200521_145459:tmp
+            /*
+            double  iForce(
+               string       symbol,           // symbol              :1
+               int          timeframe,        // timeframe           :2
+               int          period,           // averaging period    :3
+               int          ma_method,        // averaging method    :4
+               int          applied_price,    // applied price       :5
+               int          shift             // shift               :6
+               );         
+            */
+         force = iForce(
+                     symbol_Str, time_Frame
+                     , period_Force
+                     , ma_Force
+                     , applied_price_Force
+                     , i);
+         
+         
          //ref https://docs.mql4.com/indicators/ibands
          ibands_Main = iBands(symbol_Str,time_Frame, period_BB, 0,0,PRICE_CLOSE,MODE_MAIN,i);
          
@@ -1654,6 +1710,9 @@ int get_AryOf_RSI_BB_MFI(
          AryOf_Data[i][9] = ibands_2S_Minus;
          
          AryOf_Data[i][10] = mfi;
+         
+         //_20200521_150925:tmp
+         AryOf_Data[i][11] = force;
          
          // count
          count ++;
@@ -2554,7 +2613,9 @@ void get_BasicData_with_RSI_BB_MFI(
    int price_Target = PRICE_CLOSE;
    
    //double   AryOf_Data[][5];
-   double   AryOf_Data[][11];
+   //20200521_150747:tmp
+   //double   AryOf_Data[][11];
+   double   AryOf_Data[][12];
    
    //int length = 5;
    int length = _NUMOF_DAYS;
@@ -2563,6 +2624,7 @@ void get_BasicData_with_RSI_BB_MFI(
    Print("[", __FILE__, ":",__LINE__,"] calling ---> get_AryOf_RSI");
    
 
+   //_20200521_150728:tmp
    //get_AryOf_RSI(
    get_AryOf_RSI_BB_MFI(
             _symbol_Str, 

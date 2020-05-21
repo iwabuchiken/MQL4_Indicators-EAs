@@ -16,10 +16,24 @@
 //          5) _file_write__data() --> edit variables
 
 //--------------------------------------------------------------------
+
+// "no indicator window property is defined, indicator_chart_window is applied		0	0"
+//ref https://docs.mql4.com/basis/preprosessor/compilation
+#property indicator_chart_window
+
 //+------------------------------------------------------------------+
 //| Includes                                                                 |
 //+------------------------------------------------------------------+
 #include <utils.mqh>
+
+/*------------------------------------------------------------------+
+   external funcs
+   
+   utils.mqh
+      get_BasicData_with_RSI_BB_MFI
+   
+//+------------------------------------------------------------------+*/
+
 
 //+------------------------------------------------------------------+
 //| vars                                                                 |
@@ -100,7 +114,7 @@ input int      NUMOF_DAYS  = 55000;    // Num of bars :
 //input int      TIME_FRAME  = 10080;  // W1
 //input int      TIME_FRAME  = 1440;  // 1 day
 //input int      TIME_FRAME  = 1;  // 1 min
-input int      TIME_FRAME  = 5;  // 5 min
+input int      TIME_FRAME  = 5;  // TIME_FRAME : 5 min
 //input int      TIME_FRAME  = 15;  // 15 min
 //input int      TIME_FRAME  = 60;  // 60 min
 
@@ -543,6 +557,7 @@ void _setup__BasicParams() {
 //ref about "tick" --> https://www.mql5.com/en/forum/109552
 void setup() 
   {
+  //_20200521_144515:tmp
   
    //+------------------------------------------------------------------+
    //| opening message
