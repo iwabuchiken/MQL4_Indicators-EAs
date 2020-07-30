@@ -493,23 +493,23 @@ int start()
                      //_20200427_085700:tmp
                      
                      //code:20200728_150404:c
-                     return 0;   //debug:20200728_140900:d
+                     //return 0;   //debug:20200728_140900:d
 
                      /********************************
                         step : j3 : Y : 2
-                           buy ==> exec
+                           sell ==> exec
                      ********************************/
                      //_20200411_104528:tmp
                      double minstoplevel    = 0.05;
                      double mintakelevel    = 0.10;
                      
                      //next:20200728_151019:n
-                     
-                     int result_i = take_Position__Buy(minstoplevel, mintakelevel);
+                     //int result_i = take_Position__Buy(minstoplevel, mintakelevel);
+                     int result_i = take_Position__Sell(minstoplevel, mintakelevel);
                      
                      //debug
                      txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "]"
-                              + " (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> "
+                              + " (step : j3 : Y : 2) sell ==> exec : take_Position__Sell --> "
                               + (string) result_i
                                ;
                      
@@ -1382,6 +1382,19 @@ int init()
    //_20200503_151135:tmp
    init__Test_Width_Level();
 
+
+   /*******************
+      step : X
+         test ==> take_Position__Sell
+   *******************/   
+   //code:20200730_151313:c
+/*   double minstoplevel    = 0.05;
+   double mintakelevel    = 0.10;
+ 
+   
+   //int result_i = take_Position__Buy(minstoplevel, mintakelevel);
+   int result_i = take_Position__Sell(minstoplevel, mintakelevel);
+*/
 
    /*******************
       step : X
