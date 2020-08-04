@@ -1479,6 +1479,44 @@ void trail_Orders() {
    txt += "\n";
 
    /*******************
+      step : 2.1
+         validate
+   *******************/   
+   if(numOf_Orders <= 0)
+     {
+         txt += StringFormat("[%s:%d] no pending orders : %d"
+                  
+                  , __FILE__, __LINE__
+                  , numOf_Orders
+                  );
+         
+         txt += "\n";
+         
+         //write_Log(dpath_Log , fname_Log_For_Trailing_Data
+         write_Log(dpath_Log , fname_Log_For_Session
+         
+            , __FILE__ , __LINE__ , txt);
+   
+         // return
+         return;   
+         
+     }
+   else
+     {
+         //code:20200804_130436
+         txt += StringFormat("[%s:%d] pending orders : %d"
+                  
+                  , __FILE__, __LINE__
+                  , numOf_Orders
+                  );
+         
+         txt += "\n";
+      
+     }
+
+   //code:20200804_125006:c
+
+   /*******************
       step : 3
          modify
    *******************/   
@@ -1524,6 +1562,7 @@ void trail_Orders() {
                      
                      + "valOf_Threshold_Trailing * Point\t%.03f" + "\n"
                      
+                     //next:20200804_132152
                      + "Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)\t%.03f" + "\n"
                      
                      + "(Bid) - (Trail threshold)\t%.03f" + "\n"
@@ -1541,6 +1580,8 @@ void trail_Orders() {
                      , (double) Latest_Price.bid - (double) OrderOpenPrice()
                      
                      , (double) valOf_Threshold_Trailing * Point
+                     
+                     //next:20200804_132218
                      , (double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point
                      
                      , (double) Latest_Price.bid -
@@ -1549,6 +1590,17 @@ void trail_Orders() {
                      );
             
             txt += "\n";
+
+            //debug:20200804_130533
+            //debug:20200804_125000:d
+            //write_Log(dpath_Log , fname_Log_For_Trailing_Data
+            write_Log(dpath_Log , fname_Log_For_Session
+            
+               , __FILE__ , __LINE__ , txt);
+            
+            //return;
+
+            continue;
 
             /*******************
                step : 3 : 2.2
