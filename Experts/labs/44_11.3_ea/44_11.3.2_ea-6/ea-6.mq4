@@ -81,6 +81,9 @@ extern string Sym_Set   = "AUDJPY";
 //+------------------------------------------------------------------+
 string nameOf_Detect_Pattern = "dp_2__All_True";
 //string PGName = "file=ea-4:dp=dp_2__All_True"
+
+string typeOf_Order_Mode = "Order_SELL";
+
 string PGName = "file=ea-6:dp=" + nameOf_Detect_Pattern
             + "\n"
             + ":StopLoss=" + (string) StopLoss
@@ -91,6 +94,9 @@ string PGName = "file=ea-6:dp=" + nameOf_Detect_Pattern
             + "\n"
 
             + ":Time_period=" + (string) Time_period
+            + "\n"
+
+            + ":Order_Mode=" + typeOf_Order_Mode
             + "\n"
             
             ;     //
@@ -122,7 +128,7 @@ double   priceOf_Bid__Max     = -1.0;
 extern double   TRAILING_LEVEL_STOP = 50.0;
 extern double   TRAILING_LEVEL_TAKE = 100.0;
 
-int      valOf_Threshold_Trailing = 40;   // 40 x Points (= 4 pips)
+int      valOf_Threshold_Trailing = 40;   // 40 x Points (= 4 pips) ==> 0.04 JPY
 
 //double minstoplevel    = 0.05;
 //double mintakelevel    = 0.10;
@@ -234,7 +240,8 @@ float g_lo_Price_Close[];
 int      g_lo_BB_Loc_Nums[];
 string   g_lo_DateTime[];
 
-int   g_MaxOf_NumOf_Pending_Orders  = 20;
+//int   g_MaxOf_NumOf_Pending_Orders  = 20;
+int   g_MaxOf_NumOf_Pending_Orders  = 10;
 
 //+------------------------------------------------------------------+
 //    vars
@@ -1546,6 +1553,14 @@ void trail_Orders() {
                step : 3 : 2.1
                   get : data
             *******************/   
+            //code:20200814_153907
+            double diffOf_TP_SL                 = (double) OrderTakeProfit() - (double) OrderStopLoss();
+            double volumeOf_Threshold_Trailing  = (double) valOf_Threshold_Trailing * Point;
+            double diffOf_LatestBid_OpenPrice   = (double) Latest_Price.bid - (double) OrderOpenPrice();
+            double diffOf_OpenPrice_VolumeOf_TT = (double) OrderOpenPrice() - volumeOf_Threshold_Trailing;
+            double diffOf_LatestBid_TT          = (double) Latest_Price.bid -
+                                  ((double) OrderOpenPrice() - volumeOf_Threshold_Trailing);
+            
             //_20200505_121736:tmp
             // get : ticket num
             //txt += "ticket num\t" + (string) OrderTicket();
@@ -1563,7 +1578,8 @@ void trail_Orders() {
                      + "valOf_Threshold_Trailing * Point\t%.03f" + "\n"
                      
                      //next:20200804_132152
-                     + "Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)\t%.03f" + "\n"
+                     //+ "Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)\t%.03f" + "\n"
+                     + "Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)\t%.03f" + "\n"
                      
                      + "(Bid) - (Trail threshold)\t%.03f" + "\n"
                      
@@ -1574,18 +1590,24 @@ void trail_Orders() {
                      
                      , (double) OrderTakeProfit()
                      , (double) OrderStopLoss()
-                     , (double) OrderTakeProfit() - (double) OrderStopLoss()
+                     //, (double) OrderTakeProfit() - (double) OrderStopLoss()
+                     , diffOf_TP_SL
                      
                      , (double) Latest_Price.bid
-                     , (double) Latest_Price.bid - (double) OrderOpenPrice()
+                     //, (double) Latest_Price.bid - (double) OrderOpenPrice()
+                     , diffOf_LatestBid_OpenPrice
                      
-                     , (double) valOf_Threshold_Trailing * Point
+                     //, (double) valOf_Threshold_Trailing * Point
+                     , volumeOf_Threshold_Trailing
                      
                      //next:20200804_132218
-                     , (double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point
+                     //, (double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point
+                     //, (double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point
+                     , diffOf_OpenPrice_VolumeOf_TT
                      
-                     , (double) Latest_Price.bid -
-                                  ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)
+                     //, (double) Latest_Price.bid -
+                       //           ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)
+                     , diffOf_LatestBid_TT
                      
                      );
             
@@ -1651,7 +1673,7 @@ void trail_Orders() {
                   txt += "\n";
                   
                   
-                  
+                  //ref:20200814_155743
                   bool result_OrderModify_b = OrderModify(
                   
                         ticket_num
