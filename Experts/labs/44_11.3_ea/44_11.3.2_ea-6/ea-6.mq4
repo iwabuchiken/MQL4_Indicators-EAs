@@ -1561,6 +1561,11 @@ void trail_Orders() {
             double diffOf_LatestBid_TT          = (double) Latest_Price.bid -
                                   ((double) OrderOpenPrice() - volumeOf_Threshold_Trailing);
             
+            //double diffOf_Bid_Ask               = (double) Latest_Price.bid - Latest_Price.ask;
+            double diffOf_Ask_Bid               = (double) Latest_Price.ask - Latest_Price.bid;
+            
+            double priceOf_SL_Candidate         = (Latest_Price.bid + valOf_MinstopLevel + diffOf_Ask_Bid);
+            
             //_20200505_121736:tmp
             // get : ticket num
             //txt += "ticket num\t" + (string) OrderTicket();
@@ -1583,6 +1588,19 @@ void trail_Orders() {
                      
                      + "(Bid) - (Trail threshold)\t%.03f" + "\n"
                      
+                     //code:20200819_150937
+                     //+ "Latest_Price.bid - Latest_Price.ask\t%.03f" + "\n"
+                     + "Spread : Latest_Price.ask - Latest_Price.bid\t%.03f" + "\n"
+                     
+                     + "(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)\t%.03f" + "\n"
+
+                     + "Latest_Price.bid\t%.03f" + "\n"
+
+                     + "valOf_MinstopLevel\t%.03f" + "\n"
+
+                     + "diffOf_Bid_Ask\t%.03f" + "\n"
+
+
                      + "\n"
                      
                      , (int) OrderTicket()
@@ -1609,8 +1627,71 @@ void trail_Orders() {
                        //           ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)
                      , diffOf_LatestBid_TT
                      
+                     //, diffOf_Bid_Ask
+                     , diffOf_Ask_Bid
+                     
+                     , priceOf_SL_Candidate
+                     
+                     , Latest_Price.bid
+                     , valOf_MinstopLevel
+                     , diffOf_Ask_Bid
+                     
                      );
             
+            //return;
+            
+            /*******************
+               step : 3 : 2.2
+                  judge
+            *******************/   
+            //code:20200819_152148
+            /*******************
+               step : 3 : 2.2 : 1
+                  condition
+            *******************/   
+            // vars
+            double price_Curr_SL = (double) OrderStopLoss();
+            
+            
+            // condition : 1
+            // compare : absolute ==> open / current bid
+            bool cond_OrderModify_1 = (
+                     (double) Latest_Price.bid < 
+                       ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+                       );
+            //bool cond_OrderModify_1 = ((double) Latest_Price.bid -
+              //         ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)) > 0;
+            
+            // condition : 2
+            // compare : relative ==> current SL / candidate
+            bool cond_OrderModify_2 = (
+            
+                 price_Curr_SL > 
+                     ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Ask_Bid)
+
+                 //((double) Latest_Price.bid - (double) valOf_MinstopLevel)
+                   //  > price_Curr_SL
+                     
+            );
+            
+            // text : cond_OrderModify_1
+            txt += "cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)";
+            
+            txt += "\n";
+            
+            txt += "\t==> " + (string) cond_OrderModify_1;
+            
+            txt += "\n";
+
+            // text : cond_OrderModify_2
+            txt += "cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)";
+            
+            txt += "\n";
+            
+            txt += "\t==> " + (string) cond_OrderModify_2;
+            
+            txt += "\n";
+
             txt += "\n";
 
             //debug:20200804_130533
@@ -1620,33 +1701,10 @@ void trail_Orders() {
             
                , __FILE__ , __LINE__ , txt);
             
-            //return;
+            //next:20200819_153808
 
+            //marker:20200819_152103
             continue;
-
-            /*******************
-               step : 3 : 2.2
-                  judge
-            *******************/   
-            /*******************
-               step : 3 : 2.2 : 1
-                  condition
-            *******************/   
-            // vars
-            double price_Curr_SL = (double) OrderStopLoss();
-            
-            
-            // condition
-            bool cond_OrderModify_1 = ((double) Latest_Price.bid -
-                       ((double) OrderOpenPrice() + (double) valOf_Threshold_Trailing * Point)) > 0;
-            
-            bool cond_OrderModify_2 = (
-            
-                 ((double) Latest_Price.bid - (double) valOf_MinstopLevel)
-                     > price_Curr_SL
-                     
-            );
-            
             
             /*******************
                step : 3 : 2.2 : 1
