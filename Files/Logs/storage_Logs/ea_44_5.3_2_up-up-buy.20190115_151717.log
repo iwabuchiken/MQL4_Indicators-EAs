@@ -1,8 +1,0 @@
-[2019.01.15 15:18:00 / ea_44_5.3_2_down-down-buy.mq4:122]new bar (tick = 20) (period = 1 / symbol = EURJPY_)
-[2019.01.15 15:18:00 / lib_ea.mqh:234]
-diff_Latest >= 0 (0.01000000000000512) (2019.01.15 08:17)
-[2019.01.15 15:18:00 / ea_44_5.3_2_down-down-buy.mq4:144]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)
-[2019.01.15 15:19:00 / ea_44_5.3_2_down-down-buy.mq4:122]new bar (tick = 104) (period = 1 / symbol = EURJPY_)
-[2019.01.15 15:19:00 / lib_ea.mqh:274]
-price_Close_Latest >= ibands_1S_Plus (close = 124.775) (BB.-1 = 124.7689910613667) (2019.01.15 08:18)
-[2019.01.15 15:19:00 / ea_44_5.3_2_down-down-buy.mq4:144]detect_DownDown_Buy() => false) (period = 1 / symbol = EURJPY_)

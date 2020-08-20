@@ -1,6 +1,0 @@
-[2019.01.07 22:30:13 / ea-1_up-up-buy.mq4:282]
-cntOf_Ticks = 96 / cntOf_Ticks_In_The_Bar = 96
-cntOf_Ticks_In_The_Bar => resetting to 0...
-[2019.01.07 22:30:13 / utils.mqh:2724]
-_deviation : 1 / _target_price : 124.017 / BB_Val : 123.97758 / 
-[2019.01.07 22:30:13 / ea-1_up-up-buy.mq4:331]_is_Above_BB_1S => true

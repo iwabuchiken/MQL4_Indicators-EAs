@@ -241,7 +241,8 @@ int      g_lo_BB_Loc_Nums[];
 string   g_lo_DateTime[];
 
 //int   g_MaxOf_NumOf_Pending_Orders  = 20;
-int   g_MaxOf_NumOf_Pending_Orders  = 10;
+//int   g_MaxOf_NumOf_Pending_Orders  = 10;
+int   g_MaxOf_NumOf_Pending_Orders  = 5;
 
 //+------------------------------------------------------------------+
 //    vars
@@ -1593,14 +1594,14 @@ void trail_Orders() {
                      + "Spread : Latest_Price.ask - Latest_Price.bid\t%.03f" + "\n"
                      
                      + "(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)\t%.03f" + "\n"
-
+   
                      + "Latest_Price.bid\t%.03f" + "\n"
-
+   
                      + "valOf_MinstopLevel\t%.03f" + "\n"
-
+   
                      + "diffOf_Bid_Ask\t%.03f" + "\n"
-
-
+   
+   
                      + "\n"
                      
                      , (int) OrderTicket()
@@ -1668,11 +1669,20 @@ void trail_Orders() {
             
                  price_Curr_SL > 
                      ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Ask_Bid)
-
+   
                  //((double) Latest_Price.bid - (double) valOf_MinstopLevel)
                    //  > price_Curr_SL
                      
             );
+            
+            // condition : 3
+            // cond_1, _2 ==> true
+            bool cond_OrderModify_3_Final = (
+                     
+                     (cond_OrderModify_1 == true)
+                      && (cond_OrderModify_2 == true)
+                     
+                     );
             
             // text : cond_OrderModify_1
             txt += "cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)";
@@ -1682,7 +1692,7 @@ void trail_Orders() {
             txt += "\t==> " + (string) cond_OrderModify_1;
             
             txt += "\n";
-
+   
             // text : cond_OrderModify_2
             txt += "cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)";
             
@@ -1691,9 +1701,9 @@ void trail_Orders() {
             txt += "\t==> " + (string) cond_OrderModify_2;
             
             txt += "\n";
-
+            
             txt += "\n";
-
+   
             //debug:20200804_130533
             //debug:20200804_125000:d
             //write_Log(dpath_Log , fname_Log_For_Trailing_Data
@@ -1701,88 +1711,196 @@ void trail_Orders() {
             
                , __FILE__ , __LINE__ , txt);
             
+            // flash txt
+            txt = "";
+            
             //next:20200819_153808
-
-            //marker:20200819_152103
-            continue;
+   
             
             /*******************
-               step : 3 : 2.2 : 1
+               step : 3 : 2.2 : 2
                   condition ==> filled ?
             *******************/   
-            //if(cond_OrderModify == true)
-            if(cond_OrderModify_1 == true
-                  && cond_OrderModify_2 == true )
+            /*******************
+               step : 3 : 2.2 : 2 : N
+                  condition ==> NOT filled
+            *******************/   
+            //code:20200820_113128
+            if(cond_OrderModify_3_Final == false)
               {
+   
+                  /*******************
+                     step : 3 : 2.2 : 2 : N : 1
+                        log
+                  *******************/   
+                  //code:20200820_112944
+                  txt = "[" +  __FILE__ + ":" + (string) __LINE__ + "] (for)(step : 3 : 2.2 : 2 : N : 1)";
+                  txt += "\n";
+                  
+                  // text : cond_OrderModify_3
+                  txt += "cond_OrderModify_3_Final : \t==> " + (string) cond_OrderModify_3_Final;
+                  
+                  txt += "\n";
+   
+                  txt += "continue for-loop...";
+                  
+                  txt += "\n";
+   
+                  txt += "\n";
+   
+                  write_Log(dpath_Log , fname_Log_For_Session
+                  
+                     , __FILE__ , __LINE__ , txt);
+                     
+                  // flash txt
+                  txt = "";
+   
+                  /*******************
+                     step : 3 : 2.2 : 2 : N : 2
+                        continue
+                  *******************/   
+                  //marker:20200819_152103
+                  continue;
+                  
+               
+              }//if(cond_OrderModify_3_Final == false)
+   
+            /*******************
+               step : 3 : 2.2 : 2 : Y
+                  condition ==> filled
+            *******************/   
+            /*******************
+               step : 3 : 2.2 : 2 : Y : 1
+                  log
+            *******************/   
+            txt = "[" + __FILE__ + ":" + (string) __LINE__ + "] ";
+            txt += "(for)(step : 3 : 2.2 : 2 : Y : 1)";
+            txt += "\n";
+            
+            // text : cond_OrderModify_3
+            txt += "cond_OrderModify_3_Final : \t==> " + (string) cond_OrderModify_3_Final;
+            
+            txt += "\n";
+   
+            /*******************
+               step : 3 : 2.2 : 2 : Y : 2
+                  prep : vals
+            *******************/   
+   
+   //            //if(cond_OrderModify == true)
+            //if(cond_OrderModify_1 == true
+              //    && cond_OrderModify_2 == true )
+   //              {
                   
                   
-                  // set : vals
-                  double price_New = (double) Latest_Price.bid;
-                  
-                  double price_New_TP = (double) price_New + (double) valOf_Mintakelevel;
-                  double price_New_SL = (double) price_New - (double) valOf_MinstopLevel;
-                  
-                  
-                  
-                  int   ticket_num = OrderTicket();
+            // set : vals
+            double price_New = (double) Latest_Price.bid;
 
-                  // log
-                  txt += "modifying order for : " + (string) ticket_num;
-                  txt += "\n";
-                  
-                  
-                  //ref:20200814_155743
-                  bool result_OrderModify_b = OrderModify(
-                  
-                        ticket_num
-                        , price_New
-                        , price_New_SL
-                        , price_New_TP
-                        //, price_New - valOf_MinstopLevel
-                        //, price_New - valOf_Mintakelevel
-                        , 0
-                        , clrPink
-                  
-                  );
-                  
-                  txt += "OrderModify result ==> " + (string) result_OrderModify_b;
-                  
-                  if(result_OrderModify_b == false)
-                    {
-                        txt+= "\n";
-                        txt+= "error code : " + (string) GetLastError();
-                    }
-                  
-                  txt += "\n";
-              
+            double price_New_TP = (double) price_New 
+                                 - (double) valOf_Mintakelevel
+                                 - (double) diffOf_Ask_Bid 
+                                 ;
+            double price_New_SL = (double) price_New 
+                                 + (double) valOf_MinstopLevel
+                                 + (double) diffOf_Ask_Bid 
+                                 ;
+            
+            //double price_New_TP = (double) price_New + (double) valOf_Mintakelevel;
+            //double price_New_SL = (double) price_New - (double) valOf_MinstopLevel;
+            
+            
+            
+            int   ticket_num = OrderTicket();
+   
+            // log
+            txt += StringFormat("[%s : %d", __FILE__, __LINE__);
+            
+            txt += "(for)(step : 3 : 2.2 : 2 : Y : 2)";
+            txt += "modifying order for : ";
+            
+            txt += "ticket_num\t" + (string) ticket_num;
+            txt += "\n";
+            
+            txt += "price_New\t" + (string) NormalizeDouble(price_New, 2);
+            txt += "\n";
+            txt += "price_New_SL\t" + (string) NormalizeDouble(price_New_SL, 2);
+            txt += "\n";
+            txt += "price_New_TP\t" + (string) NormalizeDouble(price_New_TP, 2);
+            txt += "\n";
+            
+            // separator line
+            txt += "\n";
+            
+            //write log
+            write_Log(dpath_Log , fname_Log_For_Session
+            
+               , __FILE__ , __LINE__ , txt);
+
+            // flash txt
+            txt = "";
+            
+            //next:20200820_122658
+                           
+/*
+            //ref:20200814_155743
+            bool result_OrderModify_b = OrderModify(
+            
+                  ticket_num
+                  , price_New
+                  , price_New_SL
+                  , price_New_TP
+                  //, price_New - valOf_MinstopLevel
+                  //, price_New - valOf_Mintakelevel
+                  , 0
+                  , clrPink
+            
+            );
+            
+            txt += "OrderModify result ==> " + (string) result_OrderModify_b;
+            
+            if(result_OrderModify_b == false)
+              {
+                  txt+= "\n";
+                  txt+= "error code : " + (string) GetLastError();
               }
+*/
+            
+              
+        }//if(result_b == true)
+
 /*            else if(cond_OrderModify_1 == false
                   && cond_OrderModify_2 == true)
              {
                   txt += "cond_1 ==> false : "
                         + "((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SL";
              }*/
-            else if(cond_OrderModify_1 == true
-                  && cond_OrderModify_2 == false)
-             {
-                  txt += "cond_2 ==> false : "
-                        + "((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SL";
-             }
-            else
-              {
+//            else if(cond_OrderModify_1 == true
+//                  && cond_OrderModify_2 == false)
+//             {
+//                  txt += "cond_2 ==> false : "
+//                        + "((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SL";
+//             }
+//            else
+//              {
                
                
-              }//if(cond_OrderModify == true)
+ //             }//if(cond_OrderModify == true)
             
-        }    
+//        }    
       else////if(result_b == true)
         {
             
-            txt += "OrderSelect ==> error : " + (string) GetLastError();
+            txt = "OrderSelect ==> error : " + (string) GetLastError();
             
             txt += "\n";
 
-        }//if(result_b == true)
+            //write log
+            write_Log(dpath_Log , fname_Log_For_Session
+            
+               , __FILE__ , __LINE__ , txt);
+
+
+      }//if(result_b == true)
       
    
    }//for( int i = 0 ; i < OrdersTotal() ; i++ ) {
