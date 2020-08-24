@@ -1543,7 +1543,7 @@ void trail_Orders() {
       //If the pair of the order (OrderSymbol() is equal to the pair where the EA is running (Symbol()) then return true
       //if( OrderSymbol() == Symbol() ) return(true);
       
-      if(result_b == true)
+      if(result_b == true)//OrderSelect
         {
 
             /*******************
@@ -1866,7 +1866,7 @@ void trail_Orders() {
 */
             
               
-        }//if(result_b == true)
+        }//if(result_b == true)//OrderSelect
 
 /*            else if(cond_OrderModify_1 == false
                   && cond_OrderModify_2 == true)
@@ -1887,7 +1887,7 @@ void trail_Orders() {
  //             }//if(cond_OrderModify == true)
             
 //        }    
-      else////if(result_b == true)
+      else//if(result_b == true)//OrderSelect
         {
             
             txt = "OrderSelect ==> error : " + (string) GetLastError();
@@ -1900,7 +1900,7 @@ void trail_Orders() {
                , __FILE__ , __LINE__ , txt);
 
 
-      }//if(result_b == true)
+      }//if(result_b == true)//OrderSelect
       
    
    }//for( int i = 0 ; i < OrdersTotal() ; i++ ) {
