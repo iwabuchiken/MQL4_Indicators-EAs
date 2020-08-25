@@ -1815,6 +1815,8 @@ void trail_Orders() {
             // log
             txt += StringFormat("[%s : %d", __FILE__, __LINE__);
             
+            txt += "[" + __FILE__ + ":" + (string) __LINE__ + "] ";
+            
             txt += "(for)(step : 3 : 2.2 : 2 : Y : 2)";
             txt += "modifying order for : ";
             
@@ -1841,7 +1843,7 @@ void trail_Orders() {
             
             //next:20200820_122658
                            
-/*
+///*
             //ref:20200814_155743
             bool result_OrderModify_b = OrderModify(
             
@@ -1856,16 +1858,37 @@ void trail_Orders() {
             
             );
             
+            txt += "[" + __FILE__ + ":" + (string) __LINE__ + "] ";
+            txt += "\n";
+            
             txt += "OrderModify result ==> " + (string) result_OrderModify_b;
             
             if(result_OrderModify_b == false)
               {
                   txt+= "\n";
                   txt+= "error code : " + (string) GetLastError();
+                  txt+= "\n";
               }
-*/
+            else
+              {
+                  txt+= "\n";
+                  txt+= "order ==> modified : " + (string) ticket_num;
+                  txt+= "\n";
+               
+              }
+//*/
             
-              
+            // separator
+            txt+= "\n";
+            
+            //write log
+            write_Log(dpath_Log , fname_Log_For_Session
+            
+               , __FILE__ , __LINE__ , txt);
+
+            // flash txt
+            txt = "";
+                         
         }//if(result_b == true)//OrderSelect
 
 /*            else if(cond_OrderModify_1 == false
@@ -1890,7 +1913,10 @@ void trail_Orders() {
       else//if(result_b == true)//OrderSelect
         {
             
-            txt = "OrderSelect ==> error : " + (string) GetLastError();
+            txt = "[" + __FILE__ + ":" + (string) __LINE__ + "] ";
+            txt += "\n";
+
+            txt += "OrderSelect ==> error : " + (string) GetLastError();
             
             txt += "\n";
 
@@ -1899,10 +1925,11 @@ void trail_Orders() {
             
                , __FILE__ , __LINE__ , txt);
 
+            // flash txt
+            txt = "";
 
       }//if(result_b == true)//OrderSelect
       
-   
    }//for( int i = 0 ; i < OrdersTotal() ; i++ ) {
 
    
