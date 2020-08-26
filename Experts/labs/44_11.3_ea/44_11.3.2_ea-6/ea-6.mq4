@@ -28,8 +28,8 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-extern int Time_period        = PERIOD_M1;
-//extern int Time_period        = PERIOD_M5;
+//extern int Time_period        = PERIOD_M1;
+extern int Time_period        = PERIOD_M5;
 //extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
@@ -240,9 +240,10 @@ float g_lo_Price_Close[];
 int      g_lo_BB_Loc_Nums[];
 string   g_lo_DateTime[];
 
+int   g_MaxOf_NumOf_Pending_Orders  = 30;
 //int   g_MaxOf_NumOf_Pending_Orders  = 20;
 //int   g_MaxOf_NumOf_Pending_Orders  = 10;
-int   g_MaxOf_NumOf_Pending_Orders  = 5;
+//int   g_MaxOf_NumOf_Pending_Orders  = 5;
 
 //+------------------------------------------------------------------+
 //    vars
