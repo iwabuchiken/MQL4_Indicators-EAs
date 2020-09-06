@@ -1,0 +1,5174 @@
+
+[2020.09.05 00:16:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.320
+(Bid,latest) - (Open)	-0.030
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.010
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.375
+Latest_Price.bid	106.320
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.320
+(Bid,latest) - (Open)	-0.032
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.008
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.375
+Latest_Price.bid	106.320
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.320
+(Bid,latest) - (Open)	-0.026
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.014
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.375
+Latest_Price.bid	106.320
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:16:59 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:16:59 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:00 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12791)
+[2020.09.05 00:17:00 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:00 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:00 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12792)
+[2020.09.05 00:17:00 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:00 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:00 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12793)
+[2020.09.05 00:17:00 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:00 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:00 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:01 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12794)
+[2020.09.05 00:17:01 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:01 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:01 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12795)
+[2020.09.05 00:17:01 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:01 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:01 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12796)
+[2020.09.05 00:17:01 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.009
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.031
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.012
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.030
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.010
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.024
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.016
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:01 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:01 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:02 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12797)
+[2020.09.05 00:17:02 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:02 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:02 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:03 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12798)
+[2020.09.05 00:17:03 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:03 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:03 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:05 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12799)
+[2020.09.05 00:17:05 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.009
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.031
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.012
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.030
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.010
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.322
+(Bid,latest) - (Open)	-0.024
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.016
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.377
+Latest_Price.bid	106.322
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:05 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:05 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12800)
+[2020.09.05 00:17:05 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:05 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:05 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:07 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12801)
+[2020.09.05 00:17:07 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.378
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:07 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:07 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12802)
+[2020.09.05 00:17:07 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.379
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:07 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:07 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:10 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12803)
+[2020.09.05 00:17:10 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.011
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.323
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.323
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:10 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:10 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12804)
+[2020.09.05 00:17:10 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.004
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.036
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.025
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.015
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:10 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:10 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:11 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12805)
+[2020.09.05 00:17:11 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.004
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.036
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.383
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.383
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.025
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.015
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.383
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.327
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.383
+Latest_Price.bid	106.327
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:11 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:11 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:15 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12806)
+[2020.09.05 00:17:15 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.006
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.034
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.025
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.015
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:15 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:15 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:21 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12807)
+[2020.09.05 00:17:21 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.007
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.033
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.026
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.014
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.012
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:21 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:21 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12808)
+[2020.09.05 00:17:21 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.006
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.034
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.025
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.015
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:21 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:21 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:25 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12809)
+[2020.09.05 00:17:25 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.007
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.033
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.026
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.014
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.012
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.324
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.380
+Latest_Price.bid	106.324
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:25 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:25 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12810)
+[2020.09.05 00:17:25 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.006
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.034
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.025
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.015
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.013
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.325
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.325
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:25 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:25 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:30 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12811)
+[2020.09.05 00:17:30 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.326
+(Bid,latest) - (Open)	-0.005
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.035
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.326
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.326
+(Bid,latest) - (Open)	-0.024
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.016
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.326
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.326
+(Bid,latest) - (Open)	-0.026
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.014
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.326
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.326
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.381
+Latest_Price.bid	106.326
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:30 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:30 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12812)
+[2020.09.05 00:17:30 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.329
+(Bid,latest) - (Open)	-0.002
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.038
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.329
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.329
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.329
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.329
+(Bid,latest) - (Open)	-0.023
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.017
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.329
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.329
+(Bid,latest) - (Open)	-0.017
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.023
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.329
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:30 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:30 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12813)
+[2020.09.05 00:17:30 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.001
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.039
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:30 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:31 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:31 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:31 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:31 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:37 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12814)
+[2020.09.05 00:17:37 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:37 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:37 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12815)
+[2020.09.05 00:17:37 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.335
+(Bid,latest) - (Open)	0.004
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.044
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.335
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.335
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.335
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.335
+(Bid,latest) - (Open)	-0.017
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.023
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.335
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.335
+(Bid,latest) - (Open)	-0.011
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.029
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.335
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:37 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:37 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:38 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12816)
+[2020.09.05 00:17:38 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.334
+(Bid,latest) - (Open)	0.003
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.043
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.390
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.334
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.390
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.334
+(Bid,latest) - (Open)	-0.018
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.022
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.390
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.334
+(Bid,latest) - (Open)	-0.012
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.028
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.390
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:38 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:38 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12817)
+[2020.09.05 00:17:38 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.334
+(Bid,latest) - (Open)	0.003
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.043
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.389
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.334
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.389
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.334
+(Bid,latest) - (Open)	-0.018
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.022
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.389
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.334
+(Bid,latest) - (Open)	-0.012
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.028
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.389
+Latest_Price.bid	106.334
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:38 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:38 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12818)
+[2020.09.05 00:17:38 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.332
+(Bid,latest) - (Open)	0.001
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.041
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.332
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.332
+(Bid,latest) - (Open)	-0.018
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.022
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.332
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.332
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.332
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.332
+(Bid,latest) - (Open)	-0.014
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.026
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.332
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:38 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:38 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12819)
+[2020.09.05 00:17:38 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:38 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:38 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:40 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12820)
+[2020.09.05 00:17:40 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.001
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.039
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.007
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.007
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:40 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:40 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12821)
+[2020.09.05 00:17:40 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:40 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:40 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:42 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12822)
+[2020.09.05 00:17:42 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.337
+(Bid,latest) - (Open)	0.006
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.046
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.337
+(Bid,latest) - (Open)	-0.013
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.027
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.337
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.337
+(Bid,latest) - (Open)	-0.009
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.031
+Spread : Latest_Price.ask - Latest_Price.bid	0.004
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.391
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.004
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:42 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:42 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:43 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12823)
+[2020.09.05 00:17:43 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.337
+(Bid,latest) - (Open)	0.006
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.046
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.337
+(Bid,latest) - (Open)	-0.013
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.027
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.337
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.337
+(Bid,latest) - (Open)	-0.009
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.031
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.337
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:43 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:43 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:44 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12824)
+[2020.09.05 00:17:44 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.338
+(Bid,latest) - (Open)	0.007
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.047
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.393
+Latest_Price.bid	106.338
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.338
+(Bid,latest) - (Open)	-0.012
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.028
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.393
+Latest_Price.bid	106.338
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.338
+(Bid,latest) - (Open)	-0.014
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.026
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.393
+Latest_Price.bid	106.338
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.338
+(Bid,latest) - (Open)	-0.008
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.032
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.393
+Latest_Price.bid	106.338
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:44 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:44 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12825)
+[2020.09.05 00:17:44 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.336
+(Bid,latest) - (Open)	0.005
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.045
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.336
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.336
+(Bid,latest) - (Open)	-0.014
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.026
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.336
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.336
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.336
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.336
+(Bid,latest) - (Open)	-0.010
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.030
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.392
+Latest_Price.bid	106.336
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:44 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:44 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:47 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12826)
+[2020.09.05 00:17:47 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.333
+(Bid,latest) - (Open)	0.002
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.042
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.333
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.333
+(Bid,latest) - (Open)	-0.017
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.023
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.333
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.333
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.333
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.333
+(Bid,latest) - (Open)	-0.013
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.027
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.388
+Latest_Price.bid	106.333
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:47 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:47 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12827)
+[2020.09.05 00:17:47 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:47 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:47 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12828)
+[2020.09.05 00:17:47 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:47 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:47 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:48 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12829)
+[2020.09.05 00:17:48 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.001
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.039
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:48 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:48 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:49 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12830)
+[2020.09.05 00:17:49 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.001
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.039
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.385
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:49 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:49 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:57 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12831)
+[2020.09.05 00:17:57 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.001
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.039
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:57 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:57 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.020
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.020
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:57 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.022
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.018
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.330
+(Bid,latest) - (Open)	-0.016
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.024
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.330
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:58 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:58 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12832)
+[2020.09.05 00:17:58 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:58 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:58 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:59 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12833)
+[2020.09.05 00:17:59 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:59 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:17:59 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12834)
+[2020.09.05 00:17:59 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.006
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.387
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.006
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:17:59 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:17:59 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
+[2020.09.05 00:18:00 / ea-6.mq4:288][ea-6.mq4:278] starting... (tick = 12835)
+[2020.09.05 00:18:00 / ea-6.mq4:1713]numOf_Orders ==> 4
+[ea-6.mq4:1518] pending orders : 4
+OrderTicket	28327665
+OrderOpenPrice	106.331
+OrderTakeProfit	106.228
+OrderStopLoss	106.386
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	0.000
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.291
+(Bid) - (Trail threshold)	0.040
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1713]OrderTicket	28328390
+OrderOpenPrice	106.350
+OrderTakeProfit	106.245
+OrderStopLoss	106.405
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.019
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.310
+(Bid) - (Trail threshold)	0.021
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1713]OrderTicket	28328602
+OrderOpenPrice	106.352
+OrderTakeProfit	106.247
+OrderStopLoss	106.407
+(TP) - (SL)	-0.160
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.021
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.312
+(Bid) - (Trail threshold)	0.019
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1713]OrderTicket	28328692
+OrderOpenPrice	106.346
+OrderTakeProfit	106.241
+OrderStopLoss	106.399
+(TP) - (SL)	-0.158
+Bid,latest	106.331
+(Bid,latest) - (Open)	-0.015
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) - (valOf_Threshold_Trailing * Point)	106.306
+(Bid) - (Trail threshold)	0.025
+Spread : Latest_Price.ask - Latest_Price.bid	0.005
+(Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)	106.386
+Latest_Price.bid	106.331
+valOf_MinstopLevel	0.050
+diffOf_Bid_Ask	0.005
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> true
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:1754][ea-6.mq4:1738] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.05 00:18:00 / ea-6.mq4:326][ea-6.mq4:320] _is_NewBar => false
+[2020.09.05 00:18:00 / ea-6.mq4:619][ea-6.mq4:616] (step : j1 : N : 1) NOT a new bar
