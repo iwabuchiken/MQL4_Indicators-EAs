@@ -1,0 +1,787 @@
+
+[2020.09.03 21:32:11 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.066
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.026
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.089
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.049
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.039
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	-0.001
+
+
+OrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.052
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.012
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.050
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.010
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.041
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.001
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.647
+(Bid,latest) - (Open)	0.025
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.015
+
+
+
+[2020.09.03 21:32:12 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.067
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.027
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.090
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.050
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.040
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	-0.000
+
+
+OrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.053
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.013
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.051
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.011
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.042
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.002
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.026
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.014
+
+
+
+[2020.09.03 21:32:13 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.067
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.027
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.090
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.050
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.040
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	-0.000
+
+
+OrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.053
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.013
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.051
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.011
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.042
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.002
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.648
+(Bid,latest) - (Open)	0.026
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.014
+
+
+
+[2020.09.03 21:32:13 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.068
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.028
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.091
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.051
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.041
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	0.001
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.054
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.014
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.052
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.012
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.043
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.003
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.649
+(Bid,latest) - (Open)	0.027
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.013
+
+
+
+[2020.09.03 21:32:16 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.070
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.030
+
+
+modifying order for : 28296763
+OrderModify result ==> true
+OrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.093
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.053
+
+
+modifying order for : 28296856
+OrderModify result ==> true
+OrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.043
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	0.003
+
+
+modifying order for : 28296939
+OrderModify result ==> true
+OrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.056
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.016
+
+
+modifying order for : 28297047
+OrderModify result ==> true
+OrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.054
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.014
+
+
+modifying order for : 28297110
+OrderModify result ==> true
+OrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.750
+OrderStopLoss	77.600
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.045
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.005
+
+
+modifying order for : 28297277
+OrderModify result ==> true
+OrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.651
+(Bid,latest) - (Open)	0.029
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.011
+
+
+
+[2020.09.03 21:32:16 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.069
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.029
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.092
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.052
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.042
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	0.002
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.055
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.015
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.053
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.013
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.044
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.004
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.012
+
+
+
+[2020.09.03 21:32:16 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.069
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.029
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.092
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.052
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.042
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	0.002
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.055
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.015
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.053
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.013
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.044
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.004
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.012
+
+
+
+[2020.09.03 21:32:17 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.069
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.029
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.092
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.052
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.042
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	0.002
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.055
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.015
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.053
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.013
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.044
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.004
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.012
+
+
+
+[2020.09.03 21:32:18 / ea-4.mq4:1722]numOf_Orders ==> 7
+OrderTicket	28296763
+OrderOpenPrice	77.581
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.069
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.621
+(Bid) - (Trail threshold)	0.029
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296856
+OrderOpenPrice	77.558
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.092
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.598
+(Bid) - (Trail threshold)	0.052
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28296939
+OrderOpenPrice	77.608
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.042
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.648
+(Bid) - (Trail threshold)	0.002
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297047
+OrderOpenPrice	77.595
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.055
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.635
+(Bid) - (Trail threshold)	0.015
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297110
+OrderOpenPrice	77.597
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.053
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.637
+(Bid) - (Trail threshold)	0.013
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297277
+OrderOpenPrice	77.606
+OrderTakeProfit	77.751
+OrderStopLoss	77.601
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.044
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.646
+(Bid) - (Trail threshold)	0.004
+
+
+cond_2 ==> false : ((double) Latest_Price.bid - (double) valOf_MinstopLevel) <= price_Curr_SLOrderTicket	28297353
+OrderOpenPrice	77.622
+OrderTakeProfit	77.709
+OrderStopLoss	77.559
+(TP) - (SL)	0.150
+Bid,latest	77.650
+(Bid,latest) - (Open)	0.028
+valOf_Threshold_Trailing * Point	0.040
+Trail threshold = (Open) + (valOf_Threshold_Trailing * Point)	77.662
+(Bid) - (Trail threshold)	-0.012
+
+
+
