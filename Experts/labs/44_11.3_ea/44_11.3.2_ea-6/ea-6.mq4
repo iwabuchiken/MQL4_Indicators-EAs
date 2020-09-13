@@ -274,6 +274,7 @@ int start()
    
    Print("[", __FILE__, ":",__LINE__,"] ", txt);
    */
+/*
    //debug
    txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] starting..."
             + " (tick = "
@@ -287,7 +288,7 @@ int start()
    write_Log(dpath_Log , fname_Log_For_Session
          , __FILE__ , __LINE__ , txt_EA_4);
    
-
+*/
    //code:20200728_140603:
    
 
@@ -317,13 +318,18 @@ int start()
    result_b_global = _is_NewBar();
 
    //debug
-   txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b_global;
-   
-   //debug
-   Print(txt_EA_4);
-   
-   write_Log(dpath_Log , fname_Log_For_Session
-         , __FILE__ , __LINE__ , txt_EA_4);
+   if(result_b_global == true)
+     {
+
+         txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] _is_NewBar => " + (string) result_b_global;
+         
+         //debug
+         Print(txt_EA_4);
+         
+         write_Log(dpath_Log , fname_Log_For_Session
+               , __FILE__ , __LINE__ , txt_EA_4);
+      
+     }
 
    //code:20200728_140922:c
    
@@ -612,12 +618,13 @@ int start()
             step : j1 : N : 1
                log
          ********************************/
+/*
          //debug
          txt_EA_4 = "[" + __FILE__ + ":" + (string) __LINE__ + "] (step : j1 : N : 1) NOT a new bar";
          
          write_Log(dpath_Log , fname_Log_For_Session
                , __FILE__ , __LINE__ , txt_EA_4);     
-
+*/
      }//if(result_b_global == true)//_is_NewBar
 
    //debug
@@ -1481,47 +1488,47 @@ void trail_Orders() {
    SymbolInfoTick(Symbol(), Latest_Price);
    
    
-   txt = "numOf_Orders ==> "
-         + (string) numOf_Orders
-   ;
-   
-   txt += "\n";
+//   txt = "numOf_Orders ==> "
+//         + (string) numOf_Orders
+//   ;
+//   
+//   txt += "\n";
 
-   /*******************
-      step : 2.1
-         validate
-   *******************/   
-   if(numOf_Orders <= 0)
-     {
-         txt += StringFormat("[%s:%d] no pending orders : %d"
-                  
-                  , __FILE__, __LINE__
-                  , numOf_Orders
-                  );
-         
-         txt += "\n";
-         
-         //write_Log(dpath_Log , fname_Log_For_Trailing_Data
-         write_Log(dpath_Log , fname_Log_For_Session
-         
-            , __FILE__ , __LINE__ , txt);
-   
-         // return
-         return;   
-         
-     }
-   else
-     {
-         //code:20200804_130436
-         txt += StringFormat("[%s:%d] pending orders : %d"
-                  
-                  , __FILE__, __LINE__
-                  , numOf_Orders
-                  );
-         
-         txt += "\n";
-      
-     }
+//   /*******************
+//      step : 2.1
+//         validate
+//   *******************/   
+//   if(numOf_Orders <= 0)
+//     {
+//         txt += StringFormat("[%s:%d] no pending orders : %d"
+//                  
+//                  , __FILE__, __LINE__
+//                  , numOf_Orders
+//                  );
+//         
+//         txt += "\n";
+//         
+//         //write_Log(dpath_Log , fname_Log_For_Trailing_Data
+//         write_Log(dpath_Log , fname_Log_For_Session
+//         
+//            , __FILE__ , __LINE__ , txt);
+//   
+//         // return
+//         return;   
+//         
+//     }
+//   else
+//     {
+//         //code:20200804_130436
+//         txt += StringFormat("[%s:%d] pending orders : %d"
+//                  
+//                  , __FILE__, __LINE__
+//                  , numOf_Orders
+//                  );
+//         
+//         txt += "\n";
+//      
+//     }
 
    //code:20200804_125006:c
 
@@ -1573,7 +1580,7 @@ void trail_Orders() {
             //txt += "ticket num\t" + (string) OrderTicket();
             txt += StringFormat(
                      "OrderTicket\t%d" + "\n"
-                     + "OrderOpenPrice\t%.03f" + "\n"
+/*                     + "OrderOpenPrice\t%.03f" + "\n"
                      
                      + "OrderTakeProfit\t%.03f" + "\n"
                      + "OrderStopLoss\t%.03f" + "\n"
@@ -1601,12 +1608,12 @@ void trail_Orders() {
                      + "valOf_MinstopLevel\t%.03f" + "\n"
    
                      + "diffOf_Bid_Ask\t%.03f" + "\n"
-   
+   */
    
                      + "\n"
                      
                      , (int) OrderTicket()
-                     , (double) OrderOpenPrice()
+/*                     , (double) OrderOpenPrice()
                      
                      , (double) OrderTakeProfit()
                      , (double) OrderStopLoss()
@@ -1637,7 +1644,7 @@ void trail_Orders() {
                      , Latest_Price.bid
                      , valOf_MinstopLevel
                      , diffOf_Ask_Bid
-                     
+*/                     
                      );
             
             //return;
