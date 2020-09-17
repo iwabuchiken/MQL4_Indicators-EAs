@@ -1,0 +1,20 @@
+[2020.09.11 18:17:22 / lib_ea_2.mqh:1642]get_Stats__Bar_Width ==> starting...
+[2020.09.11 18:17:22 / lib_ea_2.mqh:1830]
+lenOf_Close_Array	65247
+
+symbol	USDJPY
+period	5
+start	2020.09.11 12:15:00
+end	2020.09.11 11:50:00
+lenOf_Target_Prices	100
+
+<histogram of diffs>
+lo_Threshold_Prices(<=)	histo
+0.010	60	0.60
+0.020	30	0.30
+0.030	7	0.07
+0.040	2	0.02
+0.050	0	0.00
+0.060	1	0.01
+more	0	0.00
+
