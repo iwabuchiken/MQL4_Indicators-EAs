@@ -1,0 +1,1605 @@
+
+[2020.09.15 23:41:47 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:47 / ea-6.mq4:1720]OrderTicket	28492274
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:47 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:47 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:47 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:47 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:47 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28491321
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28491532
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28491990
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28492274
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:49 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491321
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491532
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491990
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28492274
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491321
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28491990
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:50 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:51 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:51 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:51 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:51 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:51 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:51 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:52 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:54 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:54 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:54 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:54 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:54 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:54 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:55 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:55 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:55 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:55 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:55 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:55 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:56 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:57 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:57 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:57 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:57 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:57 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:57 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:41:59 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:00 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:00 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:00 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:00 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:00 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:00 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:01 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28491909
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:02 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:03 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:04 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:04 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:04 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:04 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:05 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:05 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:05 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:05 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:06 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:10 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:10 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:10 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:10 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:12 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:13 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:16 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:17 / ea-6.mq4:1720]OrderTicket	28492306
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:17 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:17 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:17 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:18 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:18 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:18 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:18 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:20 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:20 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:21 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:21 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:21 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:21 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:22 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:22 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:22 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:22 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:22 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:22 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+
+[2020.09.15 23:42:23 / ea-6.mq4:1720]OrderTicket	28492361
+
+cond_OrderModify_1 : (double) Latest_Price.bid < ((double) OrderOpenPrice() - (double) valOf_Threshold_Trailing * Point)
+	==> false
+cond_OrderModify_2 : price_Curr_SL > ((double) Latest_Price.bid + valOf_MinstopLevel + diffOf_Bid_Ask)
+	==> false
+
+
+[2020.09.15 23:42:23 / ea-6.mq4:1761][ea-6.mq4:1745] (for)(step : 3 : 2.2 : 2 : N : 1)
+cond_OrderModify_3_Final : 	==> false
+continue for-loop...
+
+

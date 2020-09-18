@@ -1,0 +1,56 @@
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1343][lib_ea_2.mqh:1320]
+symbol!!	AUDJPY
+period	5
+this file	[ea-6_tester-1].(20200914_095555).(bar-data).log
+	datetime current	BB.-5	BB.-4	BB.-3	BB.-2	BB.-1	u/d.-5	u/d.-4	u/d.-3	u/d.-2	u/d.-1	width.-5	width.-4	width.-3	width.-2	width.-1
+	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1363]header ==> written(Close[1] = 77.217) / _lo_DateTime[0] = 2020.09.14 03:55:00
+
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1379]	2020.09.14 03:55:00	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1426]	2020.09.14 03:55:00	6	5	5	5	4	1	1	-1	1	1	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1476]lo_Thresholds[2] = -0.01
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1520]	2020.09.14 03:55:00	6	5	5	5	4	1	1	-1	1	1	0.013	0.006	-0.002	0.011	0.009	2	1	-1	2	1	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1598]	2020.09.14 03:55:00	6	5	5	5	4	1	1	-1	1	1	0.013	0.006	-0.002	0.011	0.009	2	1	-1	2	1	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1605]op_Get_BB_Loc_Nums ==> complete
+
+[2020.09.14 09:55:55 / ea-6.mq4:1149]
+i = 1 / width level = 1
+
+i = 2 / width level = 2
+
+i = 3 / width level = -1
+
+i = 4 / width level = 1
+
+i = 5 / width level = 2
+
+i = 6 / width level = -4
+
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1343][lib_ea_2.mqh:1320]
+symbol!!	USDJPY
+period	5
+this file	[ea-6_tester-1].(20200914_095555).(bar-data).log
+	datetime current	BB.-5	BB.-4	BB.-3	BB.-2	BB.-1	u/d.-5	u/d.-4	u/d.-3	u/d.-2	u/d.-1	width.-5	width.-4	width.-3	width.-2	width.-1
+	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1363]header ==> written(Close[1] = 106.159) / _lo_DateTime[0] = 2020.09.14 03:55:00
+
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1379]	2020.09.14 03:55:00	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1426]	2020.09.14 03:55:00	3	3	2	2	2	1	-1	1	1	1	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1476]lo_Thresholds[2] = -0.01
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1520]	2020.09.14 03:55:00	3	3	2	2	2	1	-1	1	1	1	0.002	-0.002	0.012	0.001	0.003	1	-1	2	1	1	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1598]	2020.09.14 03:55:00	3	3	2	2	2	1	-1	1	1	1	0.002	-0.002	0.012	0.001	0.003	1	-1	2	1	1	
+[2020.09.14 09:55:55 / lib_ea_2.mqh:1605]op_Get_BB_Loc_Nums ==> complete
+
+[2020.09.14 09:55:55 / ea-6.mq4:1149]
+i = 1 / width level = 1
+
+i = 2 / width level = 1
+
+i = 3 / width level = 2
+
+i = 4 / width level = -1
+
+i = 5 / width level = 1
+
+i = 6 / width level = 1
+
