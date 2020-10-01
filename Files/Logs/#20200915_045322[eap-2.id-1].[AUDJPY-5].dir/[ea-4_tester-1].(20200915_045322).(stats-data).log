@@ -1,0 +1,20 @@
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1629]get_Stats__Bar_Width ==> starting...
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1817]
+lenOf_Close_Array	27168
+
+symbol	AUDJPY
+period	5
+start	2020.09.14 22:50:00
+end	2020.09.14 22:25:00
+lenOf_Target_Prices	100
+
+<histogram of diffs>
+lo_Threshold_Prices(<=)	histo
+0.010	29	0.29
+0.020	37	0.37
+0.030	20	0.20
+0.040	8	0.08
+0.050	2	0.02
+0.060	3	0.03
+more	1	0.01
+

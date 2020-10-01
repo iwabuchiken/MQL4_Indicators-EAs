@@ -1,0 +1,28 @@
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1330][lib_ea_2.mqh:1307]
+symbol!!	AUDJPY
+period	5
+this file	[ea-4_tester-1].(20200915_045322).(bar-data).log
+	datetime current	BB.-5	BB.-4	BB.-3	BB.-2	BB.-1	u/d.-5	u/d.-4	u/d.-3	u/d.-2	u/d.-1	width.-5	width.-4	width.-3	width.-2	width.-1
+	
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1350]header ==> written(Close[1] = 77.11499999999999) / _lo_DateTime[0] = 2020.09.14 22:50:00
+
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1366]	2020.09.14 22:50:00	
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1413]	2020.09.14 22:50:00	2	2	2	2	2	1	1	1	1	-1	
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1463]lo_Thresholds[2] = -0.01
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1507]	2020.09.14 22:50:00	2	2	2	2	2	1	1	1	1	-1	0.011	0.010	0.003	0.015	-0.002	2	2	1	2	-1	
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1585]	2020.09.14 22:50:00	2	2	2	2	2	1	1	1	1	-1	0.011	0.010	0.003	0.015	-0.002	2	2	1	2	-1	
+[2020.09.15 04:53:22 / lib_ea_2.mqh:1592]op_Get_BB_Loc_Nums ==> complete
+
+[2020.09.15 04:53:22 / ea-4.mq4:1206]
+i = 1 / width level = -1
+
+i = 2 / width level = 2
+
+i = 3 / width level = 1
+
+i = 4 / width level = 2
+
+i = 5 / width level = 2
+
+i = 6 / width level = -3
+
