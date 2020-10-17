@@ -1,0 +1,30 @@
+param is '[1]'
+all params are : '[1] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201013_180907 + 20201016_113448'
+setting param...
+executing...
+Setting a var: WORKS_HOME=C:\WORKS_2
+Setting a var: BATCHES_HOME=C:\WORKS_2\batches
+Setting a var: SAKURA_HOME=C:\WORKS_2\Programs\sakura
+Setting a var: JAVA_1.8_BIN_HOME=C:\WORKS_2\Programs\Java\jdk1.8.0_144\bin
+Setting a var: COMMANDS=C:\WORKS_2\Utils\commands
+Setting a var: GIT_CMD="C:\WORKS_2\Programs\Git_2.14.1\bin"
+Setting a var: SQLITE3_BIN_HOME=C:\WORKS_2\Programs\sqlite-tools-win32-x86-3140200
+Setting a var: PHP_BIN_HOME=C:\xampp_5.6\php
+Setting a var: RUBY_BIN_HOME=C:\WORKS_2\Programs\Ruby24-x64\bin
+yes!
+Setting a var: MINGW_64_BIN_HOME=C:\mingw-w64\x86_64-6.2.0-posix-seh-rt_v5-rev1\mingw64\bin
+Setting a var: PYTHON_HOME=C:\WORKS_2\Programs\Python\Python_3.5.1
+
+Setting aliases for git
+	=> checkout -> co, push -> p, add -> a, log -> l,			status -> s, commit -> c
+param is ... 'oj'
+param is "oj"!
+changing to ... C:\WORKS_2\WS\WS_Others.JVEMV6
+[master 8e86e72] [1] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201013_180907 + 20201016_113448
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 JVEMV6/44_currency/10_prog-php/2_tester/tasks_[51.1].odt
+
+C:\WORKS_2\WS\WS_Others.JVEMV6>g pull https://github.com/iwabuchiken/WS_Others.JVEMV6.git 
+Already up-to-date.
+
+C:\WORKS_2\WS\WS_Others.JVEMV6>g push origin master 
