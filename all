@@ -1,5 +1,5 @@
-param is '[1]'
-all params are : '[1] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201013_180907 + 20201016_113448'
+param is '[2]'
+all params are : '[2] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201017_143639'
 setting param...
 executing...
 Setting a var: WORKS_HOME=C:\WORKS_2
@@ -20,9 +20,9 @@ Setting aliases for git
 param is ... 'oj'
 param is "oj"!
 changing to ... C:\WORKS_2\WS\WS_Others.JVEMV6
-[master 8e86e72] [1] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201013_180907 + 20201016_113448
+[master 3f826ec] [2] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201017_143639
  3 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 JVEMV6/44_currency/10_prog-php/2_tester/tasks_[51.1].odt
+ rewrite JVEMV6/44_currency/10_prog-php/2_tester/log_JVE_44_6_2.[session-26~].ods (63%)
 
 C:\WORKS_2\WS\WS_Others.JVEMV6>g pull https://github.com/iwabuchiken/WS_Others.JVEMV6.git 
 Already up-to-date.
