@@ -1,5 +1,5 @@
-param is '[2]'
-all params are : '[2] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201017_143639'
+param is '[3]'
+all params are : '[3] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201018_151851'
 setting param...
 executing...
 Setting a var: WORKS_HOME=C:\WORKS_2
@@ -20,11 +20,10 @@ Setting aliases for git
 param is ... 'oj'
 param is "oj"!
 changing to ... C:\WORKS_2\WS\WS_Others.JVEMV6
-[master 3f826ec] [2] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201017_143639
- 3 files changed, 0 insertions(+), 0 deletions(-)
- rewrite JVEMV6/44_currency/10_prog-php/2_tester/log_JVE_44_6_2.[session-26~].ods (63%)
+[master d7f1f0d] [3] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201018_151851
+ 3 files changed, 1 insertion(+), 1 deletion(-)
 
-C:\WORKS_2\WS\WS_Others.JVEMV6>g pull https://github.com/iwabuchiken/WS_Others.JVEMV6.git 
+(env) C:\WORKS_2\WS\WS_Others.JVEMV6>g pull https://github.com/iwabuchiken/WS_Others.JVEMV6.git 
 Already up-to-date.
 
-C:\WORKS_2\WS\WS_Others.JVEMV6>g push origin master 
+(env) C:\WORKS_2\WS\WS_Others.JVEMV6>g push origin master 
