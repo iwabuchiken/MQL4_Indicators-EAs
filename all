@@ -1,5 +1,5 @@
-param is '[4]'
-all params are : '[4] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201019_170250'
+param is '[5]'
+all params are : '[5] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201021_172000'
 setting param...
 executing...
 Setting a var: WORKS_HOME=C:\WORKS_2
@@ -20,10 +20,10 @@ Setting aliases for git
 param is ... 'oj'
 param is "oj"!
 changing to ... C:\WORKS_2\WS\WS_Others.JVEMV6
-[master 9f2a283] [4] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201019_170250
+[master fd0a29b] [5] res free# JVEMV6 44#13.51.1_X / 44. currency / 13. tasks / 51. observe / 1. specific-selections:prev 4 bars == up/down / 20201021_172000
  4 files changed, 1 insertion(+), 1 deletion(-)
 
-(env) C:\WORKS_2\WS\WS_Others.JVEMV6>g pull https://github.com/iwabuchiken/WS_Others.JVEMV6.git 
+C:\WORKS_2\WS\WS_Others.JVEMV6>g pull https://github.com/iwabuchiken/WS_Others.JVEMV6.git 
 Already up-to-date.
 
-(env) C:\WORKS_2\WS\WS_Others.JVEMV6>g push origin master 
+C:\WORKS_2\WS\WS_Others.JVEMV6>g push origin master 
