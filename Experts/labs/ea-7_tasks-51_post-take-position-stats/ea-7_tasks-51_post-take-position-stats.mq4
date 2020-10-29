@@ -28,15 +28,17 @@
 //+------------------------------------------------------------------+
 //| externs
 //+------------------------------------------------------------------+
-//extern int Time_period        = PERIOD_M1;
-extern int Time_period        = PERIOD_M5;
+extern int Time_period        = PERIOD_M1;
+//extern int Time_period        = PERIOD_M5;
 //extern int Time_period        = PERIOD_M15;
 
 //ref Ask_MFI_EA
 extern int MagicNumber  = 10001;
 extern double Lots      = 0.1;
-extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
-extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+//extern double StopLoss  = 20 * 0.001;  // StopLoss (in currency)
+//extern double TakeProfit= 40 * 0.001;  // TakeProfit (in currency)
+extern double StopLoss  = 0.04;  // StopLoss (in currency)
+extern double TakeProfit= 0.08;  // TakeProfit (in currency)
 //extern double StopLoss  = 30 * 0.001;  // StopLoss (in currency)
 //extern double TakeProfit= 70 * 0.001;  // TakeProfit (in currency)
 
@@ -519,8 +521,10 @@ int start()
                            buy ==> exec
                      ********************************/
                      //_20200411_104528:tmp
-                     double minstoplevel    = 0.05;
-                     double mintakelevel    = 0.10;
+                     //double minstoplevel    = 0.05;
+                     //double mintakelevel    = 0.10;
+                     double minstoplevel    = StopLoss;
+                     double mintakelevel    = TakeProfit;
                      
                      //marker:20201028_173432
                      int result_i = take_Position__Buy(minstoplevel, mintakelevel);
