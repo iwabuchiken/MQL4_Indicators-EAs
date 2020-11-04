@@ -1,0 +1,23 @@
+program file path = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Files/Logs/get_folder_list.[v.2].20190210_091405.rb
+version = 1.0
+list file created at = 20201104_131411
+dir path = C:/Users/iwabuchiken/AppData/Roaming/MetaQuotes/Terminal/34B08C83A5AAE27A4079DE708E60511E/MQL4/Files/Logs
+dirs = 10
+files = 2
+
+<directories> 10 =========================
+1	20201029_134701[eap-2.id-1].[AUDJPY-1].dir
+2	20201029_135141[eap-2.id-1].[AUDJPY-1].dir
+3	20201029_141443[eap-2.id-1].[AUDJPY-1].dir
+4	20201029_142851[eap-2.id-1].[AUDJPY-1].dir
+5	20201029_150748[eap-2.id-1].[AUDJPY-5].dir
+6	20201102_092115[eap-2.id-1].[AUDJPY-5].dir
+7	20201103_091251[eap-2.id-1].[AUDJPY-5].dir
+8	20201103_134339[eap-2.id-1].[AUDJPY-5].dir
+9	20201103_134445[eap-2.id-1].[AUDJPY-5].dir
+10	storage_Logs
+
+
+<files> 2 =========================
+1	dev.log
+2	get_folder_list.[v.2].20190210_091405.rb
