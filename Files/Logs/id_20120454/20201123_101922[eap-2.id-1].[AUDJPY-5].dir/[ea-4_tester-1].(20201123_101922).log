@@ -1,0 +1,276 @@
+[2020.11.23 10:19:22 / ea-4.mq4:1244][ea-4.mq4:1231]
+thie file	[ea-4_tester-1].(20201123_101922).log
+[ea-4.mq4:1233] 
+init... : PGName = file=ea-4:dp=dp_2__All_True
+:StopLoss=0.04
+:TakeProfit=0.08
+:TrailingStop=0.03
+
+init ==> comp : file=ea-4:dp=dp_2__All_True
+:StopLoss=0.04
+:TakeProfit=0.08
+:TrailingStop=0.03
+
+[2020.11.23 10:19:22 / ea-4.mq4:1511][ea-4.mq4:1499] symbol + period => AUDJPY / 5
+[2020.11.23 10:19:22 / ea-4.mq4:1278][ea-4.mq4:1271] is_Order_Pending => -1
+[2020.11.23 10:19:22 / ea-4.mq4:1329][ea-4.mq4:1298] _is_NewBar => false
+[ea-4.mq4:1317] num_BB_Area => 2 (index = 0)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1073][lib_ea_2.mqh:1066] get_BB_Loc_Nums() ==> starts
+
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1140]_lo_Price_Close[0]	75.987	2020.11.23 03:15:00(num_BB_Area = 2)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1140]_lo_Price_Close[1]	76.000	2020.11.23 03:10:00(num_BB_Area = 2)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1140]_lo_Price_Close[2]	75.985	2020.11.23 03:05:00(num_BB_Area = 2)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1140]_lo_Price_Close[3]	75.958	2020.11.23 03:00:00(num_BB_Area = 3)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1140]_lo_Price_Close[4]	75.977	2020.11.23 02:55:00(num_BB_Area = 2)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1140]_lo_Price_Close[5]	75.980	2020.11.23 02:50:00(num_BB_Area = 2)
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1185][lib_ea_2.mqh:1176] _lo_Price_Close => vals set
+
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1287][lib_ea_2.mqh:1264] op_Get_BB_Loc_Nums
+_lo_BB_Loc_Nums[0]	2	(up/down = -1)
+_lo_BB_Loc_Nums[1]	2	(up/down = 1)
+_lo_BB_Loc_Nums[2]	2	(up/down = 1)
+_lo_BB_Loc_Nums[3]	3	(up/down = -1)
+_lo_BB_Loc_Nums[4]	2	(up/down = -1)
+_lo_BB_Loc_Nums[5]	2	(up/down = 1)
+
+[2020.11.23 10:19:22 / lib_ea_2.mqh:1340]bar data file : header ==> written (bar data file = [ea-4_tester-1].(20201123_101922).(bar-data).log)
+[2020.11.23 10:19:22 / ea-4.mq4:1409][ea-4.mq4:1405] calling ==> get_Stats__Bar_Width : file = [ea-4_tester-1].(20201123_101922).(stats-data).log
+
+[2020.11.23 10:19:22 / ea-4.mq4:1482][ea-4.mq4:1475] init() ==> exiting...
+
+[2020.11.23 10:19:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29237927
+
+[2020.11.23 10:24:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29237956
+
+[2020.11.23 10:30:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238005
+
+[2020.11.23 10:34:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238047
+
+[2020.11.23 10:39:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238080
+
+[2020.11.23 10:45:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238096
+
+[2020.11.23 10:50:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238133
+
+[2020.11.23 10:54:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238152
+
+[2020.11.23 10:59:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238181
+
+[2020.11.23 11:05:03 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238204
+
+[2020.11.23 11:10:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238216
+
+[2020.11.23 11:15:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238241
+
+[2020.11.23 11:20:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238262
+
+[2020.11.23 11:25:04 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238276
+
+[2020.11.23 11:29:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238291
+
+[2020.11.23 11:34:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238338
+
+[2020.11.23 11:40:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238375
+
+[2020.11.23 11:44:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238401
+
+[2020.11.23 11:50:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238442
+
+[2020.11.23 11:54:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238460
+
+[2020.11.23 11:59:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238512
+
+[2020.11.23 12:04:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238547
+
+[2020.11.23 12:10:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238563
+
+[2020.11.23 12:14:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238571
+
+[2020.11.23 12:20:05 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238585
+
+[2020.11.23 12:25:05 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238596
+
+[2020.11.23 12:29:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238606
+
+[2020.11.23 12:35:03 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238626
+
+[2020.11.23 12:39:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238645
+
+[2020.11.23 12:45:17 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238655
+
+[2020.11.23 12:50:25 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238674
+
+[2020.11.23 12:54:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238685
+
+[2020.11.23 12:59:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238699
+
+[2020.11.23 13:04:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238719
+
+[2020.11.23 13:09:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238741
+
+[2020.11.23 13:15:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238759
+
+[2020.11.23 13:20:24 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238782
+
+[2020.11.23 13:25:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238794
+
+[2020.11.23 13:29:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238803
+
+[2020.11.23 13:34:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238820
+
+[2020.11.23 13:40:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238826
+
+[2020.11.23 13:45:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238839
+
+[2020.11.23 13:49:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238856
+
+[2020.11.23 13:55:23 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238862
+
+[2020.11.23 13:59:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238868
+
+[2020.11.23 14:05:02 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238904
+
+[2020.11.23 14:10:02 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238913
+
+[2020.11.23 14:14:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238926
+
+[2020.11.23 14:19:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238943
+
+[2020.11.23 14:24:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238965
+
+[2020.11.23 14:29:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29238987
+
+[2020.11.23 14:34:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239007
+
+[2020.11.23 14:40:04 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239023
+
+[2020.11.23 14:44:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239036
+
+[2020.11.23 14:49:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239055
+
+[2020.11.23 14:54:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239072
+
+[2020.11.23 14:59:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239106
+
+[2020.11.23 15:05:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239214
+
+[2020.11.23 15:10:03 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239242
+
+[2020.11.23 15:14:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239267
+
+[2020.11.23 15:19:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239283
+
+[2020.11.23 15:24:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239300
+
+[2020.11.23 15:29:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239317
+
+[2020.11.23 15:35:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239337
+
+[2020.11.23 15:40:01 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239358
+
+[2020.11.23 15:44:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239375
+
+[2020.11.23 15:49:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239391
+
+[2020.11.23 15:54:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239426
+
+[2020.11.23 15:59:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239457
+
+[2020.11.23 16:04:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239580
+
+[2020.11.23 16:09:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239662
+
+[2020.11.23 16:14:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239701
+
+[2020.11.23 16:19:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239743
+
+[2020.11.23 16:24:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239770
+
+[2020.11.23 16:29:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239819
+
+[2020.11.23 16:34:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239880
+
+[2020.11.23 16:39:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239918
+
+[2020.11.23 16:44:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239939
+
+[2020.11.23 16:49:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29239988
+
+[2020.11.23 16:55:05 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240030
+
+[2020.11.23 16:59:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240077
+
+[2020.11.23 17:04:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240187
+
+[2020.11.23 17:09:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240261
+
+[2020.11.23 17:14:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240301
+
+[2020.11.23 17:19:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240363
+
+[2020.11.23 17:24:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240412
+
+[2020.11.23 17:30:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240485
+
+[2020.11.23 17:34:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240568
+
+[2020.11.23 17:39:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240635
+
+[2020.11.23 17:44:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240695
+
+[2020.11.23 17:49:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240739
+
+[2020.11.23 17:54:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240763
+
+[2020.11.23 17:59:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240826
+
+[2020.11.23 18:04:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240958
+
+[2020.11.23 18:09:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29240990
+
+[2020.11.23 18:14:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241009
+
+[2020.11.23 18:19:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241056
+
+[2020.11.23 18:24:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241136
+
+[2020.11.23 18:29:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241217
+
+[2020.11.23 18:34:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241266
+
+[2020.11.23 18:39:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241301
+
+[2020.11.23 18:45:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241365
+
+[2020.11.23 18:49:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241441
+
+[2020.11.23 18:54:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241469
+
+[2020.11.23 18:59:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241513
+
+[2020.11.23 19:04:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241573
+
+[2020.11.23 19:09:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241596
+
+[2020.11.23 19:14:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241620
+
+[2020.11.23 19:19:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241665
+
+[2020.11.23 19:24:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241711
+
+[2020.11.23 19:29:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241748
+
+[2020.11.23 19:34:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241839
+
+[2020.11.23 19:39:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241878
+
+[2020.11.23 19:44:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241919
+
+[2020.11.23 19:49:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29241947
+
+[2020.11.23 19:55:10 / lib_ea_2.mqh:314]OrderSend placed successfully : 29242018
+
+[2020.11.23 19:59:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29242139
+
+[2020.11.23 20:04:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29242254
+

@@ -1,0 +1,2048 @@
+[2020.11.23 10:19:39 / ea-7_tasks-51_post-take-position-stats.mq4:1233][ea-7_tasks-51_post-take-position-stats.mq4:1220]
+thie file	[ea-4_tester-1].(20201123_101939).log
+[ea-7_tasks-51_post-take-position-stats.mq4:1222] 
+init... : PGName = file=ea-4:dp=dp_2__All_True
+:StopLoss=0.04
+:TakeProfit=0.08
+:TrailingStop=0.03
+
+init ==> comp : file=ea-4:dp=dp_2__All_True
+:StopLoss=0.04
+:TakeProfit=0.08
+:TrailingStop=0.03
+
+[2020.11.23 10:19:39 / ea-7_tasks-51_post-take-position-stats.mq4:1501][ea-7_tasks-51_post-take-position-stats.mq4:1489] symbol + period => AUDJPY / 5
+[2020.11.23 10:19:39 / ea-7_tasks-51_post-take-position-stats.mq4:1267][ea-7_tasks-51_post-take-position-stats.mq4:1260] is_Order_Pending => -1
+[2020.11.23 10:19:39 / ea-7_tasks-51_post-take-position-stats.mq4:1318][ea-7_tasks-51_post-take-position-stats.mq4:1287] _is_NewBar => false
+[ea-7_tasks-51_post-take-position-stats.mq4:1306] num_BB_Area => 2 (index = 0)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1090][lib_ea_2.mqh:1083] get_BB_Loc_Nums() ==> starts
+
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1157]_lo_Price_Close[0]	75.986	2020.11.23 03:15:00(num_BB_Area = 2)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1157]_lo_Price_Close[1]	76.000	2020.11.23 03:10:00(num_BB_Area = 2)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1157]_lo_Price_Close[2]	75.985	2020.11.23 03:05:00(num_BB_Area = 2)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1157]_lo_Price_Close[3]	75.958	2020.11.23 03:00:00(num_BB_Area = 3)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1157]_lo_Price_Close[4]	75.977	2020.11.23 02:55:00(num_BB_Area = 2)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1157]_lo_Price_Close[5]	75.980	2020.11.23 02:50:00(num_BB_Area = 2)
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1202][lib_ea_2.mqh:1193] _lo_Price_Close => vals set
+
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1304][lib_ea_2.mqh:1281] op_Get_BB_Loc_Nums
+_lo_BB_Loc_Nums[0]	2	(up/down = -1)
+_lo_BB_Loc_Nums[1]	2	(up/down = 1)
+_lo_BB_Loc_Nums[2]	2	(up/down = 1)
+_lo_BB_Loc_Nums[3]	3	(up/down = -1)
+_lo_BB_Loc_Nums[4]	2	(up/down = -1)
+_lo_BB_Loc_Nums[5]	2	(up/down = 1)
+
+[2020.11.23 10:19:39 / lib_ea_2.mqh:1357]bar data file : header ==> written (bar data file = [ea-4_tester-1].(20201123_101939).(bar-data).log)
+[2020.11.23 10:19:39 / ea-7_tasks-51_post-take-position-stats.mq4:1398][ea-7_tasks-51_post-take-position-stats.mq4:1394] calling ==> get_Stats__Bar_Width : file = [ea-4_tester-1].(20201123_101939).(stats-data).log
+
+[2020.11.23 10:19:39 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:19:39 / ea-7_tasks-51_post-take-position-stats.mq4:1472][ea-7_tasks-51_post-take-position-stats.mq4:1465] init() ==> exiting...
+
+[2020.11.23 10:19:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.98999999999999
+Ask	75.98999999999999
+Bid	75.98
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.94
+takeprofit	76.06
+
+[2020.11.23 10:20:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29237928
+
+[2020.11.23 10:20:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29237928
+[2020.11.23 10:20:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:24:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.98999999999999
+Ask	75.98999999999999
+Bid	75.982
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.94199999999999
+takeprofit	76.062
+
+[2020.11.23 10:24:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29237957
+
+[2020.11.23 10:24:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29237957
+[2020.11.23 10:24:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:30:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.98399999999999
+Ask	75.98399999999999
+Bid	75.974
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.934
+takeprofit	76.054
+
+[2020.11.23 10:30:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238004
+
+[2020.11.23 10:30:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238004
+[2020.11.23 10:30:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:34:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.971
+Ask	75.971
+Bid	75.961
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.92100000000001
+takeprofit	76.041
+
+[2020.11.23 10:34:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238045
+
+[2020.11.23 10:34:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238045
+[2020.11.23 10:34:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:39:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.971
+Ask	75.971
+Bid	75.962
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.922
+takeprofit	76.042
+
+[2020.11.23 10:39:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238079
+
+[2020.11.23 10:39:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238079
+[2020.11.23 10:39:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:45:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.983
+Ask	75.983
+Bid	75.974
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.934
+takeprofit	76.054
+
+[2020.11.23 10:45:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238098
+
+[2020.11.23 10:45:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238098
+[2020.11.23 10:45:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:49:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.95999999999999
+Ask	75.95999999999999
+Bid	75.95099999999999
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.911
+takeprofit	76.03100000000001
+
+[2020.11.23 10:50:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238131
+
+[2020.11.23 10:50:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238131
+[2020.11.23 10:50:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:54:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.97799999999999
+Ask	75.97799999999999
+Bid	75.968
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.928
+takeprofit	76.048
+
+[2020.11.23 10:54:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238150
+
+[2020.11.23 10:54:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238150
+[2020.11.23 10:54:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 10:59:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.982
+Ask	75.982
+Bid	75.974
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.934
+takeprofit	76.054
+
+[2020.11.23 10:59:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238176
+
+[2020.11.23 10:59:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238176
+[2020.11.23 10:59:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:05:02 / lib_ea_2.mqh:253](step : 1) vars
+price	75.979
+Ask	75.979
+Bid	75.96899999999999
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.929
+takeprofit	76.04900000000001
+
+[2020.11.23 11:05:03 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238205
+
+[2020.11.23 11:05:03 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238205
+[2020.11.23 11:05:03 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:10:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.98699999999999
+Ask	75.98699999999999
+Bid	75.977
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.937
+takeprofit	76.057
+
+[2020.11.23 11:10:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238217
+
+[2020.11.23 11:10:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238217
+[2020.11.23 11:10:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:14:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.958
+Ask	75.958
+Bid	75.94799999999999
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.908
+takeprofit	76.02800000000001
+
+[2020.11.23 11:15:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238243
+
+[2020.11.23 11:15:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238243
+[2020.11.23 11:15:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:20:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.95999999999999
+Ask	75.95999999999999
+Bid	75.95
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.91
+takeprofit	76.03
+
+[2020.11.23 11:20:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238263
+
+[2020.11.23 11:20:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238263
+[2020.11.23 11:20:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:25:03 / lib_ea_2.mqh:253](step : 1) vars
+price	75.95399999999999
+Ask	75.95399999999999
+Bid	75.943
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.90300000000001
+takeprofit	76.023
+
+[2020.11.23 11:25:04 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238278
+
+[2020.11.23 11:25:04 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238278
+[2020.11.23 11:25:04 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:29:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.949
+Ask	75.949
+Bid	75.938
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.898
+takeprofit	76.018
+
+[2020.11.23 11:29:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238293
+
+[2020.11.23 11:29:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238293
+[2020.11.23 11:29:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:34:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.914
+Ask	75.914
+Bid	75.905
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.86499999999999
+takeprofit	75.985
+
+[2020.11.23 11:34:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238337
+
+[2020.11.23 11:34:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238337
+[2020.11.23 11:34:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:39:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.92700000000001
+Ask	75.92700000000001
+Bid	75.916
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.876
+takeprofit	75.996
+
+[2020.11.23 11:40:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238376
+
+[2020.11.23 11:40:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238376
+[2020.11.23 11:40:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:44:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.91200000000001
+Ask	75.91200000000001
+Bid	75.90300000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.863
+takeprofit	75.983
+
+[2020.11.23 11:44:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238402
+
+[2020.11.23 11:44:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238402
+[2020.11.23 11:44:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:50:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.91800000000001
+Ask	75.91800000000001
+Bid	75.90900000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.869
+takeprofit	75.989
+
+[2020.11.23 11:50:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238444
+
+[2020.11.23 11:50:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238444
+[2020.11.23 11:50:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:54:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.934
+Ask	75.934
+Bid	75.925
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.88500000000001
+takeprofit	76.005
+
+[2020.11.23 11:54:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238463
+
+[2020.11.23 11:54:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238463
+[2020.11.23 11:54:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 11:59:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.92400000000001
+Ask	75.92400000000001
+Bid	75.91500000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.875
+takeprofit	75.995
+
+[2020.11.23 11:59:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238515
+
+[2020.11.23 11:59:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238515
+[2020.11.23 11:59:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:04:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.905
+Ask	75.905
+Bid	75.896
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.85599999999999
+takeprofit	75.976
+
+[2020.11.23 12:04:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238546
+
+[2020.11.23 12:04:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238546
+[2020.11.23 12:04:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:09:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.92
+Ask	75.92
+Bid	75.91
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.87
+takeprofit	75.98999999999999
+
+[2020.11.23 12:10:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238564
+
+[2020.11.23 12:10:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238564
+[2020.11.23 12:10:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:14:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.93300000000001
+Ask	75.93300000000001
+Bid	75.925
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.88500000000001
+takeprofit	76.005
+
+[2020.11.23 12:14:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238572
+
+[2020.11.23 12:14:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238572
+[2020.11.23 12:14:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:20:04 / lib_ea_2.mqh:253](step : 1) vars
+price	75.929
+Ask	75.929
+Bid	75.91800000000001
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.878
+takeprofit	75.998
+
+[2020.11.23 12:20:05 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238586
+
+[2020.11.23 12:20:05 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238586
+[2020.11.23 12:20:05 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:25:04 / lib_ea_2.mqh:253](step : 1) vars
+price	75.94499999999999
+Ask	75.94499999999999
+Bid	75.935
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.895
+takeprofit	76.015
+
+[2020.11.23 12:25:05 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238594
+
+[2020.11.23 12:25:05 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238594
+[2020.11.23 12:25:05 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:29:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.935
+Ask	75.935
+Bid	75.925
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.88500000000001
+takeprofit	76.005
+
+[2020.11.23 12:29:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238609
+
+[2020.11.23 12:29:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238609
+[2020.11.23 12:29:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:35:02 / lib_ea_2.mqh:253](step : 1) vars
+price	75.934
+Ask	75.934
+Bid	75.926
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.886
+takeprofit	76.006
+
+[2020.11.23 12:35:03 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238625
+
+[2020.11.23 12:35:03 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238625
+[2020.11.23 12:35:03 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:39:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.92700000000001
+Ask	75.92700000000001
+Bid	75.91800000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.878
+takeprofit	75.998
+
+[2020.11.23 12:39:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238643
+
+[2020.11.23 12:39:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238643
+[2020.11.23 12:39:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:45:17 / lib_ea_2.mqh:253](step : 1) vars
+price	75.931
+Ask	75.931
+Bid	75.923
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.883
+takeprofit	76.003
+
+[2020.11.23 12:45:17 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238658
+
+[2020.11.23 12:45:17 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238658
+[2020.11.23 12:45:17 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:50:25 / lib_ea_2.mqh:253](step : 1) vars
+price	75.931
+Ask	75.931
+Bid	75.922
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.88200000000001
+takeprofit	76.002
+
+[2020.11.23 12:50:25 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238675
+
+[2020.11.23 12:50:25 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238675
+[2020.11.23 12:50:25 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:54:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.931
+Ask	75.931
+Bid	75.923
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.883
+takeprofit	76.003
+
+[2020.11.23 12:54:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238684
+
+[2020.11.23 12:54:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238684
+[2020.11.23 12:54:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 12:59:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.91200000000001
+Ask	75.91200000000001
+Bid	75.90300000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.863
+takeprofit	75.983
+
+[2020.11.23 12:59:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238700
+
+[2020.11.23 12:59:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238700
+[2020.11.23 12:59:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:04:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.895
+Ask	75.895
+Bid	75.886
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.846
+takeprofit	75.96599999999999
+
+[2020.11.23 13:04:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238721
+
+[2020.11.23 13:04:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238721
+[2020.11.23 13:04:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:09:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.89
+Ask	75.89
+Bid	75.88
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.84
+takeprofit	75.95999999999999
+
+[2020.11.23 13:09:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238742
+
+[2020.11.23 13:09:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238742
+[2020.11.23 13:09:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:14:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.88
+Ask	75.88
+Bid	75.871
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.831
+takeprofit	75.95099999999999
+
+[2020.11.23 13:15:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238758
+
+[2020.11.23 13:15:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238758
+[2020.11.23 13:15:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:20:24 / lib_ea_2.mqh:253](step : 1) vars
+price	75.89100000000001
+Ask	75.89100000000001
+Bid	75.881
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.84099999999999
+takeprofit	75.961
+
+[2020.11.23 13:20:24 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238781
+
+[2020.11.23 13:20:24 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238781
+[2020.11.23 13:20:24 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:24:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.877
+Ask	75.877
+Bid	75.869
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82899999999999
+takeprofit	75.949
+
+[2020.11.23 13:25:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238792
+
+[2020.11.23 13:25:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238792
+[2020.11.23 13:25:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:29:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.88500000000001
+Ask	75.88500000000001
+Bid	75.876
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.836
+takeprofit	75.956
+
+[2020.11.23 13:29:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238804
+
+[2020.11.23 13:29:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238804
+[2020.11.23 13:29:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:34:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.881
+Ask	75.881
+Bid	75.871
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.831
+takeprofit	75.95099999999999
+
+[2020.11.23 13:34:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238819
+
+[2020.11.23 13:34:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238819
+[2020.11.23 13:34:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:40:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.876
+Ask	75.876
+Bid	75.869
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82899999999999
+takeprofit	75.949
+
+[2020.11.23 13:40:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238828
+
+[2020.11.23 13:40:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238828
+[2020.11.23 13:40:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:44:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.884
+Ask	75.884
+Bid	75.875
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.83499999999999
+takeprofit	75.955
+
+[2020.11.23 13:45:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238840
+
+[2020.11.23 13:45:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238840
+[2020.11.23 13:45:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:49:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.88200000000001
+Ask	75.88200000000001
+Bid	75.873
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.833
+takeprofit	75.953
+
+[2020.11.23 13:49:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238855
+
+[2020.11.23 13:49:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238855
+[2020.11.23 13:49:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:55:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.872
+Ask	75.872
+Bid	75.863
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82299999999999
+takeprofit	75.943
+
+[2020.11.23 13:55:04 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238861
+
+[2020.11.23 13:55:04 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238861
+[2020.11.23 13:55:04 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 13:59:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.874
+Ask	75.874
+Bid	75.864
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.824
+takeprofit	75.944
+
+[2020.11.23 13:59:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238869
+
+[2020.11.23 13:59:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238869
+[2020.11.23 13:59:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:05:02 / lib_ea_2.mqh:253](step : 1) vars
+price	75.876
+Ask	75.876
+Bid	75.866
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82599999999999
+takeprofit	75.946
+
+[2020.11.23 14:05:02 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238906
+
+[2020.11.23 14:05:02 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238906
+[2020.11.23 14:05:02 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:10:02 / lib_ea_2.mqh:253](step : 1) vars
+price	75.87
+Ask	75.87
+Bid	75.85899999999999
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.819
+takeprofit	75.93899999999999
+
+[2020.11.23 14:10:02 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238914
+
+[2020.11.23 14:10:02 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238914
+[2020.11.23 14:10:02 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:14:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.87
+Ask	75.87
+Bid	75.863
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82299999999999
+takeprofit	75.943
+
+[2020.11.23 14:14:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238922
+
+[2020.11.23 14:14:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238922
+[2020.11.23 14:14:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:19:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.86799999999999
+Ask	75.86799999999999
+Bid	75.85899999999999
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.819
+takeprofit	75.93899999999999
+
+[2020.11.23 14:19:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238942
+
+[2020.11.23 14:19:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238942
+[2020.11.23 14:19:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:24:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.876
+Ask	75.876
+Bid	75.866
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82599999999999
+takeprofit	75.946
+
+[2020.11.23 14:24:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238967
+
+[2020.11.23 14:24:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238967
+[2020.11.23 14:24:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:29:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.881
+Ask	75.881
+Bid	75.871
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.831
+takeprofit	75.95099999999999
+
+[2020.11.23 14:29:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29238986
+
+[2020.11.23 14:29:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29238986
+[2020.11.23 14:29:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:34:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.85899999999999
+Ask	75.85899999999999
+Bid	75.851
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.81100000000001
+takeprofit	75.931
+
+[2020.11.23 14:34:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239005
+
+[2020.11.23 14:34:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239005
+[2020.11.23 14:34:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:40:03 / lib_ea_2.mqh:253](step : 1) vars
+price	75.873
+Ask	75.873
+Bid	75.864
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.824
+takeprofit	75.944
+
+[2020.11.23 14:40:04 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239022
+
+[2020.11.23 14:40:04 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239022
+[2020.11.23 14:40:04 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:44:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.875
+Ask	75.875
+Bid	75.866
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.82599999999999
+takeprofit	75.946
+
+[2020.11.23 14:44:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239035
+
+[2020.11.23 14:44:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239035
+[2020.11.23 14:44:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:49:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.873
+Ask	75.873
+Bid	75.864
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.824
+takeprofit	75.944
+
+[2020.11.23 14:49:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239054
+
+[2020.11.23 14:49:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239054
+[2020.11.23 14:49:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:54:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.886
+Ask	75.886
+Bid	75.877
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.837
+takeprofit	75.95699999999999
+
+[2020.11.23 14:54:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239071
+
+[2020.11.23 14:54:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239071
+[2020.11.23 14:54:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 14:59:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.90300000000001
+Ask	75.90300000000001
+Bid	75.895
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.855
+takeprofit	75.97499999999999
+
+[2020.11.23 14:59:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239104
+
+[2020.11.23 14:59:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239104
+[2020.11.23 14:59:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:05:01 / lib_ea_2.mqh:253](step : 1) vars
+price	75.914
+Ask	75.914
+Bid	75.90600000000001
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.866
+takeprofit	75.986
+
+[2020.11.23 15:05:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239215
+
+[2020.11.23 15:05:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239215
+[2020.11.23 15:05:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:10:03 / lib_ea_2.mqh:253](step : 1) vars
+price	75.90900000000001
+Ask	75.90900000000001
+Bid	75.90000000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.86
+takeprofit	75.98
+
+[2020.11.23 15:10:03 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239241
+
+[2020.11.23 15:10:03 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239241
+[2020.11.23 15:10:03 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:14:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.907
+Ask	75.907
+Bid	75.899
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.85899999999999
+takeprofit	75.979
+
+[2020.11.23 15:14:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239268
+
+[2020.11.23 15:14:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239268
+[2020.11.23 15:14:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:19:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.89700000000001
+Ask	75.89700000000001
+Bid	75.889
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.849
+takeprofit	75.96899999999999
+
+[2020.11.23 15:19:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239282
+
+[2020.11.23 15:19:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239282
+[2020.11.23 15:19:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:24:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.898
+Ask	75.898
+Bid	75.89
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.84999999999999
+takeprofit	75.97
+
+[2020.11.23 15:24:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239301
+
+[2020.11.23 15:24:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239301
+[2020.11.23 15:24:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:29:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.88200000000001
+Ask	75.88200000000001
+Bid	75.874
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.834
+takeprofit	75.95399999999999
+
+[2020.11.23 15:29:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239316
+
+[2020.11.23 15:29:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239316
+[2020.11.23 15:29:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:34:59 / lib_ea_2.mqh:253](step : 1) vars
+price	75.87
+Ask	75.87
+Bid	75.861
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.821
+takeprofit	75.941
+
+[2020.11.23 15:35:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239336
+
+[2020.11.23 15:35:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239336
+[2020.11.23 15:35:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:40:00 / lib_ea_2.mqh:253](step : 1) vars
+price	75.86799999999999
+Ask	75.86799999999999
+Bid	75.861
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.821
+takeprofit	75.941
+
+[2020.11.23 15:40:01 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239359
+
+[2020.11.23 15:40:01 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239359
+[2020.11.23 15:40:01 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:44:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.858
+Ask	75.858
+Bid	75.849
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.809
+takeprofit	75.929
+
+[2020.11.23 15:44:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239377
+
+[2020.11.23 15:44:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239377
+[2020.11.23 15:44:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:49:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.83
+Ask	75.83
+Bid	75.821
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.78100000000001
+takeprofit	75.901
+
+[2020.11.23 15:49:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239392
+
+[2020.11.23 15:49:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239392
+[2020.11.23 15:49:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:54:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.825
+Ask	75.825
+Bid	75.81699999999999
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.777
+takeprofit	75.89700000000001
+
+[2020.11.23 15:54:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239428
+
+[2020.11.23 15:54:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239428
+[2020.11.23 15:54:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 15:59:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.855
+Ask	75.855
+Bid	75.84699999999999
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.807
+takeprofit	75.92700000000001
+
+[2020.11.23 15:59:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239463
+
+[2020.11.23 15:59:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239463
+[2020.11.23 15:59:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:04:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.883
+Ask	75.883
+Bid	75.876
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.836
+takeprofit	75.956
+
+[2020.11.23 16:04:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239577
+
+[2020.11.23 16:04:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239577
+[2020.11.23 16:04:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:09:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.916
+Ask	75.916
+Bid	75.907
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.867
+takeprofit	75.98699999999999
+
+[2020.11.23 16:09:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239658
+
+[2020.11.23 16:09:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239658
+[2020.11.23 16:09:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:14:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.926
+Ask	75.926
+Bid	75.917
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.877
+takeprofit	75.997
+
+[2020.11.23 16:14:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239703
+
+[2020.11.23 16:14:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239703
+[2020.11.23 16:14:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:19:58 / lib_ea_2.mqh:253](step : 1) vars
+price	75.93000000000001
+Ask	75.93000000000001
+Bid	75.922
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.88200000000001
+takeprofit	76.002
+
+[2020.11.23 16:19:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239744
+
+[2020.11.23 16:19:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239744
+[2020.11.23 16:19:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:24:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.895
+Ask	75.895
+Bid	75.88800000000001
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.848
+takeprofit	75.968
+
+[2020.11.23 16:24:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239773
+
+[2020.11.23 16:24:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239773
+[2020.11.23 16:24:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:29:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.904
+Ask	75.904
+Bid	75.895
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.855
+takeprofit	75.97499999999999
+
+[2020.11.23 16:29:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239824
+
+[2020.11.23 16:29:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239824
+[2020.11.23 16:29:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:34:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.883
+Ask	75.883
+Bid	75.875
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.83499999999999
+takeprofit	75.955
+
+[2020.11.23 16:34:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239881
+
+[2020.11.23 16:34:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239881
+[2020.11.23 16:34:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:39:56 / lib_ea_2.mqh:253](step : 1) vars
+price	75.89400000000001
+Ask	75.89400000000001
+Bid	75.886
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.846
+takeprofit	75.96599999999999
+
+[2020.11.23 16:39:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239917
+
+[2020.11.23 16:39:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239917
+[2020.11.23 16:39:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:44:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.89
+Ask	75.89
+Bid	75.88200000000001
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.842
+takeprofit	75.962
+
+[2020.11.23 16:44:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239935
+
+[2020.11.23 16:44:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239935
+[2020.11.23 16:44:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:49:56 / lib_ea_2.mqh:253](step : 1) vars
+price	75.93300000000001
+Ask	75.93300000000001
+Bid	75.925
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.88500000000001
+takeprofit	76.005
+
+[2020.11.23 16:49:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29239989
+
+[2020.11.23 16:49:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29239989
+[2020.11.23 16:49:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:55:01 / lib_ea_2.mqh:253](step : 1) vars
+price	75.96299999999999
+Ask	75.96299999999999
+Bid	75.95399999999999
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.914
+takeprofit	76.03400000000001
+
+[2020.11.23 16:55:05 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240031
+
+[2020.11.23 16:55:05 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240031
+[2020.11.23 16:55:05 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 16:59:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.95399999999999
+Ask	75.95399999999999
+Bid	75.94499999999999
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.905
+takeprofit	76.02500000000001
+
+[2020.11.23 16:59:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240073
+
+[2020.11.23 16:59:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240073
+[2020.11.23 16:59:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:04:57 / lib_ea_2.mqh:253](step : 1) vars
+price	75.971
+Ask	75.971
+Bid	75.95999999999999
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.92
+takeprofit	76.04000000000001
+
+[2020.11.23 17:04:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240188
+
+[2020.11.23 17:04:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240188
+[2020.11.23 17:04:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:09:57 / lib_ea_2.mqh:253](step : 1) vars
+price	76.01900000000001
+Ask	76.01900000000001
+Bid	76.009
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.96899999999999
+takeprofit	76.089
+
+[2020.11.23 17:09:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240263
+
+[2020.11.23 17:09:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240263
+[2020.11.23 17:09:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:14:56 / lib_ea_2.mqh:253](step : 1) vars
+price	75.994
+Ask	75.994
+Bid	75.98399999999999
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.944
+takeprofit	76.06399999999999
+
+[2020.11.23 17:14:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240298
+
+[2020.11.23 17:14:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240298
+[2020.11.23 17:14:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:19:57 / lib_ea_2.mqh:253](step : 1) vars
+price	76.001
+Ask	76.001
+Bid	75.99299999999999
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.953
+takeprofit	76.07299999999999
+
+[2020.11.23 17:19:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240364
+
+[2020.11.23 17:19:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240364
+[2020.11.23 17:19:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:24:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.04000000000001
+Ask	76.04000000000001
+Bid	76.03
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.98999999999999
+takeprofit	76.11
+
+[2020.11.23 17:24:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240410
+
+[2020.11.23 17:24:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240410
+[2020.11.23 17:24:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:29:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.02800000000001
+Ask	76.02800000000001
+Bid	76.02200000000001
+(Ask - Bid)	0.006
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.982
+takeprofit	76.102
+
+[2020.11.23 17:29:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240483
+
+[2020.11.23 17:29:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240483
+[2020.11.23 17:29:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:34:57 / lib_ea_2.mqh:253](step : 1) vars
+price	76.084
+Ask	76.084
+Bid	76.07599999999999
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.036
+takeprofit	76.15600000000001
+
+[2020.11.23 17:34:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240562
+
+[2020.11.23 17:34:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240562
+[2020.11.23 17:34:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:39:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.027
+Ask	76.027
+Bid	76.017
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.977
+takeprofit	76.09699999999999
+
+[2020.11.23 17:39:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240636
+
+[2020.11.23 17:39:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240636
+[2020.11.23 17:39:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:44:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.001
+Ask	76.001
+Bid	75.991
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.95099999999999
+takeprofit	76.071
+
+[2020.11.23 17:44:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240694
+
+[2020.11.23 17:44:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240694
+[2020.11.23 17:44:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:49:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.065
+Ask	76.065
+Bid	76.056
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.01600000000001
+takeprofit	76.136
+
+[2020.11.23 17:49:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240738
+
+[2020.11.23 17:49:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240738
+[2020.11.23 17:49:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:54:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.065
+Ask	76.065
+Bid	76.054
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.014
+takeprofit	76.134
+
+[2020.11.23 17:54:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240764
+
+[2020.11.23 17:54:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240764
+[2020.11.23 17:54:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 17:59:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.08499999999999
+Ask	76.08499999999999
+Bid	76.075
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.035
+takeprofit	76.155
+
+[2020.11.23 17:59:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240819
+
+[2020.11.23 17:59:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240819
+[2020.11.23 17:59:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:04:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.054
+Ask	76.054
+Bid	76.044
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.004
+takeprofit	76.124
+
+[2020.11.23 18:04:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240959
+
+[2020.11.23 18:04:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240959
+[2020.11.23 18:04:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:09:57 / lib_ea_2.mqh:253](step : 1) vars
+price	76.063
+Ask	76.063
+Bid	76.05500000000001
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.015
+takeprofit	76.13500000000001
+
+[2020.11.23 18:09:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29240989
+
+[2020.11.23 18:09:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29240989
+[2020.11.23 18:09:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:14:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.06699999999999
+Ask	76.06699999999999
+Bid	76.057
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.017
+takeprofit	76.137
+
+[2020.11.23 18:14:56 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241008
+
+[2020.11.23 18:14:56 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241008
+[2020.11.23 18:14:56 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:19:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.095
+Ask	76.095
+Bid	76.08799999999999
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.048
+takeprofit	76.16800000000001
+
+[2020.11.23 18:19:56 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241055
+
+[2020.11.23 18:19:56 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241055
+[2020.11.23 18:19:56 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:24:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.117
+Ask	76.117
+Bid	76.10599999999999
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.066
+takeprofit	76.18600000000001
+
+[2020.11.23 18:24:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241139
+
+[2020.11.23 18:24:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241139
+[2020.11.23 18:24:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:29:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.10599999999999
+Ask	76.10599999999999
+Bid	76.09699999999999
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.057
+takeprofit	76.17700000000001
+
+[2020.11.23 18:29:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241210
+
+[2020.11.23 18:29:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241210
+[2020.11.23 18:29:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:34:57 / lib_ea_2.mqh:253](step : 1) vars
+price	76.09
+Ask	76.09
+Bid	76.081
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.041
+takeprofit	76.161
+
+[2020.11.23 18:34:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241263
+
+[2020.11.23 18:34:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241263
+[2020.11.23 18:34:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:39:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.051
+Ask	76.051
+Bid	76.042
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.002
+takeprofit	76.122
+
+[2020.11.23 18:39:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241300
+
+[2020.11.23 18:39:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241300
+[2020.11.23 18:39:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:45:00 / lib_ea_2.mqh:253](step : 1) vars
+price	76.074
+Ask	76.074
+Bid	76.065
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.02500000000001
+takeprofit	76.145
+
+[2020.11.23 18:45:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241367
+
+[2020.11.23 18:45:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241367
+[2020.11.23 18:45:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:49:59 / lib_ea_2.mqh:253](step : 1) vars
+price	76.06
+Ask	76.06
+Bid	76.05
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.01000000000001
+takeprofit	76.13
+
+[2020.11.23 18:49:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241440
+
+[2020.11.23 18:49:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241440
+[2020.11.23 18:49:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:54:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.06
+Ask	76.06
+Bid	76.053
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.01300000000001
+takeprofit	76.133
+
+[2020.11.23 18:54:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241470
+
+[2020.11.23 18:54:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241470
+[2020.11.23 18:54:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 18:59:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.08799999999999
+Ask	76.08799999999999
+Bid	76.078
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.038
+takeprofit	76.158
+
+[2020.11.23 18:59:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241519
+
+[2020.11.23 18:59:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241519
+[2020.11.23 18:59:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:04:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.077
+Ask	76.077
+Bid	76.068
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.02800000000001
+takeprofit	76.148
+
+[2020.11.23 19:04:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241570
+
+[2020.11.23 19:04:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241570
+[2020.11.23 19:04:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:09:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.083
+Ask	76.083
+Bid	76.074
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.03400000000001
+takeprofit	76.154
+
+[2020.11.23 19:09:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241597
+
+[2020.11.23 19:09:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241597
+[2020.11.23 19:09:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:14:59 / lib_ea_2.mqh:253](step : 1) vars
+price	76.10299999999999
+Ask	76.10299999999999
+Bid	76.092
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.05200000000001
+takeprofit	76.172
+
+[2020.11.23 19:15:00 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241622
+
+[2020.11.23 19:15:00 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241622
+[2020.11.23 19:15:00 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:19:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.08
+Ask	76.08
+Bid	76.071
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.03100000000001
+takeprofit	76.151
+
+[2020.11.23 19:19:56 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241663
+
+[2020.11.23 19:19:56 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241663
+[2020.11.23 19:19:56 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:24:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.047
+Ask	76.047
+Bid	76.03700000000001
+(Ask - Bid)	0.01
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.997
+takeprofit	76.117
+
+[2020.11.23 19:24:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241709
+
+[2020.11.23 19:24:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241709
+[2020.11.23 19:24:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:29:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.054
+Ask	76.054
+Bid	76.045
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.005
+takeprofit	76.125
+
+[2020.11.23 19:29:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241747
+
+[2020.11.23 19:29:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241747
+[2020.11.23 19:29:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:34:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.03700000000001
+Ask	76.03700000000001
+Bid	76.029
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.989
+takeprofit	76.10899999999999
+
+[2020.11.23 19:34:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241840
+
+[2020.11.23 19:34:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241840
+[2020.11.23 19:34:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:39:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.04900000000001
+Ask	76.04900000000001
+Bid	76.04000000000001
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76
+takeprofit	76.12
+
+[2020.11.23 19:39:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241875
+
+[2020.11.23 19:39:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241875
+[2020.11.23 19:39:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:44:57 / lib_ea_2.mqh:253](step : 1) vars
+price	76.041
+Ask	76.041
+Bid	76.03400000000001
+(Ask - Bid)	0.007
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.994
+takeprofit	76.114
+
+[2020.11.23 19:44:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241920
+
+[2020.11.23 19:44:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241920
+[2020.11.23 19:44:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:49:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.057
+Ask	76.057
+Bid	76.04600000000001
+(Ask - Bid)	0.011
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.006
+takeprofit	76.126
+
+[2020.11.23 19:49:58 / lib_ea_2.mqh:310]OrderSend placed successfully : 29241948
+
+[2020.11.23 19:49:58 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29241948
+[2020.11.23 19:49:58 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:55:09 / lib_ea_2.mqh:253](step : 1) vars
+price	76.053
+Ask	76.053
+Bid	76.045
+(Ask - Bid)	0.008
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.005
+takeprofit	76.125
+
+[2020.11.23 19:55:10 / lib_ea_2.mqh:310]OrderSend placed successfully : 29242016
+
+[2020.11.23 19:55:10 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29242016
+[2020.11.23 19:55:10 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 19:59:56 / lib_ea_2.mqh:253](step : 1) vars
+price	76.059
+Ask	76.059
+Bid	76.05
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	76.01000000000001
+takeprofit	76.13
+
+[2020.11.23 19:59:57 / lib_ea_2.mqh:310]OrderSend placed successfully : 29242145
+
+[2020.11.23 19:59:57 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29242145
+[2020.11.23 19:59:57 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+
+[2020.11.23 20:04:58 / lib_ea_2.mqh:253](step : 1) vars
+price	76.048
+Ask	76.048
+Bid	76.039
+(Ask - Bid)	0.008999999999999999
+Point	0.001
+Digits	3
+minstoplevel	0.04
+mintakelevel	0.08
+stoploss	75.999
+takeprofit	76.119
+
+[2020.11.23 20:04:59 / lib_ea_2.mqh:310]OrderSend placed successfully : 29242255
+
+[2020.11.23 20:04:59 / ea-7_tasks-51_post-take-position-stats.mq4:540][ea-7_tasks-51_post-take-position-stats.mq4:534] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29242255
+[2020.11.23 20:04:59 / lib_ea_2.mqh:3185][lib_ea_2.mqh:3181] op_Post_Take_Position ==> comp.
+

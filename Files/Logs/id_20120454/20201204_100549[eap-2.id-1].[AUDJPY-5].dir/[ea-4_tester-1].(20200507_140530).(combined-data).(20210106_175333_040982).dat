@@ -1,0 +1,36 @@
+[01/06/2021 17:53:33 / FxUtilitiesController.php:757]
+symbol	AUDJPY
+period	5
+dp	dp_2__All_True
+this file	[ea-4_tester-1].(20201204_100549).(tickets-data).log
+
+combined file(this)	[ea-4_tester-1].(20200507_140530).(combined-data).(20210106_175333_040982).dat
+dpath	C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\id_20120454\20201204_100549[eap-2.id-1].[AUDJPY-5].dir
+order_type	
+account : 	no-match
+
+s.n.	ticket-num	curr.datetime	Close.-12	Close.-11	Close.-10	Close.-9	Close.-8	Close.-7	Close.-6	Close.-5	Close.-4	Close.-3	Close.-2	Close.-1	u/d.-12	u/d.-11	u/d.-10	u/d.-9	u/d.-8	u/d.-7	u/d.-6	u/d.-5	u/d.-4	u/d.-3	u/d.-2	u/d.-1	width.-12	width.-11	width.-10	width.-9	width.-8	width.-7	width.-6	width.-5	width.-4	width.-3	width.-2	width.-1	w-level.-12	w-level.-11	w-level.-10	w-level.-9	w-level.-8	w-level.-7	w-level.-6	w-level.-5	w-level.-4	w-level.-3	w-level.-2	w-level.-1	MFI.-12	MFI.-11	MFI.-10	MFI.-9	MFI.-8	MFI.-7	MFI.-6	MFI.-5	MFI.-4	MFI.-3	MFI.-2	MFI.-1	RSI.-12	RSI.-11	RSI.-10	RSI.-9	RSI.-8	RSI.-7	RSI.-6	RSI.-5	RSI.-4	RSI.-3	RSI.-2	RSI.-1	Force.-12	Force.-11	Force.-10	Force.-9	Force.-8	Force.-7	Force.-6	Force.-5	Force.-4	Force.-3	Force.-2	Force.-1	BB-loc.-12	BB-loc.-11	BB-loc.-10	BB-loc.-9	BB-loc.-8	BB-loc.-7	BB-loc.-6	BB-loc.-5	BB-loc.-4	BB-loc.-3	BB-loc.-2	BB-loc.-1	ticket	open-time	type	size	item	price	SL	TP	close-time	price	profit
+
+
+total=	0
+loss=	0
+gain=	0
+
+BB.loc	loss(<0)	gain(>=0)
+1	0	0
+2	0	0
+3	0	0
+4	0	0
+5	0	0
+6	0	0
+
+
+BB.loc	sum(loss)	sum(gain)
+1	0	0
+2	0	0
+3	0	0
+4	0	0
+5	0	0
+6	0	0
+
+

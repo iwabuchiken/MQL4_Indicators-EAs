@@ -1,0 +1,376 @@
+[2020.11.26 10:59:29 / ea-4.mq4:1240][ea-4.mq4:1227]
+thie file	[ea-4_tester-1].(20201126_105929).log
+[ea-4.mq4:1229] 
+init... : PGName = file=ea-4:dp=dp_2__All_True
+:StopLoss=0.05
+:TakeProfit=0.1
+:TrailingStop=0.03
+
+init ==> comp : file=ea-4:dp=dp_2__All_True
+:StopLoss=0.05
+:TakeProfit=0.1
+:TrailingStop=0.03
+
+[2020.11.26 10:59:29 / ea-4.mq4:1507][ea-4.mq4:1495] symbol + period => AUDJPY / 5
+[2020.11.26 10:59:29 / ea-4.mq4:1274][ea-4.mq4:1267] is_Order_Pending => -1
+[2020.11.26 10:59:29 / ea-4.mq4:1325][ea-4.mq4:1294] _is_NewBar => false
+[ea-4.mq4:1313] num_BB_Area => 4 (index = 0)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1073][lib_ea_2.mqh:1066] get_BB_Loc_Nums() ==> starts
+
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1140]_lo_Price_Close[0]	76.861	2020.11.26 03:55:00(num_BB_Area = 4)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1140]_lo_Price_Close[1]	76.885	2020.11.26 03:50:00(num_BB_Area = 3)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1140]_lo_Price_Close[2]	76.899	2020.11.26 03:45:00(num_BB_Area = 2)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1140]_lo_Price_Close[3]	76.885	2020.11.26 03:40:00(num_BB_Area = 2)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1140]_lo_Price_Close[4]	76.902	2020.11.26 03:35:00(num_BB_Area = 1)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1140]_lo_Price_Close[5]	76.882	2020.11.26 03:30:00(num_BB_Area = 2)
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1185][lib_ea_2.mqh:1176] _lo_Price_Close => vals set
+
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1287][lib_ea_2.mqh:1264] op_Get_BB_Loc_Nums
+_lo_BB_Loc_Nums[0]	4	(up/down = -1)
+_lo_BB_Loc_Nums[1]	3	(up/down = -1)
+_lo_BB_Loc_Nums[2]	2	(up/down = 1)
+_lo_BB_Loc_Nums[3]	2	(up/down = -1)
+_lo_BB_Loc_Nums[4]	1	(up/down = 1)
+_lo_BB_Loc_Nums[5]	2	(up/down = 1)
+
+[2020.11.26 10:59:29 / lib_ea_2.mqh:1340]bar data file : header ==> written (bar data file = [ea-4_tester-1].(20201126_105929).(bar-data).log)
+[2020.11.26 10:59:29 / ea-4.mq4:1405][ea-4.mq4:1401] calling ==> get_Stats__Bar_Width : file = [ea-4_tester-1].(20201126_105929).(stats-data).log
+
+[2020.11.26 10:59:29 / ea-4.mq4:1478][ea-4.mq4:1471] init() ==> exiting...
+
+[2020.11.26 10:59:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276620
+
+[2020.11.26 10:59:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276620
+[2020.11.26 11:04:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276648
+
+[2020.11.26 11:04:56 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276648
+[2020.11.26 11:09:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276669
+
+[2020.11.26 11:09:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276669
+[2020.11.26 11:14:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276696
+
+[2020.11.26 11:14:58 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276696
+[2020.11.26 11:19:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276714
+
+[2020.11.26 11:19:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276714
+[2020.11.26 11:24:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276730
+
+[2020.11.26 11:24:56 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276730
+[2020.11.26 11:29:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276757
+
+[2020.11.26 11:29:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276757
+[2020.11.26 11:34:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276777
+
+[2020.11.26 11:34:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276777
+[2020.11.26 11:40:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276798
+
+[2020.11.26 11:40:00 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276798
+[2020.11.26 11:44:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276817
+
+[2020.11.26 11:44:56 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276817
+[2020.11.26 11:49:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276834
+
+[2020.11.26 11:49:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276834
+[2020.11.26 11:54:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276855
+
+[2020.11.26 11:54:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276855
+[2020.11.26 11:59:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276905
+
+[2020.11.26 11:59:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276905
+[2020.11.26 12:04:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276930
+
+[2020.11.26 12:04:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276930
+[2020.11.26 12:09:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276959
+
+[2020.11.26 12:09:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276959
+[2020.11.26 12:14:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29276989
+
+[2020.11.26 12:14:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29276989
+[2020.11.26 12:19:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277001
+
+[2020.11.26 12:19:58 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277001
+[2020.11.26 12:25:06 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277015
+
+[2020.11.26 12:25:06 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277015
+[2020.11.26 12:29:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277025
+
+[2020.11.26 12:29:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277025
+[2020.11.26 12:34:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277046
+
+[2020.11.26 12:34:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277046
+[2020.11.26 12:39:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277058
+
+[2020.11.26 12:39:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277058
+[2020.11.26 12:44:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277062
+
+[2020.11.26 12:44:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277062
+[2020.11.26 12:49:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277090
+
+[2020.11.26 12:49:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277090
+[2020.11.26 12:54:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277106
+
+[2020.11.26 12:54:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277106
+[2020.11.26 12:59:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277136
+
+[2020.11.26 12:59:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277136
+[2020.11.26 13:04:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277155
+
+[2020.11.26 13:04:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277155
+[2020.11.26 13:09:59 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277172
+
+[2020.11.26 13:09:59 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277172
+[2020.11.26 13:14:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277187
+
+[2020.11.26 13:14:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277187
+[2020.11.26 13:19:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277203
+
+[2020.11.26 13:19:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277203
+[2020.11.26 13:24:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277216
+
+[2020.11.26 13:24:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277216
+[2020.11.26 13:29:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277231
+
+[2020.11.26 13:29:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277231
+[2020.11.26 13:34:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277239
+
+[2020.11.26 13:34:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277239
+[2020.11.26 13:39:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277250
+
+[2020.11.26 13:39:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277250
+[2020.11.26 13:44:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277256
+
+[2020.11.26 13:44:56 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277256
+[2020.11.26 13:50:07 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277264
+
+[2020.11.26 13:50:07 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277264
+[2020.11.26 13:54:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277275
+
+[2020.11.26 13:54:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277275
+[2020.11.26 13:59:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277305
+
+[2020.11.26 13:59:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277305
+[2020.11.26 14:04:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277344
+
+[2020.11.26 14:04:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277344
+[2020.11.26 14:09:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277361
+
+[2020.11.26 14:09:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277361
+[2020.11.26 14:14:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277370
+
+[2020.11.26 14:14:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277370
+[2020.11.26 14:19:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277383
+
+[2020.11.26 14:19:58 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277383
+[2020.11.26 14:25:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277404
+
+[2020.11.26 14:25:00 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277404
+[2020.11.26 14:29:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277423
+
+[2020.11.26 14:29:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277423
+[2020.11.26 14:34:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277450
+
+[2020.11.26 14:34:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277450
+[2020.11.26 14:39:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277472
+
+[2020.11.26 14:39:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277472
+[2020.11.26 14:44:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277485
+
+[2020.11.26 14:44:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277485
+[2020.11.26 14:49:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277512
+
+[2020.11.26 14:49:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277512
+[2020.11.26 14:54:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277517
+
+[2020.11.26 14:54:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277517
+[2020.11.26 14:59:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277557
+
+[2020.11.26 14:59:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277557
+[2020.11.26 15:04:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277658
+
+[2020.11.26 15:04:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277658
+[2020.11.26 15:09:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277689
+
+[2020.11.26 15:09:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277689
+[2020.11.26 15:14:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277749
+
+[2020.11.26 15:14:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277749
+[2020.11.26 15:19:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277781
+
+[2020.11.26 15:19:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277781
+[2020.11.26 15:24:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277818
+
+[2020.11.26 15:24:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277818
+[2020.11.26 15:29:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277858
+
+[2020.11.26 15:29:57 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277858
+[2020.11.26 15:34:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277879
+
+[2020.11.26 15:34:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277879
+[2020.11.26 15:39:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277904
+
+[2020.11.26 15:39:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277904
+[2020.11.26 15:44:58 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277919
+
+[2020.11.26 15:44:58 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277919
+[2020.11.26 15:50:00 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277938
+
+[2020.11.26 15:50:00 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277938
+[2020.11.26 15:54:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29277973
+
+[2020.11.26 15:54:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29277973
+[2020.11.26 15:59:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278005
+
+[2020.11.26 15:59:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278005
+[2020.11.26 16:04:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278076
+
+[2020.11.26 16:04:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278076
+[2020.11.26 16:09:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278113
+
+[2020.11.26 16:09:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278113
+[2020.11.26 16:14:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278136
+
+[2020.11.26 16:14:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278136
+[2020.11.26 16:19:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278171
+
+[2020.11.26 16:19:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278171
+[2020.11.26 16:24:51 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278190
+
+[2020.11.26 16:24:51 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278190
+[2020.11.26 16:29:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278213
+
+[2020.11.26 16:29:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278213
+[2020.11.26 16:34:57 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278245
+
+[2020.11.26 16:34:57 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278245
+[2020.11.26 16:39:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278310
+
+[2020.11.26 16:39:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278310
+[2020.11.26 16:44:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278348
+
+[2020.11.26 16:44:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278348
+[2020.11.26 16:49:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278421
+
+[2020.11.26 16:49:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278421
+[2020.11.26 16:54:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278522
+
+[2020.11.26 16:54:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278522
+[2020.11.26 16:59:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278580
+
+[2020.11.26 16:59:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278580
+[2020.11.26 17:04:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278715
+
+[2020.11.26 17:04:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278715
+[2020.11.26 17:09:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278743
+
+[2020.11.26 17:09:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278743
+[2020.11.26 17:14:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278777
+
+[2020.11.26 17:14:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278777
+[2020.11.26 17:19:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278825
+
+[2020.11.26 17:19:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278825
+[2020.11.26 17:24:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278852
+
+[2020.11.26 17:24:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278852
+[2020.11.26 17:29:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278872
+
+[2020.11.26 17:29:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278872
+[2020.11.26 17:34:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278942
+
+[2020.11.26 17:34:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278942
+[2020.11.26 17:39:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29278975
+
+[2020.11.26 17:39:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29278975
+[2020.11.26 17:44:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279009
+
+[2020.11.26 17:44:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279009
+[2020.11.26 17:49:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279064
+
+[2020.11.26 17:49:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279064
+[2020.11.26 17:54:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279119
+
+[2020.11.26 17:54:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279119
+[2020.11.26 17:59:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279236
+
+[2020.11.26 17:59:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279236
+[2020.11.26 18:04:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279322
+
+[2020.11.26 18:04:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279322
+[2020.11.26 18:09:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279356
+
+[2020.11.26 18:09:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279356
+[2020.11.26 18:14:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279398
+
+[2020.11.26 18:14:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279398
+[2020.11.26 18:19:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279438
+
+[2020.11.26 18:19:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279438
+[2020.11.26 18:24:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279477
+
+[2020.11.26 18:24:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279477
+[2020.11.26 18:29:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279507
+
+[2020.11.26 18:29:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279507
+[2020.11.26 18:34:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279534
+
+[2020.11.26 18:34:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279534
+[2020.11.26 18:39:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279568
+
+[2020.11.26 18:39:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279568
+[2020.11.26 18:44:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279623
+
+[2020.11.26 18:44:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279623
+[2020.11.26 18:49:56 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279691
+
+[2020.11.26 18:49:56 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279691
+[2020.11.26 18:54:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279719
+
+[2020.11.26 18:54:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279719
+[2020.11.26 18:59:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279806
+
+[2020.11.26 18:59:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279806
+[2020.11.26 19:04:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279854
+
+[2020.11.26 19:04:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279854
+[2020.11.26 19:09:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279893
+
+[2020.11.26 19:09:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279893
+[2020.11.26 19:14:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29279948
+
+[2020.11.26 19:14:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29279948
+[2020.11.26 19:19:54 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280006
+
+[2020.11.26 19:19:54 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280006
+[2020.11.26 19:24:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280030
+
+[2020.11.26 19:24:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280030
+[2020.11.26 19:29:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280064
+
+[2020.11.26 19:29:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280064
+[2020.11.26 19:34:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280099
+
+[2020.11.26 19:34:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280099
+[2020.11.26 19:39:53 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280122
+
+[2020.11.26 19:39:53 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280122
+[2020.11.26 19:44:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280168
+
+[2020.11.26 19:44:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280168
+[2020.11.26 19:49:51 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280201
+
+[2020.11.26 19:49:51 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280201
+[2020.11.26 19:54:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280239
+
+[2020.11.26 19:54:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280239
+[2020.11.26 19:59:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280280
+
+[2020.11.26 19:59:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280280
+[2020.11.26 20:04:55 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280338
+
+[2020.11.26 20:04:55 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280338
+[2020.11.26 20:09:51 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280365
+
+[2020.11.26 20:09:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280365
+[2020.11.26 20:14:52 / lib_ea_2.mqh:314]OrderSend placed successfully : 29280402
+
+[2020.11.26 20:14:52 / ea-4.mq4:549][ea-4.mq4:543] (step : j3 : Y : 2) buy ==> exec : take_Position__Buy --> 29280402

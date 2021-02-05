@@ -1,0 +1,28 @@
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1347][lib_ea_2.mqh:1324]
+symbol!!	AUDJPY
+period	5
+this file	[ea-4_tester-1].(20201125_105027).(bar-data).log
+	datetime current	BB.-5	BB.-4	BB.-3	BB.-2	BB.-1	u/d.-5	u/d.-4	u/d.-3	u/d.-2	u/d.-1	width.-5	width.-4	width.-3	width.-2	width.-1
+	
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1367]header ==> written(Close[1] = 76.93000000000001) / _lo_DateTime[0] = 2020.11.25 03:50:00
+
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1383]	2020.11.25 03:50:00	
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1430]	2020.11.25 03:50:00	4	4	4	4	4	-1	1	-1	-1	-1	
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1480]lo_Thresholds[2] = -0.01
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1524]	2020.11.25 03:50:00	4	4	4	4	4	-1	1	-1	-1	-1	-0.020	0.000	-0.007	-0.014	-0.008	-3	-1	-1	-2	-1	
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1602]	2020.11.25 03:50:00	4	4	4	4	4	-1	1	-1	-1	-1	-0.020	0.000	-0.007	-0.014	-0.008	-3	-1	-1	-2	-1	
+[2020.11.25 10:50:27 / lib_ea_2.mqh:1609]op_Get_BB_Loc_Nums ==> complete
+
+[2020.11.25 10:50:27 / ea-7_tasks-51_post-take-position-stats.mq4:1203]
+i = 1 / width level = -1
+
+i = 2 / width level = -2
+
+i = 3 / width level = -1
+
+i = 4 / width level = -1
+
+i = 5 / width level = -3
+
+i = 6 / width level = 2
+
